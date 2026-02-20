@@ -37,7 +37,7 @@ export default function Navbar() {
 
         {/* ── Logo ─────────────────────────────────────────────────── */}
         <a
-          href="#"
+          href="/"
           className="font-display text-[31px] leading-[46px] text-[#253862] uppercase tracking-wide shrink-0"
         >
           Smart Cleaning
@@ -50,7 +50,7 @@ export default function Navbar() {
           <nav className="flex items-center gap-[20px]">
 
             <a
-              href="#"
+              href="/"
               className="font-display-reg text-[16px] tracking-[0.96px] uppercase text-[#0a2540] hover:text-[#155da6] transition-colors duration-200 whitespace-nowrap"
             >
               Home
@@ -134,7 +134,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-[#c8e0fd] border-t border-[#253862] px-[40px] py-6 flex flex-col gap-5">
           <a
-            href="#"
+            href="/"
             onClick={() => setMenuOpen(false)}
             className="font-display-reg text-[16px] tracking-[0.96px] uppercase text-[#0a2540]"
           >
