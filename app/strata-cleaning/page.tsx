@@ -19,7 +19,7 @@ import Footer from "@/components/Footer";
 
 // ── Shared reveal hook ──────────────────────────────────────────────────────
 function useReveal(threshold = 0.1) {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const obs = new IntersectionObserver(
       (entries) => {
@@ -248,7 +248,7 @@ export default function StrataCleaningPage() {
         {/* ── 2. WHAT IS STRATA CLEANING ───────────────────────────────── */}
         <section
           className="py-[80px] bg-[#f2f2f2]"
-          ref={introRef as React.RefObject<HTMLElement>}
+          ref={introRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-start">
             {/* Left — text */}
@@ -297,7 +297,7 @@ export default function StrataCleaningPage() {
         {/* ── 3. COMMON AREAS OF FOCUS ─────────────────────────────────── */}
         <section
           className="py-[80px] bg-[#155da6]"
-          ref={areasRef as React.RefObject<HTMLElement>}
+          ref={areasRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[46px]">
             <div className="reveal flex flex-col gap-[16px] items-center text-center">
@@ -337,7 +337,7 @@ export default function StrataCleaningPage() {
         {/* ── 4. IMAGE 1 ───────────────────────────────────────────────── */}
         <div
           className="px-4 sm:px-8 md:px-[60px] py-[60px] bg-[#f2f2f2]"
-          ref={img1Ref as React.RefObject<HTMLElement>}
+          ref={img1Ref}
         >
           <div
             className="reveal img-zoom rounded-[12px] border border-black/10"
@@ -354,7 +354,7 @@ export default function StrataCleaningPage() {
         {/* ── 5. TYPES OF BUILDINGS ─────────────────────────────────────── */}
         <section
           className="pb-[80px] bg-[#f2f2f2]"
-          ref={buildingRef as React.RefObject<HTMLElement>}
+          ref={buildingRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px]">
             <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase mb-[30px]">
@@ -397,7 +397,7 @@ export default function StrataCleaningPage() {
         {/* ── 6. HOW IT WORKS ──────────────────────────────────────────── */}
         <section
           className="py-[80px] bg-[#253862]"
-          ref={stepsRef as React.RefObject<HTMLElement>}
+          ref={stepsRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[50px]">
             <div className="reveal flex flex-col gap-[12px]">
@@ -434,7 +434,7 @@ export default function StrataCleaningPage() {
         {/* ── 7. SCHEDULE OPTIONS ──────────────────────────────────────── */}
         <section
           className="py-[80px] bg-[#f2f2f2]"
-          ref={schedRef as React.RefObject<HTMLElement>}
+          ref={schedRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[46px]">
             <div className="reveal flex flex-col gap-[12px] items-center text-center">
@@ -492,7 +492,7 @@ export default function StrataCleaningPage() {
         {/* ── 8. IMAGE 2 ───────────────────────────────────────────────── */}
         <div
           className="px-4 sm:px-8 md:px-[60px] pb-[60px] bg-[#f2f2f2]"
-          ref={img2Ref as React.RefObject<HTMLElement>}
+          ref={img2Ref}
         >
           <div
             className="reveal img-zoom rounded-[12px] border border-black/10"
@@ -509,7 +509,7 @@ export default function StrataCleaningPage() {
         {/* ── 9. SERVICE AREAS ─────────────────────────────────────────── */}
         <section
           className="py-[80px] bg-[#c8e0fd]"
-          ref={areasBlurbRef as React.RefObject<HTMLElement>}
+          ref={areasBlurbRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-center">
             {/* Text */}
@@ -556,7 +556,7 @@ export default function StrataCleaningPage() {
         <section
           id="contact"
           className="py-[80px] md:py-[100px] bg-[#253862]"
-          ref={ctaRef as React.RefObject<HTMLElement>}
+          ref={ctaRef}
         >
           <div className="flex flex-col gap-[48px] md:gap-[64px] items-center px-4 sm:px-8 md:px-[60px] text-center">
             <div className="reveal flex flex-col gap-[8px] items-center uppercase">
