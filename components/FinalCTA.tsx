@@ -53,7 +53,9 @@ export default function FinalCTA() {
         {/* Heading */}
         <div className="reveal flex flex-col gap-[8px] items-center text-center uppercase">
           <h2 className="font-display text-[28px] sm:text-[36px] md:text-[44px] leading-[1.2] text-white">
-            READY FOR A CLEANER SPACE?
+            READY FOR A{" "}
+            <br className="sm:hidden" />
+            CLEANER SPACE?
           </h2>
           <p className="font-display text-[28px] sm:text-[36px] md:text-[44px] leading-[1.2] text-[#c8e0fd]">
             LET&apos;S MAKE IT HAPPEN.
@@ -82,7 +84,7 @@ export default function FinalCTA() {
 
         {/* GET IN TOUCH button */}
         <a
-          href="#"
+          href="/contact"
           className="reveal inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
         >
           Get in Touch

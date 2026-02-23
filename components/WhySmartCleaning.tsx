@@ -54,7 +54,7 @@ export default function WhySmartCleaning() {
     <section className="flex flex-col md:flex-row" ref={sectionRef}>
       {/* Left — blue bg + image */}
       <div
-        className="w-full md:w-1/2 p-6 sm:p-10 md:p-[60px] flex flex-col"
+        className="w-full md:w-1/2 p-4 sm:p-8 md:p-[60px] flex flex-col"
         style={{ background: "#155da6", minHeight: "300px" }}
       >
         <div className="reveal img-zoom rounded-[12px] flex-1" style={{ minHeight: "260px" }}>
@@ -69,7 +69,7 @@ export default function WhySmartCleaning() {
 
       {/* Right — light blue bg + accordion */}
       <div
-        className="w-full md:w-1/2 p-6 sm:p-10 md:p-[60px] flex flex-col gap-[42px]"
+        className="w-full md:w-1/2 px-4 pt-[40px] pb-[40px] sm:p-8 md:p-[60px] flex flex-col gap-[24px] md:gap-[42px]"
         style={{ background: "#c8e0fd" }}
       >
         <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
@@ -85,7 +85,7 @@ export default function WhySmartCleaning() {
             return (
               <div key={item.title} className="border-b border-[#253862]">
                 <button
-                  className="w-full flex items-center justify-between py-[24px] md:py-[30px] text-left gap-4"
+                  className="w-full flex items-center justify-between py-[18px] md:py-[30px] text-left gap-4"
                   onClick={() => setOpen(isOpen ? -1 : idx)}
                 >
                   <div className="flex items-center gap-[10px]">
@@ -122,7 +122,7 @@ export default function WhySmartCleaning() {
         </div>
 
         <a
-          href="#contact"
+          href="/contact"
           className="reveal inline-flex items-center justify-center self-start bg-[#155da6] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#253862] transition-colors duration-200"
         >
           Request a Quote

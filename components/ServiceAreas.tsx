@@ -14,6 +14,7 @@ const areas = [
   "Coquitlam",
   "Port Coquitlam",
   "Port Moody",
+  "New Westminster",
 ];
 
 export default function ServiceAreas() {
@@ -60,7 +61,7 @@ export default function ServiceAreas() {
             {areas.map((area) => (
               <div
                 key={area}
-                className="h-[67px] flex items-center justify-center border border-[#253862] rounded-[12px] cursor-pointer transition-all duration-300 hover:bg-[#253862] group"
+                className={`h-[67px] flex items-center justify-center border border-[#253862] rounded-[12px] cursor-pointer transition-all duration-300 hover:bg-[#253862] group${area === "New Westminster" ? " md:hidden" : ""}`}
               >
                 <span className="font-display-reg text-[18px] sm:text-[20px] md:text-[24px] tracking-[0.96px] uppercase text-[#0a2540] group-hover:text-white transition-colors duration-300 leading-none">
                   {area}
@@ -71,12 +72,12 @@ export default function ServiceAreas() {
 
           {/* AND MORE banner */}
           <div className="reveal w-full">
-            <div className="bg-[#253862] rounded-[12px] px-[24px] sm:px-[40px] md:px-[60px] py-[24px] md:py-[29px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="bg-[#253862] rounded-[12px] px-[24px] sm:px-[40px] md:px-[60px] py-[24px] md:py-[29px] flex flex-col sm:flex-row items-center sm:justify-between gap-4">
               <p className="font-display text-[28px] sm:text-[36px] md:text-[44px] leading-[1.2] text-white">
                 AND MORE!
               </p>
               <a
-                href="#"
+                href="/service-areas"
                 className="inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200 whitespace-nowrap"
               >
                 View All Service Areas

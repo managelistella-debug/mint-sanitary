@@ -2,16 +2,17 @@
 // Navigation matches header: Home, Services, Service Areas, Contact
 
 const navLinks = [
-  { label: "Home", href: "#" },
-  { label: "Services", href: "#services" },
-  { label: "Service Areas", href: "#areas" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/#services" },
+  { label: "Service Areas", href: "/service-areas" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const serviceLinks = [
-  { label: "Strata Cleaning", href: "#" },
-  { label: "Commercial Cleaning", href: "#" },
-  { label: "Residential Cleaning", href: "#" },
+  { label: "Strata Cleaning", href: "/strata-cleaning" },
+  { label: "Commercial Cleaning", href: "/commercial-cleaning" },
+  { label: "Residential Cleaning", href: "/residential-cleaning" },
 ];
 
 const contactInfo = [
@@ -37,7 +38,7 @@ export default function Footer() {
               across Metro Vancouver and the Fraser Valley.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center justify-center self-start bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[14px] tracking-[0.32px] uppercase rounded-[99px] px-[28px] py-[10px] hover:bg-white transition-colors duration-200 mt-[4px]"
             >
               Request a Quote
@@ -103,20 +104,23 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/20 pt-[24px] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-white/20 pt-[24px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <p className="font-body font-medium text-[13px] text-white/50 tracking-[0.32px]">
             © {new Date().getFullYear()} Smart Cleaning. All rights reserved.
           </p>
           <div className="flex gap-[24px]">
-            {["Privacy Policy", "Terms of Service"].map((l) => (
-              <a
-                key={l}
-                href="#"
-                className="font-body font-medium text-[13px] text-white/50 hover:text-white transition-colors duration-200"
-              >
-                {l}
-              </a>
-            ))}
+            <a
+              href="/privacy-policy"
+              className="font-body font-medium text-[13px] text-white/50 hover:text-white transition-colors duration-200"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms-of-service"
+              className="font-body font-medium text-[13px] text-white/50 hover:text-white transition-colors duration-200"
+            >
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

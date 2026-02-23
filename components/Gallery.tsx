@@ -97,7 +97,7 @@ export default function Gallery() {
       {/* View Gallery button */}
       <div className="flex justify-center">
         <a
-          href="#"
+          href="/gallery"
           className="reveal inline-flex items-center justify-center bg-[#155da6] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#253862] transition-colors duration-200"
         >
           View Gallery

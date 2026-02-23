@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section
       className="relative flex items-center overflow-hidden"
-      style={{ marginTop: "78px", minHeight: "400px", height: "641px" }}
+      style={{ marginTop: "77px", minHeight: "400px", height: "641px" }}
     >
       {/* Background image */}
       <div
@@ -39,7 +39,7 @@ export default function Hero() {
           Professional strata, commercial &amp; residential cleaning across Metro Vancouver.
         </p>
         <a
-          href="#contact"
+          href="/contact"
           className="reveal delay-2 inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
         >
           Request a Quote

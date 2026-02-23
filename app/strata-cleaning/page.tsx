@@ -180,13 +180,13 @@ const serviceAreas = [
   "Coquitlam",
   "Port Coquitlam",
   "Port Moody",
+  "New Westminster",
 ];
 
 // ── Page ────────────────────────────────────────────────────────────────────
 export default function StrataCleaningPage() {
   const heroRef = useRef<HTMLDivElement>(null);
 
-  // Each section gets its own ref for staggered reveal
   const introRef    = useReveal(0.08);
   const areasRef    = useReveal(0.05);
   const img1Ref     = useReveal(0.1);
@@ -197,7 +197,6 @@ export default function StrataCleaningPage() {
   const areasBlurbRef = useReveal(0.08);
   const ctaRef      = useReveal(0.08);
 
-  // Hero animates immediately on load
   useEffect(() => {
     const t = setTimeout(() => {
       heroRef.current?.querySelectorAll<HTMLElement>(".reveal").forEach((el, i) => {
@@ -215,7 +214,7 @@ export default function StrataCleaningPage() {
         {/* ── 1. HERO ──────────────────────────────────────────────────── */}
         <section
           className="relative flex items-center overflow-hidden"
-          style={{ marginTop: "78px", minHeight: "400px", height: "580px" }}
+          style={{ marginTop: "77px", minHeight: "400px", height: "580px" }}
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
@@ -237,7 +236,7 @@ export default function StrataCleaningPage() {
               Reliable strata cleaning for residential, commercial, and mixed-use buildings across Metro Vancouver.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="reveal delay-2 inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
             >
               Request a Quote
@@ -263,7 +262,7 @@ export default function StrataCleaningPage() {
                 A well-maintained building improves resident satisfaction, upholds property values, and ensures a healthy environment for everyone. Smart Cleaning designs fully customized strata programs built around your building&apos;s size, traffic patterns, and strata council requirements — with the same trusted team on every visit.
               </p>
               <a
-                href="#contact"
+                href="/contact"
                 className="reveal self-start inline-flex items-center justify-center bg-[#155da6] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#253862] transition-colors duration-200"
               >
                 Request a Free Quote
@@ -276,7 +275,7 @@ export default function StrataCleaningPage() {
                 { stat: "3+",    sub: "Years in strata" },
                 { stat: "50+",   sub: "Buildings served" },
                 { stat: "100%",  sub: "Satisfaction rate" },
-                { stat: "Same",  sub: "Team every visit" },
+                { stat: "SAME",  sub: "Team every visit" },
               ].map((s) => (
                 <div
                   key={s.stat}
@@ -302,7 +301,9 @@ export default function StrataCleaningPage() {
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[46px]">
             <div className="reveal flex flex-col gap-[16px] items-center text-center">
               <h2 className="font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
-                Common Areas We Clean
+                Common Areas
+                <br className="md:hidden" />
+                {" "}We Clean
               </h2>
               <p className="font-body font-medium text-[16px] text-white/80 max-w-[620px] leading-[28px] tracking-[0.28px]">
                 Every building is different, but these are the shared spaces we specialize in — cleaned on a schedule that keeps your property looking its best, every single day.
@@ -511,9 +512,9 @@ export default function StrataCleaningPage() {
           className="py-[80px] bg-[#c8e0fd]"
           ref={areasBlurbRef}
         >
-          <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-center">
+          <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-start md:items-center">
             {/* Text */}
-            <div className="flex flex-col gap-[24px] flex-[1.2_0_0]">
+            <div className="flex flex-col gap-[24px] flex-[1.2_0_0] w-full">
               <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
                 Serving Metro Vancouver
               </h2>
@@ -521,7 +522,7 @@ export default function StrataCleaningPage() {
                 Smart Cleaning provides strata services across the Lower Mainland and Fraser Valley. From downtown Vancouver highrises to suburban townhouse complexes — if your building is in Greater Vancouver, we&apos;ve got you covered.
               </p>
               <a
-                href="#contact"
+                href="/service-areas"
                 className="reveal self-start inline-flex items-center justify-center bg-[#155da6] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#253862] transition-colors duration-200"
               >
                 Check Your Area
@@ -529,12 +530,12 @@ export default function StrataCleaningPage() {
             </div>
 
             {/* Area pills + AND MORE */}
-            <div className="reveal flex-1 flex flex-col gap-[12px]">
+            <div className="reveal flex-1 w-full flex flex-col gap-[12px]">
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-[12px]">
                 {serviceAreas.map((area) => (
                   <div
                     key={area}
-                    className="h-[58px] flex items-center justify-center border border-[#253862] rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer"
+                    className={`h-[58px] flex items-center justify-center border border-[#253862] rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer${area === "New Westminster" ? " sm:hidden" : ""}`}
                   >
                     <span className="font-display-reg text-[12px] sm:text-[13px] tracking-[0.64px] uppercase text-[#253862] group-hover:text-white transition-colors duration-300 leading-none text-center px-2">
                       {area}
@@ -572,7 +573,6 @@ export default function StrataCleaningPage() {
               Get a free, no-obligation walkthrough of your building. We&apos;ll assess your common areas, understand your needs, and deliver a detailed quote — fast.
             </p>
 
-            {/* Contact blocks — containers centered on page, text left-aligned within */}
             <div className="reveal flex flex-col sm:flex-row items-stretch justify-center gap-[40px] w-full max-w-[640px]">
               <div className="flex-1 flex flex-col gap-[7px] pb-[20px] border-b border-[#c8e0fd] text-left">
                 <p className="font-body font-extrabold text-[16px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
@@ -598,17 +598,17 @@ export default function StrataCleaningPage() {
               </div>
             </div>
 
-            <div className="reveal flex flex-col sm:flex-row gap-[16px]">
+            <div className="reveal flex flex-col sm:flex-row gap-[16px] w-full sm:w-auto">
               <a
                 href="tel:6041234567"
-                className="inline-flex items-center justify-center gap-[8px] bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
               >
                 <Phone size={16} strokeWidth={2.5} />
                 Call Now
               </a>
               <a
                 href="mailto:info@smartcleaning.com"
-                className="inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
               >
                 <Mail size={16} strokeWidth={2.5} />
                 Email Us

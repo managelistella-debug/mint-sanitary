@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 // Cocogoose Pro Outlined — logo, major section headings (h1/h2)
 const cocogooseOutlined = localFont({
@@ -39,9 +40,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cocogooseOutlined.variable} ${cocogooseRegular.variable} ${inter.variable}`}
+      className={`${cocogooseOutlined.variable} ${cocogooseRegular.variable} ${inter.variable} scroll-smooth`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   );
 }

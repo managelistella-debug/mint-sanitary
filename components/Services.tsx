@@ -7,12 +7,12 @@ const services = [
   {
     title: "Strata Cleaning",
     description:
-      "Common areas, lobbies, parkades, garbage rooms, amenity spaces, kept spotless year-round.",
+      "Common areas, lobbies, parkades, amenity spaces, kept spotless year-round.",
     bg: "#c8e0fd",
     textColor: "#0a2540",
     image:
       "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=430&h=322&fit=crop&q=80",
-    href: "#",
+    href: "/strata-cleaning",
   },
   {
     title: "Commercial Cleaning",
@@ -22,7 +22,7 @@ const services = [
     textColor: "#ffffff",
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=430&h=322&fit=crop&q=80",
-    href: "#",
+    href: "/commercial-cleaning",
   },
   {
     title: "Residential Cleaning",
@@ -32,7 +32,7 @@ const services = [
     textColor: "#ffffff",
     image:
       "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=430&h=322&fit=crop&q=80",
-    href: "#",
+    href: "/residential-cleaning",
   },
 ];
 
