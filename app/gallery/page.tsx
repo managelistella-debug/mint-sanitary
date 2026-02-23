@@ -290,16 +290,16 @@ export default function GalleryPage() {
             <p className="reveal font-body font-medium text-[16px] text-white/65 max-w-[500px] leading-[28px] tracking-[0.28px]">
               Get a free quote and see what a professionally cleaned space looks and feels like.
             </p>
-            <div className="reveal flex flex-col sm:flex-row gap-[16px]">
+            <div className="reveal flex flex-col sm:flex-row gap-[16px] w-full max-w-[500px]">
               <a
                 href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                className="w-full inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
               >
                 Request a Quote
               </a>
               <a
                 href="tel:6041234567"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
+                className="w-full inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
               >
                 <Phone size={16} strokeWidth={2.5} />
                 Call Now
