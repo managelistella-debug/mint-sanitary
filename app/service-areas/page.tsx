@@ -33,19 +33,19 @@ function useReveal(threshold = 0.1) {
 // ── City data ─────────────────────────────────────────────────────────────────
 const cities = [
   {
+    name: "Maple Ridge",
+    blurb:
+      "From newer residential developments to established strata complexes along the Lougheed corridor, Smart Cleaning brings professional-grade cleaning services to homes and businesses throughout Maple Ridge.",
+  },
+  {
+    name: "Pitt Meadows",
+    blurb:
+      "Smart Cleaning serves Pitt Meadows\u2019 growing residential communities and local businesses. From family homes to commercial properties, we deliver reliable, professional cleaning throughout this vibrant community.",
+  },
+  {
     name: "Vancouver",
     blurb:
       "Smart Cleaning serves all Vancouver neighbourhoods — from downtown highrises and Yaletown condos to East Van homes and Commercial Drive businesses. We provide strata, commercial, and residential cleaning across the city.",
-  },
-  {
-    name: "North Vancouver",
-    blurb:
-      "From Lower Lonsdale apartment towers to the residential hillsides of Lynn Valley and Edgemont Village, our team provides reliable cleaning services for strata buildings, offices, and homes throughout the North Shore.",
-  },
-  {
-    name: "West Vancouver",
-    blurb:
-      "We serve West Vancouver's upscale residential properties and professional offices — from Horseshoe Bay to Ambleside and Dundarave. Strata complexes, private residences, and commercial spaces all serviced to a high standard.",
   },
   {
     name: "Burnaby",
@@ -93,9 +93,14 @@ const cities = [
       "We serve both the Township and City of Langley — providing reliable cleaning for suburban homes, commercial properties, retail spaces, and strata buildings in this rapidly growing community.",
   },
   {
-    name: "Maple Ridge",
+    name: "North Vancouver",
     blurb:
-      "From newer residential developments to established strata complexes along the Lougheed corridor, Smart Cleaning brings professional-grade cleaning services to homes and businesses throughout Maple Ridge.",
+      "From Lower Lonsdale apartment towers to the residential hillsides of Lynn Valley and Edgemont Village, our team provides reliable cleaning services for strata buildings, offices, and homes throughout the North Shore.",
+  },
+  {
+    name: "West Vancouver",
+    blurb:
+      "We serve West Vancouver's upscale residential properties and professional offices — from Horseshoe Bay to Ambleside and Dundarave. Strata complexes, private residences, and commercial spaces all serviced to a high standard.",
   },
   {
     name: "White Rock",

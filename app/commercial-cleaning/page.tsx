@@ -159,9 +159,9 @@ const accessFeatures = [
 ];
 
 const serviceAreas = [
+  "Maple Ridge",
+  "Pitt Meadows",
   "Vancouver",
-  "North Vancouver",
-  "West Vancouver",
   "Burnaby",
   "Richmond",
   "Surrey",
@@ -365,7 +365,7 @@ export default function CommercialCleaningPage() {
               {/* Touch points column */}
               <div className="flex flex-col gap-[20px] flex-1">
                 <p className="reveal font-display-reg text-[17px] tracking-[0.64px] uppercase text-[#155da6] pb-[12px] border-b-2 border-[#155da6]/40">
-                  Touch Points & Specialty
+                  Touch Points AND Specialty
                 </p>
                 <div className="flex flex-col gap-[14px]">
                   {touchItems.map((item, i) => (

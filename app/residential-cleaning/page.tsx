@@ -159,9 +159,9 @@ const steps = [
 ];
 
 const serviceAreas = [
+  "Maple Ridge",
+  "Pitt Meadows",
   "Vancouver",
-  "North Vancouver",
-  "West Vancouver",
   "Burnaby",
   "Richmond",
   "Surrey",

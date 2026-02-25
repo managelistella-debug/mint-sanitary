@@ -5,9 +5,9 @@ import { useEffect, useRef } from "react";
 // Matches Figma node 15:456 — centered heading, area pill grid, AND MORE banner, full-width image
 
 const areas = [
+  "Maple Ridge",
+  "Pitt Meadows",
   "Vancouver",
-  "North Vancouver",
-  "West Vancouver",
   "Burnaby",
   "Richmond",
   "Surrey",
