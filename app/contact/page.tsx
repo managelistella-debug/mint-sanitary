@@ -52,6 +52,7 @@ const cityOptions = [
   "Delta",
   "Langley",
   "Maple Ridge",
+  "Pitt Meadows",
   "White Rock",
   "Other",
 ];
