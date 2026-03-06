@@ -7,14 +7,21 @@ import { useEffect, useRef } from "react";
 // Gallery carousel images intentionally have NO hover zoom (per design spec)
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=302&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=302&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=400&h=302&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=302&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=302&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400&h=302&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=302&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=400&h=302&fit=crop&q=80",
+  "/strata.png",
+  "/commercial.png",
+  "/residential.png",
+  "/strata-2.png",
+  "/commercial-2.png",
+  "/residential-2.png",
+  "/strata-3.png",
+  "/commercial-3.png",
+  "/residential-3.jpg",
+  "/commercial-4.png",
+  "/residential-4.jpg",
+  "/hero-and-strata-4.png",
+  "/commercial-5.png",
+  "/residential-5.jpg",
+  "/strata-or-commercial.png",
 ];
 
 // Double the array so translateX(-50%) loops seamlessly

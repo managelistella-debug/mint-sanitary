@@ -11,7 +11,7 @@ const services = [
     bg: "#c8e0fd",
     textColor: "#0a2540",
     image:
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=430&h=322&fit=crop&q=80",
+      "/strata.png",
     href: "/strata-cleaning",
   },
   {
@@ -21,7 +21,7 @@ const services = [
     bg: "#155da6",
     textColor: "#ffffff",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=430&h=322&fit=crop&q=80",
+      "/commercial.png",
     href: "/commercial-cleaning",
   },
   {
@@ -31,7 +31,7 @@ const services = [
     bg: "#253862",
     textColor: "#ffffff",
     image:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=430&h=322&fit=crop&q=80",
+      "/residential.png",
     href: "/residential-cleaning",
   },
 ];

@@ -36,65 +36,80 @@ type Category = "strata" | "commercial" | "residential";
 const images: { src: string; alt: string; category: Category }[] = [
   // Strata
   {
-    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
+    src: "/strata.png",
+    alt: "Strata building maintained by Smart Cleaning",
+    category: "strata",
+  },
+  {
+    src: "/strata-2.png",
+    alt: "Clean strata common area — Smart Cleaning",
+    category: "strata",
+  },
+  {
+    src: "/strata-3.png",
+    alt: "Professional strata cleaning by Smart Cleaning",
+    category: "strata",
+  },
+  {
+    src: "/hero-and-strata-4.png",
     alt: "Strata building exterior — Smart Cleaning",
     category: "strata",
   },
   {
-    src: "https://images.unsplash.com/photo-1497366858526-0766b7010a08?auto=format&fit=crop&w=900&q=80",
-    alt: "Clean building hallway — Smart Cleaning strata",
-    category: "strata",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80",
-    alt: "Professional strata cleaning team at work",
-    category: "strata",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80",
-    alt: "Residential strata complex maintained by Smart Cleaning",
+    src: "/strata-or-commercial.png",
+    alt: "Strata and commercial building cleaned by Smart Cleaning",
     category: "strata",
   },
   // Commercial
   {
-    src: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80",
-    alt: "Clean commercial office interior — Smart Cleaning",
+    src: "/commercial.png",
+    alt: "Commercial space cleaned by Smart Cleaning",
     category: "commercial",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
-    alt: "Commercial cleaning team maintaining a professional space",
+    src: "/commercial-2.png",
+    alt: "Commercial facility maintained by Smart Cleaning",
     category: "commercial",
   },
   {
-    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
-    alt: "Spotless office workspace cleaned by Smart Cleaning",
+    src: "/commercial-3.png",
+    alt: "Professional commercial cleaning — Smart Cleaning",
     category: "commercial",
   },
   {
-    src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80",
-    alt: "Professional cleaner at a commercial facility",
+    src: "/commercial-4.png",
+    alt: "Clean commercial workspace — Smart Cleaning",
+    category: "commercial",
+  },
+  {
+    src: "/commercial-5.png",
+    alt: "Commercial cleaning team at work — Smart Cleaning",
     category: "commercial",
   },
   // Residential
   {
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80",
-    alt: "Sparkling clean kitchen — Smart Cleaning residential",
+    src: "/residential.png",
+    alt: "Residential home cleaned by Smart Cleaning",
     category: "residential",
   },
   {
-    src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80",
-    alt: "Fresh residential interior cleaned by Smart Cleaning",
+    src: "/residential-2.png",
+    alt: "Fresh residential interior — Smart Cleaning",
     category: "residential",
   },
   {
-    src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80",
+    src: "/residential-3.jpg",
     alt: "Residential cleaning service in Metro Vancouver",
     category: "residential",
   },
   {
-    src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80",
+    src: "/residential-4.jpg",
     alt: "Detailed home cleaning by Smart Cleaning team",
+    category: "residential",
+  },
+  {
+    src: "/residential-5.jpg",
+    alt: "Spotless home maintained by Smart Cleaning",
     category: "residential",
   },
 ];
@@ -180,6 +195,18 @@ export default function GalleryPage() {
   // ── Close lightbox when filter changes
   useEffect(() => {
     if (lightboxIdx !== -1) closeLightbox();
+    // Re-trigger reveal animations on filter change
+    const section = gridRef.current;
+    if (section) {
+      section.querySelectorAll<HTMLElement>(".reveal").forEach((el) => {
+        el.classList.remove("visible");
+      });
+      requestAnimationFrame(() => {
+        section.querySelectorAll<HTMLElement>(".reveal").forEach((el, i) => {
+          setTimeout(() => el.classList.add("visible"), i * 80);
+        });
+      });
+    }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeFilter]);
 
@@ -197,7 +224,7 @@ export default function GalleryPage() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1440&h=600&fit=crop&q=80')",
+                "url('/commercial-5.png')",
             }}
           />
           <div

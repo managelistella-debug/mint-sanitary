@@ -30,9 +30,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row gap-[60px] mb-[50px]">
           {/* Brand column */}
           <div className="flex flex-col gap-[16px] flex-[1.5_0_0]">
-            <span className="font-display text-[30px] leading-none text-white uppercase tracking-[0.5px]">
-              Smart Cleaning
-            </span>
+            <img src="/logo.svg" alt="Smart Cleaning" className="h-[46px] w-auto brightness-0 invert self-start" />
             <p className="font-body font-medium text-[15px] leading-[22px] text-white/70 max-w-[280px]">
               Professional strata, commercial &amp; residential cleaning services
               across Metro Vancouver and the Fraser Valley.

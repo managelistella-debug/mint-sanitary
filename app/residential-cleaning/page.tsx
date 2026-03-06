@@ -206,7 +206,7 @@ export default function ResidentialCleaningPage() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1440&h=700&fit=crop&q=80')",
+                "url('/residential.png')",
             }}
           />
           <div className="absolute inset-0 bg-[#0a2540]/60" />
@@ -398,7 +398,7 @@ export default function ResidentialCleaningPage() {
             style={{ height: "460px" }}
           >
             <img
-              src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=1320&h=460&fit=crop&q=80"
+              src="/residential-2.png"
               alt="Smart Cleaning residential team delivering a thorough home clean"
               className="rounded-[12px]"
             />

@@ -90,21 +90,21 @@ const buildingTypes = [
     desc: "Condos, apartments, and townhouse complexes — from 10 units to 400+. We tailor the program to your building size, traffic level, and strata council requirements.",
     bg: "#c8e0fd",
     textColor: "#0a2540",
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=430&h=280&fit=crop&q=80",
+    image: "/strata-or-commercial.png",
   },
   {
     title: "Commercial Strata",
     desc: "Office towers, retail plazas, and professional buildings. We schedule around business hours with zero disruption to tenants or operations.",
     bg: "#155da6",
     textColor: "#ffffff",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=430&h=280&fit=crop&q=80",
+    image: "/commercial-4.png",
   },
   {
     title: "Mixed-Use Strata",
     desc: "Buildings combining residential units with ground-floor retail or commercial space — handled seamlessly under one contract, one team, one standard.",
     bg: "#253862",
     textColor: "#ffffff",
-    image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=430&h=280&fit=crop&q=80",
+    image: "/hero-and-strata-4.png",
   },
 ];
 
@@ -220,7 +220,7 @@ export default function StrataCleaningPage() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1440&h=700&fit=crop&q=80')",
+                "url('/strata.png')",
             }}
           />
           <div className="absolute inset-0 bg-[#0a2540]/60" />
@@ -345,7 +345,7 @@ export default function StrataCleaningPage() {
             style={{ height: "460px" }}
           >
             <img
-              src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1320&h=460&fit=crop&q=80"
+              src="/strata-2.png"
               alt="Smart Cleaning professional maintaining a strata building"
               className="rounded-[12px]"
             />
@@ -500,7 +500,7 @@ export default function StrataCleaningPage() {
             style={{ height: "460px" }}
           >
             <img
-              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1320&h=460&fit=crop&q=80"
+              src="/strata-3.png"
               alt="Clean and maintained strata building common area"
               className="rounded-[12px]"
             />

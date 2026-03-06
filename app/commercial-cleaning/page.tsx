@@ -206,7 +206,7 @@ export default function CommercialCleaningPage() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1440&h=700&fit=crop&q=80')",
+                "url('/commercial.png')",
             }}
           />
           <div className="absolute inset-0 bg-[#0a2540]/65" />
@@ -400,7 +400,7 @@ export default function CommercialCleaningPage() {
             style={{ height: "460px" }}
           >
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1320&h=460&fit=crop&q=80"
+              src="/commercial-2.png"
               alt="Smart Cleaning commercial team maintaining a professional workspace"
               className="rounded-[12px]"
             />
@@ -414,7 +414,7 @@ export default function CommercialCleaningPage() {
             {/* Image — fixed height on mobile, stretches on desktop */}
             <div className="reveal-left flex-1 img-zoom rounded-[12px] border border-black/10 w-full h-[360px] md:h-auto">
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&h=460&fit=crop&q=80"
+                src="/commercial-3.png"
                 alt="Smart Cleaning professional team — reliable access and consistent service"
                 className="rounded-[12px]"
               />

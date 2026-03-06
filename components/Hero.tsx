@@ -24,7 +24,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1440&h=700&fit=crop&q=80')",
+            "url('/hero-and-strata-4.png')",
         }}
       />
       {/* Dark overlay */}
@@ -33,7 +33,7 @@ export default function Hero() {
       {/* Content */}
       <div ref={ref} className="relative z-10 px-4 sm:px-8 md:px-[60px] flex flex-col gap-[29px] items-start max-w-[800px]">
         <h1 className="reveal font-display text-[36px] sm:text-[50px] md:text-[65px] leading-[1.1] text-white uppercase">
-          A cleaner world starts at home.
+          A better clean for every space.
         </h1>
         <p className="reveal delay-1 font-body font-bold text-[16px] sm:text-[20px] md:text-[23px] text-white tracking-[0.48px] max-w-[539px] leading-[1.3]">
           Professional strata, commercial &amp; residential cleaning across Metro Vancouver.

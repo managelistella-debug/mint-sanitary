@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   title: "Smart Cleaning | Professional Cleaning Services in Metro Vancouver",
   description:
     "Expert strata, commercial, and residential cleaning services across Vancouver, North Vancouver, West Vancouver, Burnaby, Richmond, Coquitlam and more.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

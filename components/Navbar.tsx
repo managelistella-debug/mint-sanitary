@@ -35,9 +35,9 @@ export default function Navbar() {
         {/* ── Logo ─────────────────────────────────────────────────── */}
         <a
           href="/"
-          className="font-display text-[31px] leading-[46px] text-[#253862] uppercase tracking-wide shrink-0"
+          className="shrink-0"
         >
-          Smart Cleaning
+          <img src="/logo.svg" alt="Smart Cleaning" className="h-[46px] w-auto" />
         </a>
 
         {/* ── Desktop nav ───────────────────────────────────────────── */}
