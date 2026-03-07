@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { ShieldCheck, Award, Sparkles, Leaf } from "lucide-react";
 
 // Matches Figma node 15:420 — split section with left image + right accordion
@@ -57,12 +58,13 @@ export default function WhySmartCleaning() {
         className="w-full md:w-1/2 p-4 sm:p-8 md:p-[60px] flex flex-col"
         style={{ background: "#155da6", minHeight: "300px" }}
       >
-        <div className="reveal img-zoom rounded-[12px] flex-1" style={{ minHeight: "260px" }}>
-          <img
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=570&fit=crop&q=80"
+        <div className="reveal img-zoom rounded-[12px] flex-1 relative" style={{ minHeight: "260px" }}>
+          <Image
+            src="/residential-5.jpg"
             alt="Professional cleaning at work"
-            className="rounded-[12px]"
-            style={{ height: "100%", minHeight: "260px" }}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="rounded-[12px] object-cover"
           />
         </div>
       </div>

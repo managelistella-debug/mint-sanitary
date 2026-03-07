@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import {
   Briefcase,
   ShoppingBag,
@@ -396,13 +397,15 @@ export default function CommercialCleaningPage() {
           ref={imgRef}
         >
           <div
-            className="reveal img-zoom rounded-[12px] border border-black/10"
+            className="reveal img-zoom rounded-[12px] border border-black/10 relative"
             style={{ height: "460px" }}
           >
-            <img
+            <Image
               src="/commercial-2.png"
               alt="Smart Cleaning commercial team maintaining a professional workspace"
-              className="rounded-[12px]"
+              fill
+              sizes="(max-width: 768px) 100vw, 1200px"
+              className="rounded-[12px] object-cover"
             />
           </div>
         </div>
@@ -412,11 +415,13 @@ export default function CommercialCleaningPage() {
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] md:items-stretch">
 
             {/* Image — fixed height on mobile, stretches on desktop */}
-            <div className="reveal-left flex-1 img-zoom rounded-[12px] border border-black/10 w-full h-[360px] md:h-auto">
-              <img
+            <div className="reveal-left flex-1 img-zoom rounded-[12px] border border-black/10 w-full h-[360px] md:h-auto relative">
+              <Image
                 src="/commercial-3.png"
                 alt="Smart Cleaning professional team — reliable access and consistent service"
-                className="rounded-[12px]"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="rounded-[12px] object-cover"
               />
             </div>
 

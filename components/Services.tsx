@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 // Matches Figma node 15:401 — three service cards with image + colored info box
 const services = [
@@ -73,11 +74,13 @@ export default function Services() {
               style={{ transitionDelay: `${idx * 0.12}s` }}
             >
               {/* Image with hover zoom — img-zoom prevents container resize */}
-              <div className="img-zoom rounded-[12px] border border-black/10" style={{ height: "322px" }}>
-                <img
+              <div className="img-zoom rounded-[12px] border border-black/10 relative" style={{ height: "322px" }}>
+                <Image
                   src={svc.image}
                   alt={svc.title}
-                  className="rounded-[12px]"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="rounded-[12px] object-cover"
                 />
               </div>
 

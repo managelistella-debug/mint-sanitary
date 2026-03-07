@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import {
   ChefHat,
   Droplets,
@@ -394,13 +395,15 @@ export default function ResidentialCleaningPage() {
           ref={imgRef}
         >
           <div
-            className="reveal img-zoom rounded-[12px] border border-black/10"
+            className="reveal img-zoom rounded-[12px] border border-black/10 relative"
             style={{ height: "460px" }}
           >
-            <img
+            <Image
               src="/residential-2.png"
               alt="Smart Cleaning residential team delivering a thorough home clean"
-              className="rounded-[12px]"
+              fill
+              sizes="(max-width: 768px) 100vw, 1200px"
+              className="rounded-[12px] object-cover"
             />
           </div>
         </div>

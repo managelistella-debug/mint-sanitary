@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
+import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, Phone } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -285,10 +286,12 @@ export default function GalleryPage() {
                     transitionDelay: `${(idx % 6) * 0.07}s`,
                   }}
                 >
-                  <img
+                  <Image
                     src={img.src}
                     alt={img.alt}
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
                   />
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-[#253862]/0 group-hover:bg-[#253862]/50 transition-colors duration-300 rounded-[12px] flex items-end p-[16px]">
@@ -357,10 +360,13 @@ export default function GalleryPage() {
             {/* Image wrapper */}
             <div className="relative w-full">
               {/* Main image — only this fades on navigation */}
-              <img
+              <Image
                 src={filtered[lightboxIdx]?.src}
                 alt={filtered[lightboxIdx]?.alt}
+                width={1100}
+                height={733}
                 className="w-full max-h-[70vh] md:max-h-[80vh] object-contain rounded-[12px]"
+                priority
                 style={{
                   opacity: imgFading ? 0 : 1,
                   transition: "opacity 0.22s ease",

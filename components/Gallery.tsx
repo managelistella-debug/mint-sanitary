@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 // Matches Figma node 15:531 — two rows of images
 // Top row scrolls left, bottom row scrolls right — both at same speed
@@ -66,13 +67,15 @@ export default function Gallery() {
           {doubled.map((src, i) => (
             <div
               key={i}
-              className="rounded-[12px] overflow-hidden border border-black/10 shrink-0"
+              className="rounded-[12px] overflow-hidden border border-black/10 shrink-0 relative"
               style={{ width: "391px", height: "302px" }}
             >
-              <img
+              <Image
                 src={src}
                 alt=""
-                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                fill
+                sizes="391px"
+                className="object-cover"
               />
             </div>
           ))}
@@ -88,13 +91,15 @@ export default function Gallery() {
           {doubled.map((src, i) => (
             <div
               key={i}
-              className="rounded-[12px] overflow-hidden border border-black/10 shrink-0"
+              className="rounded-[12px] overflow-hidden border border-black/10 shrink-0 relative"
               style={{ width: "391px", height: "302px" }}
             >
-              <img
+              <Image
                 src={src}
                 alt=""
-                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                fill
+                sizes="391px"
+                className="object-cover"
               />
             </div>
           ))}

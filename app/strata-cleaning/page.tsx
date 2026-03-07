@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import {
   Building2,
   ArrowUpDown,
@@ -341,13 +342,15 @@ export default function StrataCleaningPage() {
           ref={img1Ref}
         >
           <div
-            className="reveal img-zoom rounded-[12px] border border-black/10"
+            className="reveal img-zoom rounded-[12px] border border-black/10 relative"
             style={{ height: "460px" }}
           >
-            <img
+            <Image
               src="/strata-2.png"
               alt="Smart Cleaning professional maintaining a strata building"
-              className="rounded-[12px]"
+              fill
+              sizes="(max-width: 768px) 100vw, 1200px"
+              className="rounded-[12px] object-cover"
             />
           </div>
         </div>
@@ -369,13 +372,15 @@ export default function StrataCleaningPage() {
                   style={{ transitionDelay: `${idx * 0.12}s` }}
                 >
                   <div
-                    className="img-zoom rounded-[12px] border border-black/10"
+                    className="img-zoom rounded-[12px] border border-black/10 relative"
                     style={{ height: "280px" }}
                   >
-                    <img
+                    <Image
                       src={b.image}
                       alt={b.title}
-                      className="rounded-[12px]"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="rounded-[12px] object-cover"
                     />
                   </div>
                   <div
@@ -496,13 +501,15 @@ export default function StrataCleaningPage() {
           ref={img2Ref}
         >
           <div
-            className="reveal img-zoom rounded-[12px] border border-black/10"
+            className="reveal img-zoom rounded-[12px] border border-black/10 relative"
             style={{ height: "460px" }}
           >
-            <img
+            <Image
               src="/strata-3.png"
               alt="Clean and maintained strata building common area"
-              className="rounded-[12px]"
+              fill
+              sizes="(max-width: 768px) 100vw, 1200px"
+              className="rounded-[12px] object-cover"
             />
           </div>
         </div>
