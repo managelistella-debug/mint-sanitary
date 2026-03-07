@@ -60,8 +60,8 @@ html {
   from { transform: translateX(-50%); }
   to   { transform: translateX(0); }
 }
-.animate-carousel-left  { animation: carousel-ltr 40s linear infinite; }
-.animate-carousel-right { animation: carousel-rtl 40s linear infinite; }
+.animate-carousel-left  { animation: carousel-ltr 80s linear infinite; }
+.animate-carousel-right { animation: carousel-rtl 110s linear infinite; }
 
 /* ─── Scroll-reveal ──────────────────────────────────────────── */
 .reveal {

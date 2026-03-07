@@ -87,6 +87,16 @@ const images: { src: string; alt: string; category: Category }[] = [
     alt: "Commercial cleaning team at work — Smart Cleaning",
     category: "commercial",
   },
+  {
+    src: "/commercial-new.jpg",
+    alt: "Commercial space maintained by Smart Cleaning",
+    category: "commercial",
+  },
+  {
+    src: "/commercial-3-new.jpg",
+    alt: "Commercial facility cleaned by Smart Cleaning",
+    category: "commercial",
+  },
   // Residential
   {
     src: "/residential.png",
@@ -111,6 +121,16 @@ const images: { src: string; alt: string; category: Category }[] = [
   {
     src: "/residential-5.jpg",
     alt: "Spotless home maintained by Smart Cleaning",
+    category: "residential",
+  },
+  {
+    src: "/residential-new.jpg",
+    alt: "Residential space cleaned by Smart Cleaning",
+    category: "residential",
+  },
+  {
+    src: "/residential-2-new.jpg",
+    alt: "Freshly cleaned residential interior — Smart Cleaning",
     category: "residential",
   },
 ];

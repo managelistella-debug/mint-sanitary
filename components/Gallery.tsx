@@ -7,7 +7,7 @@ import Image from "next/image";
 // Top row scrolls left, bottom row scrolls right — both at same speed
 // Gallery carousel images intentionally have NO hover zoom (per design spec)
 
-const galleryImages = [
+const row1Images = [
   "/strata.png",
   "/commercial.png",
   "/residential.png",
@@ -16,6 +16,9 @@ const galleryImages = [
   "/residential-2.png",
   "/strata-3.png",
   "/commercial-3.png",
+];
+
+const row2Images = [
   "/residential-3.jpg",
   "/commercial-4.png",
   "/residential-4.jpg",
@@ -23,10 +26,15 @@ const galleryImages = [
   "/commercial-5.png",
   "/residential-5.jpg",
   "/strata-or-commercial.png",
+  "/commercial-new.jpg",
+  "/commercial-3-new.jpg",
+  "/residential-new.jpg",
+  "/residential-2-new.jpg",
 ];
 
-// Double the array so translateX(-50%) loops seamlessly
-const doubled = [...galleryImages, ...galleryImages];
+// Double each array so translateX(-50%) loops seamlessly
+const doubled1 = [...row1Images, ...row1Images];
+const doubled2 = [...row2Images, ...row2Images];
 
 export default function Gallery() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -64,7 +72,7 @@ export default function Gallery() {
           className="flex gap-[23px] animate-carousel-left"
           style={{ width: "max-content" }}
         >
-          {doubled.map((src, i) => (
+          {doubled1.map((src, i) => (
             <div
               key={i}
               className="rounded-[12px] overflow-hidden border border-black/10 shrink-0 relative"
@@ -88,7 +96,7 @@ export default function Gallery() {
           className="flex gap-[23px] animate-carousel-right"
           style={{ width: "max-content" }}
         >
-          {doubled.map((src, i) => (
+          {doubled2.map((src, i) => (
             <div
               key={i}
               className="rounded-[12px] overflow-hidden border border-black/10 shrink-0 relative"
