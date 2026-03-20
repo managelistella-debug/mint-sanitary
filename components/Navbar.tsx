@@ -4,9 +4,9 @@ import { useState, useRef } from "react";
 import { ChevronDown, Menu, X, MoveRight } from "lucide-react";
 
 const serviceLinks = [
+  { label: "Residential Cleaning", href: "/residential-cleaning" },
   { label: "Strata Cleaning",      href: "/strata-cleaning" },
   { label: "Commercial Cleaning",  href: "/commercial-cleaning" },
-  { label: "Residential Cleaning", href: "/residential-cleaning" },
 ];
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
           href="/"
           className="shrink-0"
         >
-          <img src="/logo.svg" alt="Smart Cleaning" className="h-[46px] w-auto" />
+          <img src="/logo.svg" alt="Smart Cleaning" className="h-[46px] md:h-[54px] w-auto" />
         </a>
 
         {/* ── Desktop nav ───────────────────────────────────────────── */}
