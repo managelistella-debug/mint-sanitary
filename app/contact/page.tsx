@@ -204,8 +204,7 @@ export default function ContactPage() {
 
         {/* ── HERO ──────────────────────────────────────────────────────── */}
         <section
-          className="relative flex items-center justify-center overflow-hidden"
-          style={{ marginTop: "77px", minHeight: "360px", height: "460px" }}
+          className="relative flex min-h-[360px] h-[460px] items-center justify-center overflow-hidden pt-[77px]"
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
