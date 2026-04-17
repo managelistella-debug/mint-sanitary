@@ -1,337 +1,480 @@
-"use client";
+import type { Metadata } from "next";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
-import { useEffect, useRef } from "react";
-import { MapPin, Mail, Phone } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+export const metadata: Metadata = {
+  title: "House Cleaning Service Across Greater Vancouver | Mint Sanitary",
+  description:
+    "Professional house cleaning in North Vancouver, West Vancouver, Vancouver, Burnaby, and Greater Vancouver. 7-day availability. Free estimates. (604) 671-6252.",
+};
 
-// ── Shared reveal hook ────────────────────────────────────────────────────────
-function useReveal(threshold = 0.1) {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target
-              .querySelectorAll<HTMLElement>(".reveal, .reveal-left, .reveal-right")
-              .forEach((el, i) => {
-                setTimeout(() => el.classList.add("visible"), i * 80);
-              });
-            obs.unobserve(e.target);
-          }
-        });
-      },
-      { threshold }
-    );
-    if (ref.current) obs.observe(ref.current);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
-}
-
-// ── City data ─────────────────────────────────────────────────────────────────
-const cities = [
+const whyChooseItems: { title: string; body: string; image: string }[] = [
   {
-    name: "Maple Ridge",
-    blurb:
-      "From newer residential developments to established strata complexes along the Lougheed corridor, Smart Cleaning brings professional-grade cleaning services to homes and businesses throughout Maple Ridge.",
+    title: "7-Day Availability Across All Areas",
+    body: "No matter which part of Greater Vancouver you call home, we have cleaning slots available. North Vancouver gets our fastest response times as our home base, but West Vancouver, Vancouver, and Burnaby receive the same dedication to scheduling flexibility.",
+    image: "/recurring-cleaning-kitchen-north-vancouver.jpg",
   },
   {
-    name: "Pitt Meadows",
-    blurb:
-      "Smart Cleaning serves Pitt Meadows\u2019 growing residential communities and local businesses. From family homes to commercial properties, we deliver reliable, professional cleaning throughout this vibrant community.",
+    title: "Eco-Friendly Cleaning Standard",
+    body: "We use only non-toxic, environmentally responsible cleaning products across every service area. Your home gets clean without harsh chemicals, and the local waterways benefit too.",
+    image: "/eco-friendly-cleaning-products-north-vancouver.jpg",
   },
   {
-    name: "Vancouver",
-    blurb:
-      "Smart Cleaning serves all Vancouver neighbourhoods — from downtown highrises and Yaletown condos to East Van homes and Commercial Drive businesses. We provide strata, commercial, and residential cleaning across the city.",
+    title: "Free Estimates for All Locations",
+    body: "Call, email, or request a quote online. We'll assess your specific space and provide a transparent estimate with no pressure and no surprises.",
+    image: "/standard-cleaning-kitchen-north-vancouver.jpg",
   },
   {
-    name: "Burnaby",
-    blurb:
-      "Burnaby's growing commercial hubs and residential strata towers are well within our service area. We cover Metrotown, Brentwood, Highgate, and all surrounding neighbourhoods with consistent, professional cleaning.",
+    title: "Residential, Commercial, and Industrial Expertise",
+    body: "We handle diverse cleaning needs, covering homes, office spaces, and industrial facilities, across Greater Vancouver. We scale our approach to match your property size and requirements.",
+    image: "/office-cleaning-north-vancouver-workspace.jpg",
   },
   {
-    name: "Richmond",
-    blurb:
-      "From the busy commercial corridors of No. 3 Road to Richmond's diverse residential communities, Smart Cleaning provides dependable strata, commercial, and home cleaning services across the entire city.",
-  },
-  {
-    name: "Coquitlam",
-    blurb:
-      "We service Coquitlam's expanding residential developments, commercial properties, and strata buildings throughout Coquitlam Centre, Burke Mountain, Westwood Plateau, and neighbouring areas.",
-  },
-  {
-    name: "Port Coquitlam",
-    blurb:
-      "Smart Cleaning covers Port Coquitlam's homes, small businesses, and community buildings. We deliver consistent professional cleaning to both residential and commercial clients throughout the city.",
-  },
-  {
-    name: "Port Moody",
-    blurb:
-      "From Heritage Mountain townhouses to Inlet Centre condos and Suterbrook Village, Smart Cleaning provides thorough residential and strata cleaning services throughout Port Moody and its surrounding communities.",
-  },
-  {
-    name: "New Westminster",
-    blurb:
-      "We serve the historic city of New Westminster — including its downtown commercial district, riverside strata buildings, and residential neighbourhoods — with professional, detail-driven cleaning solutions.",
-  },
-  {
-    name: "Surrey",
-    blurb:
-      "With Surrey as one of BC's fastest-growing cities, Smart Cleaning provides comprehensive services for its expanding residential developments, commercial spaces, and strata buildings across all six town centres.",
-  },
-  {
-    name: "Delta",
-    blurb:
-      "Smart Cleaning covers North Delta, Ladner, and Tsawwassen, providing professional cleaning services to homes, businesses, and strata properties throughout the municipality of Delta.",
-  },
-  {
-    name: "Langley",
-    blurb:
-      "We serve both the Township and City of Langley — providing reliable cleaning for suburban homes, commercial properties, retail spaces, and strata buildings in this rapidly growing community.",
-  },
-  {
-    name: "North Vancouver",
-    blurb:
-      "From Lower Lonsdale apartment towers to the residential hillsides of Lynn Valley and Edgemont Village, our team provides reliable cleaning services for strata buildings, offices, and homes throughout the North Shore.",
-  },
-  {
-    name: "West Vancouver",
-    blurb:
-      "We serve West Vancouver's upscale residential properties and professional offices — from Horseshoe Bay to Ambleside and Dundarave. Strata complexes, private residences, and commercial spaces all serviced to a high standard.",
-  },
-  {
-    name: "White Rock",
-    blurb:
-      "Smart Cleaning serves White Rock's oceanfront condos, residential homes, and local businesses — providing dependable cleaning across this sought-after South Surrey community.",
+    title: "Local Business, Professional Results",
+    body: "We're North Vancouver-based and committed to serving our community. That means you're working with people who understand local neighborhoods and value long-term relationships.",
+    image: "/mint-sanitary-team-north-vancouver.jpg",
   },
 ];
 
-// ── Page ─────────────────────────────────────────────────────────────────────
+const cleaningServices: { text: string; image: string }[] = [
+  { text: "Weekly cleaning for consistent maintenance", image: "/recurring-cleaning-kitchen-result-north-vancouver.jpg" },
+  { text: "Bi-weekly cleaning for moderate-traffic homes", image: "/recurring-cleaning-hepa-vacuum-north-vancouver.jpg" },
+  { text: "Monthly cleaning for lighter upkeep", image: "/standard-cleaning-kitchen-north-vancouver.jpg" },
+  { text: "Deep or spring cleaning for seasonal refreshes", image: "/deep-cleaned-kitchen-north-vancouver.jpg" },
+  { text: "Move-in or move-out cleaning for transitions", image: "/move-out-cleaning-north-vancouver-living-room.jpg" },
+  { text: "Post-renovation or post-construction cleaning", image: "/post-construction-cleaning-north-vancouver.jpg" },
+  { text: "Commercial office cleaning for businesses", image: "/office-desk-disinfection-north-vancouver.jpg" },
+  { text: "Industrial cleaning for specialized facilities", image: "/commercial-kitchen-cleaning-north-vancouver.jpg" },
+  { text: "Carpet and upholstery care", image: "/freshly-cleaned-carpets-north-vancouver.jpg" },
+];
+
+const faqItems: { question: string; answer: string }[] = [
+  {
+    question:
+      "Does Mint Sanitary service my specific neighborhood in North Vancouver?",
+    answer:
+      "We serve all of North Vancouver including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. If you're in North Vancouver and unsure, contact us at (604) 671-6252 or hello@mintsanitary.com to confirm.",
+  },
+  {
+    question: "Is there a travel fee for areas outside North Vancouver?",
+    answer:
+      "We include travel time in our estimates for all standard service areas including West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver neighborhoods. For areas beyond our primary coverage zone, call for a custom quote.",
+  },
+  {
+    question: "Can I get same-day or next-day cleaning in Vancouver?",
+    answer:
+      "Yes. We operate 7 days a week across all Greater Vancouver service areas. North Vancouver customers often benefit from same-day or next-day availability. For West Vancouver, Vancouver, Burnaby, or other areas, call (604) 671-6252 to check your specific availability.",
+  },
+  {
+    question:
+      "Are your eco-friendly cleaning products available in all service areas?",
+    answer:
+      "Absolutely. Every Mint Sanitary cleaning job, whether in North Vancouver, West Vancouver, Vancouver, Burnaby, or Greater Vancouver, uses non-toxic, eco-friendly cleaning products. We never compromise on green standards based on location.",
+  },
+  {
+    question: "Do you offer free estimates for all service areas?",
+    answer:
+      "Yes. We provide free, no-obligation estimates for homes and businesses across North Vancouver, West Vancouver, Vancouver, Burnaby, and surrounding areas. Contact us online or call (604) 671-6252 for your quote.",
+  },
+  {
+    question:
+      "What if my West Vancouver or Greater Vancouver address is outside your standard service zone?",
+    answer:
+      "Call us at (604) 671-6252 with your location and we'll provide a custom quote based on travel distance and your cleaning needs. Many areas beyond Burnaby and Richmond can still work with the right schedule.",
+  },
+  {
+    question:
+      "Do you offer commercial and industrial cleaning in all service areas?",
+    answer:
+      "Yes. Beyond residential house cleaning, we provide commercial office cleaning and industrial cleaning services throughout North Vancouver, West Vancouver, Vancouver, Burnaby, and Greater Vancouver. Contact us for a detailed commercial quote.",
+  },
+];
+
 export default function ServiceAreasPage() {
-  const heroRef   = useRef<HTMLDivElement>(null);
-  const introRef  = useReveal(0.08);
-  const citiesRef = useReveal(0.04);
-  const ctaRef    = useReveal(0.08);
-
-  useEffect(() => {
-    const t = setTimeout(() => {
-      heroRef.current?.querySelectorAll<HTMLElement>(".reveal").forEach((el, i) => {
-        setTimeout(() => el.classList.add("visible"), i * 160);
-      });
-    }, 80);
-    return () => clearTimeout(t);
-  }, []);
-
   return (
-    <>
-      <Navbar />
-      <main>
-
-        {/* ── 1. HERO ───────────────────────────────────────────────────── */}
-        <section
-          className="relative flex items-center justify-center overflow-hidden"
-          style={{ marginTop: "77px", minHeight: "400px", height: "520px" }}
-        >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1559511260-66a654ae982a?w=1440&h=700&fit=crop&q=80')",
-            }}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to top, rgba(10,37,64,0.88) 0%, rgba(10,37,64,0.55) 55%, rgba(10,37,64,0.35) 100%)",
-            }}
-          />
-
-          <div
-            ref={heroRef}
-            className="relative z-10 px-4 sm:px-8 md:px-[60px] flex flex-col gap-[20px] items-center text-center max-w-[780px]"
-          >
-            <div className="reveal flex items-center gap-[8px]">
-              <MapPin size={16} strokeWidth={2} className="text-[#c8e0fd]" />
-              <span className="font-display-reg text-[13px] tracking-[0.96px] uppercase text-[#c8e0fd]">
-                Metro Vancouver
-              </span>
-            </div>
-            <h1 className="reveal font-display text-[36px] sm:text-[48px] md:text-[60px] leading-[1.1] text-white uppercase">
-              Serving Greater Vancouver
-            </h1>
-            <p className="reveal delay-1 font-body font-bold text-[16px] sm:text-[18px] text-white/85 max-w-[560px] leading-[1.55]">
-              Professional cleaning services across 14+ cities in Metro Vancouver and the Fraser Valley — consistent, reliable, and local.
+    <ServicePageLayout
+      title="House Cleaning Service Across Greater Vancouver"
+      heroImage="/mint-sanitary-service-van-north-vancouver.jpg"
+      heroIntro="Mint Sanitary started in North Vancouver and has grown into one of the region's most trusted cleaning companies. Today, we serve North Vancouver, West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver areas with the same commitment to quality, eco-friendly cleaning that made us local favorites."
+      faqItems={faqItems}
+      ctaHeading="Ready to Schedule Your Cleaning?"
+      ctaBody="Finding reliable, eco-friendly cleaning across Greater Vancouver is simpler than you think. Mint Sanitary brings professional standards, non-toxic products, and 7-day availability to every neighborhood we serve. First-time customers: use code MINT25 for 10% off your first clean."
+    >
+      {/* ── Intro + Image ───────────────────────────────────────── */}
+      <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+        <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
+          <div>
+            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              Across the heart of Vancouver, the North Shore, and the suburbs
+              beyond, we&apos;re here to handle your cleaning. We operate 7 days a
+              week across all service areas, bringing professional-grade cleaning
+              with non-toxic, environmentally responsible products to every
+              neighborhood. Same standards. Same attention to detail. Everywhere we
+              go.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              Not sure if we service your specific neighborhood? Scroll through
+              our service areas below or reach out at{" "}
+              <a
+                href="tel:+16046716252"
+                className="underline underline-offset-2"
+              >
+                (604) 671-6252
+              </a>
+              . We&apos;re happy to confirm coverage and answer any questions
+              about scheduling or pricing.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <strong className="font-extrabold text-[#4E5062]">
+                New customers receive 10% off your first clean with code MINT25.
+              </strong>
             </p>
             <a
               href="/contact"
-              className="reveal delay-2 inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
             >
-              Get a Quote
+              Check Availability
             </a>
           </div>
-        </section>
-
-        {/* ── 2. INTRO ──────────────────────────────────────────────────── */}
-        <section className="py-[60px] bg-[#f2f2f2]" ref={introRef}>
-          <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[48px] items-center">
-            <div className="flex flex-col gap-[16px] flex-[1.2_0_0]">
-              <h2 className="reveal font-display text-[28px] sm:text-[34px] md:text-[38px] leading-[1.15] text-[#253862] uppercase">
-                Local Cleaning, Done Right
-              </h2>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px] max-w-[520px]">
-                Whether you&apos;re in a downtown Vancouver highrise, a Burnaby strata complex, or a suburban home in Langley — Smart Cleaning brings the same trained team, the same thorough standard, and the same reliability to your door.
-              </p>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px] max-w-[520px]">
-                We&apos;re a Metro Vancouver company. This is our community — and keeping it clean is our commitment.
-              </p>
-            </div>
-
-            {/* Stats strip */}
-            <div className="reveal flex-1 grid grid-cols-2 gap-[14px] w-full">
-              {[
-                { stat: "14+", sub: "Cities served" },
-                { stat: "3+",  sub: "Years operating" },
-                { stat: "ALL", sub: "Service types" },
-                { stat: "1",   sub: "Consistent standard" },
-              ].map((s) => (
-                <div
-                  key={s.sub}
-                  className="bg-[#253862] rounded-[12px] p-[24px] flex flex-col gap-[6px]"
-                >
-                  <span className="font-body font-extrabold text-[36px] leading-none text-[#c8e0fd]">
-                    {s.stat}
-                  </span>
-                  <span className="font-body font-medium text-[12px] text-white/60 tracking-[0.32px] uppercase leading-[18px]">
-                    {s.sub}
-                  </span>
-                </div>
-              ))}
-            </div>
+          <div className="overflow-hidden rounded-[20px]">
+            <img
+              src="/mint-service-area-map.png"
+              alt="Map of Greater Vancouver showing Mint Sanitary service area"
+              className="w-full rounded-[20px]"
+            />
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── 3. CITIES GRID ────────────────────────────────────────────── */}
-        <section className="pt-[40px] md:pt-[80px] pb-[80px] bg-[#f2f2f2]" ref={citiesRef}>
-          <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[32px]">
-            <div className="flex flex-col gap-[10px] items-center text-center">
-              <h2 className="reveal font-display text-[28px] sm:text-[34px] md:text-[38px] leading-[1.15] text-[#253862] uppercase">
-                Areas We Cover
-              </h2>
-              <p className="reveal font-body font-medium text-[15px] text-[#0a2540]/70 tracking-[0.28px] leading-[24px]">
-                Contact us for a free quote — we serve most Metro Vancouver neighbourhoods.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
-              {cities.map((city, idx) => (
-                <div
-                  key={city.name}
-                  className="reveal card-hover bg-white rounded-[12px] p-[28px] flex flex-col gap-[12px] border border-black/6"
-                  style={{ transitionDelay: `${(idx % 6) * 0.07}s` }}
-                >
-                  <div className="flex items-center gap-[10px]">
-                    <div className="w-[8px] h-[8px] bg-[#155da6] rounded-full shrink-0" />
-                    <h3 className="font-display-reg text-[20px] tracking-[0.64px] uppercase text-[#253862] leading-none">
-                      {city.name}
-                    </h3>
-                  </div>
-                  <p className="font-body font-medium text-[15px] text-[#0a2540] leading-[24px] tracking-[0.28px]">
-                    {city.blurb}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Not on the list? blurb */}
-            <div className="reveal bg-[#c8e0fd] rounded-[12px] p-[28px] flex flex-col sm:flex-row sm:items-center gap-[20px] justify-between">
-              <div className="flex flex-col gap-[6px]">
-                <p className="font-display-reg text-[17px] tracking-[0.64px] uppercase text-[#253862] leading-none">
-                  Don&apos;t see your city?
-                </p>
-                <p className="font-body font-medium text-[15px] text-[#0a2540] leading-[22px] max-w-[480px]">
-                  We&apos;re always expanding our service area. Reach out and we&apos;ll let you know if we can accommodate your location.
+      {/* ── Why Choose — Image Cards ────────────────────────────── */}
+      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            Why Choose Mint Sanitary for House Cleaning in Greater Vancouver?
+          </h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {whyChooseItems.map((item) => (
+              <div
+                key={item.title}
+                className="overflow-hidden rounded-[20px] bg-white p-4 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="h-[170px] w-full rounded-[14px] object-cover"
+                />
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                  {item.title}
+                </h3>
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  {item.body}
                 </p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── North Vancouver — Image + Text ──────────────────────── */}
+      <section
+        className="relative z-10 bg-[#6191e9] px-4 py-16 sm:px-8 md:px-[60px]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(97,145,233,0.92), rgba(97,145,233,0.92)), url('/mint-bg.png')",
+        }}
+      >
+        <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-[20px]">
+            <img
+              src="/professional-cleaning-services-north-vancouver.jpg"
+              alt="Professional cleaning service in North Vancouver"
+              className="h-[360px] w-full object-cover sm:h-[440px]"
+            />
+          </div>
+          <div>
+            <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
+              North Vancouver Cleaning Service
+            </h2>
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
+              Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and
+              Seymour Heights all fall within our primary service territory. As our
+              home base, North Vancouver benefits from same-day availability and
+              the fastest response times anywhere in our coverage area.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
+              We offer residential cleaning for single-family homes, duplexes, and
+              multi-unit properties. Commercial clients in North Vancouver also
+              trust us for office cleaning, retail spaces, and building
+              maintenance. Our team knows the North Shore intimately and can often
+              fit you in quickly.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
+              Eco-friendly cleaning is standard in every North Vancouver job. We
+              bring professional equipment and green products to every corner of
+              Deep Cove, Lower Lonsdale, Lynn Valley, and beyond. Whether
+              it&apos;s weekly maintenance or a one-time deep clean, your North
+              Vancouver home receives the same attention we give every property.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center shrink-0 bg-[#253862] text-[#c8e0fd] font-body font-extrabold text-[15px] tracking-[0.32px] uppercase rounded-[99px] px-[32px] py-[12px] hover:bg-[#155da6] transition-colors duration-200"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
-                Contact Us
+                Schedule North Van Cleaning
+              </a>
+              <a
+                href="tel:+16046716252"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
+              >
+                Call (604) 671-6252
               </a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── 4. CTA ────────────────────────────────────────────────────── */}
-        <section
-          id="contact"
-          className="py-[80px] md:py-[100px] bg-[#253862]"
-          ref={ctaRef}
-        >
-          <div className="flex flex-col gap-[48px] md:gap-[64px] items-center px-4 sm:px-8 md:px-[60px] text-center">
-            <div className="reveal flex flex-col gap-[8px] items-center uppercase">
-              <h2 className="font-display text-[28px] sm:text-[36px] md:text-[44px] leading-[1.2] text-white">
-                Your city. Our standard.
-              </h2>
-              <p className="font-display text-[28px] sm:text-[36px] md:text-[44px] leading-[1.2] text-[#c8e0fd]">
-                Let&apos;s get started.
-              </p>
-            </div>
-
-            <p className="reveal font-body font-medium text-[16px] text-white/65 max-w-[520px] leading-[28px] tracking-[0.28px]">
-              Get in touch for a free quote. Tell us your location, your needs, and we&apos;ll take care of the rest — fast, local, and reliable.
+      {/* ── West Vancouver — Text + Image ──────────────────────── */}
+      <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+        <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
+          <div>
+            <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              West Vancouver House Cleaning
+            </h2>
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              We cover all of West Vancouver, including Ambleside, Dundarave, and
+              Horseshoe Bay. Many residents assume companies based in North
+              Vancouver charge travel fees for the longer routes across the Second
+              Narrows, but we don&apos;t. West Vancouver clients receive the same
+              pricing structure as North Vancouver despite the distance.
             </p>
-
-            <div className="reveal flex flex-col sm:flex-row items-stretch justify-center gap-[40px] w-full max-w-[640px]">
-              <div className="flex-1 flex flex-col gap-[7px] pb-[20px] border-b border-[#c8e0fd] text-left">
-                <p className="font-body font-extrabold text-[16px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
-                  Call Us
-                </p>
-                <p className="font-body font-extrabold text-[22px] uppercase text-white leading-[28px]">
-                  604-123-4567
-                </p>
-                <p className="font-body font-medium text-[13px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
-                  Mon–Sat, 7am–6pm
-                </p>
-              </div>
-              <div className="flex-1 flex flex-col gap-[7px] pb-[20px] border-b border-[#c8e0fd] text-left">
-                <p className="font-body font-extrabold text-[16px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
-                  Email Us
-                </p>
-                <p className="font-body font-extrabold text-[20px] uppercase text-white leading-[28px]">
-                  info@smartcleaning.com
-                </p>
-                <p className="font-body font-medium text-[13px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
-                  Reply within 2 hours
-                </p>
-              </div>
-            </div>
-
-            <div className="reveal flex flex-col sm:flex-row gap-[16px] w-full max-w-[500px]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              Your West Vancouver home gets the same eco-friendly, non-toxic
+              cleaning approach we apply everywhere. Weekly, bi-weekly, monthly,
+              and deep cleaning options are all available. We understand West
+              Vancouver&apos;s unique character, including waterfront properties
+              and newer residential neighborhoods, and adjust our service to match
+              each home&apos;s specific needs.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              Availability in West Vancouver is strong across all days of the
+              week. Call{" "}
               <a
-                href="tel:6041234567"
-                className="w-full inline-flex items-center justify-center gap-[8px] bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                href="tel:+16046716252"
+                className="underline underline-offset-2"
               >
-                <Phone size={16} strokeWidth={2.5} />
-                Call Now
+                (604) 671-6252
+              </a>{" "}
+              to check current openings or{" "}
+              <a href="/contact" className="underline underline-offset-2">
+                request your free estimate
               </a>
+              .
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-[20px]">
+            <img
+              src="/deep-cleaned-kitchen-north-vancouver.jpg"
+              alt="Deep cleaned kitchen in West Vancouver home"
+              className="h-[340px] w-full object-cover sm:h-[400px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Vancouver — Image + Text ────────────────────────────── */}
+      <section
+        className="relative z-10 bg-[#6191e9] px-4 py-16 sm:px-8 md:px-[60px]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(97,145,233,0.92), rgba(97,145,233,0.92)), url('/mint-bg.png')",
+        }}
+      >
+        <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-[20px]">
+            <img
+              src="/office-cleaning-north-vancouver-workspace.jpg"
+              alt="Professional office cleaning in Vancouver workspace"
+              className="h-[360px] w-full object-cover sm:h-[440px]"
+            />
+          </div>
+          <div>
+            <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
+              Vancouver Cleaning Services
+            </h2>
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
+              Vancouver proper is one of our largest service areas. Serving
+              Downtown, Kitsilano, the West End, East Vancouver, South Vancouver,
+              Kerrisdale, and more, we maintain regular cleaning schedules
+              throughout the city.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
+              We serve residential apartments, condos, and single-family homes at
+              all price points. Commercial spaces in Vancouver also benefit from
+              our professional cleaning; office buildings, retail locations, and
+              small businesses across the city trust us with their environments.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
+              Flexible scheduling works well for Vancouver&apos;s diverse
+              neighborhoods. One-time deep cleans, weekly maintenance, bi-weekly
+              service, or monthly refreshes all fit within our standard Greater
+              Vancouver rotation. Eco-friendly products are used in every Vancouver
+              job, regardless of neighborhood.
+            </p>
+            <a
+              href="/contact"
+              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
+            >
+              Book Vancouver Cleaning
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Burnaby — Text + Image ──────────────────────────────── */}
+      <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+        <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
+          <div>
+            <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              Burnaby House Cleaning
+            </h2>
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              Metrotown, Burnaby Heights, South Burnaby, and surrounding
+              neighborhoods all fall within our regular service area. Burnaby
+              residents benefit from the same 7-day availability and eco-friendly
+              approach we offer across Greater Vancouver.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              We specialize in condo and single-family home cleaning throughout
+              Burnaby. Professional standards match what we maintain in North
+              Vancouver, and flexible scheduling accommodates busy Burnaby families
+              and business owners.
+            </p>
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              Free estimates are always available. Reach out today to discuss your
+              Burnaby property&apos;s specific cleaning needs and find a schedule
+              that works for you.{" "}
+              <a href="/contact" className="underline underline-offset-2">
+                Schedule Burnaby service
+              </a>{" "}
+              or call{" "}
               <a
-                href="mailto:info@smartcleaning.com"
-                className="w-full inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
+                href="tel:+16046716252"
+                className="underline underline-offset-2"
               >
-                <Mail size={16} strokeWidth={2.5} />
-                Email Us
+                (604) 671-6252
               </a>
+              .
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-[20px]">
+            <img
+              src="/recurring-cleaning-kitchen-north-vancouver.jpg"
+              alt="Clean and fresh kitchen after recurring cleaning service in Burnaby"
+              className="h-[340px] w-full object-cover sm:h-[400px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Greater Vancouver — Wide Banner ─────────────────────── */}
+      <section className="relative z-10 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/mint-sanitary-service-van-north-vancouver.jpg"
+            alt="Mint Sanitary service van covering Greater Vancouver"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#6191e9]/88" />
+        </div>
+        <div className="relative z-10 px-4 py-20 sm:px-8 md:px-[60px]">
+          <div className="mx-auto max-w-[1200px]">
+            <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
+              Greater Vancouver and Surrounding Areas
+            </h2>
+            <p className="mt-6 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
+              Beyond North Vancouver, West Vancouver, Vancouver, and Burnaby, we
+              extend service to Richmond, New Westminster, Coquitlam, Port Moody,
+              Port Coquitlam, and Maple Ridge. For these outer areas or
+              neighborhoods not mentioned above, we&apos;re happy to discuss
+              options.
+            </p>
+            <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
+              Custom quotes are available for extended service areas. Travel time
+              impacts pricing, but we&apos;ll be transparent about costs and
+              availability before you commit. Call{" "}
+              <a
+                href="tel:+16046716252"
+                className="underline underline-offset-2"
+              >
+                (604) 671-6252
+              </a>{" "}
+              with your specific location and we&apos;ll provide a detailed
+              estimate based on distance and your cleaning needs.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              {["Richmond", "New Westminster", "Coquitlam", "Port Moody", "Port Coquitlam", "Maple Ridge"].map((city) => (
+                <span
+                  key={city}
+                  className="rounded-full bg-white/15 px-5 py-2.5 font-body text-[14px] font-semibold text-white"
+                >
+                  {city}
+                </span>
+              ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </main>
-      <Footer />
-    </>
+      {/* ── Services Available — Image Grid ─────────────────────── */}
+      <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            What Cleaning Services Do We Offer in Your Area?
+          </h2>
+          <p className="mt-6 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            Our full service menu is available no matter which Greater Vancouver
+            neighborhood you choose:
+          </p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {cleaningServices.map((service) => (
+              <div
+                key={service.text}
+                className="overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1"
+              >
+                <img
+                  src={service.image}
+                  alt={service.text}
+                  className="h-[160px] w-full rounded-[14px] object-cover"
+                />
+                <p className="mt-4 font-body text-[15px] font-semibold leading-[1.5] text-[#4E5062]">
+                  {service.text}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-10 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            Every service uses eco-friendly, non-toxic cleaning products. No
+            harsh chemicals or irritating fumes. Just effective, safe,
+            professional cleaning.
+          </p>
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            For complete details on our service offerings, visit our main{" "}
+            <a
+              href="/cleaning-services-north-vancouver"
+              className="underline underline-offset-2"
+            >
+              services page for house cleaning options
+            </a>
+            .
+          </p>
+        </div>
+      </section>
+    </ServicePageLayout>
   );
 }

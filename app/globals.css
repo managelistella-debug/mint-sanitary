@@ -1,67 +1,83 @@
 @import "tailwindcss";
 
-/* ─── Design Tokens ─────────────────────────────────────────── */
 @theme inline {
-  --color-navy:         #253862;
-  --color-blue:         #155da6;
-  --color-sky:          #c8e0fd;
-  --color-ink:          #0a2540;
-  --color-bg:           #f2f2f2;
-  --color-primary:      #155da6;
-  --color-primary-dark: #253862;
-  --color-secondary:    #c8e0fd;
-  --color-third:        #f2f2f2;
-  --color-dark:         #0a2540;
-  --color-text:         #0a2540;
-  --color-muted:        #253862;
+  --color-navy:         #4E5062;
+  --color-blue:         #6191e9;
+  --color-sky:          #66DAD5;
+  --color-ink:          #4E5062;
+  --color-bg:           #6191e9;
+  --color-primary:      #6191e9;
+  --color-primary-dark: #4E5062;
+  --color-secondary:    #66DAD5;
+  --color-third:        #ffffff;
+  --color-dark:         #4E5062;
+  --color-text:         #4E5062;
+  --color-muted:        #5C5E70;
 }
 
-/* ─── Base ───────────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: #f2f2f2;
-  color: #0a2540;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  background: #6191e9;
+  color: #4E5062;
+  font-family: "omnes-pro", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Scrolling image background ────────────────────────────── */
+.site-scrolling-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.site-scrolling-bg-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200vh;
+  background-image: url('/mint-bg.png');
+  background-repeat: repeat-y;
+  background-size: 100% 50%;
+  animation: mint-scroll-up 55s linear infinite;
+  will-change: transform;
+}
+
+@keyframes mint-scroll-up {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
 }
 
 /* ─── Font helpers ───────────────────────────────────────────── */
-/* Outlined = major headings (OUR SERVICES, HAPPY CUSTOMERS, logo) */
-.font-display     { font-family: var(--font-coco-outlined), serif; }
-/* Regular  = nav items, card titles, pill text, accordion labels  */
-.font-display-reg { font-family: var(--font-coco-regular), serif; }
-.font-body        { font-family: var(--font-inter), system-ui, sans-serif; }
+.font-display,
+.font-display-reg,
+.font-body {
+  font-family: "omnes-pro", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "omnes-pro", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 900 !important;
+  letter-spacing: 0;
+}
+
+h1.font-display-reg, h2.font-display-reg, h3.font-display-reg, h4.font-display-reg,
+h1.font-display, h2.font-display, h3.font-display, h4.font-display {
+  font-weight: 900 !important;
+}
 
 /* ─── Scrollbar — hidden globally ───────────────────────────── */
 html {
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE / Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-::-webkit-scrollbar { display: none; } /* Chrome / Safari */
-
-/* ─── Ticker animation ───────────────────────────────────────── */
-@keyframes ticker-left {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-.animate-ticker {
-  animation: ticker-left 35s linear infinite;
-}
-
-/* ─── Gallery carousel animations ───────────────────────────── */
-@keyframes carousel-ltr {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-@keyframes carousel-rtl {
-  from { transform: translateX(-50%); }
-  to   { transform: translateX(0); }
-}
-.animate-carousel-left  { animation: carousel-ltr 80s linear infinite; }
-.animate-carousel-right { animation: carousel-rtl 110s linear infinite; }
+::-webkit-scrollbar { display: none; }
 
 /* ─── Scroll-reveal ──────────────────────────────────────────── */
 .reveal {
@@ -78,7 +94,7 @@ html {
 .reveal.delay-3 { transition-delay: 0.36s; }
 .reveal.delay-4 { transition-delay: 0.48s; }
 
-/* ─── Image hover zoom (within frame, no container resize) ───── */
+/* ─── Image hover zoom ───────────────────────────────────────── */
 .img-zoom { overflow: hidden; }
 .img-zoom img {
   transition: transform 0.5s ease;
@@ -89,7 +105,6 @@ html {
 }
 .img-zoom:hover img { transform: scale(1.06); }
 
-/* ─── Additional reveal variants ────────────────────────────── */
 .reveal-left {
   opacity: 0;
   transform: translateX(-24px);
@@ -100,15 +115,11 @@ html {
   transform: translateX(24px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.reveal-left.visible,
-.reveal-right.visible {
+.reveal-left.visible, .reveal-right.visible {
   opacity: 1;
   transform: none;
 }
-.reveal-left.delay-1, .reveal-right.delay-1 { transition-delay: 0.12s; }
-.reveal-left.delay-2, .reveal-right.delay-2 { transition-delay: 0.24s; }
 
-/* ─── Card hover lift ────────────────────────────────────────── */
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -117,43 +128,24 @@ html {
   box-shadow: 0 12px 32px rgba(10, 37, 64, 0.12);
 }
 
-/* ─── Services dropdown ──────────────────────────────────────── */
-.nav-dropdown { display: none; }
-.nav-dropdown-trigger:hover .nav-dropdown,
-.nav-dropdown-trigger:focus-within .nav-dropdown {
-  display: flex;
-}
-
-/* ─── Mobile / Safari compatibility ─────────────────────────── */
-/* Remove iOS default inner shadow and border-radius on inputs */
-input,
-textarea {
+/* ─── Mobile / Safari compat ─────────────────────────────────── */
+input, textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
+button { -webkit-appearance: none; }
 
-/* Remove iOS default button styling */
-button {
-  -webkit-appearance: none;
-}
-
-/* Override Safari autofill yellow/blue background */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #f2f2f2 inset;
-  -webkit-text-fill-color: #0a2540;
+  -webkit-text-fill-color: #4E5062;
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* Remove 300ms tap delay on tappable elements (Safari < 15) */
-a,
-button {
-  touch-action: manipulation;
-}
+a, button { touch-action: manipulation; }
 
-/* Fix overflow-hidden + border-radius image clipping on iOS Safari */
 .img-zoom {
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
