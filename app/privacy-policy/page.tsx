@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Privacy Policy | Smart Cleaning",
-  description: "How Smart Cleaning collects, uses, and protects your personal information.",
+  title: "Privacy Policy | Mint Sanitary",
+  description: "How Mint Sanitary collects, uses, and protects your personal information.",
 };
 
 const sections = [
@@ -58,7 +58,7 @@ const sections = [
     title: "Contact Us",
     content: [
       "If you have any questions or concerns about this Privacy Policy or how we handle your personal information, please contact us:",
-      "Email: info@smartcleaning.com\nPhone: 604-123-4567\nService Area: Metro Vancouver, BC",
+      "Email: hello@mintsanitary.com\nPhone: 604-123-4567\nService Area: Metro Vancouver, BC",
     ],
   },
 ];
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Intro */}
             <p className="font-body font-medium text-[16px] text-[#0a2540] leading-[28px]">
-              Smart Cleaning is committed to protecting your privacy. This policy explains what personal information we collect, how we use it, and how we keep it safe. By using our website or services, you agree to the practices described here.
+              Mint Sanitary is committed to protecting your privacy. This policy explains what personal information we collect, how we use it, and how we keep it safe. By using our website or services, you agree to the practices described here.
             </p>
 
             {/* Sections */}

@@ -12,7 +12,7 @@ const contacts = [
   },
   {
     label: "EMAIL US",
-    value: "info@smartcleaning.com",
+    value: "hello@mintsanitary.com",
     note: "Reply within 2 hours",
   },
   {

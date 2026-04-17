@@ -93,7 +93,7 @@ export default function ServiceAreas() {
         <div className="reveal img-zoom rounded-[12px] border border-black/10 relative" style={{ height: "460px" }}>
           <Image
             src="/commercial-new.jpg"
-            alt="Smart Cleaning professional team at work"
+            alt="Mint Sanitary professional team at work"
             fill
             sizes="(max-width: 768px) 100vw, 1200px"
             className="rounded-[12px] object-cover"

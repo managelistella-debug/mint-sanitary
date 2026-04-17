@@ -400,7 +400,7 @@ export default function ResidentialCleaningPage() {
           >
             <Image
               src="/residential-2.png"
-              alt="Smart Cleaning residential team delivering a thorough home clean"
+              alt="Mint Sanitary residential team delivering a thorough home clean"
               fill
               sizes="(max-width: 768px) 100vw, 1200px"
               className="rounded-[12px] object-cover"
@@ -542,7 +542,7 @@ export default function ResidentialCleaningPage() {
                   Email Us
                 </p>
                 <p className="font-body font-extrabold text-[20px] uppercase text-white leading-[28px]">
-                  info@smartcleaning.com
+                  hello@mintsanitary.com
                 </p>
                 <p className="font-body font-medium text-[13px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
                   Reply within 2 hours
@@ -559,7 +559,7 @@ export default function ResidentialCleaningPage() {
                 Call Now
               </a>
               <a
-                href="mailto:info@smartcleaning.com"
+                href="mailto:hello@mintsanitary.com"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
               >
                 <Mail size={16} strokeWidth={2.5} />

@@ -260,7 +260,7 @@ export default function StrataCleaningPage() {
                 Strata cleaning is the professional maintenance of shared spaces within multi-unit buildings — the common areas every resident, tenant, and visitor uses daily. Unlike cleaning individual suites, strata cleaning is focused entirely on keeping lobbies, hallways, elevators, amenity rooms, parkades, and other shared spaces consistently clean, hygienic, and welcoming.
               </p>
               <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px]">
-                A well-maintained building improves resident satisfaction, upholds property values, and ensures a healthy environment for everyone. Smart Cleaning designs fully customized strata programs built around your building&apos;s size, traffic patterns, and strata council requirements — with the same trusted team on every visit.
+                A well-maintained building improves resident satisfaction, upholds property values, and ensures a healthy environment for everyone. Mint Sanitary designs fully customized strata programs built around your building&apos;s size, traffic patterns, and strata council requirements — with the same trusted team on every visit.
               </p>
               <a
                 href="/contact"
@@ -347,7 +347,7 @@ export default function StrataCleaningPage() {
           >
             <Image
               src="/strata-2.png"
-              alt="Smart Cleaning professional maintaining a strata building"
+              alt="Mint Sanitary professional maintaining a strata building"
               fill
               sizes="(max-width: 768px) 100vw, 1200px"
               className="rounded-[12px] object-cover"
@@ -526,7 +526,7 @@ export default function StrataCleaningPage() {
                 Serving Metro Vancouver
               </h2>
               <p className="reveal font-body font-medium text-[16px] text-[#0a2540] leading-[28px] tracking-[0.28px] max-w-[480px]">
-                Smart Cleaning provides strata services across the Lower Mainland and Fraser Valley. From downtown Vancouver highrises to suburban townhouse complexes — if your building is in Greater Vancouver, we&apos;ve got you covered.
+                Mint Sanitary provides strata services across the Lower Mainland and Fraser Valley. From downtown Vancouver highrises to suburban townhouse complexes — if your building is in Greater Vancouver, we&apos;ve got you covered.
               </p>
               <a
                 href="/service-areas"
@@ -597,7 +597,7 @@ export default function StrataCleaningPage() {
                   Email Us
                 </p>
                 <p className="font-body font-extrabold text-[20px] uppercase text-white leading-[28px]">
-                  info@smartcleaning.com
+                  hello@mintsanitary.com
                 </p>
                 <p className="font-body font-medium text-[13px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
                   Reply within 2 hours
@@ -614,7 +614,7 @@ export default function StrataCleaningPage() {
                 Call Now
               </a>
               <a
-                href="mailto:info@smartcleaning.com"
+                href="mailto:hello@mintsanitary.com"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
               >
                 <Mail size={16} strokeWidth={2.5} />

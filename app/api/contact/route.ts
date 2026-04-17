@@ -9,8 +9,8 @@ import { NextRequest, NextResponse } from "next/server";
 // import { Resend } from "resend";
 // const resend = new Resend(process.env.RESEND_API_KEY);
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL ?? "info@smartcleaning.com";
-const FROM_ADDRESS = "Smart Cleaning <noreply@smartcleaning.com>";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL ?? "hello@mintsanitary.com";
+const FROM_ADDRESS = "Mint Sanitary <noreply@mintsanitary.com>";
 
 export async function POST(req: NextRequest) {
   try {
@@ -27,10 +27,10 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: FROM_ADDRESS,
       to: email,
-      subject: "We received your message — Smart Cleaning",
+      subject: "We received your message — Mint Sanitary",
       html: `
         <p>Hi ${name},</p>
-        <p>Thanks for reaching out to Smart Cleaning. We've received your message and will be in touch within 2 hours.</p>
+        <p>Thanks for reaching out to Mint Sanitary. We've received your message and will be in touch within 2 hours.</p>
         <p><strong>Your submission:</strong></p>
         <ul>
           <li><strong>Service:</strong> ${service}</li>
@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
           ${message ? `<li><strong>Message:</strong> ${message}</li>` : ""}
         </ul>
         <p>If you need immediate assistance, call us at <strong>604-123-4567</strong> (Mon–Sat, 7am–6pm).</p>
-        <p>— The Smart Cleaning Team</p>
+        <p>— The Mint Sanitary Team</p>
       `,
     });
 

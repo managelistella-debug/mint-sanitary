@@ -2,21 +2,21 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Terms of Service | Smart Cleaning",
-  description: "Terms and conditions for using Smart Cleaning services in Metro Vancouver.",
+  title: "Terms of Service | Mint Sanitary",
+  description: "Terms and conditions for using Mint Sanitary services in Metro Vancouver.",
 };
 
 const sections = [
   {
     title: "Acceptance of Terms",
     content: [
-      "By accessing our website or engaging Smart Cleaning for any service, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our services.",
+      "By accessing our website or engaging Mint Sanitary for any service, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our services.",
     ],
   },
   {
     title: "Our Services",
     content: [
-      "Smart Cleaning provides professional strata, commercial, and residential cleaning services throughout Metro Vancouver and the Fraser Valley.",
+      "Mint Sanitary provides professional strata, commercial, and residential cleaning services throughout Metro Vancouver and the Fraser Valley.",
       "All services are subject to availability in your area. Contact us to confirm coverage for your specific location.",
     ],
   },
@@ -31,7 +31,7 @@ const sections = [
     title: "Cancellations and Rescheduling",
     content: [
       "We require a minimum of 24 hours notice for any cancellation or rescheduling request. Cancellations made with less than 24 hours notice may be subject to a cancellation fee.",
-      "Smart Cleaning reserves the right to reschedule a service due to unforeseen circumstances (such as equipment issues or extreme weather). We will provide as much notice as possible in these cases.",
+      "Mint Sanitary reserves the right to reschedule a service due to unforeseen circumstances (such as equipment issues or extreme weather). We will provide as much notice as possible in these cases.",
     ],
   },
   {
@@ -45,20 +45,20 @@ const sections = [
     title: "Satisfaction and Claims",
     content: [
       "We stand behind the quality of our work. If you are not satisfied with a service, please notify us within 24 hours of the visit and we will arrange a re-clean of the affected areas at no additional charge.",
-      "Smart Cleaning is not liable for pre-existing damage to property, fixtures, or surfaces. Claims for damage must be reported within 24 hours of the service visit.",
+      "Mint Sanitary is not liable for pre-existing damage to property, fixtures, or surfaces. Claims for damage must be reported within 24 hours of the service visit.",
     ],
   },
   {
     title: "Limitation of Liability",
     content: [
-      "To the maximum extent permitted by law, Smart Cleaning's liability for any claim arising from our services is limited to the cost of the service provided.",
+      "To the maximum extent permitted by law, Mint Sanitary's liability for any claim arising from our services is limited to the cost of the service provided.",
       "We are not liable for any indirect, incidental, or consequential damages arising from the use of our services.",
     ],
   },
   {
     title: "Intellectual Property",
     content: [
-      "All content on this website — including text, images, logos, and design — is the property of Smart Cleaning and may not be reproduced, distributed, or used without our express written permission.",
+      "All content on this website — including text, images, logos, and design — is the property of Mint Sanitary and may not be reproduced, distributed, or used without our express written permission.",
     ],
   },
   {
@@ -71,7 +71,7 @@ const sections = [
     title: "Contact Us",
     content: [
       "If you have any questions about these Terms of Service, please contact us:",
-      "Email: info@smartcleaning.com\nPhone: 604-123-4567\nService Area: Metro Vancouver, BC",
+      "Email: hello@mintsanitary.com\nPhone: 604-123-4567\nService Area: Metro Vancouver, BC",
     ],
   },
 ];
@@ -100,7 +100,7 @@ export default function TermsOfServicePage() {
 
             {/* Intro */}
             <p className="font-body font-medium text-[16px] text-[#0a2540] leading-[28px]">
-              These Terms of Service govern your use of the Smart Cleaning website and your engagement with our cleaning services. Please read them carefully before booking a service.
+              These Terms of Service govern your use of the Mint Sanitary website and your engagement with our cleaning services. Please read them carefully before booking a service.
             </p>
 
             {/* Sections */}

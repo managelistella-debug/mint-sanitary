@@ -38,74 +38,74 @@ const images: { src: string; alt: string; category: Category }[] = [
   // Strata
   {
     src: "/strata.png",
-    alt: "Strata building maintained by Smart Cleaning",
+    alt: "Strata building maintained by Mint Sanitary",
     category: "strata",
   },
   {
     src: "/strata-2.png",
-    alt: "Clean strata common area — Smart Cleaning",
+    alt: "Clean strata common area — Mint Sanitary",
     category: "strata",
   },
   {
     src: "/strata-3.png",
-    alt: "Professional strata cleaning by Smart Cleaning",
+    alt: "Professional strata cleaning by Mint Sanitary",
     category: "strata",
   },
   {
     src: "/hero-and-strata-4.png",
-    alt: "Strata building exterior — Smart Cleaning",
+    alt: "Strata building exterior — Mint Sanitary",
     category: "strata",
   },
   {
     src: "/strata-or-commercial.png",
-    alt: "Strata and commercial building cleaned by Smart Cleaning",
+    alt: "Strata and commercial building cleaned by Mint Sanitary",
     category: "strata",
   },
   // Commercial
   {
     src: "/commercial.png",
-    alt: "Commercial space cleaned by Smart Cleaning",
+    alt: "Commercial space cleaned by Mint Sanitary",
     category: "commercial",
   },
   {
     src: "/commercial-2.png",
-    alt: "Commercial facility maintained by Smart Cleaning",
+    alt: "Commercial facility maintained by Mint Sanitary",
     category: "commercial",
   },
   {
     src: "/commercial-3.png",
-    alt: "Professional commercial cleaning — Smart Cleaning",
+    alt: "Professional commercial cleaning — Mint Sanitary",
     category: "commercial",
   },
   {
     src: "/commercial-4.png",
-    alt: "Clean commercial workspace — Smart Cleaning",
+    alt: "Clean commercial workspace — Mint Sanitary",
     category: "commercial",
   },
   {
     src: "/commercial-5.png",
-    alt: "Commercial cleaning team at work — Smart Cleaning",
+    alt: "Commercial cleaning team at work — Mint Sanitary",
     category: "commercial",
   },
   {
     src: "/commercial-new.jpg",
-    alt: "Commercial space maintained by Smart Cleaning",
+    alt: "Commercial space maintained by Mint Sanitary",
     category: "commercial",
   },
   {
     src: "/commercial-3-new.jpg",
-    alt: "Commercial facility cleaned by Smart Cleaning",
+    alt: "Commercial facility cleaned by Mint Sanitary",
     category: "commercial",
   },
   // Residential
   {
     src: "/residential.png",
-    alt: "Residential home cleaned by Smart Cleaning",
+    alt: "Residential home cleaned by Mint Sanitary",
     category: "residential",
   },
   {
     src: "/residential-2.png",
-    alt: "Fresh residential interior — Smart Cleaning",
+    alt: "Fresh residential interior — Mint Sanitary",
     category: "residential",
   },
   {
@@ -115,22 +115,22 @@ const images: { src: string; alt: string; category: Category }[] = [
   },
   {
     src: "/residential-4.jpg",
-    alt: "Detailed home cleaning by Smart Cleaning team",
+    alt: "Detailed home cleaning by Mint Sanitary team",
     category: "residential",
   },
   {
     src: "/residential-5.jpg",
-    alt: "Spotless home maintained by Smart Cleaning",
+    alt: "Spotless home maintained by Mint Sanitary",
     category: "residential",
   },
   {
     src: "/residential-new.jpg",
-    alt: "Residential space cleaned by Smart Cleaning",
+    alt: "Residential space cleaned by Mint Sanitary",
     category: "residential",
   },
   {
     src: "/residential-2-new.jpg",
-    alt: "Freshly cleaned residential interior — Smart Cleaning",
+    alt: "Freshly cleaned residential interior — Mint Sanitary",
     category: "residential",
   },
 ];

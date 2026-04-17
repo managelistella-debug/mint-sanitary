@@ -12,11 +12,11 @@ const STAR_COLORS   = ["#253862", "#ffffff",  "#ffffff"];
 
 const testimonials = [
   {
-    quote: "The BEST. Smart Cleaning has managed our strata for 3 years — common areas have never looked better. Completely professional.",
+    quote: "The BEST. Mint Sanitary has managed our strata for 3 years — common areas have never looked better. Completely professional.",
     author: "JENNIFER M.",
   },
   {
-    quote: "We switched to Smart Cleaning for our office and couldn't be happier. Always spotless when we arrive every morning.",
+    quote: "We switched to Mint Sanitary for our office and couldn't be happier. Always spotless when we arrive every morning.",
     author: "DAVID K.",
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     author: "MARK T.",
   },
   {
-    quote: "I've tried many cleaning services — Smart Cleaning is by far the most thorough and trustworthy. Worth every penny.",
+    quote: "I've tried many cleaning services — Mint Sanitary is by far the most thorough and trustworthy. Worth every penny.",
     author: "ANNA R.",
   },
   {

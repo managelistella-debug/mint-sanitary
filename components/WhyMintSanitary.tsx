@@ -28,7 +28,7 @@ const items = [
   },
 ];
 
-export default function WhySmartCleaning() {
+export default function WhyMintSanitary() {
   // First item open by default (matches Figma design showing it expanded)
   const [open, setOpen] = useState<number>(0);
   const sectionRef = useRef<HTMLDivElement>(null);

@@ -246,7 +246,7 @@ export default function CommercialCleaningPage() {
                 Commercial cleaning is more than a tidy workspace — it reflects your brand. A consistently clean environment improves employee morale, makes better first impressions, and ensures a safer space for everyone who walks through your doors.
               </p>
               <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px]">
-                Smart Cleaning designs service programs around your hours, your access requirements, and your specific facility — so operations never skip a beat.
+                Mint Sanitary designs service programs around your hours, your access requirements, and your specific facility — so operations never skip a beat.
               </p>
               <a
                 href="/contact"
@@ -402,7 +402,7 @@ export default function CommercialCleaningPage() {
           >
             <Image
               src="/commercial-2.png"
-              alt="Smart Cleaning commercial team maintaining a professional workspace"
+              alt="Mint Sanitary commercial team maintaining a professional workspace"
               fill
               sizes="(max-width: 768px) 100vw, 1200px"
               className="rounded-[12px] object-cover"
@@ -418,7 +418,7 @@ export default function CommercialCleaningPage() {
             <div className="reveal-left flex-1 img-zoom rounded-[12px] border border-black/10 w-full h-[360px] md:h-auto relative">
               <Image
                 src="/commercial-3.png"
-                alt="Smart Cleaning professional team — reliable access and consistent service"
+                alt="Mint Sanitary professional team — reliable access and consistent service"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="rounded-[12px] object-cover"
@@ -471,7 +471,7 @@ export default function CommercialCleaningPage() {
                 Serving Metro Vancouver
               </h2>
               <p className="reveal font-body font-medium text-[16px] text-[#0a2540] leading-[28px] tracking-[0.28px] max-w-[480px]">
-                Smart Cleaning provides commercial services across the Lower Mainland. Whether your office is downtown Vancouver or your facility is out in the suburbs — we have you covered with the same standard, everywhere.
+                Mint Sanitary provides commercial services across the Lower Mainland. Whether your office is downtown Vancouver or your facility is out in the suburbs — we have you covered with the same standard, everywhere.
               </p>
               <a
                 href="/service-areas"
@@ -541,7 +541,7 @@ export default function CommercialCleaningPage() {
                   Email Us
                 </p>
                 <p className="font-body font-extrabold text-[20px] uppercase text-white leading-[28px]">
-                  info@smartcleaning.com
+                  hello@mintsanitary.com
                 </p>
                 <p className="font-body font-medium text-[13px] tracking-[0.32px] uppercase text-[#c8e0fd] leading-[22px]">
                   Reply within 2 hours
@@ -558,7 +558,7 @@ export default function CommercialCleaningPage() {
                 Call Now
               </a>
               <a
-                href="mailto:info@smartcleaning.com"
+                href="mailto:hello@mintsanitary.com"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
               >
                 <Mail size={16} strokeWidth={2.5} />
