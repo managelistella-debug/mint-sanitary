@@ -102,7 +102,7 @@ function PricingTable({
   rows: Array<{ size: string; price: string }>;
 }) {
   return (
-    <article className="overflow-hidden rounded-[18px] border border-[#d9e2fb] bg-white shadow-sm">
+    <article className="overflow-hidden rounded-[18px] border border-white/15 bg-white/[0.12] backdrop-blur-sm">
       <div className="bg-[#6191e9] px-5 py-4">
         <h3 className="font-body text-[15px] font-extrabold uppercase tracking-[0.4px] text-white">
           {heading}
@@ -111,22 +111,22 @@ function PricingTable({
       <div className="overflow-x-auto">
         <table className="w-full min-w-[440px] border-collapse">
           <thead>
-            <tr className="bg-[#f4f8ff]">
-              <th className="border-b border-[#d9e2fb] px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-[#5c6075]">
+            <tr className="bg-white/[0.12]">
+              <th className="border-b border-white/15 px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-white/80">
                 Property Size
               </th>
-              <th className="border-b border-[#d9e2fb] px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-[#5c6075]">
+              <th className="border-b border-white/15 px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-white/80">
                 Price
               </th>
             </tr>
           </thead>
           <tbody>
             {rows.map((row, i) => (
-              <tr key={row.size} className="odd:bg-white even:bg-[#fbfdff]">
-                <td className={`${i < rows.length - 1 ? "border-b border-[#e8eefc]" : ""} px-5 py-3 font-body text-[15px] text-[#4E5062]`}>
+              <tr key={row.size} className="odd:bg-white/[0.05] even:bg-white/[0.08]">
+                <td className={`${i < rows.length - 1 ? "border-b border-white/10" : ""} px-5 py-3 font-body text-[15px] text-white`}>
                   {row.size}
                 </td>
-                <td className={`${i < rows.length - 1 ? "border-b border-[#e8eefc]" : ""} px-5 py-3 font-body text-[15px] font-extrabold text-[#4E5062]`}>
+                <td className={`${i < rows.length - 1 ? "border-b border-white/10" : ""} px-5 py-3 font-body text-[15px] font-extrabold text-white`}>
                   {row.price}
                 </td>
               </tr>
@@ -146,31 +146,31 @@ export default function RatesPage() {
       heroIntro="Transparent pricing for standard cleaning, deep cleaning, and optional add-ons. Use the rate tables below to estimate your service cost before booking."
       faqItems={faqItems}
       ctaHeading="Need a Custom Quote?"
-      ctaBody="Call (604) 671-6252 or request a free estimate online. We will confirm exact pricing based on your property and requested services."
+      ctaBody="Call 236-688-3248 or request a free estimate online. We will confirm exact pricing based on your property and requested services."
     >
       {/* ── Image + Text Intro ──────────────────────────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+            <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
               Transparent Pricing
             </p>
-            <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Residential Cleaning Price List
             </h2>
-            <p className="mt-4 font-body text-[16px] leading-[1.75] text-[#5c6075]">
+            <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
               Rates are based on home size and cleaning depth. Final pricing may vary
               depending on condition and special requests. Every quote includes
               eco-friendly products, all supplies, and a trained, bonded team.
             </p>
-            <p className="mt-4 font-body text-[16px] leading-[1.75] text-[#5c6075]">
-              Use code <strong className="text-[#6191e9]">MINT25</strong> for 10%
+            <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
+              Use code <strong className="text-white font-extrabold">MINT25</strong> for 10%
               off your first service.
             </p>
             <a
               href="/contact"
-              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
             >
               Get a Free Estimate
             </a>
@@ -186,7 +186,7 @@ export default function RatesPage() {
       </section>
 
       {/* ── All Pricing Tables ─────────────────────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 lg:grid-cols-2">
             <PricingTable heading="Standard Cleaning Rates" rows={standardRates} />
@@ -194,7 +194,7 @@ export default function RatesPage() {
           </div>
 
           <div className="mt-6">
-            <article className="overflow-hidden rounded-[18px] border border-[#d9e2fb] bg-white shadow-sm">
+            <article className="overflow-hidden rounded-[18px] border border-white/15 bg-white/[0.12] backdrop-blur-sm">
               <div className="bg-[#6191e9] px-5 py-4">
                 <h3 className="font-body text-[15px] font-extrabold uppercase tracking-[0.4px] text-white">
                   Add-On Services
@@ -203,22 +203,22 @@ export default function RatesPage() {
               <div className="overflow-x-auto">
                 <table className="w-full min-w-[440px] border-collapse">
                   <thead>
-                    <tr className="bg-[#f4f8ff]">
-                      <th className="border-b border-[#d9e2fb] px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-[#5c6075]">
+                    <tr className="bg-white/[0.12]">
+                      <th className="border-b border-white/15 px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-white/80">
                         Add-On
                       </th>
-                      <th className="border-b border-[#d9e2fb] px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-[#5c6075]">
+                      <th className="border-b border-white/15 px-5 py-3 text-left font-body text-[12px] font-bold uppercase tracking-[1px] text-white/80">
                         Price
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     {addOns.map((row, i) => (
-                      <tr key={row.item} className="odd:bg-white even:bg-[#fbfdff]">
-                        <td className={`${i < addOns.length - 1 ? "border-b border-[#e8eefc]" : ""} px-5 py-3 font-body text-[15px] text-[#4E5062]`}>
+                      <tr key={row.item} className="odd:bg-white/[0.05] even:bg-white/[0.08]">
+                        <td className={`${i < addOns.length - 1 ? "border-b border-white/10" : ""} px-5 py-3 font-body text-[15px] text-white`}>
                           {row.item}
                         </td>
-                        <td className={`${i < addOns.length - 1 ? "border-b border-[#e8eefc]" : ""} px-5 py-3 font-body text-[15px] font-extrabold text-[#4E5062]`}>
+                        <td className={`${i < addOns.length - 1 ? "border-b border-white/10" : ""} px-5 py-3 font-body text-[15px] font-extrabold text-white`}>
                           {row.price}
                         </td>
                       </tr>
@@ -229,7 +229,7 @@ export default function RatesPage() {
             </article>
           </div>
 
-          <p className="mt-6 font-body text-[14px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[14px] leading-[1.7] text-white/80">
             Build your cleaning package by adding the extras you need. Final pricing may vary depending on condition and special requests.
           </p>
         </div>
@@ -239,10 +239,10 @@ export default function RatesPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What Standard Cleaning Includes
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.75] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.75] text-white/80">
             Our standard cleaning covers the essential tasks that keep your home fresh
             and tidy on a regular basis.
           </p>
@@ -250,14 +250,14 @@ export default function RatesPage() {
             {standardIncludes.map((item) => (
               <div
                 key={item.text}
-                className="overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1"
+                className="overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1"
               >
                 <img
                   src={item.image}
                   alt={item.text}
                   className="h-[160px] w-full rounded-[14px] object-cover"
                 />
-                <p className="mt-4 font-body text-[15px] font-semibold leading-[1.5] text-[#4E5062]">
+                <p className="mt-4 font-body text-[15px] font-semibold leading-[1.5] text-white">
                   {item.text}
                 </p>
               </div>
@@ -310,17 +310,17 @@ export default function RatesPage() {
       </section>
 
       {/* ── Eco-Friendly Banner — Full Image + Text ─────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+            <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
               Included in Every Service
             </p>
-            <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Eco-Friendly Products at No Extra Cost
             </h2>
-            <p className="mt-4 font-body text-[16px] leading-[1.75] text-[#5c6075]">
+            <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
               Every price above includes plant-based, non-toxic cleaning products.
               We never charge extra for green cleaning. Your home stays safe for
               kids, pets, and sensitive surfaces while getting the same thorough
@@ -330,7 +330,7 @@ export default function RatesPage() {
               {["Plant-Based Cleaners", "HEPA-Filtered Vacuums", "Non-Toxic Formulas", "Safe for Pets & Kids"].map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full bg-white px-5 py-2.5 font-body text-[13px] font-semibold text-[#4E5062] shadow-sm"
+                  className="rounded-full bg-white/[0.18] px-5 py-2.5 font-body text-[13px] font-semibold text-white shadow-sm"
                 >
                   {tag}
                 </span>

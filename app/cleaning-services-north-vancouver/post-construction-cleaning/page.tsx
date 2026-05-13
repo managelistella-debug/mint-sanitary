@@ -130,7 +130,7 @@ const pricingTiers = [
 const processSteps = [
   {
     title: "Request Your Free Estimate",
-    body: "Call (604) 671-6252 or book online. Tell us about your project size and construction type, and we\u2019ll provide a transparent quote with no obligation.",
+    body: "Call 236-688-3248 or book online. Tell us about your project size and construction type, and we\u2019ll provide a transparent quote with no obligation.",
   },
   {
     title: "On-Site or Virtual Assessment",
@@ -193,7 +193,7 @@ const benefitCards = [
   },
   {
     title: "MINT25: 10% Off First Clean",
-    body: "New clients save 10% on their first post-construction cleaning with promo code MINT25. Call (604) 671-6252 for a free estimate and to redeem your discount.",
+    body: "New clients save 10% on their first post-construction cleaning with promo code MINT25. Call 236-688-3248 for a free estimate and to redeem your discount.",
   },
 ];
 
@@ -247,7 +247,7 @@ const faqItems = [
   {
     question: "How much does post-construction cleaning cost?",
     answer:
-      "Small condo renovations start around $500\u2013$1,000. Average home builds run $1,000\u2013$2,500. Large homes and commercial projects range from $2,500\u2013$5,000+. Call (604) 671-6252 for a free, detailed quote. New clients receive a 10% discount.",
+      "Small condo renovations start around $500\u2013$1,000. Average home builds run $1,000\u2013$2,500. Large homes and commercial projects range from $2,500\u2013$5,000+. Call 236-688-3248 for a free, detailed quote. New clients receive a 10% discount.",
   },
 ];
 
@@ -260,7 +260,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
       heroIntro="After construction ends, a thorough post-construction clean is essential before move-in or opening. Mint Sanitary handles renovation dust, construction debris, adhesive residue, and fine particles using HEPA equipment and eco-friendly products. Serving North Vancouver 7 days a week. Use code MINT25 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Clean Up After Construction?"
-      ctaBody="Call Mint Sanitary at (604) 671-6252 or book online. 7-day availability, HEPA equipment, eco-friendly products. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, HEPA equipment, eco-friendly products. Use code MINT25 for 10% off your first booking."
     >
       {/* ── Image + Text: What Is Post-Construction Cleaning ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -275,19 +275,19 @@ export default function PostConstructionCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 HEPA Equipment &amp; Eco-Friendly Products
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Post-Construction Cleaning?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Post-construction cleaning is a specialized service that removes
                 the dust, debris, and residue left behind after building,
                 renovation, or remodeling work. It goes far beyond what standard
                 cleaning can handle.
               </p>
-              <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 Construction generates silica dust, drywall particles, paint
                 overspray, adhesive residue, and VOCs from fresh paint, sealants,
                 and flooring materials. These contaminants require HEPA-filtered
@@ -296,7 +296,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -306,7 +306,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
       </section>
 
       {/* ── What's Included — Card Grid ──────────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {phases.map((phase) => (
@@ -314,14 +314,14 @@ export default function PostConstructionCleaningNorthVancouverPage() {
                 key={phase.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {phase.title}
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {phase.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
@@ -332,14 +332,14 @@ export default function PostConstructionCleaningNorthVancouverPage() {
           </div>
 
           <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Complete Post-Construction Checklist
             </h3>
             <ul className="mt-3 grid gap-x-8 gap-y-1.5 md:grid-cols-2">
               {whatsIncluded.map((item) => (
                 <li
                   key={item}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {item}
                 </li>
@@ -385,10 +385,10 @@ export default function PostConstructionCleaningNorthVancouverPage() {
             scratched or stained by improper cleaning, and occupants are exposed
             to harmful airborne particles. Call{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             to discuss your project.
           </p>
@@ -400,7 +400,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Post-Construction Cleaning Process: Step by Step
             </h2>
           </div>
@@ -410,10 +410,10 @@ export default function PostConstructionCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -442,10 +442,10 @@ export default function PostConstructionCleaningNorthVancouverPage() {
           <div className="grid items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Transparent Pricing
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Post-Construction Cleaning Pricing &amp; Free Quote
               </h2>
             </div>
@@ -458,7 +458,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
               />
             </div>
           </div>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Post-construction cleaning pricing depends on project size,
             construction type, and the level of debris and dust remaining.
             Here are typical ranges for North Vancouver projects:
@@ -467,29 +467,29 @@ export default function PostConstructionCleaningNorthVancouverPage() {
             {pricingTiers.map((tier) => (
               <div
                 key={tier.label}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+                <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                   {tier.label}
                 </p>
-                <p className="mt-2 font-body text-[22px] font-extrabold text-[#4E5062]">
+                <p className="mt-2 font-body text-[22px] font-extrabold text-white">
                   {tier.range}
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {tier.detail}
                 </p>
               </div>
             ))}
           </div>
           <div className="mt-10">
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Every project is different. The best way to get an accurate price
               is a free on-site or virtual estimate. Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               or{" "}
               <a href="/contact" className="underline underline-offset-2">
@@ -572,13 +572,13 @@ export default function PostConstructionCleaningNorthVancouverPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Safe, Move-In Ready Results
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Professional Post-Construction Cleaning Matters
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Post-construction cleaning isn&apos;t just about appearances. It
                 protects occupant health, preserves new finishes, and ensures
                 your space is genuinely safe and ready for move-in or handover.
@@ -597,12 +597,12 @@ export default function PostConstructionCleaningNorthVancouverPage() {
             {benefitCards.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {benefit.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {benefit.body}
                 </p>
               </div>

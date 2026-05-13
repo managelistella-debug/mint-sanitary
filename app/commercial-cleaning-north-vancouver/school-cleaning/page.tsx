@@ -208,7 +208,7 @@ const faqItems = [
   },
   {
     question: "What should North Vancouver schools do if students get sick or there's an outbreak?",
-    answer: "We provide emergency disinfection services for North Vancouver schools facing illness outbreaks. Our team can rapidly treat all high-touch surfaces, bathrooms, common areas, and classroom spaces with hospital-grade disinfectants. Contact us immediately at (604) 671-6252 for same-day or next-day service.",
+    answer: "We provide emergency disinfection services for North Vancouver schools facing illness outbreaks. Our team can rapidly treat all high-touch surfaces, bathrooms, common areas, and classroom spaces with hospital-grade disinfectants. Contact us immediately at 236-688-3248 for same-day or next-day service.",
   },
   {
     question: "Do you service all types of school facilities in North Vancouver?",
@@ -238,7 +238,7 @@ export default function SchoolCleaningNorthVancouverPage() {
       heroIntro="When you walk into a clean school, you notice it immediately. Fresh air. Bright hallways. Sanitized classrooms. That&apos;s not luck. It&apos;s the result of professional school cleaning in North Vancouver."
       faqItems={faqItems}
       ctaHeading="Get Started with Professional School Cleaning in North Vancouver"
-      ctaBody="Call us today: (604) 671-6252. We&apos;ll visit your North Vancouver school, assess your specific needs, and provide a free estimate. Use code MINT25 for 10% off your first clean."
+      ctaBody="Call us today: 236-688-3248. We&apos;ll visit your North Vancouver school, assess your specific needs, and provide a free estimate. Use code MINT25 for 10% off your first clean."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -252,18 +252,18 @@ export default function SchoolCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is School Cleaning in North Vancouver?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Schools aren&apos;t like regular offices. They handle hundreds of students, staff, and visitors daily. High-touch surfaces get touched thousands of times. Bathrooms see constant use. Cafeterias serve meals that require food-safe standards. Gymnasiums need special floor care. Every area demands a specialized approach.
               </p>
-              <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 At Mint Sanitary, we&apos;ve spent years perfecting school cleaning in North Vancouver for facilities from Lower Lonsdale to Edgemont Village. We know what principals, custodians, and parents want: healthier environments, fewer sick days, and products safe for children.
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -275,21 +275,21 @@ export default function SchoolCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="space-y-4">
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               School cleaning is specialized janitorial care designed for educational environments. It goes beyond basic tidying. Standard commercial cleaning treats all buildings the same. School cleaning recognizes that children, teachers, and staff have different needs. A classroom isn&apos;t a warehouse. A bathroom in a school serves forty students per period, not five adults.
             </p>
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Our school cleaning services North Vancouver follow BC Centre for Disease Control guidelines and Health Canada standards. We don&apos;t just clean. We create healthier places where students learn and teachers work.
             </p>
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             Professional school janitorial services North Vancouver includes:
           </p>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {whatIsIncluded.map((item) => (
-              <div key={item.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{item.title}</h3>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">{item.body}</p>
+              <div key={item.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{item.title}</h3>
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">{item.body}</p>
               </div>
             ))}
           </div>
@@ -347,23 +347,23 @@ export default function SchoolCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Thorough School Cleaning Services in North Vancouver
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Every area of a school requires different expertise and products. We handle them all.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {serviceCategories.map((cat) => (
-              <div key={cat.title} className="rounded-[20px] bg-[#f4f8ff] p-6">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{cat.title}</h3>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">{cat.intro}</p>
+              <div key={cat.title} className="rounded-[20px] bg-white/[0.12] p-6">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{cat.title}</h3>
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">{cat.intro}</p>
                 <ul className="mt-3 space-y-1">
                   {cat.items.map((item) => (
-                    <li key={item} className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; {item}</li>
+                    <li key={item} className="font-body text-[15px] leading-[1.7] text-white/80">&bull; {item}</li>
                   ))}
                 </ul>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">{cat.outro}</p>
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">{cat.outro}</p>
               </div>
             ))}
           </div>
@@ -423,10 +423,10 @@ export default function SchoolCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               School Cleaning Process &amp; Scheduling
             </h2>
-            <p className="mx-auto mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
               Professional school cleaning North Vancouver requires planning and consistency. We don&apos;t just show up and clean randomly.
             </p>
           </div>
@@ -436,10 +436,10 @@ export default function SchoolCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -477,7 +477,7 @@ export default function SchoolCleaningNorthVancouverPage() {
               </p>
               <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 We also serve West Vancouver, Vancouver, Burnaby, and greater Greater Vancouver. If your school is in the area, we likely service it or can start. Call us at{" "}
-                <a href="tel:+16046716252" className="underline underline-offset-2">(604) 671-6252</a>{" "}
+                <a href="tel:+12366883248" className="underline underline-offset-2">236-688-3248</a>{" "}
                 for availability and pricing.
               </p>
             </div>
@@ -528,7 +528,7 @@ export default function SchoolCleaningNorthVancouverPage() {
             {relatedServices.map((s) => (
               <div key={s.href} className="rounded-[14px] bg-white/10 p-6">
                 <h3 className="font-body text-[17px] font-extrabold text-white">{s.title}</h3>
-                <a href={s.href} className="mt-5 inline-block w-fit border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white">Learn more</a>
+                <a href={s.href} className="mt-5 inline-block w-fit border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white">Learn more</a>
               </div>
             ))}
           </div>

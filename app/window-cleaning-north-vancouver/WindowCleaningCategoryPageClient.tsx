@@ -104,7 +104,7 @@ const faqItems = [
     question:
       "How much does professional window cleaning cost in North Vancouver?",
     answer:
-      "Costs depend on the number and size of windows, accessibility, and add-ons like screens, frames, or hard-water stain removal. Residential homes typically range from $150 to $400 per cleaning. We provide free estimates tailored to your specific property. Call (604) 671-6252 or email hello@mintsanitary.com.",
+      "Costs depend on the number and size of windows, accessibility, and add-ons like screens, frames, or hard-water stain removal. Residential homes typically range from $150 to $400 per cleaning. We provide free estimates tailored to your specific property. Call 236-688-3248 or email hello@mintsanitary.com.",
   },
 ];
 
@@ -247,7 +247,7 @@ export default function WindowCleaningCategoryPageClient() {
                 construction dust — using eco-friendly solutions safe for
                 children, pets, and landscaping. Seven-day availability, free
                 estimates, and 10% off your first clean with code MINT25. Call
-                (604) 671-6252 today.
+                236-688-3248 today.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
@@ -257,10 +257,10 @@ export default function WindowCleaningCategoryPageClient() {
                   Free Estimate
                 </a>
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
                 >
-                  Call (604) 671-6252
+                  Call 236-688-3248
                 </a>
               </div>
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
@@ -279,7 +279,7 @@ export default function WindowCleaningCategoryPageClient() {
             >
               <path
                 d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-                fill="#6191e9"
+                fill="rgba(255,255,255,0.13)"
               />
             </svg>
           </div>
@@ -310,7 +310,7 @@ export default function WindowCleaningCategoryPageClient() {
         </section>
 
         {/* ── Wave: Blue → White ──────────────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-[#6191e9]">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
@@ -318,7 +318,7 @@ export default function WindowCleaningCategoryPageClient() {
           >
             <path
               d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-              fill="#ffffff"
+              fill="transparent"
             />
           </svg>
         </div>
@@ -338,14 +338,14 @@ export default function WindowCleaningCategoryPageClient() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Why It Matters
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Professional Window Cleaning Matters in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   North Vancouver&apos;s unique coastal environment presents distinct
                   challenges that most homeowners underestimate. The combination
                   of high rainfall, ocean-influenced humidity, and construction
@@ -356,7 +356,7 @@ export default function WindowCleaningCategoryPageClient() {
                   and can corrode window frames, screens, and hardware if left
                   untreated.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Clean windows maximize natural light entering your home or
                   business. In North Vancouver&apos;s climate, where overcast days
                   dominate, this boost to available daylight matters for energy
@@ -372,29 +372,29 @@ export default function WindowCleaningCategoryPageClient() {
         </section>
 
         {/* ── DIY vs Professional — Text Left, Image Right ─────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto grid max-w-[1200px] items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why DIY Window Cleaning Falls Short
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Streaking and haze plague most DIY attempts. Tap water
                   contains dissolved minerals that leave residue as water
                   evaporates. In North Vancouver, where salt air is already an
                   issue, standard tap water compounds the problem. You end up
                   with windows that look worse after cleaning than before.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Safety hazards intensify when working at height. Multi-story
                   homes, skylights, second-floor windows, and exterior frames
                   require ladder work that homeowners often underestimate. Falls
                   from ladders represent a significant injury risk, especially on
                   sloped roofs or wet surfaces common in our rainy climate.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Professional window cleaners use water-fed poles with purified
                   water systems that eliminate mineral residue causing spotting.
                   Our trained team also catches maintenance issues — frame rot,
@@ -421,10 +421,10 @@ export default function WindowCleaningCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Window Cleaning Services
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Our 4 Window Cleaning Services
               </h2>
             </div>
@@ -433,7 +433,7 @@ export default function WindowCleaningCategoryPageClient() {
                 <a
                   key={s.href}
                   href={s.href}
-                  className="group overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-[#eef4ff]"
+                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
                 >
                   <img
                     src={s.image}
@@ -443,13 +443,13 @@ export default function WindowCleaningCategoryPageClient() {
                     decoding="async"
                     sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
                   />
-                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-[#4E5062]">
+                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-white/80">
                     {s.description}
                   </p>
-                  <span className="mt-4 inline-block border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062] transition-colors group-hover:text-[#6191e9]">
+                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
                     Learn More
                   </span>
                 </a>
@@ -529,10 +529,10 @@ export default function WindowCleaningCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Work
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 See the Difference
               </h2>
             </div>
@@ -559,7 +559,7 @@ export default function WindowCleaningCategoryPageClient() {
         </section>
 
         {/* ── Google Reviews ─────────────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
@@ -570,19 +570,19 @@ export default function WindowCleaningCategoryPageClient() {
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05" />
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
                 </svg>
-                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                   Google Reviews
                 </span>
               </div>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Our Clients Say
               </h2>
               <div className="mt-2 flex items-center justify-center gap-2">
                 <StarRating rating={5} />
-                <span className="font-body text-[15px] font-semibold text-[#4E5062]">
+                <span className="font-body text-[15px] font-semibold text-white">
                   4.9 out of 5
                 </span>
-                <span className="font-body text-[14px] text-[#5c6075]">
+                <span className="font-body text-[14px] text-white/80">
                   based on 120+ reviews
                 </span>
               </div>
@@ -591,17 +591,17 @@ export default function WindowCleaningCategoryPageClient() {
               {googleReviews.map((review) => (
                 <div
                   key={review.name}
-                  className="rounded-[20px] bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[16px] font-extrabold text-white">
                       {review.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                      <p className="font-body text-[15px] font-extrabold text-white">
                         {review.name}
                       </p>
-                      <p className="font-body text-[12px] text-[#5c6075]">
+                      <p className="font-body text-[12px] text-white/80">
                         {review.date}
                       </p>
                     </div>
@@ -609,7 +609,7 @@ export default function WindowCleaningCategoryPageClient() {
                   <div className="mt-3">
                     <StarRating rating={review.rating} />
                   </div>
-                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-white/80">
                     {review.text}
                   </p>
                 </div>
@@ -720,34 +720,34 @@ export default function WindowCleaningCategoryPageClient() {
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Ready for Sparkling Windows in North Vancouver?
             </h2>
-            <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-white/80">
               Our window cleaning experts are prepared to deliver sparkling
               results tailored to your North Vancouver home or business. Call
-              (604) 671-6252 or email hello@mintsanitary.com. Use promo code
+              236-688-3248 or email hello@mintsanitary.com. Use promo code
               MINT25 for 10% off your first clean.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:bg-[#5580d4] hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-[#6191e9]/30 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062] transition-all duration-200 hover:border-[#6191e9]/60 hover:bg-[#f4f8ff]"
+                href="tel:+12366883248"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
         </section>
 
         {/* ── Wave: White → Blue (Footer) ────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-white">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"

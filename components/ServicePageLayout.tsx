@@ -139,10 +139,10 @@ export default function ServicePageLayout({
                   Free Estimate
                 </a>
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
                 >
-                  Call (604) 671-6252
+                  Call 236-688-3248
                 </a>
               </div>
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
@@ -161,7 +161,7 @@ export default function ServicePageLayout({
             >
               <path
                 d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-                fill="#6191e9"
+                fill="rgba(255,255,255,0.13)"
               />
             </svg>
           </div>
@@ -192,7 +192,7 @@ export default function ServicePageLayout({
         </section>
 
         {/* ── Wave: Blue → White ──────────────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-[#6191e9]">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
@@ -200,7 +200,7 @@ export default function ServicePageLayout({
           >
             <path
               d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-              fill="#ffffff"
+              fill="transparent"
             />
           </svg>
         </div>
@@ -209,7 +209,7 @@ export default function ServicePageLayout({
         {children}
 
         {/* ── Google Reviews ─────────────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
@@ -232,19 +232,19 @@ export default function ServicePageLayout({
                     fill="#EA4335"
                   />
                 </svg>
-                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                   Google Reviews
                 </span>
               </div>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Our Clients Say
               </h2>
               <div className="mt-2 flex items-center justify-center gap-2">
                 <StarRating rating={5} />
-                <span className="font-body text-[15px] font-semibold text-[#4E5062]">
+                <span className="font-body text-[15px] font-semibold text-white">
                   4.9 out of 5
                 </span>
-                <span className="font-body text-[14px] text-[#5c6075]">
+                <span className="font-body text-[14px] text-white/80">
                   based on 120+ reviews
                 </span>
               </div>
@@ -253,17 +253,17 @@ export default function ServicePageLayout({
               {reviews.map((review) => (
                 <div
                   key={review.name}
-                  className="rounded-[20px] bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[16px] font-extrabold text-white">
                       {review.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                      <p className="font-body text-[15px] font-extrabold text-white">
                         {review.name}
                       </p>
-                      <p className="font-body text-[12px] text-[#5c6075]">
+                      <p className="font-body text-[12px] text-white/80">
                         {review.date}
                       </p>
                     </div>
@@ -271,7 +271,7 @@ export default function ServicePageLayout({
                   <div className="mt-3">
                     <StarRating rating={review.rating} />
                   </div>
-                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-white/80">
                     {review.text}
                   </p>
                 </div>
@@ -337,19 +337,19 @@ export default function ServicePageLayout({
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               {ctaHeading}
             </h2>
-            <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-white/80">
               {ctaBody}
             </p>
-            <p className="mx-auto mt-3 max-w-[500px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-3 max-w-[500px] font-body text-[15px] leading-[1.7] text-white/80">
               Use code{" "}
               <strong className="text-[#6191e9]">MINT25</strong> for 10% off
               your first service.{" "}
               <a
                 href="/rates/"
-                className="border-b border-[#66DAD5] font-bold text-[#4E5062]"
+                className="border-b border-white/40 font-bold text-white"
               >
                 View our rates
               </a>
@@ -358,22 +358,22 @@ export default function ServicePageLayout({
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:bg-[#5580d4] hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-[#6191e9]/30 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062] transition-all duration-200 hover:border-[#6191e9]/60 hover:bg-[#f4f8ff]"
+                href="tel:+12366883248"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
         </section>
 
         {/* ── Wave: White → Blue (Footer) ────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-white">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"

@@ -90,7 +90,7 @@ const faqItems = [
   {
     question: "Is same-day carpet cleaning available in North Vancouver?",
     answer:
-      "We offer 7-day availability and same-day appointments in North Vancouver whenever possible. Call (604) 671-6252 to schedule your carpet cleaning in North Vancouver, and we'll work with your schedule.",
+      "We offer 7-day availability and same-day appointments in North Vancouver whenever possible. Call 236-688-3248 to schedule your carpet cleaning in North Vancouver, and we'll work with your schedule.",
   },
   {
     question:
@@ -107,7 +107,7 @@ const faqItems = [
   {
     question: "Do you offer commercial carpet cleaning in North Vancouver?",
     answer:
-      "Yes. We clean office carpets, retail spaces, and commercial buildings throughout North Vancouver. Call (604) 671-6252 for a commercial carpet cleaning quote in North Vancouver.",
+      "Yes. We clean office carpets, retail spaces, and commercial buildings throughout North Vancouver. Call 236-688-3248 for a commercial carpet cleaning quote in North Vancouver.",
   },
   {
     question:
@@ -258,7 +258,7 @@ export default function CarpetCleaningCategoryPageClient() {
                 products that are safe for your family and pets &mdash; removing
                 embedded dirt, stains, and allergens using hot-water extraction.
                 Seven-day availability, fast drying times, and transparent
-                pricing. Call (604) 671-6252 for a free estimate or use code
+                pricing. Call 236-688-3248 for a free estimate or use code
                 MINT25 for 10% off your first service.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -269,10 +269,10 @@ export default function CarpetCleaningCategoryPageClient() {
                   Free Estimate
                 </a>
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
                 >
-                  Call (604) 671-6252
+                  Call 236-688-3248
                 </a>
               </div>
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
@@ -291,7 +291,7 @@ export default function CarpetCleaningCategoryPageClient() {
             >
               <path
                 d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-                fill="#6191e9"
+                fill="rgba(255,255,255,0.13)"
               />
             </svg>
           </div>
@@ -322,7 +322,7 @@ export default function CarpetCleaningCategoryPageClient() {
         </section>
 
         {/* ── Wave: Blue → White ──────────────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-[#6191e9]">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
@@ -330,7 +330,7 @@ export default function CarpetCleaningCategoryPageClient() {
           >
             <path
               d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-              fill="#ffffff"
+              fill="transparent"
             />
           </svg>
         </div>
@@ -347,14 +347,14 @@ export default function CarpetCleaningCategoryPageClient() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Why It Matters
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Professional Carpet Cleaning Matters in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   North Vancouver&apos;s coastal climate brings persistent moisture,
                   pollen, and fine particulate from the surrounding mountains and
                   forests. These contaminants settle deep into carpet fibers where
@@ -362,7 +362,7 @@ export default function CarpetCleaningCategoryPageClient() {
                   allergens, and bacteria degrade indoor air quality and accelerate
                   carpet wear.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Professional carpet cleaning using hot-water extraction removes
                   what vacuums leave behind. Our eco-friendly solutions penetrate
                   deep into fiber layers, loosening and lifting debris, bacteria,
@@ -377,23 +377,23 @@ export default function CarpetCleaningCategoryPageClient() {
         </section>
 
         {/* ── Benefits — Text Left, Image Right ───────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto grid max-w-[1200px] items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 How Professional Carpet Cleaning Benefits Your North Vancouver
                 Home
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Regular professional carpet cleaning extends carpet life by
                   years. It removes allergens that trigger asthma and allergies, a
                   concern in North Vancouver&apos;s damp climate where mold spores
                   thrive. Clean carpets also improve air quality by eliminating
                   dust, pet dander, and bacteria trapped in fibers.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   One customer in Deep Cove had the same carpet for 8 years and
                   thought it was time for replacement. After one professional steam
                   cleaning, the carpet looked almost new. They saved thousands by
@@ -403,7 +403,7 @@ export default function CarpetCleaningCategoryPageClient() {
               </div>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -426,10 +426,10 @@ export default function CarpetCleaningCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Carpet Cleaning Services
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Our Carpet Cleaning Service Types in North Vancouver
               </h2>
             </div>
@@ -438,7 +438,7 @@ export default function CarpetCleaningCategoryPageClient() {
                 <a
                   key={s.href}
                   href={s.href}
-                  className="group overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-[#eef4ff]"
+                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
                 >
                   <img
                     src={s.image}
@@ -446,13 +446,13 @@ export default function CarpetCleaningCategoryPageClient() {
                     className="h-[190px] w-full rounded-[14px] object-cover"
                     loading="lazy"
                   />
-                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-[#4E5062]">
+                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-white/80">
                     {s.description}
                   </p>
-                  <span className="mt-4 inline-block border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062] transition-colors group-hover:text-[#6191e9]">
+                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
                     Learn More
                   </span>
                 </a>
@@ -538,10 +538,10 @@ export default function CarpetCleaningCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Work
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 See the Difference
               </h2>
             </div>
@@ -568,7 +568,7 @@ export default function CarpetCleaningCategoryPageClient() {
         </section>
 
         {/* ── Google Reviews ─────────────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
@@ -591,19 +591,19 @@ export default function CarpetCleaningCategoryPageClient() {
                     fill="#EA4335"
                   />
                 </svg>
-                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                   Google Reviews
                 </span>
               </div>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Our Clients Say
               </h2>
               <div className="mt-2 flex items-center justify-center gap-2">
                 <StarRating rating={5} />
-                <span className="font-body text-[15px] font-semibold text-[#4E5062]">
+                <span className="font-body text-[15px] font-semibold text-white">
                   4.9 out of 5
                 </span>
-                <span className="font-body text-[14px] text-[#5c6075]">
+                <span className="font-body text-[14px] text-white/80">
                   based on 120+ reviews
                 </span>
               </div>
@@ -612,17 +612,17 @@ export default function CarpetCleaningCategoryPageClient() {
               {googleReviews.map((review) => (
                 <div
                   key={review.name}
-                  className="rounded-[20px] bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[16px] font-extrabold text-white">
                       {review.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                      <p className="font-body text-[15px] font-extrabold text-white">
                         {review.name}
                       </p>
-                      <p className="font-body text-[12px] text-[#5c6075]">
+                      <p className="font-body text-[12px] text-white/80">
                         {review.date}
                       </p>
                     </div>
@@ -630,7 +630,7 @@ export default function CarpetCleaningCategoryPageClient() {
                   <div className="mt-3">
                     <StarRating rating={review.rating} />
                   </div>
-                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-white/80">
                     {review.text}
                   </p>
                 </div>
@@ -675,10 +675,10 @@ export default function CarpetCleaningCategoryPageClient() {
                 <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Need carpet cleaning outside these areas? Call{" "}
                   <a
-                    href="tel:+16046716252"
+                    href="tel:+12366883248"
                     className="underline underline-offset-2"
                   >
-                    (604) 671-6252
+                    236-688-3248
                   </a>{" "}
                   and we&apos;ll do our best to accommodate you.
                 </p>
@@ -765,11 +765,11 @@ export default function CarpetCleaningCategoryPageClient() {
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Ready for Cleaner Carpets in North Vancouver?
             </h2>
-            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
-              Call Mint Sanitary at (604) 671-6252 or email
+            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-white/80">
+              Call Mint Sanitary at 236-688-3248 or email
               hello@mintsanitary.com. Use promo code MINT25 for 10% off carpet
               cleaning in North Vancouver. Free estimates. 7-day availability.
               Eco-friendly products. Bonded, insured technicians.
@@ -777,22 +777,22 @@ export default function CarpetCleaningCategoryPageClient() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:bg-[#5580d4] hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-[#6191e9]/30 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062] transition-all duration-200 hover:border-[#6191e9]/60 hover:bg-[#f4f8ff]"
+                href="tel:+12366883248"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
         </section>
 
         {/* ── Wave: White → Blue (before Footer) ─────────────── */}
-        <div className="relative z-10 -mt-1 bg-white">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"

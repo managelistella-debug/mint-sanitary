@@ -238,28 +238,34 @@ export default function StrataCleaningPage() {
             </p>
             <a
               href="/contact"
-              className="reveal delay-2 inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+              className="reveal delay-2 inline-flex items-center justify-center bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
             >
               Request a Quote
             </a>
+          </div>
+          {/* Wave at bottom of hero */}
+          <div className="absolute bottom-0 left-0 right-0 z-10">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
+              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(255,255,255,0.13)" />
+            </svg>
           </div>
         </section>
 
         {/* ── 2. WHAT IS STRATA CLEANING ───────────────────────────────── */}
         <section
-          className="py-[80px] bg-[#f2f2f2]"
+          className="py-[80px]"
           ref={introRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-start">
             {/* Left — text */}
             <div className="flex flex-col gap-[24px] flex-[1.2_0_0]">
-              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 What is Strata Cleaning?
               </h2>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 tracking-[0.28px] leading-[28px]">
                 Strata cleaning is the professional maintenance of shared spaces within multi-unit buildings — the common areas every resident, tenant, and visitor uses daily. Unlike cleaning individual suites, strata cleaning is focused entirely on keeping lobbies, hallways, elevators, amenity rooms, parkades, and other shared spaces consistently clean, hygienic, and welcoming.
               </p>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 tracking-[0.28px] leading-[28px]">
                 A well-maintained building improves resident satisfaction, upholds property values, and ensures a healthy environment for everyone. Mint Sanitary designs fully customized strata programs built around your building&apos;s size, traffic patterns, and strata council requirements — with the same trusted team on every visit.
               </p>
               <a
@@ -280,12 +286,12 @@ export default function StrataCleaningPage() {
               ].map((s) => (
                 <div
                   key={s.stat}
-                  className="bg-[#c8e0fd] rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[6px]"
+                  className="bg-white/20 rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[6px]"
                 >
-                  <span className="font-body font-extrabold text-[38px] leading-none text-[#253862]">
+                  <span className="font-body font-extrabold text-[38px] leading-none text-white">
                     {s.stat}
                   </span>
-                  <span className="font-body font-medium text-[13px] text-[#0a2540] tracking-[0.28px] uppercase leading-[18px]">
+                  <span className="font-body font-medium text-[13px] text-white/80 tracking-[0.28px] uppercase leading-[18px]">
                     {s.sub}
                   </span>
                 </div>
@@ -320,13 +326,13 @@ export default function StrataCleaningPage() {
                     className="reveal bg-white rounded-[12px] p-[24px] flex flex-col gap-[14px]"
                     style={{ transitionDelay: `${idx * 0.07}s` }}
                   >
-                    <div className="w-[44px] h-[44px] bg-[#c8e0fd] rounded-[10px] flex items-center justify-center shrink-0">
-                      <Icon size={22} strokeWidth={1.8} className="text-[#155da6]" />
+                    <div className="w-[44px] h-[44px] bg-white/20 rounded-[10px] flex items-center justify-center shrink-0">
+                      <Icon size={22} strokeWidth={1.8} className="text-white" />
                     </div>
-                    <p className="font-display-reg text-[16px] tracking-[0.64px] uppercase text-[#253862] leading-none">
+                    <p className="font-display-reg text-[16px] tracking-[0.64px] uppercase text-white leading-none">
                       {area.label}
                     </p>
-                    <p className="font-body font-medium text-[14px] text-[#0a2540] leading-[22px] tracking-[0.28px]">
+                    <p className="font-body font-medium text-[14px] text-white/80 leading-[22px] tracking-[0.28px]">
                       {area.desc}
                     </p>
                   </div>
@@ -338,7 +344,7 @@ export default function StrataCleaningPage() {
 
         {/* ── 4. IMAGE 1 ───────────────────────────────────────────────── */}
         <div
-          className="px-4 sm:px-8 md:px-[60px] py-[60px] bg-[#f2f2f2]"
+          className="px-4 sm:px-8 md:px-[60px] py-[60px]"
           ref={img1Ref}
         >
           <div
@@ -357,11 +363,11 @@ export default function StrataCleaningPage() {
 
         {/* ── 5. TYPES OF BUILDINGS ─────────────────────────────────────── */}
         <section
-          className="pb-[80px] bg-[#f2f2f2]"
+          className="pb-[80px]"
           ref={buildingRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px]">
-            <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase mb-[30px]">
+            <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase mb-[30px]">
               Types of Buildings We Serve
             </h2>
             <div className="flex flex-col md:flex-row gap-5">
@@ -439,15 +445,15 @@ export default function StrataCleaningPage() {
 
         {/* ── 7. SCHEDULE OPTIONS ──────────────────────────────────────── */}
         <section
-          className="py-[80px] bg-[#f2f2f2]"
+          className="py-[80px]"
           ref={schedRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[46px]">
             <div className="reveal flex flex-col gap-[12px] items-center text-center">
-              <h2 className="font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 Schedule Options
               </h2>
-              <p className="font-body font-medium text-[16px] text-[#0a2540] max-w-[600px] leading-[28px] tracking-[0.28px]">
+              <p className="font-body font-medium text-[16px] text-white/80 max-w-[600px] leading-[28px] tracking-[0.28px]">
                 We work around your building — not the other way around. Choose a service frequency that fits your property&apos;s size, traffic, and budget.
               </p>
             </div>
@@ -497,7 +503,7 @@ export default function StrataCleaningPage() {
 
         {/* ── 8. IMAGE 2 ───────────────────────────────────────────────── */}
         <div
-          className="px-4 sm:px-8 md:px-[60px] pb-[60px] bg-[#f2f2f2]"
+          className="px-4 sm:px-8 md:px-[60px] pb-[60px]"
           ref={img2Ref}
         >
           <div
@@ -516,16 +522,16 @@ export default function StrataCleaningPage() {
 
         {/* ── 9. SERVICE AREAS ─────────────────────────────────────────── */}
         <section
-          className="py-[80px] bg-[#c8e0fd]"
+          className="py-[80px] bg-white/20"
           ref={areasBlurbRef}
         >
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-start md:items-center">
             {/* Text */}
             <div className="flex flex-col gap-[24px] flex-[1.2_0_0] w-full">
-              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 Serving Metro Vancouver
               </h2>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] leading-[28px] tracking-[0.28px] max-w-[480px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 leading-[28px] tracking-[0.28px] max-w-[480px]">
                 Mint Sanitary provides strata services across the Lower Mainland and Fraser Valley. From downtown Vancouver highrises to suburban townhouse complexes — if your building is in Greater Vancouver, we&apos;ve got you covered.
               </p>
               <a
@@ -542,9 +548,9 @@ export default function StrataCleaningPage() {
                 {serviceAreas.map((area) => (
                   <div
                     key={area}
-                    className={`h-[58px] flex items-center justify-center border border-[#253862] rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer${area === "New Westminster" ? " sm:hidden" : ""}`}
+                    className={`h-[58px] flex items-center justify-center border border-white rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer${area === "New Westminster" ? " sm:hidden" : ""}`}
                   >
-                    <span className="font-display-reg text-[12px] sm:text-[13px] tracking-[0.64px] uppercase text-[#253862] group-hover:text-white transition-colors duration-300 leading-none text-center px-2">
+                    <span className="font-display-reg text-[12px] sm:text-[13px] tracking-[0.64px] uppercase text-white group-hover:text-white transition-colors duration-300 leading-none text-center px-2">
                       {area}
                     </span>
                   </div>
@@ -608,14 +614,14 @@ export default function StrataCleaningPage() {
             <div className="reveal flex flex-col sm:flex-row gap-[16px] w-full sm:w-auto">
               <a
                 href="tel:6041234567"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
               >
                 <Phone size={16} strokeWidth={2.5} />
                 Call Now
               </a>
               <a
                 href="mailto:hello@mintsanitary.com"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white/20 hover:text-white transition-colors duration-200"
               >
                 <Mail size={16} strokeWidth={2.5} />
                 Email Us

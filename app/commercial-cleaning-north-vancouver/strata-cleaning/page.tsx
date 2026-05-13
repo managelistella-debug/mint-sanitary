@@ -248,7 +248,7 @@ export default function StrataCleaningNorthVancouverPage() {
       heroIntro="If you manage a condo building, townhouse complex, or multi-unit residential property in North Vancouver, you know how demanding it is to keep common areas spotless. Lobbies get dirty fast. Elevators accumulate fingerprints and smudges. Parkades collect dust and debris."
       faqItems={faqItems}
       ctaHeading="Ready to Upgrade Your Strata Building?"
-      ctaBody="Your North Vancouver strata building deserves professional care. Contact Mint Sanitary for a free estimate. Call (604) 671-6252 or visit www.mintsanitary.com. Mention code MINT25 for 10% off your first strata cleaning service."
+      ctaBody="Your North Vancouver strata building deserves professional care. Contact Mint Sanitary for a free estimate. Call 236-688-3248 or visit www.mintsanitary.com. Mention code MINT25 for 10% off your first strata cleaning service."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -264,18 +264,18 @@ export default function StrataCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Professional Strata Cleaning
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Strata Cleaning in North Vancouver?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 At Mint Sanitary, we have been helping North Vancouver strata councils and property managers maintain spotless, safe common spaces. Our eco-friendly strata cleaning service covers lobby floors, parkade maintenance, and all common areas, with the flexibility to schedule cleaning around resident schedules.
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -289,18 +289,18 @@ export default function StrataCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-10 md:grid-cols-2 md:gap-12">
             <div className="space-y-4">
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Strata cleaning is professional janitorial service for shared spaces in multi-unit residential buildings. Unlike residential house cleaning, strata cleaning focuses on common areas that serve dozens, sometimes hundreds, of residents daily.
               </p>
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 In North Vancouver, strata-titled buildings are common. The BC Strata Property Act requires buildings to maintain common property in safe condition. This is not optional; it is a legal obligation for strata councils. Cleaning is not just about appearance. It is about liability, resident satisfaction, and property value.
               </p>
             </div>
             <div className="space-y-4">
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 When you hire a strata cleaning contractor, look for someone bonded and insured with at least $2 million in liability coverage. They should be WorkSafeBC registered. At Mint Sanitary, we carry $2M liability insurance, are fully bonded, and maintain WorkSafeBC registration. Your building is protected.
               </p>
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Strata cleaning is not one-size-fits-all. A 30-unit building has different needs than a 200-unit high-rise. Some buildings need daily cleaning. Others do well with twice-weekly service. North Vancouver buildings vary widely, from waterfront condos in Deep Cove to busy residential complexes in Lower Lonsdale. We customize our strata cleaning service to match your building&apos;s size, occupancy patterns, and budget.
               </p>
             </div>
@@ -334,17 +334,17 @@ export default function StrataCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Why Strata Cleaning Matters for BC Buildings
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Keeping your North Vancouver strata building clean is not just cosmetic. It is fundamental to running a well-maintained property.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {whyMattersItems.map((item) => (
-              <div key={item.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{item.title}</h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">{item.body}</p>
+              <div key={item.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{item.title}</h3>
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">{item.body}</p>
               </div>
             ))}
           </div>
@@ -355,7 +355,7 @@ export default function StrataCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Strata Cleaning Process in North Vancouver
             </h2>
           </div>
@@ -365,10 +365,10 @@ export default function StrataCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -387,7 +387,7 @@ export default function StrataCleaningNorthVancouverPage() {
 
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="font-body text-[15px] leading-[1.7] text-white/80">
             I remember when we first started cleaning a 45-unit complex in Lower Lonsdale. The strata council had been cycling through contractors, frustrated with inconsistent quality. We took time to understand their specific concerns: the lobby tracked water during rainy season, the parkade smelled musty, and residents complained about elevator cleanliness. We adjusted our approach, focused on those pain points, and stuck with the same team for continuity. Two years later, we are still their contractor. That is the difference between a cleaning service and a cleaning partner.
           </p>
         </div>
@@ -443,40 +443,40 @@ export default function StrataCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Strata Cleaning Pricing and Free Quotes
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Strata cleaning costs vary based on building size, service frequency, and specific needs. Here are typical ranges for North Vancouver buildings:
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {pricingTiers.map((tier) => (
-              <div key={tier.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{tier.title}</h3>
+              <div key={tier.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{tier.title}</h3>
                 <div className="mt-3 space-y-2">
-                  <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                    <strong className="font-extrabold text-[#4E5062]">Twice-weekly:</strong>{" "}
-                    <span className="font-extrabold text-[#66DAD5]">{tier.twiceWeekly}</span>
+                  <p className="font-body text-[15px] leading-[1.7] text-white/80">
+                    <strong className="font-extrabold text-white">Twice-weekly:</strong>{" "}
+                    <span className="font-extrabold text-white">{tier.twiceWeekly}</span>
                   </p>
-                  <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                    <strong className="font-extrabold text-[#4E5062]">Daily:</strong>{" "}
-                    <span className="font-extrabold text-[#66DAD5]">{tier.daily}</span>
+                  <p className="font-body text-[15px] leading-[1.7] text-white/80">
+                    <strong className="font-extrabold text-white">Daily:</strong>{" "}
+                    <span className="font-extrabold text-white">{tier.daily}</span>
                   </p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             These are estimates. Your actual North Vancouver strata cleaning cost depends on:
           </p>
           <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {pricingFactors.map((factor) => (
-              <li key={factor} className="rounded-[10px] bg-[#f4f8ff] px-4 py-2.5 font-body text-[15px] text-[#5c6075]">{factor}</li>
+              <li key={factor} className="rounded-[10px] bg-white/[0.12] px-4 py-2.5 font-body text-[15px] text-white/80">{factor}</li>
             ))}
           </ul>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             We provide free consultations and custom quotes. Call{" "}
-            <a href="tel:+16046716252" className="underline underline-offset-2">(604) 671-6252</a>{" "}
+            <a href="tel:+12366883248" className="underline underline-offset-2">236-688-3248</a>{" "}
             or visit{" "}
             <a href="https://www.mintsanitary.com" className="underline underline-offset-2">www.mintsanitary.com</a>{" "}
             to request an estimate for your North Vancouver strata building. We will assess your property, understand your needs, and provide transparent pricing.
@@ -487,14 +487,14 @@ export default function StrataCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Services
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {relatedServices.map((s) => (
-              <div key={s.href} className="rounded-[14px] bg-[#f4f8ff] p-6">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{s.title}</h3>
-                <a href={s.href} className="mt-5 inline-block w-fit border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062]">Learn more</a>
+              <div key={s.href} className="rounded-[14px] bg-white/[0.12] p-6">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{s.title}</h3>
+                <a href={s.href} className="mt-5 inline-block w-fit border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white">Learn more</a>
               </div>
             ))}
           </div>

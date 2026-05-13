@@ -1,8 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   WebGL gradient canvas — identical shader to mint-gradient-bg.html
+   Renders as a fixed full-viewport background behind all page content.
+───────────────────────────────────────────────────────────────────────────── */
+// GradientBackground is now injected globally via layout.tsx
+
+/* ─── Page data ──────────────────────────────────────────────────────────── */
 
 const categoryCards = [
   {
@@ -156,8 +164,7 @@ const faqItems = [
   },
   {
     question: "Are your cleaners bonded and insured?",
-    answer:
-      "Yes. Every team member is vetted, background-checked, bonded, and insured.",
+    answer: "Yes. Every team member is vetted, background-checked, bonded, and insured.",
   },
   {
     question: "What if I'm not satisfied with the clean?",
@@ -172,52 +179,41 @@ const faqItems = [
 ];
 
 const featuredClients = [
-  {
-    name: "Vancouver Coastal Health",
-    logo: "/client-vancouver-coastal-health.png",
-  },
-  {
-    name: "BC Hydro",
-    logo: "/client-bc-hydro.png",
-  },
-  {
-    name: "Arbutus Point Developments Ltd.",
-    logo: "/client-arbutus-point.png",
-  },
-  {
-    name: "Powers Construction",
-    logo: "/client-powers-construction.png",
-  },
+  { name: "Vancouver Coastal Health", logo: "/client-vancouver-coastal-health.png" },
+  { name: "BC Hydro", logo: "/client-bc-hydro.png" },
+  { name: "Arbutus Point Developments Ltd.", logo: "/client-arbutus-point.png" },
+  { name: "Powers Construction", logo: "/client-powers-construction.png" },
 ];
 
-export default function Home() {
+/* ─── Page component ─────────────────────────────────────────────────────── */
+
+export default function HomeGradient() {
   const [openWhy, setOpenWhy] = useState<number | null>(0);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
     <>
+      
       <Navbar />
-      <main>
+      <main style={{ position: "relative", zIndex: 1 }}>
 
         {/* ── Hero ─────────────────────────────────────────────── */}
         <section className="relative min-h-[85vh] overflow-hidden">
           <div
             className="absolute inset-0 z-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url(/mint-homepage-hero.png)",
-            }}
+            style={{ backgroundImage: "url(/mint-homepage-hero.png)" }}
           />
           <div className="absolute inset-0 z-[1] bg-black/35" />
           <div className="relative z-10 mx-auto grid max-w-[1200px] grid-cols-1 items-center px-4 pb-32 pt-[180px] sm:px-8 md:grid-cols-2 md:px-[60px] md:pb-40 md:pt-[200px]">
             <div>
-              <div className="mb-5 h-[3px] w-[50px] bg-[#66DAD5]" />
+              <div className="mb-5 h-[3px] w-[50px] bg-white/60" />
               <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 House Cleaning Service in North Vancouver
               </p>
               <h1 className="mt-4 font-display-reg text-[34px] uppercase leading-[1.08] text-white sm:text-[48px] md:text-[56px]">
                 Professional House Cleaning Service
               </h1>
-              <div className="mt-5 h-[2px] w-[80px] bg-[#66DAD5]" />
+              <div className="mt-5 h-[2px] w-[80px] bg-white/50" />
               <p className="mt-6 max-w-[520px] font-body text-[17px] leading-[1.75] text-white/90">
                 Between work, family, and everything else, cleaning can eat your
                 weekends. Mint Sanitary helps North Vancouver homeowners and
@@ -255,8 +251,11 @@ export default function Home() {
         </section>
 
         {/* ── Featured Clients ───────────────────────────────────── */}
-        <section className="relative z-10 bg-[#6191e9] px-4 pt-10 pb-4 sm:px-8 md:px-[60px]">
-          <div className="mx-auto max-w-[1200px]">
+        <section className="relative z-10 px-4 pt-10 pb-10 sm:px-8 md:px-[60px]">
+          <div
+            className="mx-auto max-w-[1200px] rounded-[24px] px-6 py-8"
+            style={{ background: "rgba(255,255,255,0.12)", backdropFilter: "blur(10px)" }}
+          >
             <p className="mb-5 text-center font-body text-[12px] font-bold uppercase tracking-[2px] text-white/60">
               Trusted by Local Organizations
             </p>
@@ -278,22 +277,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Wave: Blue → White (Featured Clients → Services) ── */}
-        <div className="relative z-10 -mt-1">
-          <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
-            <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="transparent" />
-          </svg>
-        </div>
-
-        {/* ── Service Categories (WHITE) ──────────────────────── */}
+        {/* ── Service Categories ──────────────────────────────────── */}
         <section
           id="services"
-          className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]"
+          className="relative z-10 px-4 py-16 sm:px-8 md:px-[60px]"
         >
           <div className="mx-auto max-w-[1200px]">
             <div>
-              <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
+              <div className="mb-4 h-[3px] w-[50px] bg-white/50" />
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/70">
                 Our Cleaning Services
               </p>
               <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
@@ -311,7 +303,20 @@ export default function Home() {
                 <a
                   key={card.title}
                   href={card.href}
-                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
+                  className="group overflow-hidden rounded-[20px] p-4 transition-all duration-200 hover:-translate-y-1"
+                  style={{
+                    background: "rgba(255,255,255,0.13)",
+                    backdropFilter: "blur(10px)",
+                    border: "1px solid rgba(255,255,255,0.2)",
+                  }}
+                  onMouseEnter={(e) =>
+                    ((e.currentTarget as HTMLElement).style.background =
+                      "rgba(255,255,255,0.2)")
+                  }
+                  onMouseLeave={(e) =>
+                    ((e.currentTarget as HTMLElement).style.background =
+                      "rgba(255,255,255,0.13)")
+                  }
                 >
                   <img
                     src={card.image}
@@ -324,7 +329,7 @@ export default function Home() {
                   <p className="mt-3 font-body text-[15px] leading-[1.65] text-white/80">
                     {card.description}
                   </p>
-                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
+                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:border-white">
                     Learn More
                   </span>
                 </a>
@@ -333,53 +338,56 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Text + Image: Meet the Team ────────────────────── */}
-        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
-          <div className="mx-auto grid max-w-[1200px] items-center gap-8 lg:grid-cols-2">
-            <div>
-              <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
-                About Our Team
-              </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[36px]">
-                Trained, Vetted, and Ready to Clean
-              </h2>
-              <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
-                Every Mint Sanitary team member is background-checked, bonded, and
-                insured. We invest in hands-on training so our crews know the right
-                products, techniques, and safety protocols for every surface in your
-                home or business.
-              </p>
-              <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
-                When you book recurring service, we do our best to send the same
-                team each visit. That means your preferences are remembered, your
-                space is treated with care, and quality stays consistent.
-              </p>
-              <a
-                href="/about"
-                className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
-              >
-                About Us
-              </a>
-            </div>
-            <div className="overflow-hidden rounded-[20px]">
-              <img
-                src="/mint-sanitary-team-north-vancouver.jpg"
-                alt="Mint Sanitary cleaning team in North Vancouver"
-                className="h-[340px] w-full object-cover sm:h-[400px]"
-              />
+        {/* ── Text + Image: Meet the Team ────────────────────────── */}
+        <section className="relative z-10 px-4 py-16 sm:px-8 md:px-[60px]">
+          <div
+            className="mx-auto max-w-[1200px] rounded-[28px] p-8 md:p-12"
+            style={{
+              background: "rgba(255,255,255,0.10)",
+              backdropFilter: "blur(10px)",
+              border: "1px solid rgba(255,255,255,0.18)",
+            }}
+          >
+            <div className="grid items-center gap-8 lg:grid-cols-2">
+              <div>
+                <div className="mb-4 h-[3px] w-[50px] bg-white/50" />
+                <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/70">
+                  About Our Team
+                </p>
+                <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[36px]">
+                  Trained, Vetted, and Ready to Clean
+                </h2>
+                <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
+                  Every Mint Sanitary team member is background-checked, bonded, and
+                  insured. We invest in hands-on training so our crews know the right
+                  products, techniques, and safety protocols for every surface in your
+                  home or business.
+                </p>
+                <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
+                  When you book recurring service, we do our best to send the same
+                  team each visit. That means your preferences are remembered, your
+                  space is treated with care, and quality stays consistent.
+                </p>
+                <a
+                  href="/about"
+                  className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
+                >
+                  About Us
+                </a>
+              </div>
+              <div className="overflow-hidden rounded-[20px]">
+                <img
+                  src="/mint-sanitary-team-north-vancouver.jpg"
+                  alt="Mint Sanitary cleaning team in North Vancouver"
+                  className="h-[340px] w-full object-cover sm:h-[400px]"
+                />
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ── Why Mint — Image + Accordion (BLUE) ─────────────── */}
-        <section
-          className="relative z-10 bg-[#6191e9] px-4 py-16 sm:px-8 md:px-[60px]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(97,145,233,0.92), rgba(97,145,233,0.92)), url('/mint-bg.png')",
-          }}
-        >
+        {/* ── Why Mint — Image + Accordion ────────────────────────── */}
+        <section className="relative z-10 px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto grid max-w-[1200px] items-center gap-8 lg:grid-cols-2">
             <div className="overflow-hidden rounded-[20px]">
               <img
@@ -389,7 +397,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+              <div className="mb-4 h-[3px] w-[50px] bg-white/50" />
               <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Detail-Driven, Every Single Time
               </h2>
@@ -401,7 +409,14 @@ export default function Home() {
                 {whyMintItems.map((item, i) => (
                   <div
                     key={item.title}
-                    className="rounded-[14px] border border-white/15 bg-white/10 transition-colors duration-200 hover:bg-white/[0.14]"
+                    className="rounded-[14px] transition-colors duration-200"
+                    style={{
+                      border: "1px solid rgba(255,255,255,0.18)",
+                      background:
+                        openWhy === i
+                          ? "rgba(255,255,255,0.18)"
+                          : "rgba(255,255,255,0.10)",
+                    }}
                   >
                     <button
                       onClick={() => setOpenWhy(openWhy === i ? null : i)}
@@ -413,15 +428,16 @@ export default function Home() {
                       <span
                         className="ml-4 flex h-[28px] w-[28px] shrink-0 items-center justify-center rounded-full border border-white/30 font-body text-[20px] leading-none text-white transition-transform duration-300"
                         style={{
-                          transform:
-                            openWhy === i ? "rotate(45deg)" : "rotate(0deg)",
+                          transform: openWhy === i ? "rotate(45deg)" : "rotate(0deg)",
                         }}
                       >
                         +
                       </span>
                     </button>
                     <div
-                      className={`grid transition-[grid-template-rows] duration-300 ease-out ${openWhy === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+                      className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                        openWhy === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                      }`}
                     >
                       <div className="overflow-hidden">
                         <p className="px-5 pb-4 font-body text-[15px] leading-[1.65] text-white/75">
@@ -442,11 +458,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── How It Works — Horizontal Steps (WHITE) ─────────── */}
-        <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+        {/* ── How It Works — Horizontal Steps ─────────────────────── */}
+        <section className="relative z-10 px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
-              <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+              <div className="mx-auto mb-4 h-[3px] w-[50px] bg-white/50" />
               <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 How Our Process Works
               </h2>
@@ -459,15 +475,15 @@ export default function Home() {
               {processSteps.map((s, i) => (
                 <div key={s.step} className="relative text-center">
                   {i < processSteps.length - 1 && (
-                    <div className="absolute right-0 top-[24px] hidden h-[2px] w-full translate-x-1/2 bg-[#66DAD5]/30 lg:block" />
+                    <div className="absolute right-0 top-[24px] hidden h-[2px] w-full translate-x-1/2 bg-white/20 lg:block" />
                   )}
-                  <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
+                  <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-white/20 font-body text-[18px] font-extrabold text-white" style={{ border: "1px solid rgba(255,255,255,0.4)" }}>
                     {s.step}
                   </span>
                   <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
+                  <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/75">
                     {s.detail}
                   </p>
                 </div>
@@ -476,10 +492,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Service Area — Full-Width Centered ──────────────── */}
-        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
-          <div className="mx-auto max-w-[900px] text-center">
-            <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+        {/* ── Service Area ─────────────────────────────────────────── */}
+        <section className="relative z-10 px-4 py-16 sm:px-8 md:px-[60px]">
+          <div
+            className="mx-auto max-w-[900px] rounded-[28px] px-8 py-12 text-center"
+            style={{
+              background: "rgba(255,255,255,0.10)",
+              backdropFilter: "blur(10px)",
+              border: "1px solid rgba(255,255,255,0.18)",
+            }}
+          >
+            <div className="mx-auto mb-4 h-[3px] w-[50px] bg-white/50" />
             <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Serving North Vancouver and Beyond
             </h2>
@@ -491,7 +514,11 @@ export default function Home() {
               {serviceAreas.map((city) => (
                 <span
                   key={city}
-                  className="rounded-full bg-white/[0.18] px-5 py-2.5 font-body text-[14px] font-semibold text-white shadow-sm"
+                  className="rounded-full px-5 py-2.5 font-body text-[14px] font-semibold text-white"
+                  style={{
+                    background: "rgba(255,255,255,0.18)",
+                    border: "1px solid rgba(255,255,255,0.25)",
+                  }}
                 >
                   {city}
                 </span>
@@ -511,17 +538,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── FAQ — Single-Column Accordion (BLUE) ───────────── */}
-        <section
-          className="relative z-10 bg-[#6191e9] px-4 py-16 sm:px-8 md:px-[60px]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(97,145,233,0.92), rgba(97,145,233,0.92)), url('/mint-bg.png')",
-          }}
-        >
+        {/* ── FAQ ─────────────────────────────────────────────────── */}
+        <section className="relative z-10 px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[800px]">
             <div className="text-center">
-              <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+              <div className="mx-auto mb-4 h-[3px] w-[50px] bg-white/50" />
               <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Frequently Asked Questions
               </h2>
@@ -530,7 +551,14 @@ export default function Home() {
               {faqItems.map((faq, i) => (
                 <div
                   key={faq.question}
-                  className="rounded-[14px] border border-white/15 bg-white/10 transition-colors duration-200 hover:bg-white/[0.14]"
+                  className="rounded-[14px] transition-colors duration-200"
+                  style={{
+                    border: "1px solid rgba(255,255,255,0.18)",
+                    background:
+                      openFaq === i
+                        ? "rgba(255,255,255,0.18)"
+                        : "rgba(255,255,255,0.10)",
+                  }}
                 >
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -542,15 +570,16 @@ export default function Home() {
                     <span
                       className="flex h-[28px] w-[28px] shrink-0 items-center justify-center rounded-full border border-white/30 font-body text-[20px] leading-none text-white transition-transform duration-300"
                       style={{
-                        transform:
-                          openFaq === i ? "rotate(45deg)" : "rotate(0deg)",
+                        transform: openFaq === i ? "rotate(45deg)" : "rotate(0deg)",
                       }}
                     >
                       +
                     </span>
                   </button>
                   <div
-                    className={`grid transition-[grid-template-rows] duration-300 ease-out ${openFaq === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+                    className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                      openFaq === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                    }`}
                   >
                     <div className="overflow-hidden">
                       <p className="px-5 pb-4 font-body text-[15px] leading-[1.65] text-white/75">
@@ -564,10 +593,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── CTA — Ready to Get Started? (WHITE) ────────────── */}
-        <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+        {/* ── CTA ─────────────────────────────────────────────────── */}
+        <section className="relative z-10 px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
-            <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+            <div className="mx-auto mb-4 h-[3px] w-[50px] bg-white/50" />
             <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Ready to Refresh Your Space?
             </h2>
@@ -582,7 +611,7 @@ export default function Home() {
               your first service.{" "}
               <a
                 href="/rates/"
-                className="border-b border-white/40 font-bold text-white"
+                className="border-b border-white/40 font-bold text-white hover:border-white"
               >
                 View our rates
               </a>
@@ -597,7 +626,7 @@ export default function Home() {
               </a>
               <a
                 href="tel:+12366883248"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/40 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
                 Call 236-688-3248
               </a>
@@ -605,7 +634,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Wave: White → Blue (Footer) ────────────────────── */}
+        {/* ── Wave into footer ─────────────────────────────────── */}
         <div className="relative z-10 -mt-1">
           <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
             <path d="M0,50 C400,100 800,0 1440,40 L1440,100 L0,100 Z" fill="#6191e9" />

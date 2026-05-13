@@ -239,7 +239,7 @@ export default function DrapesCurtainsCleaningPage() {
       heroIntro="Your drapes and curtains collect dust, allergens, and odors every single day. In North Vancouver's humid climate, that buildup happens faster, and the risk of mold and mildew grows with each season. Professional cleaning isn't just about appearance. It's about protecting your investment, improving indoor air quality, and keeping your home healthy."
       faqItems={faqItems}
       ctaHeading="Ready to Restore Your North Vancouver Drapes?"
-      ctaBody="Don't wait. Contact Mint Sanitary today for your free North Vancouver drapery cleaning estimate. Call (604) 671-6252 or email hello@mintsanitary.com. Use MINT25 for 10% off your first clean."
+      ctaBody="Don't wait. Contact Mint Sanitary today for your free North Vancouver drapery cleaning estimate. Call 236-688-3248 or email hello@mintsanitary.com. Use MINT25 for 10% off your first clean."
     >
       {/* ── Image + Text Intro ──────────────────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -254,23 +254,23 @@ export default function DrapesCurtainsCleaningPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Professional Drapes and Curtains Cleaning Matters in North
                 Vancouver
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Mint Sanitary provides expert in-home and drop-off drapery cleaning
                 throughout North Vancouver, West Vancouver, and Greater Vancouver.
                 Our IICRC-certified technicians use eco-friendly, plant-based
                 products that clean thoroughly without damaging delicate fabrics like
                 silk, velvet, or specialty linens. We offer flexible scheduling with
                 7-day availability, free estimates, and 10% off your first clean
-                with code MINT25. Ready to restore your drapes? Call us at (604)
-                671-6252 or email hello@mintsanitary.com.
+                with code MINT25. Ready to restore your drapes? Call us at 236-688-3248
+                or email hello@mintsanitary.com.
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -280,10 +280,10 @@ export default function DrapesCurtainsCleaningPage() {
       </section>
 
       {/* ── Why It Matters — Detailed Sub-Sections ──────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <div className="space-y-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
-            <h3 className="text-[18px] font-extrabold text-[#4E5062]">
+          <div className="space-y-6 font-body text-[15px] leading-[1.7] text-white/80">
+            <h3 className="text-[18px] font-extrabold text-white">
               Dust, Allergens, and Mold in the West Coast Climate
             </h3>
             <p>
@@ -300,7 +300,7 @@ export default function DrapesCurtainsCleaningPage() {
               Professional cleaning extracts these hidden contaminants that
               regular dusting misses.
             </p>
-            <h3 className="text-[18px] font-extrabold text-[#4E5062]">
+            <h3 className="text-[18px] font-extrabold text-white">
               Extending the Life of Your Fabric Investment
             </h3>
             <p>
@@ -318,7 +318,7 @@ export default function DrapesCurtainsCleaningPage() {
               fibers. Regular professional cleaning extends your curtains&apos;
               lifespan by years, sometimes a decade or more.
             </p>
-            <h3 className="text-[18px] font-extrabold text-[#4E5062]">
+            <h3 className="text-[18px] font-extrabold text-white">
               Restoring Appearance and Freshness
             </h3>
             <p>
@@ -334,7 +334,7 @@ export default function DrapesCurtainsCleaningPage() {
               result is stunning. Colors brighten. Your curtains hang with their
               original shape and elegance. The freshness is immediate.
             </p>
-            <h3 className="text-[18px] font-extrabold text-[#4E5062]">
+            <h3 className="text-[18px] font-extrabold text-white">
               Health Benefits You&apos;ll Notice
             </h3>
             <p>
@@ -350,7 +350,7 @@ export default function DrapesCurtainsCleaningPage() {
               bedrooms. That&apos;s not coincidence. It&apos;s what happens when
               you remove the allergen reservoir from your home.
             </p>
-            <h3 className="text-[18px] font-extrabold text-[#4E5062]">
+            <h3 className="text-[18px] font-extrabold text-white">
               Avoiding Costly Damage from DIY Attempts
             </h3>
             <p>
@@ -482,10 +482,10 @@ export default function DrapesCurtainsCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Fabric Types We Clean Safely in North Vancouver
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Not all fabrics are the same. Each material requires specific
             techniques, moisture levels, and cleaning agents. Our technicians are
             trained to handle specialty fabrics correctly.
@@ -494,15 +494,15 @@ export default function DrapesCurtainsCleaningPage() {
             {fabricTypes.map((fabric) => (
               <div
                 key={fabric.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {fabric.title}
                 </h3>
                 {fabric.paragraphs.map((p, i) => (
                   <p
                     key={i}
-                    className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                    className="mt-3 font-body text-[15px] leading-[1.7] text-white/80"
                   >
                     {p}
                   </p>
@@ -518,10 +518,10 @@ export default function DrapesCurtainsCleaningPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Our Professional Drapery Cleaning Process in North Vancouver
             </h2>
-            <p className="mx-auto mt-6 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-6 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
               Knowing our process builds confidence. Here&apos;s exactly what
               happens when you choose Mint Sanitary for your North Vancouver
               drapery cleaning.
@@ -533,13 +533,13 @@ export default function DrapesCurtainsCleaningPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {step.step}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
                 {step.paragraphs.map((p, i) => (
                   <p
                     key={i}
-                    className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]"
+                    className="mt-2 font-body text-[14px] leading-[1.6] text-white/80"
                   >
                     {p}
                   </p>
@@ -646,7 +646,7 @@ export default function DrapesCurtainsCleaningPage() {
               Every quote is no-obligation and free. We&apos;ll discuss your
               specific curtains, take photos if helpful, and provide a written
               estimate before work begins. No surprises. No hidden fees. Just
-              honest, upfront pricing. Call (604) 671-6252 or email
+              honest, upfront pricing. Call 236-688-3248 or email
               hello@mintsanitary.com for your free estimate.
             </p>
           </div>
@@ -715,10 +715,10 @@ export default function DrapesCurtainsCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Ready to Restore Your North Vancouver Drapes?
           </h2>
-          <div className="mt-6 rounded-[14px] bg-[#f4f8ff] p-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <div className="mt-6 rounded-[14px] bg-white/[0.12] p-6 font-body text-[15px] leading-[1.7] text-white/80">
             <p>
               Your curtains deserve professional care. Whether they&apos;re
               delicate silk sheers, cozy velvet drapes, or blackout curtains
@@ -735,22 +735,22 @@ export default function DrapesCurtainsCleaningPage() {
               expert cleaning does.
             </p>
             <p className="mt-4">
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Call:
               </strong>{" "}
-              (604) 671-6252
+              236-688-3248
               <br />
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Email:
               </strong>{" "}
               hello@mintsanitary.com
               <br />
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Website:
               </strong>{" "}
               www.mintsanitary.com
               <br />
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Discount:
               </strong>{" "}
               MINT25 for 10% off your first clean
@@ -758,10 +758,10 @@ export default function DrapesCurtainsCleaningPage() {
           </div>
           <div className="mt-12">
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Related Services in North Vancouver
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               If you&apos;re investing in professional drapery care, consider
               these complementary services we offer throughout North Vancouver:
             </p>
@@ -770,7 +770,7 @@ export default function DrapesCurtainsCleaningPage() {
                 <a
                   key={svc.href}
                   href={svc.href}
-                  className="rounded-[14px] bg-[#f4f8ff] p-5 font-body text-[15px] font-extrabold text-[#4E5062] underline underline-offset-2"
+                  className="rounded-[14px] bg-white/[0.12] p-5 font-body text-[15px] font-extrabold text-white underline underline-offset-2"
                 >
                   {svc.title}
                 </a>

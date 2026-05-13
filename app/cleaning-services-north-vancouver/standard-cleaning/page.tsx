@@ -78,7 +78,7 @@ const notIncluded = [
 const processSteps = [
   {
     title: "Request Your Free Estimate",
-    body: "Call (604) 671-6252 or book online. Tell us about your space, and we\u2019ll provide a transparent quote with no obligation.",
+    body: "Call 236-688-3248 or book online. Tell us about your space, and we\u2019ll provide a transparent quote with no obligation.",
   },
   {
     title: "Confirm Your Schedule",
@@ -224,7 +224,7 @@ const faqItems = [
   {
     question: "How much does standard cleaning cost in North Vancouver?",
     answer:
-      "Standard cleaning is priced by property size (square footage), starting at $220 for 500\u2013600 sq ft and scaling based on size. Weekly clients get preferred rates. Visit our rates page for full pricing details. First-time clients save 10% with code MINT25. Call (604) 671-6252 for a free estimate.",
+      "Standard cleaning is priced by property size (square footage), starting at $220 for 500\u2013600 sq ft and scaling based on size. Weekly clients get preferred rates. Visit our rates page for full pricing details. First-time clients save 10% with code MINT25. Call 236-688-3248 for a free estimate.",
   },
   {
     question: "Can I request the same cleaner every time?",
@@ -239,7 +239,7 @@ const faqItems = [
   {
     question: "Do you offer move-in or move-out cleaning?",
     answer:
-      "Yes. For specialized move-in or move-out cleaning, we offer dedicated services designed for property transitions. Visit our move-in cleaning and move-out cleaning pages or call (604) 671-6252 to discuss your needs.",
+      "Yes. For specialized move-in or move-out cleaning, we offer dedicated services designed for property transitions. Visit our move-in cleaning and move-out cleaning pages or call 236-688-3248 to discuss your needs.",
   },
   {
     question: "What areas in North Vancouver do you serve?",
@@ -257,7 +257,7 @@ export default function StandardCleaningNorthVancouverPage() {
       heroIntro="Standard cleaning keeps your home consistently fresh between deep cleans. Mint Sanitary provides professional standard cleaning across North Vancouver with eco-friendly products, trained teams, and flexible scheduling 7 days a week. Choose weekly, bi-weekly, or monthly service and use code MINT25 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Get Your Home Clean?"
-      ctaBody="Book a free estimate today. Call Mint Sanitary at (604) 671-6252. We&apos;re open seven days a week, including evenings and weekends. New clients, use code MINT25 for 10% off your first booking."
+      ctaBody="Book a free estimate today. Call Mint Sanitary at 236-688-3248. We&apos;re open seven days a week, including evenings and weekends. New clients, use code MINT25 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -272,20 +272,20 @@ export default function StandardCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Room-by-Room Cleaning
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What&apos;s Included in a Standard Clean
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 A standard clean covers every room in your home with thorough
                 attention to surfaces, floors, and high-touch areas. Here&apos;s
                 exactly what our team handles in each area:
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -295,7 +295,7 @@ export default function StandardCleaningNorthVancouverPage() {
       </section>
 
       {/* ── Included Areas — Card Grid ────────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {includedAreas.map((area) => (
@@ -303,14 +303,14 @@ export default function StandardCleaningNorthVancouverPage() {
                 key={area.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {area.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
@@ -321,20 +321,20 @@ export default function StandardCleaningNorthVancouverPage() {
           </div>
 
           <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               What&apos;s Not Included in Standard Cleaning
             </h3>
             <ul className="mt-3 space-y-1.5">
               {notIncluded.map((item) => (
                 <li
                   key={item}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {item}
                 </li>
               ))}
             </ul>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Need these services? They&apos;re available as part of our{" "}
               <a
                 href="/cleaning-services-north-vancouver/deep-cleaning/"
@@ -419,10 +419,10 @@ export default function StandardCleaningNorthVancouverPage() {
             2&ndash;4 times per year for a thorough reset. Not sure which you
             need? Call{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             and we&apos;ll help you decide.
           </p>
@@ -434,7 +434,7 @@ export default function StandardCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Standard Cleaning Process: Step by Step
             </h2>
           </div>
@@ -444,10 +444,10 @@ export default function StandardCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -473,10 +473,10 @@ export default function StandardCleaningNorthVancouverPage() {
           <div className="grid items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Flexible Plans
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Standard Cleaning Frequency &amp; Pricing Guidance
               </h2>
             </div>
@@ -493,22 +493,22 @@ export default function StandardCleaningNorthVancouverPage() {
             {frequencyOptions.map((option) => (
               <div
                 key={option.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {option.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {option.body}
                 </p>
               </div>
             ))}
           </div>
           <div className="mt-10">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Pricing Factors
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Standard cleaning in North Vancouver is priced by property size
               (square footage), starting at $220 for a 500–600 sq ft home. Your specific price depends on:
             </p>
@@ -516,19 +516,19 @@ export default function StandardCleaningNorthVancouverPage() {
               {pricingFactors.map((factor) => (
                 <li
                   key={factor}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {factor}
                 </li>
               ))}
             </ul>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               for a free estimate. Use code MINT25 for 10% off your first
               booking. See full pricing details on our{" "}
@@ -607,13 +607,13 @@ export default function StandardCleaningNorthVancouverPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Your Home, Your Health
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Standard Cleaning Matters: Health &amp; Environmental Benefits
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Regular standard cleaning isn&apos;t just about appearances. It has
                 measurable benefits for your health, your home, and the environment.
               </p>
@@ -631,12 +631,12 @@ export default function StandardCleaningNorthVancouverPage() {
             {healthBenefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {benefit.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {benefit.body}
                 </p>
               </div>

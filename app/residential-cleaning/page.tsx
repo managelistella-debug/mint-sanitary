@@ -224,21 +224,27 @@ export default function ResidentialCleaningPage() {
             </p>
             <a
               href="/contact"
-              className="reveal delay-2 inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+              className="reveal delay-2 inline-flex items-center justify-center bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
             >
               Book a Clean
             </a>
           </div>
+          {/* Wave at bottom of hero */}
+          <div className="absolute bottom-0 left-0 right-0 z-10">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
+              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(255,255,255,0.13)" />
+            </svg>
+          </div>
         </section>
 
         {/* ── 2. WHAT WE CLEAN ─────────────────────────────────────────── */}
-        <section className="py-[80px] bg-[#f2f2f2]" ref={cleanRef}>
+        <section className="py-[80px]" ref={cleanRef}>
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[46px]">
             <div className="reveal flex flex-col gap-[14px] items-center text-center">
-              <h2 className="font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 Everything We Clean, Every Visit
               </h2>
-              <p className="font-body font-medium text-[16px] text-[#0a2540] max-w-[580px] leading-[28px] tracking-[0.28px]">
+              <p className="font-body font-medium text-[16px] text-white/80 max-w-[580px] leading-[28px] tracking-[0.28px]">
                 From the kitchen to the doorknobs — we cover every area of your home, consistently and thoroughly, so you never have to think about it.
               </p>
             </div>
@@ -253,10 +259,10 @@ export default function ResidentialCleaningPage() {
                     style={{ transitionDelay: `${idx * 0.09}s` }}
                   >
                     <div className="flex items-center gap-[12px]">
-                      <div className="w-[44px] h-[44px] bg-[#c8e0fd] rounded-[10px] flex items-center justify-center shrink-0">
-                        <Icon size={22} strokeWidth={1.8} className="text-[#155da6]" />
+                      <div className="w-[44px] h-[44px] bg-white/20 rounded-[10px] flex items-center justify-center shrink-0">
+                        <Icon size={22} strokeWidth={1.8} className="text-white" />
                       </div>
-                      <p className="font-display-reg text-[17px] tracking-[0.64px] uppercase text-[#253862] leading-none">
+                      <p className="font-display-reg text-[17px] tracking-[0.64px] uppercase text-white leading-none">
                         {cat.label}
                       </p>
                     </div>
@@ -265,7 +271,7 @@ export default function ResidentialCleaningPage() {
                       {cat.items.map((item) => (
                         <li key={item} className="flex items-start gap-[8px]">
                           <span className="w-[4px] h-[4px] bg-[#155da6] rounded-full mt-[9px] shrink-0" />
-                          <span className="font-body font-medium text-[14px] text-[#0a2540] leading-[22px]">
+                          <span className="font-body font-medium text-[14px] text-white/80 leading-[22px]">
                             {item}
                           </span>
                         </li>
@@ -294,54 +300,54 @@ export default function ResidentialCleaningPage() {
               {/* Recurring card */}
               <div className="reveal flex-1 bg-white rounded-[12px] p-[32px] flex flex-col gap-[24px]" style={{ transitionDelay: "0s" }}>
                 <div className="flex items-center gap-[14px]">
-                  <div className="w-[50px] h-[50px] bg-[#c8e0fd] rounded-full flex items-center justify-center shrink-0">
-                    <RefreshCw size={22} strokeWidth={1.8} className="text-[#155da6]" />
+                  <div className="w-[50px] h-[50px] bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                    <RefreshCw size={22} strokeWidth={1.8} className="text-white" />
                   </div>
                   <div>
-                    <p className="font-display text-[26px] leading-none uppercase text-[#253862]">
+                    <p className="font-display text-[26px] leading-none uppercase text-white">
                       Recurring
                     </p>
-                    <p className="font-body font-medium text-[13px] text-[#155da6] uppercase tracking-[0.32px] mt-[4px]">
+                    <p className="font-body font-medium text-[13px] text-white uppercase tracking-[0.32px] mt-[4px]">
                       Weekly · Bi-Weekly · Monthly
                     </p>
                   </div>
                 </div>
-                <p className="font-body font-medium text-[15px] text-[#0a2540] leading-[24px] tracking-[0.28px]">
+                <p className="font-body font-medium text-[15px] text-white/80 leading-[24px] tracking-[0.28px]">
                   Best for busy households, families, and anyone who wants a consistently clean home without lifting a finger.
                 </p>
-                <div className="flex flex-col gap-[12px] pt-[8px] border-t border-[#253862]/10">
+                <div className="flex flex-col gap-[12px] pt-[8px] border-t border-white/10">
                   {recurringFeatures.map((f) => (
                     <div key={f} className="flex items-start gap-[10px]">
-                      <CheckCircle2 size={15} strokeWidth={2} className="text-[#155da6] shrink-0 mt-[3px]" />
-                      <span className="font-body font-medium text-[14px] text-[#0a2540] leading-[22px]">{f}</span>
+                      <CheckCircle2 size={15} strokeWidth={2} className="text-white shrink-0 mt-[3px]" />
+                      <span className="font-body font-medium text-[14px] text-white/80 leading-[22px]">{f}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* One-time card */}
-              <div className="reveal flex-1 bg-[#c8e0fd] rounded-[12px] p-[32px] flex flex-col gap-[24px]" style={{ transitionDelay: "0.12s" }}>
+              <div className="reveal flex-1 bg-white/20 rounded-[12px] p-[32px] flex flex-col gap-[24px]" style={{ transitionDelay: "0.12s" }}>
                 <div className="flex items-center gap-[14px]">
                   <div className="w-[50px] h-[50px] bg-[#253862] rounded-full flex items-center justify-center shrink-0">
                     <CalendarCheck size={22} strokeWidth={1.8} className="text-[#c8e0fd]" />
                   </div>
                   <div>
-                    <p className="font-display text-[26px] leading-none uppercase text-[#253862]">
+                    <p className="font-display text-[26px] leading-none uppercase text-white">
                       One-Time
                     </p>
-                    <p className="font-body font-medium text-[13px] text-[#155da6] uppercase tracking-[0.32px] mt-[4px]">
+                    <p className="font-body font-medium text-[13px] text-white uppercase tracking-[0.32px] mt-[4px]">
                       Book When You Need It
                     </p>
                   </div>
                 </div>
-                <p className="font-body font-medium text-[15px] text-[#0a2540] leading-[24px] tracking-[0.28px]">
+                <p className="font-body font-medium text-[15px] text-white/80 leading-[24px] tracking-[0.28px]">
                   Perfect for move-ins, seasonal deep cleans, post-renovation, or any time your home needs extra attention.
                 </p>
-                <div className="flex flex-col gap-[12px] pt-[8px] border-t border-[#253862]/15">
+                <div className="flex flex-col gap-[12px] pt-[8px] border-t border-white/15">
                   {oneTimeFeatures.map((f) => (
                     <div key={f} className="flex items-start gap-[10px]">
-                      <CheckCircle2 size={15} strokeWidth={2} className="text-[#155da6] shrink-0 mt-[3px]" />
-                      <span className="font-body font-medium text-[14px] text-[#0a2540] leading-[22px]">{f}</span>
+                      <CheckCircle2 size={15} strokeWidth={2} className="text-white shrink-0 mt-[3px]" />
+                      <span className="font-body font-medium text-[14px] text-white/80 leading-[22px]">{f}</span>
                     </div>
                   ))}
                 </div>
@@ -351,13 +357,13 @@ export default function ResidentialCleaningPage() {
         </section>
 
         {/* ── 4. TRUST NOTES ───────────────────────────────────────────── */}
-        <section className="py-[80px] bg-[#f2f2f2]" ref={trustRef}>
+        <section className="py-[80px]" ref={trustRef}>
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[46px]">
             <div className="reveal flex flex-col gap-[14px]">
-              <h2 className="font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 Trusted In Your Home
               </h2>
-              <p className="font-body font-medium text-[16px] text-[#0a2540] max-w-[520px] leading-[28px] tracking-[0.28px]">
+              <p className="font-body font-medium text-[16px] text-white/80 max-w-[520px] leading-[28px] tracking-[0.28px]">
                 Letting someone into your home takes real trust. Here&apos;s how we earn it — and keep it.
               </p>
             </div>
@@ -371,14 +377,14 @@ export default function ResidentialCleaningPage() {
                     className="reveal card-hover flex flex-col gap-[16px] bg-white rounded-[12px] p-[24px] border border-black/6"
                     style={{ transitionDelay: `${idx * 0.1}s` }}
                   >
-                    <div className="w-[52px] h-[52px] bg-[#c8e0fd] rounded-full flex items-center justify-center shrink-0">
-                      <Icon size={24} strokeWidth={1.8} className="text-[#155da6]" />
+                    <div className="w-[52px] h-[52px] bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                      <Icon size={24} strokeWidth={1.8} className="text-white" />
                     </div>
                     <div className="flex flex-col gap-[8px]">
-                      <p className="font-display-reg text-[15px] tracking-[0.64px] uppercase text-[#253862] leading-none">
+                      <p className="font-display-reg text-[15px] tracking-[0.64px] uppercase text-white leading-none">
                         {item.title}
                       </p>
-                      <p className="font-body font-medium text-[14px] text-[#0a2540] leading-[22px] tracking-[0.28px]">
+                      <p className="font-body font-medium text-[14px] text-white/80 leading-[22px] tracking-[0.28px]">
                         {item.desc}
                       </p>
                     </div>
@@ -391,7 +397,7 @@ export default function ResidentialCleaningPage() {
 
         {/* ── 5. IMAGE BREAK ───────────────────────────────────────────── */}
         <div
-          className="px-4 sm:px-8 md:px-[60px] pb-[60px] bg-[#f2f2f2]"
+          className="px-4 sm:px-8 md:px-[60px] pb-[60px]"
           ref={imgRef}
         >
           <div
@@ -432,8 +438,8 @@ export default function ResidentialCleaningPage() {
                     className="reveal flex flex-col gap-[18px]"
                     style={{ transitionDelay: `${idx * 0.1}s` }}
                   >
-                    <div className="w-[52px] h-[52px] bg-[#c8e0fd] rounded-full flex items-center justify-center shrink-0">
-                      <Icon size={24} strokeWidth={1.8} className="text-[#253862]" />
+                    <div className="w-[52px] h-[52px] bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                      <Icon size={24} strokeWidth={1.8} className="text-white" />
                     </div>
                     <div className="flex flex-col gap-[8px] pt-[16px] border-t border-[#c8e0fd]/20">
                       <span className="font-body font-extrabold text-[11px] tracking-[0.96px] uppercase text-[#c8e0fd]/45">
@@ -455,7 +461,7 @@ export default function ResidentialCleaningPage() {
             <div className="reveal flex justify-center">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                className="inline-flex items-center justify-center bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
               >
                 Book Now
               </a>
@@ -464,14 +470,14 @@ export default function ResidentialCleaningPage() {
         </section>
 
         {/* ── 7. SERVICE AREAS ─────────────────────────────────────────── */}
-        <section className="py-[80px] bg-[#c8e0fd]" ref={areasBlurbRef}>
+        <section className="py-[80px] bg-white/20" ref={areasBlurbRef}>
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-start md:items-center">
             {/* Text */}
             <div className="flex flex-col gap-[24px] flex-[1.2_0_0] w-full">
-              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 Serving Metro Vancouver
               </h2>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] leading-[28px] tracking-[0.28px] max-w-[480px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 leading-[28px] tracking-[0.28px] max-w-[480px]">
                 We provide residential cleaning services across the Lower Mainland and Fraser Valley. From Vancouver condos to suburban family homes — we bring the same high standard to every home.
               </p>
               <a
@@ -488,9 +494,9 @@ export default function ResidentialCleaningPage() {
                 {serviceAreas.map((area) => (
                   <div
                     key={area}
-                    className={`h-[58px] flex items-center justify-center border border-[#253862] rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer${area === "New Westminster" ? " sm:hidden" : ""}`}
+                    className={`h-[58px] flex items-center justify-center border border-white rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer${area === "New Westminster" ? " sm:hidden" : ""}`}
                   >
-                    <span className="font-display-reg text-[12px] sm:text-[13px] tracking-[0.64px] uppercase text-[#253862] group-hover:text-white transition-colors duration-300 leading-none text-center px-2">
+                    <span className="font-display-reg text-[12px] sm:text-[13px] tracking-[0.64px] uppercase text-white group-hover:text-white transition-colors duration-300 leading-none text-center px-2">
                       {area}
                     </span>
                   </div>
@@ -553,14 +559,14 @@ export default function ResidentialCleaningPage() {
             <div className="reveal flex flex-col sm:flex-row gap-[16px] w-full sm:w-auto">
               <a
                 href="tel:6041234567"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
               >
                 <Phone size={16} strokeWidth={2.5} />
                 Call Now
               </a>
               <a
                 href="mailto:hello@mintsanitary.com"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white/20 hover:text-white transition-colors duration-200"
               >
                 <Mail size={16} strokeWidth={2.5} />
                 Email Us

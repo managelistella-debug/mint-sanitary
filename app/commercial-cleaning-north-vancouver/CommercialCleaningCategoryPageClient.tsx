@@ -179,7 +179,7 @@ const faqItems = [
   {
     question: "How much does commercial cleaning cost in North Vancouver?",
     answer:
-      "Costs range from $30 to $35 per hour or $200 to $1,000+ per month depending on space size, cleaning frequency, and scope. We provide free, no-obligation estimates. Call (604) 671-6252.",
+      "Costs range from $30 to $35 per hour or $200 to $1,000+ per month depending on space size, cleaning frequency, and scope. We provide free, no-obligation estimates. Call 236-688-3248.",
   },
   {
     question: "Are your cleaners trained and insured?",
@@ -250,10 +250,10 @@ export default function CommercialCleaningCategoryPageClient() {
                   Free Estimate
                 </a>
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
                 >
-                  Call (604) 671-6252
+                  Call 236-688-3248
                 </a>
               </div>
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
@@ -272,7 +272,7 @@ export default function CommercialCleaningCategoryPageClient() {
             >
               <path
                 d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-                fill="#6191e9"
+                fill="rgba(255,255,255,0.13)"
               />
             </svg>
           </div>
@@ -301,7 +301,7 @@ export default function CommercialCleaningCategoryPageClient() {
           </div>
         </section>
 
-        <div className="relative z-10 -mt-1 bg-[#6191e9]">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
@@ -309,7 +309,7 @@ export default function CommercialCleaningCategoryPageClient() {
           >
             <path
               d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-              fill="#ffffff"
+              fill="transparent"
             />
           </svg>
         </div>
@@ -317,19 +317,19 @@ export default function CommercialCleaningCategoryPageClient() {
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Clean Spaces Build Better Businesses
             </h2>
             <div className="mt-8 grid gap-10 md:grid-cols-2 md:gap-12">
               <div>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Whether you run a small office, a multi-unit strata building, a
                   restaurant, or a fitness facility, cleanliness shapes how
                   clients, employees, and visitors experience your space. A
                   well-maintained environment communicates professionalism, builds
                   trust, and creates a healthier workplace.
                 </p>
-                <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                   Studies consistently show that clean workplaces reduce
                   absenteeism and increase employee productivity. A report by the
                   International Sanitary Supply Association found that 90% of
@@ -340,14 +340,14 @@ export default function CommercialCleaningCategoryPageClient() {
                 </p>
               </div>
               <div>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Mint Sanitary provides comprehensive commercial cleaning
                   services across North Vancouver and Greater Vancouver. We serve
                   offices, commercial kitchens, strata buildings, schools, gyms,
                   and churches with customized cleaning programs tailored to each
                   facility&apos;s unique needs.
                 </p>
-                <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                   Our team is fully trained in WorkSafeBC safety standards and
                   WHMIS chemical handling protocols. We use only eco-friendly,
                   non-toxic cleaning products. And we&apos;re available seven days a
@@ -429,10 +429,10 @@ export default function CommercialCleaningCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Commercial Services
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Our 6 Commercial Cleaning Services
               </h2>
             </div>
@@ -441,7 +441,7 @@ export default function CommercialCleaningCategoryPageClient() {
                 <a
                   key={s.href}
                   href={s.href}
-                  className="group overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-[#eef4ff]"
+                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
                 >
                   <img
                     src={s.image}
@@ -449,19 +449,19 @@ export default function CommercialCleaningCategoryPageClient() {
                     className="h-[190px] w-full rounded-[14px] object-cover"
                     loading="lazy"
                   />
-                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-[#4E5062]">
+                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-white/80">
                     {s.description}
                   </p>
-                  <span className="mt-4 inline-block border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062] transition-colors group-hover:text-[#6191e9]">
+                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
                     Learn More
                   </span>
                 </a>
               ))}
             </div>
-            <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
               We also provide{" "}
               <a
                 href="/cleaning-services-north-vancouver/post-construction-cleaning/"
@@ -540,7 +540,7 @@ export default function CommercialCleaningCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Commercial Cleaning Compliance &amp; Best Practices
               </h2>
             </div>
@@ -548,12 +548,12 @@ export default function CommercialCleaningCategoryPageClient() {
               {complianceItems.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[20px] bg-[#f4f8ff] p-6"
+                  className="rounded-[20px] bg-white/[0.12] p-6"
                 >
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                     {item.body}
                   </p>
                 </div>
@@ -563,15 +563,15 @@ export default function CommercialCleaningCategoryPageClient() {
         </section>
 
         <section
-          className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]"
+          className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]"
         >
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Service Schedules &amp; Flexibility
               </h2>
-              <p className="mx-auto mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mx-auto mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
                 Every business has different cleaning needs. We offer flexible
                 scheduling options designed to work around your operating hours
                 and budget.
@@ -581,12 +581,12 @@ export default function CommercialCleaningCategoryPageClient() {
               {scheduleOptions.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[20px] bg-white p-6 shadow-sm"
+                  className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6"
                 >
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                     {item.body}
                   </p>
                 </div>
@@ -647,25 +647,25 @@ export default function CommercialCleaningCategoryPageClient() {
           <div className="mx-auto grid max-w-[1200px] items-stretch gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[36px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[36px]">
                 What Sets Commercial Cleaning Apart from Residential
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Commercial cleaning and residential cleaning share basic
                   principles, but the execution is fundamentally different.
                   Commercial spaces have higher foot traffic, stricter regulatory
                   requirements, specialized equipment needs, and unique scheduling
                   demands that residential cleaning simply doesn&apos;t encounter.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   A home might need vacuuming and kitchen cleaning once a week. A
                   commercial kitchen needs nightly degreasing, hood cleaning, and
                   floor sanitization to meet health department standards. An
                   office building requires systematic high-touch disinfection
                   protocols that go far beyond residential surface wiping.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Commercial cleaning also requires compliance with WorkSafeBC
                   regulations and WHMIS chemical handling standards -
                   requirements that don&apos;t apply to residential work. Insurance,
@@ -673,7 +673,7 @@ export default function CommercialCleaningCategoryPageClient() {
                   cleaning team has access to business premises, sensitive
                   equipment, and confidential areas.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   At Mint Sanitary, our commercial cleaning team is specifically
                   trained for business environments. We carry commercial-grade
                   insurance, maintain WorkSafeBC coverage, and use industrial
@@ -700,7 +700,7 @@ export default function CommercialCleaningCategoryPageClient() {
           </div>
         </section>
 
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto grid max-w-[1200px] items-stretch gap-10 lg:grid-cols-2">
             <div className="h-full overflow-hidden rounded-[20px]">
               <img
@@ -712,11 +712,11 @@ export default function CommercialCleaningCategoryPageClient() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[36px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[36px]">
                 The Cost of Skipping Professional Cleaning
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   We once visited a North Vancouver office that had been relying
                   on staff to handle their own cleaning for over a year. The
                   carpets were visibly stained, the break room had a persistent
@@ -726,21 +726,21 @@ export default function CommercialCleaningCategoryPageClient() {
                   three employees commented on the difference the very next
                   morning.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   That story isn&apos;t unusual. Many businesses underestimate how
                   quickly dirt, grime, and bacteria accumulate in commercial
                   spaces. What starts as a minor inconvenience becomes a health
                   hazard, a morale issue, and eventually a costly restoration
                   project.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   The real costs of skipping professional cleaning include
                   premature carpet and flooring replacement, HVAC system strain
                   from dust buildup, increased sick days among staff, negative
                   impressions on clients and visitors, and potential WorkSafeBC
                   compliance issues.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Professional commercial cleaning isn&apos;t an expense - it&apos;s
                   preventive maintenance for your most valuable asset: your
                   workspace. A consistent cleaning schedule keeps your space
@@ -811,34 +811,34 @@ export default function CommercialCleaningCategoryPageClient() {
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Let&apos;s Talk About Your Cleaning Needs
             </h2>
-            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-white/80">
               Your space reflects your business values. Mint Sanitary handles
               commercial cleaning in North Vancouver so you can focus on running
               your operation. We&apos;re available 7 days a week with transparent
-              pricing, eco-friendly products, and free estimates. Call (604)
-              671-6252 today or request a free estimate online.
+              pricing, eco-friendly products, and free estimates. Call 236-688-3248
+              today or request a free estimate online.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:bg-[#5580d4] hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-[#6191e9]/30 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062] transition-all duration-200 hover:border-[#6191e9]/60 hover:bg-[#f4f8ff]"
+                href="tel:+12366883248"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
         </section>
 
-        <div className="relative z-10 -mt-1 bg-white">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"

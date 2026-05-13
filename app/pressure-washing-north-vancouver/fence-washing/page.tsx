@@ -180,15 +180,15 @@ export default function FenceWashingPage() {
       heroIntro="Your fence is one of the first things visitors and potential buyers notice about your property. Over time, North Vancouver's damp Pacific Northwest climate can leave cedar fences covered in moss, vinyl ones stained with algae, and composite materials looking dingy. Professional fence washing removes years of buildup, restores your fence's color and texture, and prepares it for sealing or staining."
       faqItems={faqItems}
       ctaHeading="Ready to Restore Your North Vancouver Fence?"
-      ctaBody="Your fence deserves professional care. Mint Sanitary combines material expertise, eco-friendly solutions, transparent pricing, and same-day service to deliver results that exceed expectations. First-time customers receive 10% off with code MINT25. Call (604) 671-6252 or email hello@mintsanitary.com. Open 7 days a week with flexible scheduling."
+      ctaBody="Your fence deserves professional care. Mint Sanitary combines material expertise, eco-friendly solutions, transparent pricing, and same-day service to deliver results that exceed expectations. First-time customers receive 10% off with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Open 7 days a week with flexible scheduling."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What Fence Washing Includes
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             At Mint Sanitary, we&apos;ve spent years perfecting fence washing
             for every material type, from natural cedar in Edgemont
             Village&apos;s older homes to vinyl fencing in newer Seymour Heights
@@ -196,7 +196,7 @@ export default function FenceWashingPage() {
             solutions that protect your investment while delivering visible
             results.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             Fence washing is more than a quick rinse with a garden hose.
             It&apos;s a specialized cleaning process that removes dirt, grime,
             algae, moss, mildew, and stubborn stains from all fence materials.
@@ -207,18 +207,18 @@ export default function FenceWashingPage() {
             {fenceIncludes.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             The entire process takes 1 to 3 hours depending on fence size,
             condition, and material. For a typical 150 to 200-foot fence in
             North Vancouver, plan on 1 to 2 hours of cleaning time.
@@ -347,10 +347,10 @@ export default function FenceWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Why Professional Fence Washing Matters
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Putting off fence cleaning might seem like a way to save money, but
             it often leads to higher costs down the road. Here&apos;s what
             happens when you invest in professional fence washing for your North
@@ -360,22 +360,22 @@ export default function FenceWashingPage() {
             {whyMatters.map((section) => (
               <div
                 key={section.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-6"
+                className="rounded-[14px] bg-white/[0.12] p-6"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {section.title}
                 </h3>
                 <ul className="mt-3 space-y-1">
                   {section.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
                   ))}
                 </ul>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {section.body}
                 </p>
               </div>
@@ -426,37 +426,37 @@ export default function FenceWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Transparent Fence Washing Pricing
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             We believe pricing should be transparent and straightforward. No
             hidden fees, no surprise charges. Here&apos;s how we price fence
             washing in North Vancouver.
           </p>
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <div>
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Linear Foot Pricing
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 This is our most common pricing method for standard residential
                 fences:
               </p>
               <div className="mt-4 space-y-3">
-                <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                  <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                <div className="rounded-[14px] bg-white/[0.12] p-5">
+                  <p className="font-body text-[15px] font-extrabold text-white">
                     Typical Range
                   </p>
-                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-white/80">
                     $2.50 to $5.50 per linear foot for 6-foot-tall fences
                   </p>
                 </div>
-                <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                  <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                <div className="rounded-[14px] bg-white/[0.12] p-5">
+                  <p className="font-body text-[15px] font-extrabold text-white">
                     Example
                   </p>
-                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-white/80">
                     A 150-foot fence costs between $375 to $825, depending on
                     material and condition
                   </p>
@@ -464,27 +464,27 @@ export default function FenceWashingPage() {
               </div>
             </div>
             <div>
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Square Footage Pricing
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 For complex layouts or fences with varying heights, we calculate
                 by square footage:
               </p>
               <div className="mt-4 space-y-3">
-                <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                  <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                <div className="rounded-[14px] bg-white/[0.12] p-5">
+                  <p className="font-body text-[15px] font-extrabold text-white">
                     Typical Range
                   </p>
-                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-white/80">
                     $0.35 to $0.90 per square foot
                   </p>
                 </div>
-                <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                  <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                <div className="rounded-[14px] bg-white/[0.12] p-5">
+                  <p className="font-body text-[15px] font-extrabold text-white">
                     Example
                   </p>
-                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-1 font-body text-[15px] leading-[1.7] text-white/80">
                     An 800 square foot fence costs between $280 to $720
                   </p>
                 </div>
@@ -492,42 +492,42 @@ export default function FenceWashingPage() {
             </div>
           </div>
           <div className="mt-10">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Factors That Affect Fence Cleaning Costs
             </h3>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Fence Material
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Cedar and wood require more specialized care and cost more
                   than vinyl or metal.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Condition
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Heavy moss or mildew buildup may require extra pre-treatment
                   time, adding $50 to $150.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Height and Size
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Taller fences require more labor and specialized equipment.
                   Larger fences may receive slight per-foot discounts.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Accessibility
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Hard-to-reach sections or steep terrain add 10 to 15% to the
                   total.
                 </p>
@@ -535,38 +535,38 @@ export default function FenceWashingPage() {
             </div>
           </div>
           <div className="mt-10">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Add-On Services
             </h3>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Sealing and Staining Prep
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Consultation included free with any wash.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Algae and Rust Pre-Treatment
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   $50 to $100 depending on severity.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Post-Wash Wood Sealing
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Quote based on application, typically $400 to $600 for 500
                   square feet.
                 </p>
               </div>
             </div>
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             We provide free, no-pressure estimates via phone or on-site visit.
             Just describe your fence, materials, approximate footage, and main
             concerns. We&apos;ll provide a ballpark range within hours.
@@ -673,16 +673,16 @@ export default function FenceWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Resources
           </h2>
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <div>
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Related Services
               </h3>
               <ul className="mt-4 space-y-3">
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver"
                     className="underline underline-offset-2"
@@ -690,7 +690,7 @@ export default function FenceWashingPage() {
                     Professional pressure washing in North Vancouver
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver/deck-patio-cleaning"
                     className="underline underline-offset-2"
@@ -698,7 +698,7 @@ export default function FenceWashingPage() {
                     Deck washing in North Vancouver
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver"
                     className="underline underline-offset-2"
@@ -706,7 +706,7 @@ export default function FenceWashingPage() {
                     Moss removal services in North Vancouver
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver"
                     className="underline underline-offset-2"
@@ -717,11 +717,11 @@ export default function FenceWashingPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Further Reading
               </h3>
               <ul className="mt-4 space-y-3">
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://www.angi.com/articles/how-much-cost-pressure-wash-fence.htm"
                     target="_blank"
@@ -731,7 +731,7 @@ export default function FenceWashingPage() {
                     Angi: How Much Does it Cost to Pressure Wash a Fence
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://www.vikingfence.com/2023/11/06/how-to-clean-a-cedar-fence.htm"
                     target="_blank"
@@ -741,7 +741,7 @@ export default function FenceWashingPage() {
                     Viking Fence: How to Clean a Cedar Fence
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://www.realhomes.com/advice/how-to-clean-a-vinyl-fence"
                     target="_blank"
@@ -751,7 +751,7 @@ export default function FenceWashingPage() {
                     Real Homes: How to Clean a Vinyl Fence
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://www.fenceauthority.com/blog/how-to-pressure-wash-your-vinyl-fence/"
                     target="_blank"
@@ -761,7 +761,7 @@ export default function FenceWashingPage() {
                     Fence Authority: How to Pressure Wash Your Vinyl Fence
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://cascadefenceanddeck.com/post/how-to-get-rid-of-moss-and-mildew-on-your-cedar-fence/"
                     target="_blank"

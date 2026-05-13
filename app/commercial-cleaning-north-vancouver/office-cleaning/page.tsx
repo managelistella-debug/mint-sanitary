@@ -100,7 +100,7 @@ const whyChooseItems = [
   },
   {
     title: "Free Estimates",
-    body: "We provide a detailed, no-obligation walkthrough and written quote. No hidden fees, no surprises. Call (604) 671-6252 to schedule yours.",
+    body: "We provide a detailed, no-obligation walkthrough and written quote. No hidden fees, no surprises. Call 236-688-3248 to schedule yours.",
   },
   {
     title: "Month-to-Month Contracts",
@@ -174,7 +174,7 @@ const faqItems = [
   {
     question: "Do you offer free office cleaning estimates?",
     answer:
-      "Yes. Call (604) 671-6252 to schedule a no-obligation walkthrough. We\u2019ll assess your space, discuss your priorities, and provide a transparent written quote.",
+      "Yes. Call 236-688-3248 to schedule a no-obligation walkthrough. We\u2019ll assess your space, discuss your priorities, and provide a transparent written quote.",
   },
   {
     question: "What\u2019s included in a standard office cleaning?",
@@ -216,7 +216,7 @@ export default function OfficeCleaningNorthVancouverPage() {
       heroIntro="A clean office isn&apos;t a luxury — it&apos;s the foundation of a healthy, productive workplace. Mint Sanitary provides professional office cleaning programs across North Vancouver with eco-friendly products, bonded staff, and 7-day availability."
       faqItems={faqItems}
       ctaHeading="Upgrade Your Office Cleaning"
-      ctaBody="Book your free office cleaning estimate with Mint Sanitary. Flexible plans, eco-friendly products, bonded staff, and seven-day availability. Use code MINT25 for 10% off your first clean. Call (604) 671-6252 or request a free estimate online."
+      ctaBody="Book your free office cleaning estimate with Mint Sanitary. Flexible plans, eco-friendly products, bonded staff, and seven-day availability. Use code MINT25 for 10% off your first clean. Call 236-688-3248 or request a free estimate online."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -231,10 +231,10 @@ export default function OfficeCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 A Clean Office Changes Everything
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Your office is where your team spends most of their waking hours. The
                 condition of that environment directly affects their health, focus, and
                 how they feel about coming to work. Dust, allergens, and bacteria
@@ -242,7 +242,7 @@ export default function OfficeCleaningNorthVancouverPage() {
                 spaces with recirculated air. Professional office cleaning removes what
                 daily tidying misses and creates a workspace your team deserves.
               </p>
-              <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 Beyond employee well-being, a clean office makes a powerful first
                 impression on clients, partners, and candidates. It signals
                 professionalism and attention to detail before anyone says a word.
@@ -251,7 +251,7 @@ export default function OfficeCleaningNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -298,19 +298,19 @@ export default function OfficeCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What&apos;s Included
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {includedItems.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
@@ -358,11 +358,11 @@ export default function OfficeCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             How Professional Office Cleaning Improves Employee Health &amp;
             Productivity
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             The connection between workplace cleanliness and employee performance is
             well-documented. Here&apos;s how regular professional cleaning makes a
             measurable difference.
@@ -371,12 +371,12 @@ export default function OfficeCleaningNorthVancouverPage() {
             {healthBenefits.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
@@ -399,19 +399,19 @@ export default function OfficeCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Eco-Friendly Cleaning Products
           </h2>
           <div className="mt-8 grid gap-10 md:grid-cols-2 md:gap-12">
             <div className="space-y-4">
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Traditional office cleaning products often contain harsh chemicals
                 that leave behind volatile organic compounds (VOCs). In an enclosed
                 office with recirculated air, these compounds degrade indoor air
                 quality and can cause headaches, respiratory irritation, and allergic
                 reactions among staff.
               </p>
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Mint Sanitary exclusively uses eco-friendly, biodegradable cleaning
                 products that are third-party certified for safety and environmental
                 responsibility. These products deliver the same cleaning power without
@@ -420,13 +420,13 @@ export default function OfficeCleaningNorthVancouverPage() {
               </p>
             </div>
             <div className="space-y-4">
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Our eco-friendly approach extends to our equipment as well. We use
                 HEPA-filter vacuums that trap 99.97% of particles, microfiber cloths
                 that reduce chemical use, and color-coded cleaning systems that prevent
                 cross-contamination between areas like washrooms and kitchens.
               </p>
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Choosing green cleaning isn&apos;t just good for the environment — it&apos;s
                 good for business. Many North Vancouver companies are pursuing
                 sustainability commitments, and eco-friendly office cleaning supports
@@ -470,7 +470,7 @@ export default function OfficeCleaningNorthVancouverPage() {
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {tier.title}
                 </h3>
-                <p className="mt-2 font-body text-[20px] font-extrabold text-[#66DAD5]">
+                <p className="mt-2 font-body text-[20px] font-extrabold text-white">
                   {tier.range}
                 </p>
                 <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
@@ -496,10 +496,10 @@ export default function OfficeCleaningNorthVancouverPage() {
             <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Every quote is based on a free walkthrough of your office. Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2 text-white"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               to schedule yours. Mention code{" "}
               <strong className="text-white">MINT25</strong> for 10% off your

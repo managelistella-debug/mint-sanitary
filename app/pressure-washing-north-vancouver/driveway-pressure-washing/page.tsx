@@ -229,7 +229,7 @@ const faqItems = [
     question:
       "How much does driveway pressure washing cost in North Vancouver?",
     answer:
-      "Professional driveway pressure washing typically costs $0.30 to $0.55 per square foot, or $100 to $350 for most North Vancouver driveways. A typical 500 square foot driveway averages $150 to $250. Heavy stains, large properties, or add-ons like sealing or oil treatment increase the cost. Mint Sanitary offers 10% off your first clean with code MINT25 and free on-site estimates with no obligation. Call (604) 671-6252 or email hello@mintsanitary.com for your personalized quote.",
+      "Professional driveway pressure washing typically costs $0.30 to $0.55 per square foot, or $100 to $350 for most North Vancouver driveways. A typical 500 square foot driveway averages $150 to $250. Heavy stains, large properties, or add-ons like sealing or oil treatment increase the cost. Mint Sanitary offers 10% off your first clean with code MINT25 and free on-site estimates with no obligation. Call 236-688-3248 or email hello@mintsanitary.com for your personalized quote.",
   },
 ];
 
@@ -241,15 +241,15 @@ export default function DrivewayPressureWashingPage() {
       heroIntro="Your driveway is often the first impression visitors have of your home. In North Vancouver's wet climate, dirt, moss, and algae buildup happens fast. Professional driveway pressure washing restores curb appeal, prevents slippery hazards, and protects your investment from long-term damage. Driveway pressure washing in North Vancouver is an affordable, effective solution for homeowners preparing to sell or dealing with stubborn oil stains."
       faqItems={faqItems}
       ctaHeading="Ready to Restore Your Driveway?"
-      ctaBody="Your North Vancouver driveway deserves professional care. Mint Sanitary delivers excellent results with eco-friendly products and professional service. Contact us today for your free, no-obligation estimate. New customers save 10% with code MINT25. Call (604) 671-6252 or email hello@mintsanitary.com. Available 7 days a week."
+      ctaBody="Your North Vancouver driveway deserves professional care. Mint Sanitary delivers excellent results with eco-friendly products and professional service. Contact us today for your free, no-obligation estimate. New customers save 10% with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What Is Driveway Pressure Washing?
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             At Mint Sanitary, we provide seven days a week professional pressure
             washing across Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont
             Village, and Seymour Heights. We use eco-friendly cleaning products
@@ -258,12 +258,12 @@ export default function DrivewayPressureWashingPage() {
             from the moss and algae that thrive in our moist environment to the
             freeze-thaw cycles that damage unprotected concrete.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             Get a free, no-obligation estimate and save 10% with code{" "}
-            <strong className="font-extrabold text-[#4E5062]">MINT25</strong>.
+            <strong className="font-extrabold text-white">MINT25</strong>.
             Call{" "}
-            <a href="tel:+16046716252" className="underline underline-offset-2">
-              (604) 671-6252
+            <a href="tel:+12366883248" className="underline underline-offset-2">
+              236-688-3248
             </a>{" "}
             or email{" "}
             <a
@@ -274,7 +274,7 @@ export default function DrivewayPressureWashingPage() {
             </a>{" "}
             to book today.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             Driveway pressure washing uses high-pressure water jets, typically
             2,000 to 4,000 PSI (pounds per square inch), to remove dirt, grime,
             mold, algae, and stains from concrete, asphalt, and paver surfaces.
@@ -283,14 +283,14 @@ export default function DrivewayPressureWashingPage() {
             high-pressure water with eco-friendly cleaning solutions that break
             down oils and contaminants without harsh chemicals.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             Most driveways (500 to 800 square feet) are completely cleaned in
             one to two hours, depending on condition. Professional pressure
             washing reaches deep into the porous structure of your driveway
             surface, restoring the original color and texture that years of
             weathering have dulled.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             Using the wrong pressure or technique damages driveways, strips
             protective sealers, or forces water into foundations and basements.
             Professional pressure washers understand the nuances of different
@@ -334,20 +334,20 @@ export default function DrivewayPressureWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Why Driveway Pressure Washing Matters
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Keeping your driveway clean is more than vanity. Here&apos;s why
             driveway pressure washing in North Vancouver delivers real value.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {benefits.map((b) => (
-              <div key={b.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div key={b.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {b.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {b.body}
                 </p>
               </div>
@@ -397,26 +397,26 @@ export default function DrivewayPressureWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Surface Damage Risks: Why DIY Can Backfire
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Pressure washer rentals are accessible but dangerous without
             training. Here&apos;s why DIY pressure washing backfires.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {diyRisks.map((r) => (
-              <div key={r.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div key={r.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {r.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {r.body}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             Professional pressure washing costs $100 to $350, far less than $500
             to $3,000+ repair bills from DIY mistakes. Our technicians are
             trained, insured, and equipped safely.
@@ -482,18 +482,18 @@ export default function DrivewayPressureWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Driveway Pressure Washing Pricing Guide
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Transparency about cost is important. Here&apos;s how professional
             pressure washing in North Vancouver is priced.
           </p>
           <div className="mt-8">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               How We Price Driveway Cleaning
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Professional driveway pressure washing costs $0.30 to $0.55 per
               square foot. For a 500 square foot driveway at $0.40 per square
               foot, the cost is $200. Most professionals charge a $100 to $200
@@ -503,35 +503,35 @@ export default function DrivewayPressureWashingPage() {
             </p>
           </div>
           <div className="mt-8">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Cost Factors
             </h3>
             <div className="mt-4 space-y-4">
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Surface Type
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Concrete and asphalt: $0.30 to $0.50 per square foot. Pavers
                   and stamped concrete: $0.40 to $0.65 per square foot (more
                   delicate).
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Condition and Stains
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Light soiling costs less; heavy buildup or oil stains cost
                   $0.40 to $1.25 per square foot due to pre-treatment and extra
                   time.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <p className="font-body text-[15px] font-extrabold text-white">
                   Add-On Services
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   Oil stain pre-treatment: $50 to $150. Driveway sealing: $0.15
                   to $0.30 per square foot. Bundled services qualify for
                   discounts.
@@ -540,37 +540,37 @@ export default function DrivewayPressureWashingPage() {
             </div>
           </div>
           <div className="mt-8">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Example Pricing Breakdown
             </h3>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
               {pricingExamples.map((p) => (
                 <div
                   key={p.size}
-                  className="rounded-[14px] bg-[#f4f8ff] p-5"
+                  className="rounded-[14px] bg-white/[0.12] p-5"
                 >
-                  <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                  <p className="font-body text-[15px] font-extrabold text-white">
                     {p.size}
                   </p>
-                  <p className="mt-1 font-body text-[13px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-1 font-body text-[13px] leading-[1.7] text-white/80">
                     {p.condition}
                   </p>
-                  <p className="mt-2 font-body text-[17px] font-extrabold text-[#66DAD5]">
+                  <p className="mt-2 font-body text-[17px] font-extrabold text-white">
                     {p.cost}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
-            <strong className="font-extrabold text-[#4E5062]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
+            <strong className="font-extrabold text-white">
               Special Offer:
             </strong>{" "}
             10% off your first clean with code{" "}
-            <strong className="font-extrabold text-[#4E5062]">MINT25</strong>.
+            <strong className="font-extrabold text-white">MINT25</strong>.
             Call{" "}
-            <a href="tel:+16046716252" className="underline underline-offset-2">
-              (604) 671-6252
+            <a href="tel:+12366883248" className="underline underline-offset-2">
+              236-688-3248
             </a>{" "}
             or email{" "}
             <a
@@ -643,20 +643,20 @@ export default function DrivewayPressureWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Why Choose Mint Sanitary
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Mint Sanitary stands out through commitment to quality, local
             expertise, and customer care.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {whyChoosePoints.map((p) => (
-              <div key={p.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div key={p.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {p.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {p.body}
                 </p>
               </div>

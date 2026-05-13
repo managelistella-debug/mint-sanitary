@@ -17,7 +17,7 @@ const categoryLinks = [
 ];
 
 const contactInfo = [
-  { label: "Phone", value: "(604) 671-6252", href: "tel:+16046716252" },
+  { label: "Phone", value: "236-688-3248", href: "tel:+12366883248" },
   { label: "Email", value: "hello@mintsanitary.com", href: "mailto:hello@mintsanitary.com" },
   { label: "Address", value: "1106 E 3rd St, North Vancouver, BC V7H 1B8" },
   { label: "Hours", value: "7 Days a Week" },
@@ -43,7 +43,7 @@ export default function Footer() {
                 Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="inline-flex items-center justify-center self-start rounded-[99px] border border-white/50 px-[24px] py-[10px] font-body text-[14px] font-bold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:border-white hover:bg-white/10"
               >
                 Call Now

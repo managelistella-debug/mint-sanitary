@@ -79,7 +79,7 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
       heroIntro="Your carpets are more than just floor coverings. They&apos;re an investment in your home&apos;s comfort and appearance. But over time, dirt, allergens, and odors build up deep in the fibers. That&apos;s where professional carpet steam cleaning in North Vancouver makes all the difference."
       faqItems={faqItems}
       ctaHeading="Ready for Cleaner, Fresher Carpets in North Vancouver?"
-      ctaBody="Your carpets deserve professional care. Preparing for a special event, dealing with stubborn odors, or ready for a deep refresh? Get your free estimate today. Call Mint Sanitary at (604) 671-6252 or email hello@mintsanitary.com."
+      ctaBody="Your carpets deserve professional care. Preparing for a special event, dealing with stubborn odors, or ready for a deep refresh? Get your free estimate today. Call Mint Sanitary at 236-688-3248 or email hello@mintsanitary.com."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -93,17 +93,17 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Carpet Steam Cleaning in North Vancouver? (The Hot Water Extraction Method)
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 The term &ldquo;steam cleaning&rdquo; is a bit of a misnomer. The real name is
                 hot water extraction, and it&apos;s the gold standard for deep carpet
                 cleaning in North Vancouver.
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -114,24 +114,24 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
 
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <p className="font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="font-body text-[15px] leading-[1.8] text-white/80">
             We heat water to 200 to 230&deg;F, mix it with an eco-friendly cleaning
             solution, and inject it deep into your carpet under high pressure.
             Simultaneously, a powerful vacuum extracts the dirty water. The
             result is a carpet that&apos;s not just surface-clean, but genuinely
             sanitized.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.8] text-white/80">
             Carpet manufacturers require professional hot water extraction
             cleaning to maintain warranty coverage. If your carpets need to stay
             protected, this is the method you need.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-[16px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+            <div className="rounded-[16px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
                 Why Choose Carpet Steam Cleaning Over Other Methods
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>The deepest clean available</li>
                 <li>Sanitization power from 200&deg;F+ heat</li>
                 <li>Pet-friendly results with enzymatic treatment</li>
@@ -139,11 +139,11 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
                 <li>Long-lasting results with no sticky residue</li>
               </ul>
             </div>
-            <div className="rounded-[16px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+            <div className="rounded-[16px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
                 What&apos;s Included in Our Service
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>Professional pre-inspection and carpet fiber assessment</li>
                 <li>Eco-friendly pre-treatment of stains and high-traffic zones</li>
                 <li>Commercial-grade hot water extraction cleaning</li>
@@ -202,10 +202,10 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Drying Time & What to Expect After Your North Vancouver Clean
           </h2>
-          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-white/80">
             Most carpets in North Vancouver are ready for normal use within
             6 to 12 hours. Light foot traffic is fine, but avoid placing
             heavy furniture back on the carpet for at least 6 hours.
@@ -230,29 +230,29 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Pricing & Service Areas in North Vancouver
           </h2>
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <div>
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Typical costs
               </p>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Carpet steam cleaning is priced at $60 per room. Final cost
                 depends on total rooms, traffic level, stain severity, and
                 add-ons like pet odor treatment. Visit our rates page for details.
               </p>
             </div>
             <div>
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Related services
               </p>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Carpet cleaning in North Vancouver
                   </a>
@@ -260,7 +260,7 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/carpet-stain-removal/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Carpet stain removal in North Vancouver
                   </a>
@@ -268,7 +268,7 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/area-rug-cleaning/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Area rug cleaning in North Vancouver
                   </a>
@@ -276,7 +276,7 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
                 <li>
                   <a
                     href="/cleaning-services-north-vancouver/upholstery-cleaning/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Upholstery cleaning in North Vancouver
                   </a>
@@ -284,15 +284,15 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
               </ul>
             </div>
           </div>
-          <div className="mt-10 rounded-[16px] bg-[#f4f8ff] p-6">
-            <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+          <div className="mt-10 rounded-[16px] bg-white/[0.12] p-6">
+            <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
               Sources & Further Reading
             </h3>
-            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
               <li>
                 <a
                   href="https://masterclean.biz/carpet-cleaning-benefits-allergies/"
-                  className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                  className="border-b border-white/40 font-body font-bold text-white"
                 >
                   Master Clean: Carpet Cleaning Benefits for Allergies
                 </a>
@@ -300,7 +300,7 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
               <li>
                 <a
                   href="https://dynamiccleaning.org/research-shows-steam-cleaning-can-rid-carpets-of-dust-mites"
-                  className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                  className="border-b border-white/40 font-body font-bold text-white"
                 >
                   Dynamic Cleaning: Steam Cleaning Research on Dust Mite Reduction
                 </a>
@@ -308,7 +308,7 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
               <li>
                 <a
                   href="https://hobbitcleaning.ca/carpet-deep-cleaning-hot-water-extraction-in-north-vancouver-bc/"
-                  className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                  className="border-b border-white/40 font-body font-bold text-white"
                 >
                   Hobbit Cleaning: Hot Water Extraction Methods
                 </a>
@@ -316,7 +316,7 @@ export default function CarpetSteamCleaningNorthVancouverPage() {
               <li>
                 <a
                   href="https://www.stanleysteemer.com/blog/tips-tricks/how-clean-pet-messes"
-                  className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                  className="border-b border-white/40 font-body font-bold text-white"
                 >
                   Stanley Steemer: Pet Stain Cleaning Guide
                 </a>

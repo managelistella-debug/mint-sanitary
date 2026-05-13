@@ -134,21 +134,21 @@ export default function DeckPatioCleaningPage() {
       heroIntro="North Vancouver's wet Pacific Northwest climate creates ideal conditions for moss, algae, and mildew growth on outdoor surfaces. Cedar decks in Lower Lonsdale, composite decking in Edgemont Village, stone patios in Deep Cove &#8212; professional cleaning restores your outdoor space and protects your investment."
       faqItems={faqItems}
       ctaHeading="Get Your Free Deck Cleaning Estimate"
-      ctaBody="Ready to restore your outdoor space? Contact Mint Sanitary for a free on-site assessment and transparent quote. First-time customers get 10% off with code MINT25. Call (604) 671-6252 or email hello@mintsanitary.com. Available 7 days a week across North Vancouver."
+      ctaBody="Ready to restore your outdoor space? Contact Mint Sanitary for a free on-site assessment and transparent quote. First-time customers get 10% off with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week across North Vancouver."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Why Professional Deck and Patio Cleaning Matters
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Mint Sanitary specializes in soft-wash deck and patio cleaning
             throughout North Vancouver, including Lynn Valley and Seymour
             Heights. Our eco-friendly methods remove years of buildup without
             damaging wood fibers or compromising composite warranties.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             Your deck or patio is an extension of your home, but North
             Vancouver&apos;s climate works against you. Constant moisture from
             rainfall and coastal humidity accelerate moss, algae, mold, and
@@ -158,12 +158,12 @@ export default function DeckPatioCleaningPage() {
             {whyItMatters.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
@@ -218,29 +218,29 @@ export default function DeckPatioCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Composite and Stone Surface Cleaning
           </h2>
           <div className="mt-10 grid gap-8 md:grid-cols-2">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Composite Deck Cleaning and Maintenance
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Newer homes in Edgemont Village and Seymour Heights often
                 feature composite decking from Trex, TimberTech, and DuxxBak.
                 These engineered materials require a different approach than
                 wood.
               </p>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                <strong className="font-extrabold text-[#4E5062]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
+                <strong className="font-extrabold text-white">
                   Warranty protection is non-negotiable.
                 </strong>{" "}
                 Composite manufacturers specify cleaning methods to protect
                 coverage. Aggressive pressure or harsh chemicals can void
                 warranties.
               </p>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Our soft-wash approach stays under 1,500 PSI and uses
                 biodegradable products approved by manufacturers. We remove
                 stains and algae without damaging material or warranty.
@@ -248,21 +248,21 @@ export default function DeckPatioCleaningPage() {
                 compliance and best results in North Vancouver.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Concrete and Stone Patio Cleaning
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Concrete, stone, and paver surfaces handle higher PSI levels
                 than wood or composite. Our concrete patio cleaning in North
                 Vancouver removes moss, algae, dirt, and weathering buildup.
               </p>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 We safely use up to 3,000 PSI when appropriate, preventing
                 surface etching and mortar joint damage. Wide-angle tips and
                 proper distance distribute pressure evenly.
               </p>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Different stone types respond differently to pressure. Our
                 assessment identifies your patio material and adjusts our
                 approach. The result is a clean, restored surface ready for
@@ -314,41 +314,41 @@ export default function DeckPatioCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Pre-Staining and Maintenance
           </h2>
           <div className="mt-8">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Pre-Staining and Pre-Sealing Deck Cleaning
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Professional cleaning beforehand is required before refreshing
               your deck with new stain or sealant. A clean deck absorbs products
               evenly, creating a professional finish that lasts 3 to 5+ years.
             </p>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               After cleaning, wait 48 to 72 hours for your deck to fully dry.
               Moisture prevents proper adhesion and causes peeling, uneven
               color, or water damage.
             </p>
           </div>
           <div className="mt-10">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Common Deck Maintenance Mistakes in North Vancouver
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Many homeowners wait too long between cleanings. In North
               Vancouver&apos;s moist climate, annual maintenance prevents
               problems rather than reacting to damage.
             </p>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               DIY pressure washing is costly. I consulted with a Deep Cove
               homeowner who rented a washer and used 3,000+ PSI on their cedar
               deck. Gouged boards, splintered edges, and rot resulted, requiring
               full board replacement. Professional soft-wash cleaning would have
               cost a fraction of repairs.
             </p>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Neglecting pre-staining preparation is another error. Applying
               stain to a dirty deck wastes protective qualities and causes
               uneven color and peeling.
@@ -398,16 +398,16 @@ export default function DeckPatioCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Services and Further Reading
           </h2>
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <div>
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Related Services in North Vancouver
               </h3>
               <ul className="mt-4 space-y-3">
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver/driveway-pressure-washing"
                     className="underline underline-offset-2"
@@ -415,7 +415,7 @@ export default function DeckPatioCleaningPage() {
                     Pressure washing driveways in North Vancouver
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver/house-washing"
                     className="underline underline-offset-2"
@@ -423,7 +423,7 @@ export default function DeckPatioCleaningPage() {
                     Home exterior cleaning in North Vancouver
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver"
                     className="underline underline-offset-2"
@@ -431,7 +431,7 @@ export default function DeckPatioCleaningPage() {
                     Eco-friendly pressure washing in North Vancouver
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver"
                     className="underline underline-offset-2"
@@ -439,7 +439,7 @@ export default function DeckPatioCleaningPage() {
                     Moss removal services in North Vancouver
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="/pressure-washing-north-vancouver"
                     className="underline underline-offset-2"
@@ -450,11 +450,11 @@ export default function DeckPatioCleaningPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Further Reading
               </h3>
               <ul className="mt-4 space-y-3">
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://www.decks.com/resource-index/decking/how-to-pressure-wash-a-deck/"
                     target="_blank"
@@ -464,7 +464,7 @@ export default function DeckPatioCleaningPage() {
                     Decks.com: How to Pressure Wash a Deck
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://www.timbertech.com/ideas/how-to-clean-composite-decking/"
                     target="_blank"
@@ -474,7 +474,7 @@ export default function DeckPatioCleaningPage() {
                     TimberTech Care Guide
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://www.decks.com/how-to/articles/removing-moss-algae-from-your-deck"
                     target="_blank"
@@ -484,7 +484,7 @@ export default function DeckPatioCleaningPage() {
                     Moss and algae removal methods
                   </a>
                 </li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">
                   <a
                     href="https://tanzite.com/blogs/news/removing-moss-algae-from-your-deck"
                     target="_blank"

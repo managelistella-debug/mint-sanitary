@@ -106,12 +106,12 @@ const faqItems = [
   {
     question: "Do you offer commercial pressure washing in North Vancouver?",
     answer:
-      "We specialize in residential services. For commercial inquiries, contact us at (604) 671-6252 or hello@mintsanitary.com. We may be able to help or refer you to a trusted partner.",
+      "We specialize in residential services. For commercial inquiries, contact us at 236-688-3248 or hello@mintsanitary.com. We may be able to help or refer you to a trusted partner.",
   },
   {
     question: "How do I book a pressure washing appointment in North Vancouver?",
     answer:
-      "Book online at our website, call (604) 671-6252, or email hello@mintsanitary.com. We're available 7 days a week. First-time customers receive 10% off with code MINT25. Free estimates are available for all services with no obligation.",
+      "Book online at our website, call 236-688-3248, or email hello@mintsanitary.com. We're available 7 days a week. First-time customers receive 10% off with code MINT25. Free estimates are available for all services with no obligation.",
   },
 ];
 
@@ -255,7 +255,7 @@ export default function PressureWashingCategoryPageClient() {
                 for moss, algae, and mildew on driveways, decks, siding, and fences.
                 Mint Sanitary brings professional pressure washing and soft washing
                 services to North Vancouver — removing years of buildup and restoring
-                your home&apos;s curb appeal. Call (604) 671-6252 or use code MINT25 for
+                your home&apos;s curb appeal. Call 236-688-3248 or use code MINT25 for
                 10% off your first service.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -266,10 +266,10 @@ export default function PressureWashingCategoryPageClient() {
                   Free Estimate
                 </a>
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
                 >
-                  Call (604) 671-6252
+                  Call 236-688-3248
                 </a>
               </div>
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
@@ -288,7 +288,7 @@ export default function PressureWashingCategoryPageClient() {
             >
               <path
                 d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-                fill="#6191e9"
+                fill="rgba(255,255,255,0.13)"
               />
             </svg>
           </div>
@@ -319,7 +319,7 @@ export default function PressureWashingCategoryPageClient() {
         </section>
 
         {/* ── Wave: Blue → White ──────────────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-[#6191e9]">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
@@ -327,7 +327,7 @@ export default function PressureWashingCategoryPageClient() {
           >
             <path
               d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-              fill="#ffffff"
+              fill="transparent"
             />
           </svg>
         </div>
@@ -347,14 +347,14 @@ export default function PressureWashingCategoryPageClient() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Why It Matters
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Pressure Washing Matters in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   North Vancouver&apos;s location at the intersection of Coast
                   Mountains, dense forest, and the Pacific Ocean creates a unique
                   climate challenge: high annual rainfall combined with persistent
@@ -362,7 +362,7 @@ export default function PressureWashingCategoryPageClient() {
                   where a few cleaning cycles per year suffice, North Vancouver
                   properties require regular attention to prevent structural damage.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Moss and algae thrive in moisture and shade. North-facing walls,
                   areas beneath tree coverage, and horizontal surfaces like
                   driveways and decks become host to organic growth that accelerates
@@ -372,7 +372,7 @@ export default function PressureWashingCategoryPageClient() {
                   early means they accelerate, with algae sending root-like
                   structures into concrete and moss trapping moisture against wood.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Research shows homes with strong curb appeal command 7 to 17%
                   higher resale prices than similar properties with neglected
                   exteriors. For homeowners in Edgemont Village or other premium
@@ -385,31 +385,31 @@ export default function PressureWashingCategoryPageClient() {
         </section>
 
         {/* ── Soft Wash vs Pressure Wash ─────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Soft Wash vs. Pressure Wash — Which Does Your Home Need?
               </h2>
             </div>
             <div className="mt-10 grid gap-6 md:grid-cols-2">
-              <div className="rounded-[20px] bg-white p-6 shadow-sm">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Pressure Washing
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Uses high force (1,500 to 4,500 PSI) to blast away embedded
                   dirt, oil stains, and grime. Works excellently for concrete
                   driveways, brick, pavers, and hard surfaces where aggressive
                   cleaning is safe.
                 </p>
               </div>
-              <div className="rounded-[20px] bg-white p-6 shadow-sm">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Soft Washing
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Uses lower pressure (less than 700 PSI) combined with
                   biodegradable detergents to lift organic growth. Targets algae,
                   moss, and mold while protecting painted surfaces, wood, composite
@@ -426,7 +426,7 @@ export default function PressureWashingCategoryPageClient() {
                   loading="lazy"
                 />
               </div>
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Many homeowners assume that more pressure equals better cleaning.
                 In reality, high pressure on wood or delicate surfaces causes
                 expensive damage. Soft wash kills moss and algae at the source by
@@ -442,10 +442,10 @@ export default function PressureWashingCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Pressure Washing Services
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Our 4 Pressure Washing Services in North Vancouver
               </h2>
             </div>
@@ -454,7 +454,7 @@ export default function PressureWashingCategoryPageClient() {
                 <a
                   key={s.href}
                   href={s.href}
-                  className="group overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-[#eef4ff]"
+                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
                 >
                   <img
                     src={s.image}
@@ -464,13 +464,13 @@ export default function PressureWashingCategoryPageClient() {
                     decoding="async"
                     sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
                   />
-                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-[#4E5062]">
+                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-white/80">
                     {s.description}
                   </p>
-                  <span className="mt-4 inline-block border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062] transition-colors group-hover:text-[#6191e9]">
+                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
                     Learn More
                   </span>
                 </a>
@@ -550,10 +550,10 @@ export default function PressureWashingCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Work
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 See the Difference
               </h2>
             </div>
@@ -578,7 +578,7 @@ export default function PressureWashingCategoryPageClient() {
         </section>
 
         {/* ── Google Reviews ──────────────────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
@@ -589,19 +589,19 @@ export default function PressureWashingCategoryPageClient() {
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05" />
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
                 </svg>
-                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                   Google Reviews
                 </span>
               </div>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Our Clients Say
               </h2>
               <div className="mt-2 flex items-center justify-center gap-2">
                 <StarRating rating={5} />
-                <span className="font-body text-[15px] font-semibold text-[#4E5062]">
+                <span className="font-body text-[15px] font-semibold text-white">
                   4.9 out of 5
                 </span>
-                <span className="font-body text-[14px] text-[#5c6075]">
+                <span className="font-body text-[14px] text-white/80">
                   based on 120+ reviews
                 </span>
               </div>
@@ -610,17 +610,17 @@ export default function PressureWashingCategoryPageClient() {
               {googleReviews.map((review) => (
                 <div
                   key={review.name}
-                  className="rounded-[20px] bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[16px] font-extrabold text-white">
                       {review.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                      <p className="font-body text-[15px] font-extrabold text-white">
                         {review.name}
                       </p>
-                      <p className="font-body text-[12px] text-[#5c6075]">
+                      <p className="font-body text-[12px] text-white/80">
                         {review.date}
                       </p>
                     </div>
@@ -628,7 +628,7 @@ export default function PressureWashingCategoryPageClient() {
                   <div className="mt-3">
                     <StarRating rating={review.rating} />
                   </div>
-                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-white/80">
                     {review.text}
                   </p>
                 </div>
@@ -741,10 +741,10 @@ export default function PressureWashingCategoryPageClient() {
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Get Your Free Pressure Washing Estimate Today
             </h2>
-            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-white/80">
               No obligation. Our team will assess your surfaces, recommend the
               right method, and provide a clear quote. Available 7 days a week
               across all North Vancouver neighbourhoods. New customer? Use code
@@ -753,22 +753,22 @@ export default function PressureWashingCategoryPageClient() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:bg-[#5580d4] hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-[#6191e9]/30 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062] transition-all duration-200 hover:border-[#6191e9]/60 hover:bg-[#f4f8ff]"
+                href="tel:+12366883248"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
         </section>
 
         {/* ── Wave: White → Blue (before Footer) ─────────────────── */}
-        <div className="relative z-10 -mt-1 bg-white">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"

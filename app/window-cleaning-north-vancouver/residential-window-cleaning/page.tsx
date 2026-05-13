@@ -48,7 +48,7 @@ const faqItems = [
     question:
       "How much does professional residential window cleaning cost in North Vancouver?",
     answer:
-      "Pricing varies based on home size, window count, and service type (interior plus exterior versus exterior-only). Most North Vancouver residential homes range from $200 to $500. The best way to get an accurate quote for your specific situation is to request our free estimate. Call (604) 671-6252 or email hello@mintsanitary.com, and we'll assess your home and provide transparent pricing.",
+      "Pricing varies based on home size, window count, and service type (interior plus exterior versus exterior-only). Most North Vancouver residential homes range from $200 to $500. The best way to get an accurate quote for your specific situation is to request our free estimate. Call 236-688-3248 or email hello@mintsanitary.com, and we'll assess your home and provide transparent pricing.",
   },
   {
     question:
@@ -65,7 +65,7 @@ const faqItems = [
   {
     question: "What areas of North Vancouver do you serve?",
     answer:
-      "We serve all of North Vancouver, including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. We also extend service to West Vancouver, Vancouver, Burnaby, and the Greater Vancouver region. To confirm service availability for your specific address, call us at (604) 671-6252 or email hello@mintsanitary.com.",
+      "We serve all of North Vancouver, including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. We also extend service to West Vancouver, Vancouver, Burnaby, and the Greater Vancouver region. To confirm service availability for your specific address, call us at 236-688-3248 or email hello@mintsanitary.com.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function ResidentialWindowCleaningPage() {
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <div className="space-y-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <div className="space-y-4 font-body text-[15px] leading-[1.7] text-white/80">
             <p>
               It removes hard water deposits from our mineral-rich water supply,
               eliminates coastal salt air residue, and restores clarity to every
@@ -186,10 +186,10 @@ export default function ResidentialWindowCleaningPage() {
 
           <div className="mt-14">
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               What&apos;s Included in Our Residential Window Cleaning Service
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Our standard residential{" "}
               <a
                 href="/window-cleaning-north-vancouver/"
@@ -204,18 +204,18 @@ export default function ResidentialWindowCleaningPage() {
               {includedServices.map((s) => (
                 <div
                   key={s.title}
-                  className="rounded-[14px] bg-[#f4f8ff] p-5"
+                  className="rounded-[14px] bg-white/[0.12] p-5"
                 >
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                     {s.body}
                   </p>
                 </div>
               ))}
             </div>
-            <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
               We offer both interior-plus-exterior packages (our standard) and
               exterior-only service at a discounted rate. What we don&apos;t
               include: window repairs, frame rot treatment, or weatherstripping
@@ -266,10 +266,10 @@ export default function ResidentialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Our Residential Window Cleaning Process
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Every project follows the same proven process for consistent results,
             safety, and your complete satisfaction.
           </p>
@@ -277,15 +277,15 @@ export default function ResidentialWindowCleaningPage() {
             {processSteps.map((step, i) => (
               <div key={step.title} className="flex gap-5">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#66DAD5]">
-                  <span className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                  <span className="font-body text-[15px] font-extrabold text-white">
                     {i + 1}
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                     {step.body}
                   </p>
                 </div>
@@ -354,20 +354,20 @@ export default function ResidentialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Hard Water Spot Treatment and Removal
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Hard water spots are mineral deposits left behind when tap water
             evaporates on glass. British Columbia&apos;s mineral-rich water makes
             this a common issue, especially for North Vancouver homeowners.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 The Problem
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Fresh spots respond well to standard cleaning. But mineral
                 buildup ages and hardens on glass. Left untreated, these deposits
                 can{" "}
@@ -383,11 +383,11 @@ export default function ResidentialWindowCleaningPage() {
                 only solution.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 DIY Limitations
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Vinegar and baking soda work on light, fresh spots. They&apos;re
                 ineffective against stubborn, aged deposits and risk scratching
                 glass if you scrub too hard.{" "}
@@ -402,11 +402,11 @@ export default function ResidentialWindowCleaningPage() {
                 are more reliable.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Professional Advantage
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 We use eco-friendly acid-based treatments designed for mineral
                 removal. We have the knowledge to assess spot severity and know
                 exactly when to stop applying treatment to avoid etching glass.
@@ -414,22 +414,22 @@ export default function ResidentialWindowCleaningPage() {
                 prevent new spots from forming during cleaning.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Cost-Benefit
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Professional hard water restoration typically runs $100 to $500,
                 depending on severity. Glass replacement, if etching occurs, can
                 exceed $500 per pane. Prevention and early treatment are far more
                 economical.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Our Approach
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 During your{" "}
                 <a
                   href="/contact/"
@@ -593,10 +593,10 @@ export default function ResidentialWindowCleaningPage() {
                 <li>
                   <strong className="font-extrabold text-white">Phone:</strong>{" "}
                   <a
-                    href="tel:+16046716252"
+                    href="tel:+12366883248"
                     className="underline underline-offset-2"
                   >
-                    (604) 671-6252
+                    236-688-3248
                   </a>
                 </li>
                 <li>
@@ -621,10 +621,10 @@ export default function ResidentialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Serving Greater North Vancouver and Key Neighborhoods
           </h2>
-          <div className="mt-6 space-y-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <div className="mt-6 space-y-4 font-body text-[15px] leading-[1.7] text-white/80">
             <p>
               Mint Sanitary proudly serves all of{" "}
               <a
@@ -639,7 +639,7 @@ export default function ResidentialWindowCleaningPage() {
               region.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Local advantages:
               </strong>{" "}
               Because we&apos;re based in North Vancouver, we understand the
@@ -650,7 +650,7 @@ export default function ResidentialWindowCleaningPage() {
               are often possible because of our local presence.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Familiarity with local homes:
               </strong>{" "}
               Across all of North Vancouver, including Seymour Heights, Lynn
@@ -659,7 +659,7 @@ export default function ResidentialWindowCleaningPage() {
               types, and environmental conditions.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Quick scheduling:
               </strong>{" "}
               Call or email with your address and preferred dates. We&apos;ll
@@ -717,10 +717,10 @@ export default function ResidentialWindowCleaningPage() {
           <div className="grid gap-10 md:grid-cols-2 md:gap-12">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Related Services
               </h2>
-              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
                   <a
                     href="/window-cleaning-north-vancouver/"
@@ -765,10 +765,10 @@ export default function ResidentialWindowCleaningPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Additional Resources
               </h2>
-              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
                   <a
                     href="https://www.windowgenie.com/blog/the-hard-truth-about-hard-water-stains/"

@@ -86,7 +86,7 @@ const whyPoints = [
   },
   {
     title: "Free Estimates",
-    body: "Call (604) 671-6252 or request a quote online. We review your needs and provide an accurate estimate with no obligation.",
+    body: "Call 236-688-3248 or request a quote online. We review your needs and provide an accurate estimate with no obligation.",
   },
   {
     title: "10% Off First Clean",
@@ -97,7 +97,7 @@ const whyPoints = [
 const bookingSteps = [
   {
     title: "Easy Booking",
-    body: "Call (604) 671-6252 or fill out our online form. Tell us about your space and what you need.",
+    body: "Call 236-688-3248 or fill out our online form. Tell us about your space and what you need.",
   },
   {
     title: "Free Estimate",
@@ -130,7 +130,7 @@ const faqItems = [
   {
     question: "How much does professional cleaning cost in North Vancouver?",
     answer:
-      "Pricing depends on property size, service level, and cleaning frequency. Standard cleaning typically starts around $200+. We provide free, no-obligation estimates with transparent pricing before you book. Visit our rates page or call (604) 671-6252.",
+      "Pricing depends on property size, service level, and cleaning frequency. Standard cleaning typically starts around $200+. We provide free, no-obligation estimates with transparent pricing before you book. Visit our rates page or call 236-688-3248.",
   },
   {
     question:
@@ -146,7 +146,7 @@ const faqItems = [
   {
     question: "Do you offer same-day cleaning in North Vancouver?",
     answer:
-      "Same-day availability is often possible depending on our schedule and the scope of work. Call us at (604) 671-6252 and we can confirm the fastest available slot.",
+      "Same-day availability is often possible depending on our schedule and the scope of work. Call us at 236-688-3248 and we can confirm the fastest available slot.",
   },
   {
     question:
@@ -172,7 +172,7 @@ const faqItems = [
   {
     question: "How do I book a cleaning service?",
     answer:
-      "Call (604) 671-6252 or request a quote online. We review your needs and provide an accurate free estimate. Once confirmed, we schedule your service at a time that works for you.",
+      "Call 236-688-3248 or request a quote online. We review your needs and provide an accurate free estimate. Once confirmed, we schedule your service at a time that works for you.",
   },
   {
     question: "What if I\u2019m not satisfied with the service?",
@@ -323,7 +323,7 @@ export default function CleaningServicesNorthVancouverPage() {
                 Mint Sanitary provides professional cleaning services for homes,
                 rentals, and businesses across North Vancouver. We use
                 eco-friendly products, work seven days a week, and deliver
-                transparent pricing with no hidden fees. Call (604) 671-6252 for
+                transparent pricing with no hidden fees. Call 236-688-3248 for
                 a free estimate or use code MINT25 for 10% off your first
                 service.
               </p>
@@ -335,10 +335,10 @@ export default function CleaningServicesNorthVancouverPage() {
                   Free Estimate
                 </a>
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
                 >
-                  Call (604) 671-6252
+                  Call 236-688-3248
                 </a>
               </div>
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
@@ -357,7 +357,7 @@ export default function CleaningServicesNorthVancouverPage() {
             >
               <path
                 d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-                fill="#6191e9"
+                fill="rgba(255,255,255,0.13)"
               />
             </svg>
           </div>
@@ -388,7 +388,7 @@ export default function CleaningServicesNorthVancouverPage() {
         </section>
 
         {/* ── Wave: Blue → White ──────────────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-[#6191e9]">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
@@ -396,7 +396,7 @@ export default function CleaningServicesNorthVancouverPage() {
           >
             <path
               d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-              fill="#ffffff"
+              fill="transparent"
             />
           </svg>
         </div>
@@ -413,14 +413,14 @@ export default function CleaningServicesNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Why It Matters
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Professional Cleaning Services Matter in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   North Vancouver&apos;s combination of coastal moisture,
                   surrounding forests, and active lifestyles creates unique
                   cleaning challenges. Dust, allergens, mold spores, and
@@ -429,8 +429,8 @@ export default function CleaningServicesNorthVancouverPage() {
                   it&apos;s an investment in your health, your time, and the
                   longevity of your property.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                  <strong className="font-extrabold text-[#4E5062]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
+                  <strong className="font-extrabold text-white">
                     Health and indoor air quality:
                   </strong>{" "}
                   Regular professional cleaning removes allergens, dust mites,
@@ -441,8 +441,8 @@ export default function CleaningServicesNorthVancouverPage() {
                   effectively without leaving behind chemical residue that can
                   further compromise indoor air.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                  <strong className="font-extrabold text-[#4E5062]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
+                  <strong className="font-extrabold text-white">
                     Time savings:
                   </strong>{" "}
                   The average homeowner spends 6 to 10 hours per week on
@@ -458,13 +458,13 @@ export default function CleaningServicesNorthVancouverPage() {
         </section>
 
         {/* ── More "Why" content — Text + Image (flipped) ─────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto grid max-w-[1200px] items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
               <div className="space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                  <strong className="font-extrabold text-[#4E5062]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
+                  <strong className="font-extrabold text-white">
                     Rental and property management:
                   </strong>{" "}
                   North Vancouver&apos;s rental and vacation rental market
@@ -487,8 +487,8 @@ export default function CleaningServicesNorthVancouverPage() {
                   </a>{" "}
                   services are designed for exactly this.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                  <strong className="font-extrabold text-[#4E5062]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
+                  <strong className="font-extrabold text-white">
                     Businesses and commercial spaces:
                   </strong>{" "}
                   A clean workspace reduces employee sick days, improves morale,
@@ -507,7 +507,7 @@ export default function CleaningServicesNorthVancouverPage() {
               </div>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -527,10 +527,10 @@ export default function CleaningServicesNorthVancouverPage() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Cleaning Services
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Our Cleaning Service Types in North Vancouver
               </h2>
             </div>
@@ -539,7 +539,7 @@ export default function CleaningServicesNorthVancouverPage() {
                 <a
                   key={s.href}
                   href={s.href}
-                  className="group overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-[#eef4ff]"
+                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
                 >
                   <img
                     src={s.image}
@@ -547,13 +547,13 @@ export default function CleaningServicesNorthVancouverPage() {
                     className="h-[170px] w-full rounded-[14px] object-cover"
                     loading="lazy"
                   />
-                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-[#4E5062]">
+                  <h3 className="mt-4 font-display-reg text-[18px] uppercase tracking-[0.45px] text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-white/80">
                     {s.description}
                   </p>
-                  <span className="mt-4 inline-block border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062] transition-colors group-hover:text-[#6191e9]">
+                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
                     Learn More
                   </span>
                 </a>
@@ -639,10 +639,10 @@ export default function CleaningServicesNorthVancouverPage() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Our Work
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 See the Difference
               </h2>
             </div>
@@ -669,7 +669,7 @@ export default function CleaningServicesNorthVancouverPage() {
         </section>
 
         {/* ── Google Reviews ─────────────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
@@ -680,19 +680,19 @@ export default function CleaningServicesNorthVancouverPage() {
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05" />
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
                 </svg>
-                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                   Google Reviews
                 </span>
               </div>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Our Clients Say
               </h2>
               <div className="mt-2 flex items-center justify-center gap-2">
                 <StarRating rating={5} />
-                <span className="font-body text-[15px] font-semibold text-[#4E5062]">
+                <span className="font-body text-[15px] font-semibold text-white">
                   4.9 out of 5
                 </span>
-                <span className="font-body text-[14px] text-[#5c6075]">
+                <span className="font-body text-[14px] text-white/80">
                   based on 120+ reviews
                 </span>
               </div>
@@ -701,17 +701,17 @@ export default function CleaningServicesNorthVancouverPage() {
               {googleReviews.map((review) => (
                 <div
                   key={review.name}
-                  className="rounded-[20px] bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[16px] font-extrabold text-white">
                       {review.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                      <p className="font-body text-[15px] font-extrabold text-white">
                         {review.name}
                       </p>
-                      <p className="font-body text-[12px] text-[#5c6075]">
+                      <p className="font-body text-[12px] text-white/80">
                         {review.date}
                       </p>
                     </div>
@@ -719,7 +719,7 @@ export default function CleaningServicesNorthVancouverPage() {
                   <div className="mt-3">
                     <StarRating rating={review.rating} />
                   </div>
-                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-white/80">
                     {review.text}
                   </p>
                 </div>
@@ -767,10 +767,10 @@ export default function CleaningServicesNorthVancouverPage() {
                 <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Need service outside these areas? Call{" "}
                   <a
-                    href="tel:+16046716252"
+                    href="tel:+12366883248"
                     className="underline underline-offset-2"
                   >
-                    (604) 671-6252
+                    236-688-3248
                   </a>{" "}
                   and we&apos;ll do our best to accommodate you.
                 </p>
@@ -805,21 +805,21 @@ export default function CleaningServicesNorthVancouverPage() {
           <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 For Homeowners &amp; Renters
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[36px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[36px]">
                 Residential Cleaning in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Your home should be a place where you can relax, not a source
                   of stress. Our residential cleaning services are designed for
                   North Vancouver homeowners, renters, and property managers who
                   want a consistently clean space without spending their free
                   time on chores.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   We offer{" "}
                   <a
                     href="/cleaning-services-north-vancouver/standard-cleaning/"
@@ -858,7 +858,7 @@ export default function CleaningServicesNorthVancouverPage() {
                   that keep your home fresh week after week. Every service uses
                   eco-friendly products safe for children and pets.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Whether you live in a compact condo in Lonsdale or a
                   multi-level home in Edgemont, our team adjusts the scope and
                   approach to match your property. We aim to send the same
@@ -879,7 +879,7 @@ export default function CleaningServicesNorthVancouverPage() {
         </section>
 
         {/* ── Commercial Cleaning — Image + Text (flipped) ──── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
             <div className="order-2 lg:order-1 overflow-hidden rounded-[20px]">
               <img
@@ -891,14 +891,14 @@ export default function CleaningServicesNorthVancouverPage() {
             </div>
             <div className="order-1 lg:order-2">
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 For Businesses &amp; Facilities
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[36px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[36px]">
                 Commercial Cleaning in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   A clean workplace protects employee health, reduces sick days,
                   and makes the right impression on clients. Mint Sanitary
                   provides{" "}
@@ -911,22 +911,22 @@ export default function CleaningServicesNorthVancouverPage() {
                   for offices, retail spaces, restaurants, strata buildings,
                   schools, churches, and gyms across North Vancouver.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   We work around your business hours with early morning, evening,
                   late night, and weekend scheduling. Our commercial team uses
                   eco-friendly, hospital-grade disinfection products and follows
                   strict protocols tailored to your facility type. Every team
                   member is trained, bonded, insured, and background-checked.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   From daily janitorial maintenance to periodic deep cleaning, we
                   develop a customized plan that fits your budget and keeps your
                   space consistently presentable. Call{" "}
                   <a
-                    href="tel:+16046716252"
+                    href="tel:+12366883248"
                     className="underline underline-offset-2"
                   >
-                    (604) 671-6252
+                    236-688-3248
                   </a>{" "}
                   for a free commercial cleaning estimate.
                 </p>
@@ -940,21 +940,21 @@ export default function CleaningServicesNorthVancouverPage() {
           <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Heavy-Duty Solutions
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[36px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[36px]">
                 Industrial Cleaning in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Industrial facilities &mdash; warehouses, manufacturing
                   plants, workshops, and storage units &mdash; require cleaning
                   that goes beyond what standard commercial services provide.
                   Heavy dust, oil residue, chemical buildup, and high-traffic
                   floor wear demand specialized equipment and experienced crews.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Mint Sanitary provides industrial cleaning services across
                   North Vancouver with a focus on safety, compliance, and
                   thorough execution. We handle floor scrubbing, degreasing,
@@ -969,15 +969,15 @@ export default function CleaningServicesNorthVancouverPage() {
                   service is particularly suited for industrial renovations and
                   new builds.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   All our products are eco-friendly and comply with workplace
                   safety standards. We schedule around your operations to
                   minimize downtime and disruption. Contact us at{" "}
                   <a
-                    href="tel:+16046716252"
+                    href="tel:+12366883248"
                     className="underline underline-offset-2"
                   >
-                    (604) 671-6252
+                    236-688-3248
                   </a>{" "}
                   to discuss your industrial cleaning needs.
                 </p>
@@ -995,14 +995,14 @@ export default function CleaningServicesNorthVancouverPage() {
         </section>
 
         {/* ── How It Works — Horizontal Steps ────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What to Expect When You Book
               </h2>
-              <p className="mx-auto mt-4 max-w-[600px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
+              <p className="mx-auto mt-4 max-w-[600px] font-body text-[16px] leading-[1.7] text-white/80">
                 Booking with us is straightforward. Six simple steps to a
                 cleaner space.
               </p>
@@ -1013,10 +1013,10 @@ export default function CleaningServicesNorthVancouverPage() {
                   <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                     {index + 1}
                   </span>
-                  <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                  <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                     {step.body}
                   </p>
                 </div>
@@ -1038,19 +1038,19 @@ export default function CleaningServicesNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[28px] uppercase text-[#4E5062] sm:text-[34px]">
+              <h2 className="mt-3 font-display-reg text-[28px] uppercase text-white sm:text-[34px]">
                 Cleaning Services That Matter to North Vancouver Families and
                 Businesses
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   At Mint Sanitary, we believe that professional cleaning should
                   be accessible, reliable, and genuinely helpful. We&apos;re not
                   interested in cutting corners or upselling services you
                   don&apos;t need. We show up on time, use products that are safe
                   for your family and the environment, and we do the job right.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Whether you need a one-time{" "}
                   <a
                     href="/cleaning-services-north-vancouver/deep-cleaning/"
@@ -1075,15 +1075,15 @@ export default function CleaningServicesNorthVancouverPage() {
                   for your business, we tailor every service to your specific
                   situation.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   North Vancouver is our home too. We take pride in serving our
                   community with honest work, fair pricing, and the kind of
                   attention to detail that earns trust over time. Call{" "}
                   <a
-                    href="tel:+16046716252"
+                    href="tel:+12366883248"
                     className="underline underline-offset-2"
                   >
-                    (604) 671-6252
+                    236-688-3248
                   </a>{" "}
                   for your free estimate, or visit our{" "}
                   <a href="/rates/" className="underline underline-offset-2">
@@ -1154,21 +1154,21 @@ export default function CleaningServicesNorthVancouverPage() {
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Ready for Clean Spaces?
             </h2>
-            <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-white/80">
               Book your free estimate and get professional cleaning that fits
-              your schedule. Call Mint Sanitary at (604) 671-6252 and use code
+              your schedule. Call Mint Sanitary at 236-688-3248 and use code
               MINT25 for 10% off your first service.
             </p>
-            <p className="mx-auto mt-3 max-w-[500px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-3 max-w-[500px] font-body text-[15px] leading-[1.7] text-white/80">
               Use code{" "}
-              <strong className="text-[#6191e9]">MINT25</strong> for 10% off
+              <strong className="text-white font-extrabold">MINT25</strong> for 10% off
               your first service.{" "}
               <a
                 href="/rates/"
-                className="border-b border-[#66DAD5] font-bold text-[#4E5062]"
+                className="border-b border-white/40 font-bold text-white"
               >
                 View our rates
               </a>
@@ -1177,22 +1177,22 @@ export default function CleaningServicesNorthVancouverPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:bg-[#5580d4] hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-[#6191e9]/30 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062] transition-all duration-200 hover:border-[#6191e9]/60 hover:bg-[#f4f8ff]"
+                href="tel:+12366883248"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
         </section>
 
         {/* ── Wave: White → Blue (Footer) ────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-white">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"

@@ -266,10 +266,16 @@ export default function GalleryPage() {
               A look at the spaces we clean and maintain across Metro Vancouver.
             </p>
           </div>
+          {/* Wave at bottom of hero */}
+          <div className="absolute bottom-0 left-0 right-0 z-10">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
+              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(255,255,255,0.13)" />
+            </svg>
+          </div>
         </section>
 
         {/* ── GALLERY GRID ──────────────────────────────────────────────── */}
-        <section className="py-[80px] bg-[#f2f2f2]" ref={gridRef}>
+        <section className="py-[80px]" ref={gridRef}>
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[40px]">
 
             {/* Filter tabs — 2×2 grid on mobile, flex row on sm+ */}
@@ -280,13 +286,13 @@ export default function GalleryPage() {
                   onClick={() => setActiveFilter(f.key)}
                   className={`w-full sm:w-auto font-display-reg text-[13px] tracking-[0.64px] uppercase rounded-[99px] px-[22px] py-[10px] border transition-colors duration-200 ${
                     activeFilter === f.key
-                      ? "bg-[#253862] text-white border-[#253862]"
-                      : "bg-white text-[#253862] border-[#253862]/30 hover:border-[#253862]"
+                      ? "bg-[#253862] text-white border-white"
+                      : "bg-white/10 text-white border-white/30 hover:border-white/60"
                   }`}
                 >
                   {f.label}
                   {f.key !== "all" && (
-                    <span className={`ml-[6px] font-body font-medium text-[11px] ${activeFilter === f.key ? "text-white/60" : "text-[#253862]/40"}`}>
+                    <span className={`ml-[6px] font-body font-medium text-[11px] ${activeFilter === f.key ? "text-white/60" : "text-white/40"}`}>
                       ({images.filter((i) => i.category === f.key).length})
                     </span>
                   )}
@@ -314,8 +320,8 @@ export default function GalleryPage() {
                     className="object-cover"
                   />
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-[#253862]/0 group-hover:bg-[#253862]/50 transition-colors duration-300 rounded-[12px] flex items-end p-[16px]">
-                    <span className="font-display-reg text-[12px] tracking-[0.64px] uppercase text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-none bg-[#253862]/60 rounded-[6px] px-[10px] py-[6px]">
+                  <div className="absolute inset-0 bg-white/0 group-hover:bg-white/20 transition-colors duration-300 rounded-[12px] flex items-end p-[16px]">
+                    <span className="font-display-reg text-[12px] tracking-[0.64px] uppercase text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-none bg-white/20 rounded-[6px] px-[10px] py-[6px]">
                       {img.category}
                     </span>
                   </div>
@@ -343,13 +349,13 @@ export default function GalleryPage() {
             <div className="reveal flex flex-col sm:flex-row gap-[16px] w-full max-w-[500px]">
               <a
                 href="/contact"
-                className="w-full inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                className="w-full inline-flex items-center justify-center bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
               >
                 Request a Quote
               </a>
               <a
                 href="tel:6041234567"
-                className="w-full inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
+                className="w-full inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white/20 hover:text-white transition-colors duration-200"
               >
                 <Phone size={16} strokeWidth={2.5} />
                 Call Now

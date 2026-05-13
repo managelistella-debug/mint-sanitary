@@ -118,7 +118,7 @@ const whyChoosePoints: { title: string; body: string }[] = [
   },
   {
     title: "Free Estimates",
-    body: "No pressure, no obligation. We assess your home\u2019s specific needs and provide accurate pricing before any commitment. Call (604) 671-6252.",
+    body: "No pressure, no obligation. We assess your home\u2019s specific needs and provide accurate pricing before any commitment. Call 236-688-3248.",
   },
   {
     title: "Eco-Friendly Credentials",
@@ -208,15 +208,15 @@ export default function HouseWashingPage() {
       heroIntro="Your home is one of your biggest investments. When dirt, algae, and mold accumulate on exterior siding, it doesn't just look neglected. It accelerates paint decay and material damage that costs thousands to repair. Mint Sanitary brings professional soft wash expertise to North Vancouver homes, removing stubborn stains safely while protecting vinyl, stucco, Hardie board, and cedar siding. We're available 7 days a week to deliver clean, beautiful results across North Vancouver."
       faqItems={faqItems}
       ctaHeading="Get Your Free House Washing Estimate Today"
-      ctaBody="Your North Vancouver home deserves professional care. Let Mint Sanitary restore your exterior to its best appearance while protecting your investment for years to come. New customers save 10% with code MINT25. Call (604) 671-6252 or email hello@mintsanitary.com. Available 7 days a week."
+      ctaBody="Your North Vancouver home deserves professional care. Let Mint Sanitary restore your exterior to its best appearance while protecting your investment for years to come. New customers save 10% with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What Is House Washing?
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             House washing is the safe, professional cleaning of all exterior
             home surfaces using soft wash methodology, using low-pressure water
             combined with biodegradable cleaning solutions. Unlike pressure
@@ -224,25 +224,25 @@ export default function HouseWashingPage() {
             mold, algae, and mildew spores to prevent regrowth for 12 to 24
             months.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             This method covers every exterior element:
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {whatIncludes.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Soft wash uses water pressure under 500 PSI, making it safe for all
             siding materials common in North Vancouver homes.
           </p>
@@ -319,21 +319,21 @@ export default function HouseWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Siding Types and Cleaning Approach
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Every siding material requires a tailored soft wash approach. North
             Vancouver homes feature a mix of materials, and each responds
             differently to cleaning solutions and pressure levels.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {sidingTypes.map((s) => (
-              <div key={s.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div key={s.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {s.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {s.body}
                 </p>
               </div>
@@ -377,10 +377,10 @@ export default function HouseWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             The Soft Wash Process: What to Expect
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Professional soft wash follows a proven methodology that balances
             effectiveness with material safety. Here&apos;s exactly what happens
             when Mint Sanitary arrives at your North Vancouver home.
@@ -389,15 +389,15 @@ export default function HouseWashingPage() {
             {processSteps.map((step, i) => (
               <div key={step.title} className="flex gap-5">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#66DAD5]">
-                  <span className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                  <span className="font-body text-[15px] font-extrabold text-white">
                     {i + 1}
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                     {step.body}
                   </p>
                 </div>
@@ -435,7 +435,7 @@ export default function HouseWashingPage() {
                 <p className="mt-1 font-body text-[13px] leading-[1.7] text-white/80">
                   1,500 to 2,000 sq ft
                 </p>
-                <p className="mt-2 font-body text-[17px] font-extrabold text-[#66DAD5]">
+                <p className="mt-2 font-body text-[17px] font-extrabold text-white">
                   $170 to $360
                 </p>
               </div>
@@ -446,7 +446,7 @@ export default function HouseWashingPage() {
                 <p className="mt-1 font-body text-[13px] leading-[1.7] text-white/80">
                   2,500 to 3,500 sq ft
                 </p>
-                <p className="mt-2 font-body text-[17px] font-extrabold text-[#66DAD5]">
+                <p className="mt-2 font-body text-[17px] font-extrabold text-white">
                   $450 to $850+
                 </p>
               </div>
@@ -457,7 +457,7 @@ export default function HouseWashingPage() {
                 <p className="mt-1 font-body text-[13px] leading-[1.7] text-white/80">
                   Custom quote due to specialized equipment
                 </p>
-                <p className="mt-2 font-body text-[17px] font-extrabold text-[#66DAD5]">
+                <p className="mt-2 font-body text-[17px] font-extrabold text-white">
                   Contact for Quote
                 </p>
               </div>
@@ -498,10 +498,10 @@ export default function HouseWashingPage() {
             provide free, no-pressure estimates so you know the exact cost
             before commitment. Call{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             or email{" "}
             <a
@@ -518,19 +518,19 @@ export default function HouseWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Professional vs. DIY House Washing
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             The upfront cost of hiring professionals exceeds pressure washer
             rental, but total value strongly favors professional service.
           </p>
           <div className="mt-8 grid gap-8 md:grid-cols-2">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Professional Advantages
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Professionals assess your specific siding material and select
                 the appropriate cleaning solution and pressure level. This
                 expertise prevents damage that rental equipment in untrained
@@ -544,11 +544,11 @@ export default function HouseWashingPage() {
                 cleanup.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 DIY Risks
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Pressure washer rentals cost $75 to $150 per day, plus cleaning
                 solution expenses. High-pressure equipment in inexperienced
                 hands frequently causes thousands in damage: vinyl panels bend
@@ -562,36 +562,36 @@ export default function HouseWashingPage() {
               </p>
             </div>
           </div>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             The professional choice protects your home and saves money over
             time.
           </p>
           <div className="mt-12">
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h3 className="font-body text-[20px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[20px] font-extrabold text-white">
               Annual Maintenance Schedule for North Vancouver Homes
             </h3>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               How often should you schedule house washing? Climate, shade
               exposure, and siding material determine the answer.
             </p>
             <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Standard Recommendation
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Annual soft wash is appropriate for most North Vancouver
                   homes. This schedule prevents spore buildup, maintains curb
                   appeal, and catches early algae or mold before it causes
                   material damage.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   High-Frequency Areas
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Homes in high-shade zones (thick tree canopy, narrow lots with
                   neighboring buildings blocking sun) may need washing every 6
                   months. North-facing walls in Seymour Heights and Deep Cove,
@@ -599,22 +599,22 @@ export default function HouseWashingPage() {
                   service.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Seasonal Timing
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Spring washing removes winter algae and mold accumulation;
                   fall cleaning prepares siding for the wet season. Many North
                   Vancouver homeowners schedule service in late March and early
                   September for seasonal coverage.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Prevention Through Maintenance
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Prune tree branches away from siding to reduce shade and
                   moisture, maintain gutters and keep downspouts directing water
                   away from the foundation, inspect roof shingles regularly
@@ -778,45 +778,45 @@ export default function HouseWashingPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Eco-Friendly Soft Wash and Why Choose Mint Sanitary
           </h2>
           <div className="mt-8">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Eco-Friendly Soft Wash: Mint Sanitary&apos;s Approach
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Environmental stewardship matters. Our soft wash process is
               designed around biodegradable, plant-safe principles.
             </p>
             <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Biodegradable Solutions
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   We use eco-friendly cleaning agents that break down naturally
                   into harmless compounds. No high-bleach, industrial
                   formulations that damage plants, poison groundwater, or harm
                   aquatic life in local streams.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Plant and Landscape Protection
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Solutions are applied with care to protect gardens, shrubs,
                   and vegetable areas. We take precautions before spraying
                   begins. Post-rinse, there&apos;s no residual toxicity risk to
                   children, pets, or landscaping.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Water Efficiency
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Soft wash uses 80% less water than pressure washing. For homes
                   in water-conscious North Vancouver, this is a significant
                   environmental benefit. Low-pressure rinsing also prevents
@@ -824,11 +824,11 @@ export default function HouseWashingPage() {
                   feeding the North Shore watershed.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   BC Environmental Responsibility
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Our soft wash methodology reflects BC values around
                   environmental protection. Low-pressure application prevents
                   contaminant runoff. Plant-safe solutions protect local
@@ -839,10 +839,10 @@ export default function HouseWashingPage() {
             </div>
           </div>
           <div className="mt-12">
-            <h3 className="font-body text-[20px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[20px] font-extrabold text-white">
               Why Choose Mint Sanitary for House Washing in North Vancouver
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Mint Sanitary brings 7+ years of North Vancouver experience, local
               expertise, and a commitment to quality that sets us apart.
             </p>
@@ -850,12 +850,12 @@ export default function HouseWashingPage() {
               {whyChoosePoints.map((p) => (
                 <div
                   key={p.title}
-                  className="rounded-[14px] bg-[#f4f8ff] p-5"
+                  className="rounded-[14px] bg-white/[0.12] p-5"
                 >
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {p.title}
                   </h3>
-                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                     {p.body}
                   </p>
                 </div>

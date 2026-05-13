@@ -49,7 +49,7 @@ const faqItems = [
     question:
       "Do you offer strata and commercial post construction cleaning in North Vancouver?",
     answer:
-      "Yes. We serve strata common areas including lobbies, hallways, and exterior glass in condominiums and commercial projects of all sizes. Commercial rates and timelines are quoted individually based on scope, access, and scheduling. Call (604) 671-6252 for a free estimate.",
+      "Yes. We serve strata common areas including lobbies, hallways, and exterior glass in condominiums and commercial projects of all sizes. Commercial rates and timelines are quoted individually based on scope, access, and scheduling. Call 236-688-3248 for a free estimate.",
   },
   {
     question:
@@ -131,7 +131,7 @@ export default function PostConstructionWindowCleaningPage() {
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="font-body text-[15px] leading-[1.7] text-white/80">
             Mint Sanitary provides professional post construction window cleaning
             throughout North Vancouver, including Lower Lonsdale, Lynn Valley,
             Deep Cove, Edgemont Village, and Seymour Heights. Our team removes
@@ -141,10 +141,10 @@ export default function PostConstructionWindowCleaningPage() {
 
           <div className="mt-14">
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               What Is Post Construction Window Cleaning?
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Post construction window cleaning addresses debris that standard
               window washing cannot handle. The process targets:
             </p>
@@ -159,13 +159,13 @@ export default function PostConstructionWindowCleaningPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-[14px] bg-[#f4f8ff] p-5 font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="rounded-[14px] bg-white/[0.12] p-5 font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   {item}
                 </div>
               ))}
             </div>
-            <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
               Unlike routine maintenance cleaning, post construction work in
               North Vancouver demands knowledge of multiple debris types, proper
               solvent selection, and gentle techniques that prevent scratching
@@ -247,20 +247,20 @@ export default function PostConstructionWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Types of Projects We Serve in North Vancouver
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Our post construction window cleaning expertise covers diverse
             project types:
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {projectTypes.map((p) => (
-              <div key={p.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div key={p.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {p.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {p.body}
                 </p>
               </div>
@@ -306,19 +306,19 @@ export default function PostConstructionWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Risks of Improper Post Construction Window Cleaning
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Improper cleaning costs far more than hiring professionals. Consider
             these risks:
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Scratched Tempered Glass and Seal Damage
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Metal razor blades on dry glass or excessive pressure causes
                 permanent scratches. These cannot be repaired and often void
                 manufacturer warranties. Harsh solvents compromise window seals,
@@ -326,22 +326,22 @@ export default function PostConstructionWindowCleaningPage() {
                 projects reach $7,000 to $15,000.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Low-E Coating and Warranty Loss
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Energy efficiency coatings on new BC windows are easily
                 compromised by abrasive cleaning or acidic products. Coating
                 damage voids manufacturer warranties. Replacement windows with
                 Low-E coatings cost $300 to $800 per window.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Our Commitment
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Mint Sanitary maintains liability insurance and uses
                 manufacturer-safe techniques. We document all work and provide
                 written guarantees on cleaning quality.
@@ -434,65 +434,65 @@ export default function PostConstructionWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Pricing for Post Construction Window Cleaning
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Post construction window cleaning costs depend on several factors.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Number of Windows
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Larger projects with 50 or more windows may qualify for volume
                 discounts that reduce per-window costs.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Debris Type and Severity
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Heavy paint overspray costs more than light dust removal.
                 Adhesive labels, caulk drips, and silicone residue each require
                 specific techniques and solvents.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Window Type and Coatings
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Tempered glass, Low-E coatings, skylights, and specialty finishes
                 require specialized handling and command higher rates.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Access and Height
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Multi-story buildings with restricted access cost more than
                 single-story homes. Roof access for skylights and high windows
                 requires additional safety equipment and trained technicians.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Turnaround Speed
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Rush services completed within 1 to 2 days may incur premium
                 rates for priority scheduling.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Typical Investment
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Most post construction window cleaning projects in North
                 Vancouver range from $200 to $500 or more, depending on scope.
                 Mint Sanitary provides{" "}
@@ -500,7 +500,7 @@ export default function PostConstructionWindowCleaningPage() {
                   free estimates
                 </a>{" "}
                 for all jobs. First-time customers receive{" "}
-                <strong className="font-extrabold text-[#4E5062]">
+                <strong className="font-extrabold text-white">
                   10% off with code MINT25
                 </strong>
                 .

@@ -4,7 +4,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata: Metadata = {
   title: "About North Vancouver | Mint Sanitary",
   description:
-    "About Mint Sanitary in North Vancouver, trusted eco-friendly cleaning service. (604) 671-6252. Background-checked, insured, and available 7 days a week.",
+    "About Mint Sanitary in North Vancouver, trusted eco-friendly cleaning service. 236-688-3248. Background-checked, insured, and available 7 days a week.",
 };
 
 const whyChooseItems: { title: string; body: string; image: string }[] = [
@@ -56,7 +56,7 @@ const faqItems: { question: string; answer: string }[] = [
   {
     question: "What areas of Greater Vancouver does Mint Sanitary serve?",
     answer:
-      "We proudly serve all of North Vancouver, including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights, plus West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver communities. If you\u2019re uncertain whether we service your address, just call (604) 671-6252 or email hello@mintsanitary.com and we\u2019ll confirm our coverage.",
+      "We proudly serve all of North Vancouver, including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights, plus West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver communities. If you\u2019re uncertain whether we service your address, just call 236-688-3248 or email hello@mintsanitary.com and we\u2019ll confirm our coverage.",
   },
   {
     question:
@@ -81,13 +81,13 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+            <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
               Our Story
             </p>
-            <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Why We Started Mint Sanitary
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               We started Mint Sanitary because we couldn&apos;t find a cleaning
               service we&apos;d trust in our own homes. We saw too many companies
               cutting corners, using harsh chemicals that made families nervous, or
@@ -100,7 +100,7 @@ export default function AboutPage() {
             </p>
             <a
               href="/contact"
-              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
             >
               Get in Touch
             </a>
@@ -173,33 +173,33 @@ export default function AboutPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Why Choose Mint Sanitary for Cleaning in North Vancouver
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Mint Sanitary stands apart in several key ways:
           </p>
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {whyChooseItems.map((item) => (
               <div
                 key={item.title}
-                className="overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                className="overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
               >
                 <img
                   src={item.image}
                   alt={item.title}
                   className="h-[170px] w-full rounded-[14px] object-cover"
                 />
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {item.title}
                 </h3>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-10 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-10 font-body text-[15px] leading-[1.7] text-white/80">
             North Vancouver families and businesses across Lower Lonsdale, Lynn
             Valley, Deep Cove, Edgemont Village, Seymour Heights, and beyond
             trust Mint Sanitary to keep their spaces spotless and safe.
@@ -276,21 +276,21 @@ export default function AboutPage() {
       </section>
 
       {/* ── Service Area — Text + Image ─────────────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Serving North Vancouver and Greater Vancouver
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Based right here in North Vancouver, we proudly serve our local
               community and the surrounding Greater Vancouver area. Our North
               Vancouver roots mean we understand the unique needs of the region,
               from the local water conditions to neighborhood-specific cleaning
               challenges.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               We serve Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village,
               Seymour Heights, and all of North Vancouver, plus West Vancouver,
               Vancouver, Burnaby, and nearby communities. If you&apos;re unsure
@@ -301,7 +301,7 @@ export default function AboutPage() {
               {["North Vancouver", "West Vancouver", "Vancouver", "Burnaby", "Deep Cove", "Lynn Valley"].map((area) => (
                 <span
                   key={area}
-                  className="rounded-full bg-white px-5 py-2.5 font-body text-[13px] font-semibold text-[#4E5062] shadow-sm"
+                  className="rounded-full bg-white/[0.18] px-5 py-2.5 font-body text-[13px] font-semibold text-white shadow-sm"
                 >
                   {area}
                 </span>
@@ -309,7 +309,7 @@ export default function AboutPage() {
             </div>
             <a
               href="/service-areas"
-              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
             >
               View All Service Areas
             </a>
@@ -378,16 +378,16 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Community and Local Commitment
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Mint Sanitary is deeply committed to North Vancouver. We hire
               locally, support local suppliers, and believe in giving back to the
               communities we serve. Our North Vancouver team is made up of
               neighbors, people who live in the areas they clean.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Follow us on{" "}
               <a
                 href="https://instagram.com/mintsanitary"
@@ -405,20 +405,20 @@ export default function AboutPage() {
               to see what we&apos;re up to, connect with our team, and stay in the
               loop on special offers and service updates.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
-              <strong className="font-extrabold text-[#4E5062]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
+              <strong className="font-extrabold text-white">
                 Special offer:
               </strong>{" "}
               Get 10% off your first clean with code MINT25. No tricks. No hidden
               fees.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Phone:{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               | Email:{" "}
               <a

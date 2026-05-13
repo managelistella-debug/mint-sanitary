@@ -51,7 +51,7 @@ const whyChooseItems = [
   },
   {
     title: "7-Day Availability",
-    body: "We're available weekdays, evenings, and weekends. Book online or call (604) 671-6252 for same-week service in most North Vancouver neighborhoods.",
+    body: "We're available weekdays, evenings, and weekends. Book online or call 236-688-3248 for same-week service in most North Vancouver neighborhoods.",
   },
   {
     title: "Satisfaction Guarantee",
@@ -132,7 +132,7 @@ const faqItems = [
     question:
       "How do I get a free estimate for gutter cleaning in North Vancouver?",
     answer:
-      "Book online or call (604) 671-6252. We provide free, no-obligation estimates including property walk-through, gutter assessment, cleaning quote, and repair recommendations. Estimates typically take 15 to 20 minutes. New customers receive 10% off first clean with code MINT25.",
+      "Book online or call 236-688-3248. We provide free, no-obligation estimates including property walk-through, gutter assessment, cleaning quote, and repair recommendations. Estimates typically take 15 to 20 minutes. New customers receive 10% off first clean with code MINT25.",
   },
   {
     question: "What areas of North Vancouver do you service?",
@@ -258,7 +258,7 @@ export default function GutterCleaningCategoryPageClient() {
                 causes expensive damage that can cost thousands to repair. Mint
                 Sanitary provides professional gutter cleaning with thorough
                 system inspection, eco-friendly disposal, and before-and-after
-                photo documentation. Call (604) 671-6252 or use code MINT25 for
+                photo documentation. Call 236-688-3248 or use code MINT25 for
                 10% off your first service.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -269,10 +269,10 @@ export default function GutterCleaningCategoryPageClient() {
                   Free Estimate
                 </a>
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
                 >
-                  Call (604) 671-6252
+                  Call 236-688-3248
                 </a>
               </div>
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
@@ -291,7 +291,7 @@ export default function GutterCleaningCategoryPageClient() {
             >
               <path
                 d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-                fill="#6191e9"
+                fill="rgba(255,255,255,0.13)"
               />
             </svg>
           </div>
@@ -322,7 +322,7 @@ export default function GutterCleaningCategoryPageClient() {
         </section>
 
         {/* ── Wave: Blue → White ──────────────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-[#6191e9]">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
@@ -330,7 +330,7 @@ export default function GutterCleaningCategoryPageClient() {
           >
             <path
               d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z"
-              fill="#ffffff"
+              fill="transparent"
             />
           </svg>
         </div>
@@ -350,14 +350,14 @@ export default function GutterCleaningCategoryPageClient() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Why It Matters
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Gutter Cleaning Matters in North Vancouver
               </h2>
               <div className="mt-6 space-y-5">
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   North Vancouver receives approximately 2,400 millimeters of
                   annual precipitation — more than 2.5 times the North American
                   average of about 900 millimeters. Most of this rain arrives
@@ -368,7 +368,7 @@ export default function GutterCleaningCategoryPageClient() {
                   structural damage that can cost between $3,000 and $25,000 to
                   remediate.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   The dense tree coverage throughout North Vancouver means fall
                   debris is constant. A single residential gutter can accumulate
                   50 pounds or more of leaves, twigs, pine needles, and granules
@@ -377,7 +377,7 @@ export default function GutterCleaningCategoryPageClient() {
                   moss growth, which blocks water flow and accelerates rust and
                   seam failure.
                 </p>
-                <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="font-body text-[15px] leading-[1.7] text-white/80">
                   Your homeowner&apos;s insurance may not cover water damage resulting
                   from neglected gutters. Many insurers explicitly exclude damage
                   caused by poor maintenance. This makes regular professional
@@ -394,10 +394,10 @@ export default function GutterCleaningCategoryPageClient() {
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 What&apos;s Included
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Every Gutter Clean Includes
               </h2>
             </div>
@@ -405,12 +405,12 @@ export default function GutterCleaningCategoryPageClient() {
               {services.map((s) => (
                 <div
                   key={s.title}
-                  className="overflow-hidden rounded-[20px] bg-[#f4f8ff] p-6"
+                  className="overflow-hidden rounded-[20px] bg-white/[0.12] p-6"
                 >
-                  <h3 className="font-display-reg text-[18px] uppercase tracking-[0.45px] text-[#4E5062]">
+                  <h3 className="font-display-reg text-[18px] uppercase tracking-[0.45px] text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[14px] leading-[1.65] text-white/80">
                     {s.description}
                   </p>
                 </div>
@@ -420,11 +420,11 @@ export default function GutterCleaningCategoryPageClient() {
         </section>
 
         {/* ── 6-Step Process ─────────────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 The Professional Gutter Cleaning Process
               </h2>
             </div>
@@ -435,17 +435,17 @@ export default function GutterCleaningCategoryPageClient() {
                     {index + 1}
                   </span>
                   <div className="mt-4 rounded-[20px] bg-white p-5 shadow-sm">
-                    <h3 className="font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                    <h3 className="font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                       {step.title}
                     </h3>
-                    <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                    <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                       {step.body}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="mx-auto mt-10 max-w-[800px] text-center font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-10 max-w-[800px] text-center font-body text-[15px] leading-[1.7] text-white/80">
               This process typically takes 1.5 to 2.5 hours for most homes,
               depending on the complexity of your roof, the length of your gutter
               system, and the amount of debris accumulated.
@@ -517,7 +517,7 @@ export default function GutterCleaningCategoryPageClient() {
         </section>
 
         {/* ── Google Reviews ─────────────────────────────────── */}
-        <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+        <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
@@ -540,19 +540,19 @@ export default function GutterCleaningCategoryPageClient() {
                     fill="#EA4335"
                   />
                 </svg>
-                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+                <span className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                   Google Reviews
                 </span>
               </div>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Our Clients Say
               </h2>
               <div className="mt-2 flex items-center justify-center gap-2">
                 <StarRating rating={5} />
-                <span className="font-body text-[15px] font-semibold text-[#4E5062]">
+                <span className="font-body text-[15px] font-semibold text-white">
                   4.9 out of 5
                 </span>
-                <span className="font-body text-[14px] text-[#5c6075]">
+                <span className="font-body text-[14px] text-white/80">
                   based on 120+ reviews
                 </span>
               </div>
@@ -561,17 +561,17 @@ export default function GutterCleaningCategoryPageClient() {
               {googleReviews.map((review) => (
                 <div
                   key={review.name}
-                  className="rounded-[20px] bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                  className="rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-[44px] w-[44px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[16px] font-extrabold text-white">
                       {review.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                      <p className="font-body text-[15px] font-extrabold text-white">
                         {review.name}
                       </p>
-                      <p className="font-body text-[12px] text-[#5c6075]">
+                      <p className="font-body text-[12px] text-white/80">
                         {review.date}
                       </p>
                     </div>
@@ -579,7 +579,7 @@ export default function GutterCleaningCategoryPageClient() {
                   <div className="mt-3">
                     <StarRating rating={review.rating} />
                   </div>
-                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[14px] leading-[1.7] text-white/80">
                     {review.text}
                   </p>
                 </div>
@@ -690,35 +690,35 @@ export default function GutterCleaningCategoryPageClient() {
         <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Ready to Protect Your North Vancouver Home?
             </h2>
-            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-white/80">
               Clogged gutters cause water damage that costs thousands to repair.
               Don&apos;t wait for overflow or foundation problems. Schedule your
-              professional gutter cleaning in North Vancouver today. Call (604)
-              671-6252 or email hello@mintsanitary.com. Use code MINT25 for 10%
+              professional gutter cleaning in North Vancouver today. Call 236-688-3248
+              or email hello@mintsanitary.com. Use code MINT25 for 10%
               off your first service.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:bg-[#5580d4] hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
               </a>
               <a
-                href="tel:+16046716252"
-                className="inline-flex items-center justify-center rounded-[99px] border-2 border-[#6191e9]/30 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062] transition-all duration-200 hover:border-[#6191e9]/60 hover:bg-[#f4f8ff]"
+                href="tel:+12366883248"
+                className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
         </section>
 
         {/* ── Wave: White → Blue ──────────────────────────────── */}
-        <div className="relative z-10 -mt-1 bg-white">
+        <div className="relative z-10 -mt-1">
           <svg
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"

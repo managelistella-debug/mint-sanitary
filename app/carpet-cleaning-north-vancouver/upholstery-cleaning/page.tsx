@@ -220,7 +220,7 @@ const faqItems = [
   {
     question: "How much does upholstery cleaning cost?",
     answer:
-      "Most individual pieces cost $100\u2013$200, depending on size, fabric type, and condition. Sectionals and larger pieces may cost more. Call (604) 671-6252 for a free estimate. Use code MINT25 for first-time savings.",
+      "Most individual pieces cost $100\u2013$200, depending on size, fabric type, and condition. Sectionals and larger pieces may cost more. Call 236-688-3248 for a free estimate. Use code MINT25 for first-time savings.",
   },
 ];
 
@@ -233,7 +233,7 @@ export default function UpholsteryCleaningNorthVancouverPage() {
       heroIntro="Upholstered furniture traps dust, allergens, pet dander, and stains deep in fabric fibers where regular vacuuming can't reach. Mint Sanitary provides professional upholstery cleaning for sofas, chairs, and all fabric furniture across North Vancouver — using eco-friendly products matched to your fabric type. Use code MINT25 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready for Fresh, Clean Upholstery?"
-      ctaBody="Call Mint Sanitary at (604) 671-6252 or book online. 7-day availability, eco-friendly products, fabric-safe techniques. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, eco-friendly products, fabric-safe techniques. Use code MINT25 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -248,13 +248,13 @@ export default function UpholsteryCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Fabric-Safe Deep Cleaning
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What&apos;s Included in Professional Upholstery Cleaning
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Professional upholstery cleaning goes far beyond surface
                 vacuuming. It&apos;s a multi-step process that deep-cleans fabric
                 fibers, removes embedded allergens, neutralizes odors, and treats
@@ -265,7 +265,7 @@ export default function UpholsteryCleaningNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -275,7 +275,7 @@ export default function UpholsteryCleaningNorthVancouverPage() {
       </section>
 
       {/* ── Furniture Types — Card Grid ───────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {furnitureTypes.map((area) => (
@@ -283,14 +283,14 @@ export default function UpholsteryCleaningNorthVancouverPage() {
                 key={area.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {area.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
@@ -306,10 +306,10 @@ export default function UpholsteryCleaningNorthVancouverPage() {
                 key={method.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {method.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {method.body}
                 </p>
               </div>
@@ -386,10 +386,10 @@ export default function UpholsteryCleaningNorthVancouverPage() {
           <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             Not sure which cleaning method is right for your furniture? Call{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             and we&apos;ll provide a free on-site assessment and recommend the
             best approach for your fabric type and condition.
@@ -402,7 +402,7 @@ export default function UpholsteryCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Upholstery Cleaning Process: Step by Step
             </h2>
           </div>
@@ -412,10 +412,10 @@ export default function UpholsteryCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -441,10 +441,10 @@ export default function UpholsteryCleaningNorthVancouverPage() {
           <div className="grid items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Transparent Pricing
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Upholstery Cleaning Pricing Guidance
               </h2>
             </div>
@@ -458,36 +458,36 @@ export default function UpholsteryCleaningNorthVancouverPage() {
             </div>
           </div>
           <div className="mt-10">
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Most individual pieces of upholstered furniture cost{" "}
               <strong>$100 to $200</strong> to clean, depending on size, fabric
               type, and condition. Sectionals, large sofas, and heavily soiled
               pieces may cost more. Multi-piece discounts are available when
               booking several items together.
             </p>
-            <h3 className="mt-8 font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="mt-8 font-body text-[17px] font-extrabold text-white">
               Pricing Factors
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Your specific price depends on:
             </p>
             <ul className="mt-3 space-y-1.5">
               {pricingFactors.map((factor) => (
                 <li
                   key={factor}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {factor}
                 </li>
               ))}
             </ul>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               for a free estimate. Use code MINT25 for 10% off your first
               booking. See full pricing details on our{" "}
@@ -566,13 +566,13 @@ export default function UpholsteryCleaningNorthVancouverPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Your Furniture, Your Health
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Upholstery Cleaning Matters: Health &amp; Home Benefits
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Professional upholstery cleaning isn&apos;t just about appearances.
                 It has measurable benefits for your health, your home, and the
                 lifespan of your furniture.
@@ -591,12 +591,12 @@ export default function UpholsteryCleaningNorthVancouverPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {benefit.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {benefit.body}
                 </p>
               </div>

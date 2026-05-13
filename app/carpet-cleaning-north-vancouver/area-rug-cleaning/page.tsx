@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Area Rug Cleaning in North Vancouver | Professional Care & Free Pickup",
   description:
-    "Professional area rug cleaning in North Vancouver. Eco-friendly, hand-wash care for Persian, Oriental & wool rugs. Free pickup & delivery. Call (604) 671-6252.",
+    "Professional area rug cleaning in North Vancouver. Eco-friendly, hand-wash care for Persian, Oriental & wool rugs. Free pickup & delivery. Call 236-688-3248.",
 };
 
 const faqItems = [
@@ -54,7 +54,7 @@ const faqItems = [
   {
     question: "How much does area rug cleaning cost in North Vancouver?",
     answer:
-      "Pricing ranges from $1 to 8 per square foot depending on material. Synthetic rugs start at $1 to 4/sq ft, wool at $3 to 8/sq ft, and delicate Oriental or silk rugs at $5 to 8+/sq ft. For a specific quote, call (604) 671-6252 or email hello@mintsanitary.com. Your free estimate for North Vancouver area rug cleaning includes all costs upfront.",
+      "Pricing ranges from $1 to 8 per square foot depending on material. Synthetic rugs start at $1 to 4/sq ft, wool at $3 to 8/sq ft, and delicate Oriental or silk rugs at $5 to 8+/sq ft. For a specific quote, call 236-688-3248 or email hello@mintsanitary.com. Your free estimate for North Vancouver area rug cleaning includes all costs upfront.",
   },
   {
     question: "Can you clean wool rugs in North Vancouver?",
@@ -91,10 +91,10 @@ export default function AreaRugCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Professional Area Rug Cleaning in North Vancouver?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Professional area rug cleaning goes far beyond vacuuming. It removes
                 deep-set dirt, allergens, pet stains, and odors trapped in the fiber
                 depths, which are invisible contaminants that DIY methods simply
@@ -102,7 +102,7 @@ export default function AreaRugCleaningNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -113,29 +113,29 @@ export default function AreaRugCleaningNorthVancouverPage() {
 
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <p className="font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="font-body text-[15px] leading-[1.8] text-white/80">
             Here&apos;s why it matters in North Vancouver&apos;s climate: moisture and
             mold thrive here, pets leave lasting damage, regular professional
             cleaning extends rug life 5 to 10+ years, and allergens accumulate
             invisibly in thick rug fibers.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-[16px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+            <div className="rounded-[16px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
                 Why it matters here
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>Moisture from our climate can lead to mold and mildew</li>
                 <li>Pet urine can soak into fibers and backing and linger</li>
                 <li>Professional care extends rug life by 5 to 10+ years</li>
                 <li>Allergen removal improves indoor air quality</li>
               </ul>
             </div>
-            <div className="rounded-[16px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+            <div className="rounded-[16px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
                 Types of rugs we clean in North Vancouver
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>Persian and Oriental rugs</li>
                 <li>Wool rugs and silk rugs</li>
                 <li>Synthetic, Kilim, and tribal rugs</li>
@@ -145,7 +145,7 @@ export default function AreaRugCleaningNorthVancouverPage() {
               </ul>
             </div>
           </div>
-          <p className="mt-6 font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.8] text-white/80">
             No matter what sits in your North Vancouver living room, our team
             knows how to clean it safely.
           </p>
@@ -214,40 +214,40 @@ export default function AreaRugCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Rug Cleaning Costs & Pricing in North Vancouver
           </h2>
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <div>
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Pricing guide
               </p>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>Synthetic rugs: $1 to 4 per square foot</li>
                 <li>Wool rugs: $3 to 8 per square foot</li>
                 <li>Silk and Oriental rugs: $5 to 8+ per square foot</li>
                 <li>Optional add-ons: pet treatment, protectant, rush drying</li>
               </ul>
-              <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 A 9x12 Persian rug covers 108 square feet. At $6 per square foot
                 (mid-range Oriental rug pricing), the total is around $650 to
                 $700.
               </p>
-              <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
-                Free estimate by phone, email, or in-person: call (604)
-                671-6252 or email hello@mintsanitary.com. First-time customers
+              <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
+                Free estimate by phone, email, or in-person: call 236-688-3248
+                or email hello@mintsanitary.com. First-time customers
                 can use code MINT25 for 10% off.
               </p>
             </div>
             <div>
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Related Services
               </p>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Carpet cleaning in North Vancouver
                   </a>
@@ -255,7 +255,7 @@ export default function AreaRugCleaningNorthVancouverPage() {
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/carpet-steam-cleaning/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Carpet steam cleaning in North Vancouver
                   </a>
@@ -263,7 +263,7 @@ export default function AreaRugCleaningNorthVancouverPage() {
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/carpet-stain-removal/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Carpet stain removal in North Vancouver
                   </a>
@@ -271,7 +271,7 @@ export default function AreaRugCleaningNorthVancouverPage() {
                 <li>
                   <a
                     href="/cleaning-services-north-vancouver/upholstery-cleaning/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Upholstery cleaning in North Vancouver
                   </a>
@@ -279,11 +279,11 @@ export default function AreaRugCleaningNorthVancouverPage() {
               </ul>
             </div>
           </div>
-          <div className="mt-10 rounded-[16px] bg-[#f4f8ff] p-6">
-            <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+          <div className="mt-10 rounded-[16px] bg-white/[0.12] p-6">
+            <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
               Rug Cleaning Tips Between Professional Cleanings
             </h3>
-            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
               <li>Vacuum regularly with gentle settings on delicate rugs.</li>
               <li>Blot spills immediately. Don&apos;t rub.</li>
               <li>Use rug pads to prevent slipping and reduce wear.</li>
@@ -291,11 +291,11 @@ export default function AreaRugCleaningNorthVancouverPage() {
               <li>Address stains fast for better outcomes.</li>
             </ul>
           </div>
-          <div className="mt-8 rounded-[16px] bg-[#f4f8ff] p-6">
-            <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+          <div className="mt-8 rounded-[16px] bg-white/[0.12] p-6">
+            <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
               Sources & Further Reading
             </h3>
-            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
               <li>Safavieh Rug Care Guide: safavieh.com/rug-care-and-cleaning</li>
               <li>
                 The Rug Chick - Pet Accidents on Rugs:
@@ -335,7 +335,7 @@ export default function AreaRugCleaningNorthVancouverPage() {
               </p>
               <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 If you&apos;re unsure whether your address qualifies for free pickup
-                and delivery, call (604) 671-6252 and we&apos;ll confirm.
+                and delivery, call 236-688-3248 and we&apos;ll confirm.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-3">

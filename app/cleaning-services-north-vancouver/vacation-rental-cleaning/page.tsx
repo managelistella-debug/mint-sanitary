@@ -216,7 +216,7 @@ const faqItems = [
   {
     question: "How much does vacation rental turnover cleaning cost?",
     answer:
-      "Turnover cleaning ranges from $120\u2013$400 depending on property size, condition, and services included. Call (604) 671-6252 for a free estimate. Use code MINT25 for first-time savings.",
+      "Turnover cleaning ranges from $120\u2013$400 depending on property size, condition, and services included. Call 236-688-3248 for a free estimate. Use code MINT25 for first-time savings.",
   },
 ];
 
@@ -229,7 +229,7 @@ export default function VacationRentalCleaningNorthVancouverPage() {
       heroIntro="Fast, reliable turnover cleaning for Airbnb, VRBO, and short-term rentals across North Vancouver. Mint Sanitary handles full property resets between guests — restocking, sanitizing, linen management, and guest-ready presentation on your schedule. Use code MINT25 for 10% off your first turnover."
       faqItems={faqItems}
       ctaHeading="Ready to Streamline Your Vacation Rental Turnovers?"
-      ctaBody="Call Mint Sanitary at (604) 671-6252 or book online. 7-day availability, same-day turnovers available. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, same-day turnovers available. Use code MINT25 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -244,13 +244,13 @@ export default function VacationRentalCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Airbnb & VRBO Turnover
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Vacation Rental Cleaning?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Vacation rental cleaning is a specialized turnover service
                 designed for short-term rental properties listed on platforms
                 like Airbnb and VRBO. Unlike standard residential cleaning, it
@@ -258,14 +258,14 @@ export default function VacationRentalCleaningNorthVancouverPage() {
                 tight time window &mdash; often just a few hours between
                 checkout and check-in.
               </p>
-              <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 The goal is simple: make every guest feel like they&apos;re the
                 first person to stay in your property. That consistency is what
                 drives five-star reviews, Superhost status, and repeat bookings.
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -275,7 +275,7 @@ export default function VacationRentalCleaningNorthVancouverPage() {
       </section>
 
       {/* ── What's Included — Card Grid ──────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {whatsIncluded.map((area) => (
@@ -283,14 +283,14 @@ export default function VacationRentalCleaningNorthVancouverPage() {
                 key={area.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {area.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
@@ -301,10 +301,10 @@ export default function VacationRentalCleaningNorthVancouverPage() {
           </div>
 
           <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Airbnb &amp; VRBO Standards You Must Meet
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Both Airbnb and VRBO have cleanliness guidelines that hosts are
               expected to follow. Our turnover checklist is built to meet or
               exceed platform requirements, covering every area guests are
@@ -314,7 +314,7 @@ export default function VacationRentalCleaningNorthVancouverPage() {
               {airbnbStandards.map((item) => (
                 <li
                   key={item.title}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; <strong>{item.title}</strong> &mdash; {item.body}
                 </li>
@@ -390,8 +390,8 @@ export default function VacationRentalCleaningNorthVancouverPage() {
             same checklist, every room is documented with photos, and every
             guest walks into a property that meets platform standards. Not sure
             where to start? Call{" "}
-            <a href="tel:+16046716252" className="underline underline-offset-2">
-              (604) 671-6252
+            <a href="tel:+12366883248" className="underline underline-offset-2">
+              236-688-3248
             </a>{" "}
             and we&apos;ll set up a turnover plan around your booking calendar.
           </p>
@@ -403,7 +403,7 @@ export default function VacationRentalCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               How Mint Sanitary&apos;s Turnover Process Works
             </h2>
           </div>
@@ -413,10 +413,10 @@ export default function VacationRentalCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -445,10 +445,10 @@ export default function VacationRentalCleaningNorthVancouverPage() {
           <div className="grid items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Flexible Plans
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Turnover Options &amp; Pricing Guidance
               </h2>
             </div>
@@ -465,22 +465,22 @@ export default function VacationRentalCleaningNorthVancouverPage() {
             {turnoverOptions.map((option) => (
               <div
                 key={option.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {option.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {option.body}
                 </p>
               </div>
             ))}
           </div>
           <div className="mt-10">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Pricing Factors
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Vacation rental turnover cleaning in North Vancouver typically
               ranges from $120 to $400 per turnover. Your specific price depends
               on:
@@ -489,19 +489,19 @@ export default function VacationRentalCleaningNorthVancouverPage() {
               {pricingFactors.map((factor) => (
                 <li
                   key={factor}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {factor}
                 </li>
               ))}
             </ul>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               for a free estimate tailored to your property. Use code MINT25 for
               10% off your first turnover. See full pricing details on our{" "}
@@ -580,13 +580,13 @@ export default function VacationRentalCleaningNorthVancouverPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Your Listing, Your Revenue
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Professional Turnover Cleaning Pays for Itself
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Professional vacation rental cleaning isn&apos;t just about
                 appearances. It directly impacts your ratings, your Superhost
                 status, your booking volume, and your nightly rate.
@@ -602,61 +602,61 @@ export default function VacationRentalCleaningNorthVancouverPage() {
             </div>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Higher Ratings
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Consistent professional cleaning drives consistent five-star
                 cleanliness scores, protecting your overall rating and Superhost
                 status.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 More Back-to-Back Bookings
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Fast, reliable turnovers let you accept back-to-back bookings
                 without buffer nights, significantly increasing your monthly
                 revenue.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Remote Management
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Photo documentation after every turnover means you can manage
                 your property remotely with full confidence it&apos;s
                 guest-ready.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Eco-Friendly Appeal
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Our non-toxic, biodegradable products are safe for guests and
                 the environment. Listing eco-friendly cleaning can increase
                 booking interest from environmentally conscious travelers.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Supply Management
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 We restock guest supplies on every visit and alert you when
                 inventory is running low, so your guests always arrive to a
                 fully stocked property.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 MINT25: 10% Off First Turnover
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 New hosts save 10% on their first vacation rental turnover with
                 promo code MINT25. No strings attached, no contracts required.
               </p>

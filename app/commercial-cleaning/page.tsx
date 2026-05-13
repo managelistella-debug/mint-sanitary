@@ -224,7 +224,7 @@ export default function CommercialCleaningPage() {
             </p>
             <a
               href="/contact"
-              className="reveal delay-2 inline-flex items-center justify-center bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+              className="reveal delay-2 inline-flex items-center justify-center bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
             >
               Request a Quote
             </a>
@@ -232,20 +232,20 @@ export default function CommercialCleaningPage() {
         </section>
 
         {/* ── 2. OVERVIEW ──────────────────────────────────────────────── */}
-        <section className="py-[80px] bg-[#f2f2f2]" ref={overviewRef}>
+        <section className="py-[80px]" ref={overviewRef}>
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-start">
 
             {/* Left — text */}
             <div className="flex flex-col gap-[24px] flex-[1.2_0_0]">
-              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 A cleaner business,{" "}
                 <br className="hidden md:block" />
                 run on your schedule.
               </h2>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 tracking-[0.28px] leading-[28px]">
                 Commercial cleaning is more than a tidy workspace — it reflects your brand. A consistently clean environment improves employee morale, makes better first impressions, and ensures a safer space for everyone who walks through your doors.
               </p>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] tracking-[0.28px] leading-[28px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 tracking-[0.28px] leading-[28px]">
                 Mint Sanitary designs service programs around your hours, your access requirements, and your specific facility — so operations never skip a beat.
               </p>
               <a
@@ -306,13 +306,13 @@ export default function CommercialCleaningPage() {
                     className="reveal card-hover bg-white rounded-[12px] p-[24px] flex flex-col gap-[14px]"
                     style={{ transitionDelay: `${idx * 0.07}s` }}
                   >
-                    <div className="w-[46px] h-[46px] bg-[#c8e0fd] rounded-full flex items-center justify-center shrink-0">
-                      <Icon size={22} strokeWidth={1.8} className="text-[#253862]" />
+                    <div className="w-[46px] h-[46px] bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                      <Icon size={22} strokeWidth={1.8} className="text-white" />
                     </div>
-                    <p className="font-display-reg text-[15px] tracking-[0.64px] uppercase text-[#253862] leading-none">
+                    <p className="font-display-reg text-[15px] tracking-[0.64px] uppercase text-white leading-none">
                       {f.label}
                     </p>
-                    <p className="font-body font-medium text-[14px] text-[#0a2540] leading-[22px] tracking-[0.28px]">
+                    <p className="font-body font-medium text-[14px] text-white/80 leading-[22px] tracking-[0.28px]">
                       {f.desc}
                     </p>
                   </div>
@@ -323,13 +323,13 @@ export default function CommercialCleaningPage() {
         </section>
 
         {/* ── 4. WHAT WE COVER ─────────────────────────────────────────── */}
-        <section className="py-[80px] bg-[#f2f2f2]" ref={whatRef}>
+        <section className="py-[80px]" ref={whatRef}>
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col gap-[40px]">
             <div className="flex flex-col gap-[12px]">
-              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 What We Cover
               </h2>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] max-w-[560px] leading-[28px] tracking-[0.28px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 max-w-[560px] leading-[28px] tracking-[0.28px]">
                 Every visit is thorough. From interior spaces to high-touch surface disinfection — our commercial scope leaves nothing overlooked.
               </p>
             </div>
@@ -337,7 +337,7 @@ export default function CommercialCleaningPage() {
             <div className="flex flex-col md:flex-row gap-[48px]">
               {/* Interior column */}
               <div className="flex flex-col gap-[20px] flex-1">
-                <p className="reveal font-display-reg text-[17px] tracking-[0.64px] uppercase text-[#155da6] pb-[12px] border-b-2 border-[#155da6]/40">
+                <p className="reveal font-display-reg text-[17px] tracking-[0.64px] uppercase text-white pb-[12px] border-b-2 border-[#155da6]/40">
                   Interior Spaces
                 </p>
                 <div className="flex flex-col gap-[14px]">
@@ -350,9 +350,9 @@ export default function CommercialCleaningPage() {
                       <CheckCircle2
                         size={16}
                         strokeWidth={2}
-                        className="text-[#155da6] shrink-0 mt-[4px]"
+                        className="text-white shrink-0 mt-[4px]"
                       />
-                      <span className="font-body font-medium text-[15px] text-[#0a2540] leading-[22px]">
+                      <span className="font-body font-medium text-[15px] text-white/80 leading-[22px]">
                         {item}
                       </span>
                     </div>
@@ -365,7 +365,7 @@ export default function CommercialCleaningPage() {
 
               {/* Touch points column */}
               <div className="flex flex-col gap-[20px] flex-1">
-                <p className="reveal font-display-reg text-[17px] tracking-[0.64px] uppercase text-[#155da6] pb-[12px] border-b-2 border-[#155da6]/40">
+                <p className="reveal font-display-reg text-[17px] tracking-[0.64px] uppercase text-white pb-[12px] border-b-2 border-[#155da6]/40">
                   Touch Points AND Specialty
                 </p>
                 <div className="flex flex-col gap-[14px]">
@@ -378,9 +378,9 @@ export default function CommercialCleaningPage() {
                       <CheckCircle2
                         size={16}
                         strokeWidth={2}
-                        className="text-[#155da6] shrink-0 mt-[4px]"
+                        className="text-white shrink-0 mt-[4px]"
                       />
-                      <span className="font-body font-medium text-[15px] text-[#0a2540] leading-[22px]">
+                      <span className="font-body font-medium text-[15px] text-white/80 leading-[22px]">
                         {item}
                       </span>
                     </div>
@@ -393,7 +393,7 @@ export default function CommercialCleaningPage() {
 
         {/* ── 5. EXTRA IMAGE ───────────────────────────────────────────── */}
         <div
-          className="px-4 sm:px-8 md:px-[60px] pb-[60px] bg-[#f2f2f2]"
+          className="px-4 sm:px-8 md:px-[60px] pb-[60px]"
           ref={imgRef}
         >
           <div
@@ -428,10 +428,10 @@ export default function CommercialCleaningPage() {
             {/* Text + feature grid */}
             <div className="flex-1 flex flex-col gap-[32px]">
               <div className="flex flex-col gap-[14px]">
-                <h2 className="reveal font-display text-[28px] sm:text-[34px] md:text-[40px] leading-[1.15] text-[#253862] uppercase">
+                <h2 className="reveal font-display text-[28px] sm:text-[34px] md:text-[40px] leading-[1.15] text-white uppercase">
                   We work around your business. Not the other way.
                 </h2>
-                <p className="reveal font-body font-medium text-[15px] text-[#0a2540] leading-[26px] tracking-[0.28px]">
+                <p className="reveal font-body font-medium text-[15px] text-white/80 leading-[26px] tracking-[0.28px]">
                   Commercial cleaning demands trust, discretion, and adaptability. We&apos;re experienced with after-hours access, alarm systems, and multi-tenant building protocols — and we take that responsibility seriously.
                 </p>
               </div>
@@ -442,16 +442,16 @@ export default function CommercialCleaningPage() {
                   return (
                     <div
                       key={feat.title}
-                      className="reveal card-hover flex flex-col gap-[10px] bg-[#f2f2f2] rounded-[12px] p-[20px]"
+                      className="reveal card-hover flex flex-col gap-[10px] rounded-[12px] p-[20px]"
                       style={{ transitionDelay: `${idx * 0.1}s` }}
                     >
-                      <div className="w-[38px] h-[38px] bg-[#c8e0fd] rounded-[8px] flex items-center justify-center shrink-0">
-                        <Icon size={18} strokeWidth={1.8} className="text-[#155da6]" />
+                      <div className="w-[38px] h-[38px] bg-white/20 rounded-[8px] flex items-center justify-center shrink-0">
+                        <Icon size={18} strokeWidth={1.8} className="text-white" />
                       </div>
-                      <p className="font-display-reg text-[13px] tracking-[0.64px] uppercase text-[#253862] leading-none">
+                      <p className="font-display-reg text-[13px] tracking-[0.64px] uppercase text-white leading-none">
                         {feat.title}
                       </p>
-                      <p className="font-body font-medium text-[13px] text-[#0a2540] leading-[20px] tracking-[0.28px]">
+                      <p className="font-body font-medium text-[13px] text-white/80 leading-[20px] tracking-[0.28px]">
                         {feat.desc}
                       </p>
                     </div>
@@ -463,14 +463,14 @@ export default function CommercialCleaningPage() {
         </section>
 
         {/* ── 7. SERVICE AREAS ─────────────────────────────────────────── */}
-        <section className="py-[80px] bg-[#c8e0fd]" ref={areasBlurbRef}>
+        <section className="py-[80px] bg-white/20" ref={areasBlurbRef}>
           <div className="px-4 sm:px-8 md:px-[60px] flex flex-col md:flex-row gap-[60px] items-start md:items-center">
             {/* Text */}
             <div className="flex flex-col gap-[24px] flex-[1.2_0_0] w-full">
-              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-[#253862] uppercase">
+              <h2 className="reveal font-display text-[32px] sm:text-[38px] md:text-[44px] leading-[1.15] text-white uppercase">
                 Serving Metro Vancouver
               </h2>
-              <p className="reveal font-body font-medium text-[16px] text-[#0a2540] leading-[28px] tracking-[0.28px] max-w-[480px]">
+              <p className="reveal font-body font-medium text-[16px] text-white/80 leading-[28px] tracking-[0.28px] max-w-[480px]">
                 Mint Sanitary provides commercial services across the Lower Mainland. Whether your office is downtown Vancouver or your facility is out in the suburbs — we have you covered with the same standard, everywhere.
               </p>
               <a
@@ -487,9 +487,9 @@ export default function CommercialCleaningPage() {
                 {serviceAreas.map((area) => (
                   <div
                     key={area}
-                    className={`h-[58px] flex items-center justify-center border border-[#253862] rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer${area === "New Westminster" ? " sm:hidden" : ""}`}
+                    className={`h-[58px] flex items-center justify-center border border-white rounded-[12px] bg-white/50 hover:bg-[#253862] group transition-colors duration-300 cursor-pointer${area === "New Westminster" ? " sm:hidden" : ""}`}
                   >
-                    <span className="font-display-reg text-[12px] sm:text-[13px] tracking-[0.64px] uppercase text-[#253862] group-hover:text-white transition-colors duration-300 leading-none text-center px-2">
+                    <span className="font-display-reg text-[12px] sm:text-[13px] tracking-[0.64px] uppercase text-white group-hover:text-white transition-colors duration-300 leading-none text-center px-2">
                       {area}
                     </span>
                   </div>
@@ -552,14 +552,14 @@ export default function CommercialCleaningPage() {
             <div className="reveal flex flex-col sm:flex-row gap-[16px] w-full sm:w-auto">
               <a
                 href="tel:6041234567"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-[#c8e0fd] text-[#253862] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-white/20 text-white font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white transition-colors duration-200"
               >
                 <Phone size={16} strokeWidth={2.5} />
                 Call Now
               </a>
               <a
                 href="mailto:hello@mintsanitary.com"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-[#c8e0fd] hover:text-[#253862] transition-colors duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white/20 hover:text-white transition-colors duration-200"
               >
                 <Mail size={16} strokeWidth={2.5} />
                 Email Us

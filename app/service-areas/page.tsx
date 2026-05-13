@@ -4,7 +4,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata: Metadata = {
   title: "House Cleaning Service Across Greater Vancouver | Mint Sanitary",
   description:
-    "Professional house cleaning in North Vancouver, West Vancouver, Vancouver, Burnaby, and Greater Vancouver. 7-day availability. Free estimates. (604) 671-6252.",
+    "Professional house cleaning in North Vancouver, West Vancouver, Vancouver, Burnaby, and Greater Vancouver. 7-day availability. Free estimates. 236-688-3248.",
 };
 
 const whyChooseItems: { title: string; body: string; image: string }[] = [
@@ -52,7 +52,7 @@ const faqItems: { question: string; answer: string }[] = [
     question:
       "Does Mint Sanitary service my specific neighborhood in North Vancouver?",
     answer:
-      "We serve all of North Vancouver including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. If you're in North Vancouver and unsure, contact us at (604) 671-6252 or hello@mintsanitary.com to confirm.",
+      "We serve all of North Vancouver including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. If you're in North Vancouver and unsure, contact us at 236-688-3248 or hello@mintsanitary.com to confirm.",
   },
   {
     question: "Is there a travel fee for areas outside North Vancouver?",
@@ -62,7 +62,7 @@ const faqItems: { question: string; answer: string }[] = [
   {
     question: "Can I get same-day or next-day cleaning in Vancouver?",
     answer:
-      "Yes. We operate 7 days a week across all Greater Vancouver service areas. North Vancouver customers often benefit from same-day or next-day availability. For West Vancouver, Vancouver, Burnaby, or other areas, call (604) 671-6252 to check your specific availability.",
+      "Yes. We operate 7 days a week across all Greater Vancouver service areas. North Vancouver customers often benefit from same-day or next-day availability. For West Vancouver, Vancouver, Burnaby, or other areas, call 236-688-3248 to check your specific availability.",
   },
   {
     question:
@@ -73,13 +73,13 @@ const faqItems: { question: string; answer: string }[] = [
   {
     question: "Do you offer free estimates for all service areas?",
     answer:
-      "Yes. We provide free, no-obligation estimates for homes and businesses across North Vancouver, West Vancouver, Vancouver, Burnaby, and surrounding areas. Contact us online or call (604) 671-6252 for your quote.",
+      "Yes. We provide free, no-obligation estimates for homes and businesses across North Vancouver, West Vancouver, Vancouver, Burnaby, and surrounding areas. Contact us online or call 236-688-3248 for your quote.",
   },
   {
     question:
       "What if my West Vancouver or Greater Vancouver address is outside your standard service zone?",
     answer:
-      "Call us at (604) 671-6252 with your location and we'll provide a custom quote based on travel distance and your cleaning needs. Many areas beyond Burnaby and Richmond can still work with the right schedule.",
+      "Call us at 236-688-3248 with your location and we'll provide a custom quote based on travel distance and your cleaning needs. Many areas beyond Burnaby and Richmond can still work with the right schedule.",
   },
   {
     question:
@@ -103,7 +103,7 @@ export default function ServiceAreasPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Across the heart of Vancouver, the North Shore, and the suburbs
               beyond, we&apos;re here to handle your cleaning. We operate 7 days a
               week across all service areas, bringing professional-grade cleaning
@@ -111,26 +111,26 @@ export default function ServiceAreasPage() {
               neighborhood. Same standards. Same attention to detail. Everywhere we
               go.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Not sure if we service your specific neighborhood? Scroll through
               our service areas below or reach out at{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>
               . We&apos;re happy to confirm coverage and answer any questions
               about scheduling or pricing.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
-              <strong className="font-extrabold text-[#4E5062]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
+              <strong className="font-extrabold text-white">
                 New customers receive 10% off your first clean with code MINT25.
               </strong>
             </p>
             <a
               href="/contact"
-              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+              className="mt-6 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
             >
               Check Availability
             </a>
@@ -146,10 +146,10 @@ export default function ServiceAreasPage() {
       </section>
 
       {/* ── Why Choose — Image Cards ────────────────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Why Choose Mint Sanitary for House Cleaning in Greater Vancouver?
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -163,10 +163,10 @@ export default function ServiceAreasPage() {
                   alt={item.title}
                   className="h-[170px] w-full rounded-[14px] object-cover"
                 />
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {item.title}
                 </h3>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
@@ -224,10 +224,10 @@ export default function ServiceAreasPage() {
                 Schedule North Van Cleaning
               </a>
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="inline-flex items-center justify-center rounded-[99px] border-2 border-white/50 px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
               >
-                Call (604) 671-6252
+                Call 236-688-3248
               </a>
             </div>
           </div>
@@ -239,17 +239,17 @@ export default function ServiceAreasPage() {
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               West Vancouver House Cleaning
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               We cover all of West Vancouver, including Ambleside, Dundarave, and
               Horseshoe Bay. Many residents assume companies based in North
               Vancouver charge travel fees for the longer routes across the Second
               Narrows, but we don&apos;t. West Vancouver clients receive the same
               pricing structure as North Vancouver despite the distance.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Your West Vancouver home gets the same eco-friendly, non-toxic
               cleaning approach we apply everywhere. Weekly, bi-weekly, monthly,
               and deep cleaning options are all available. We understand West
@@ -257,14 +257,14 @@ export default function ServiceAreasPage() {
               and newer residential neighborhoods, and adjust our service to match
               each home&apos;s specific needs.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Availability in West Vancouver is strong across all days of the
               week. Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               to check current openings or{" "}
               <a href="/contact" className="underline underline-offset-2">
@@ -338,22 +338,22 @@ export default function ServiceAreasPage() {
         <div className="mx-auto grid max-w-[1200px] items-center gap-10 lg:grid-cols-2">
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Burnaby House Cleaning
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Metrotown, Burnaby Heights, South Burnaby, and surrounding
               neighborhoods all fall within our regular service area. Burnaby
               residents benefit from the same 7-day availability and eco-friendly
               approach we offer across Greater Vancouver.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               We specialize in condo and single-family home cleaning throughout
               Burnaby. Professional standards match what we maintain in North
               Vancouver, and flexible scheduling accommodates busy Burnaby families
               and business owners.
             </p>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Free estimates are always available. Reach out today to discuss your
               Burnaby property&apos;s specific cleaning needs and find a schedule
               that works for you.{" "}
@@ -362,10 +362,10 @@ export default function ServiceAreasPage() {
               </a>{" "}
               or call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>
               .
             </p>
@@ -408,10 +408,10 @@ export default function ServiceAreasPage() {
               impacts pricing, but we&apos;ll be transparent about costs and
               availability before you commit. Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               with your specific location and we&apos;ll provide a detailed
               estimate based on distance and your cleaning needs.
@@ -434,10 +434,10 @@ export default function ServiceAreasPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What Cleaning Services Do We Offer in Your Area?
           </h2>
-          <p className="mt-6 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Our full service menu is available no matter which Greater Vancouver
             neighborhood you choose:
           </p>
@@ -445,25 +445,25 @@ export default function ServiceAreasPage() {
             {cleaningServices.map((service) => (
               <div
                 key={service.text}
-                className="overflow-hidden rounded-[20px] bg-[#f4f8ff] p-4 transition-all duration-200 hover:-translate-y-1"
+                className="overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1"
               >
                 <img
                   src={service.image}
                   alt={service.text}
                   className="h-[160px] w-full rounded-[14px] object-cover"
                 />
-                <p className="mt-4 font-body text-[15px] font-semibold leading-[1.5] text-[#4E5062]">
+                <p className="mt-4 font-body text-[15px] font-semibold leading-[1.5] text-white">
                   {service.text}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-10 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-10 font-body text-[15px] leading-[1.7] text-white/80">
             Every service uses eco-friendly, non-toxic cleaning products. No
             harsh chemicals or irritating fumes. Just effective, safe,
             professional cleaning.
           </p>
-          <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             For complete details on our service offerings, visit our main{" "}
             <a
               href="/cleaning-services-north-vancouver"

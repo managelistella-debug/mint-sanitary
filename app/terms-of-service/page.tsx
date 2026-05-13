@@ -95,11 +95,11 @@ export default function TermsOfServicePage() {
         </section>
 
         {/* Content */}
-        <section className="py-[60px] md:py-[80px] bg-[#f2f2f2]">
+        <section className="py-[60px] md:py-[80px]">
           <div className="px-4 sm:px-8 md:px-[60px] max-w-[900px] mx-auto flex flex-col gap-[48px]">
 
             {/* Intro */}
-            <p className="font-body font-medium text-[16px] text-[#0a2540] leading-[28px]">
+            <p className="font-body font-medium text-[16px] text-white/80 leading-[28px]">
               These Terms of Service govern your use of the Mint Sanitary website and your engagement with our cleaning services. Please read them carefully before booking a service.
             </p>
 
@@ -107,10 +107,10 @@ export default function TermsOfServicePage() {
             {sections.map((s, i) => (
               <div key={s.title} className="flex flex-col gap-[16px]">
                 <div className="flex items-center gap-[14px]">
-                  <span className="font-body font-extrabold text-[13px] text-[#155da6] bg-[#c8e0fd] rounded-full w-[28px] h-[28px] flex items-center justify-center shrink-0">
+                  <span className="font-body font-extrabold text-[13px] text-white bg-white/20 rounded-full w-[28px] h-[28px] flex items-center justify-center shrink-0">
                     {i + 1}
                   </span>
-                  <h2 className="font-display text-[20px] sm:text-[24px] leading-[1.2] text-[#253862] uppercase">
+                  <h2 className="font-display text-[20px] sm:text-[24px] leading-[1.2] text-white uppercase">
                     {s.title}
                   </h2>
                 </div>
@@ -118,7 +118,7 @@ export default function TermsOfServicePage() {
                   {s.content.map((para, j) => (
                     <p
                       key={j}
-                      className="font-body font-medium text-[15px] text-[#0a2540] leading-[26px] whitespace-pre-line"
+                      className="font-body font-medium text-[15px] text-white/80 leading-[26px] whitespace-pre-line"
                     >
                       {para}
                     </p>

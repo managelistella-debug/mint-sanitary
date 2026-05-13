@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import GradientBackground from "@/components/GradientBackground";
 
 export const metadata: Metadata = {
   title: "Cleaning Services North Vancouver | Mint Sanitary",
@@ -20,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased">
-        <div className="site-scrolling-bg" aria-hidden="true">
-          <div className="site-scrolling-bg-inner" />
-        </div>
+        <GradientBackground />
         <Script
           src="//use.typekit.net/ik/i0a07fpf7uWIz_CNTNWZ96QQmttS9H7Mx1tZHnKDCN6feGjgfFHN4UJLFRbh52jhWDjuZQjXFQj3FRMXjDSUw2jhFQFyjR4cFgGMJ68zdAo8Sku3Scv7fbRgVyMMegw6MKG4fO6rIMMjgfMfH6qJzRtbMg6YJMJ7fbKXVyMMeM66MKG4fwMrIMMjfPMfH6qJ0QtbMg65JMJ7fbKxVyMMegI6MTMg_4c1l3j.js"
           strategy="beforeInteractive"

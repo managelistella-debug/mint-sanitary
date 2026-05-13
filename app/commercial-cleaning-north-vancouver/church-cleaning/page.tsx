@@ -133,7 +133,7 @@ const faqItems = [
   { question: "How do you handle allergens in North Vancouver church facilities?", answer: "We use HEPA filtration vacuums and electrostatic spraying to reduce allergens in North Vancouver churches. We pay special attention to nurseries, carpets, and upholstered pews. If congregation members have specific sensitivities, we customize our approach." },
   { question: "Can Mint Sanitary handle post-event cleanup for funerals and weddings in North Vancouver?", answer: "Definitely. We have handled countless post-event cleanups for North Vancouver churches. Whether it is a reception, wedding ceremony, or funeral gathering, we restore your facility to pristine condition quickly and respectfully." },
   { question: "How do you protect religious items and artwork during church cleaning in North Vancouver?", answer: "Our team is trained to handle religious items, altar furnishings, and artwork with care. We ask questions upfront about what is sacred or delicate. We use soft cloths, appropriate products, and careful techniques. Your space receives the reverence it deserves." },
-  { question: "What is your availability for emergency cleaning in North Vancouver churches?", answer: "We offer 7-day-a-week service and can often accommodate urgent requests. Call us at (604) 671-6252 if a North Vancouver church needs same-day or emergency cleaning after unexpected damage or illness." },
+  { question: "What is your availability for emergency cleaning in North Vancouver churches?", answer: "We offer 7-day-a-week service and can often accommodate urgent requests. Call us at 236-688-3248 if a North Vancouver church needs same-day or emergency cleaning after unexpected damage or illness." },
   { question: "Do you offer customized cleaning plans for specific North Vancouver denominational requirements?", answer: "Yes. Different traditions have different preferences. We work with pastors, facility managers, and congregations in North Vancouver to create plans that align with your specific needs and values. Nothing is one-size-fits-all." },
   { question: "How much can a North Vancouver church save by switching to professional cleaning?", answer: "Most North Vancouver churches save money and countless volunteer hours. Volunteer cleaning often costs more in hidden labor and materials. Professional service is typically $300 to $800 monthly and replaces 20 to 40+ volunteer hours. Plus, your space looks and feels better." },
 ];
@@ -152,7 +152,7 @@ export default function ChurchCleaningNorthVancouverPage() {
       heroIntro="Your congregation deserves a clean, welcoming sanctuary. At Mint Sanitary, we specialize in professional church cleaning in North Vancouver. We serve places of worship across the community with respect, expertise, and care."
       faqItems={faqItems}
       ctaHeading="Ready to Refresh Your North Vancouver Church?"
-      ctaBody="Contact Mint Sanitary today for a free facility walkthrough and estimate. Phone: (604) 671-6252. First clean discount: 10% off with code MINT25. We work around your schedule. Available 7 days a week."
+      ctaBody="Contact Mint Sanitary today for a free facility walkthrough and estimate. Phone: 236-688-3248. First clean discount: 10% off with code MINT25. We work around your schedule. Available 7 days a week."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -167,36 +167,36 @@ export default function ChurchCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Professional Church Cleaning in North Vancouver?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Church cleaning in North Vancouver goes far beyond standard commercial cleaning. It is specialized work that respects the sacred nature of religious spaces while maintaining the highest hygiene standards.
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
             </div>
           </div>
           <div className="mt-12 grid gap-10 md:grid-cols-2 md:gap-12">
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Religious facilities, including churches, mosques, temples, and synagogues, have unique cleaning needs. They host multiple gatherings each week, feature delicate religious items, and require careful handling of symbolic elements. A professional church sanitizing North Vancouver service understands these nuances.
             </p>
             <div>
-              <p className="font-body text-[15px] font-extrabold leading-[1.7] text-[#4E5062]">
+              <p className="font-body text-[15px] font-extrabold leading-[1.7] text-white">
                 What does professional cleaning cover?
               </p>
               <ul className="mt-3 space-y-1.5">
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; Sanctuary and worship areas: pews, altar areas, carpets, polished wood</li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; Bathrooms: deep disinfection and grout cleaning</li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; Fellowship halls and event spaces</li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; Nurseries and children&apos;s rooms (with non-toxic products)</li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; Kitchens and food prep areas</li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; Administrative offices and storage</li>
-                <li className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; Entryways and foyers</li>
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">&bull; Sanctuary and worship areas: pews, altar areas, carpets, polished wood</li>
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">&bull; Bathrooms: deep disinfection and grout cleaning</li>
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">&bull; Fellowship halls and event spaces</li>
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">&bull; Nurseries and children&apos;s rooms (with non-toxic products)</li>
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">&bull; Kitchens and food prep areas</li>
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">&bull; Administrative offices and storage</li>
+                <li className="font-body text-[15px] leading-[1.7] text-white/80">&bull; Entryways and foyers</li>
               </ul>
             </div>
           </div>
@@ -246,19 +246,19 @@ export default function ChurchCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What&apos;s Included in Church Cleaning Services
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             When you hire Mint Sanitary for religious facility cleaning in North Vancouver, here is what you receive:
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {includedAreas.map((area) => (
-              <div key={area.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{area.title}</h3>
+              <div key={area.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{area.title}</h3>
                 <ul className="mt-3 space-y-1">
                   {area.items.map((item) => (
-                    <li key={item} className="font-body text-[15px] leading-[1.7] text-[#5c6075]">&bull; {item}</li>
+                    <li key={item} className="font-body text-[15px] leading-[1.7] text-white/80">&bull; {item}</li>
                   ))}
                 </ul>
               </div>
@@ -306,10 +306,10 @@ export default function ChurchCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               Our Church Cleaning Process
             </h2>
-            <p className="mx-auto mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mx-auto mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
               We have refined our approach to work seamlessly with busy religious schedules.
             </p>
           </div>
@@ -319,10 +319,10 @@ export default function ChurchCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -355,28 +355,28 @@ export default function ChurchCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Pricing for Church Cleaning Services
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Costs vary based on facility size, condition, and cleaning frequency.
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pricingTiers.map((tier) => (
-              <div key={tier.title} className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{tier.title}</h3>
-                <p className="mt-2 font-body text-[20px] font-extrabold text-[#66DAD5]">{tier.range}</p>
+              <div key={tier.title} className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{tier.title}</h3>
+                <p className="mt-2 font-body text-[20px] font-extrabold text-white">{tier.range}</p>
               </div>
             ))}
           </div>
           <div className="mt-8 space-y-3">
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               We offer discounts for longer-term contracts and regular scheduling.
             </p>
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
-              <strong className="font-extrabold text-[#4E5062]">First Clean Special: 10% Off</strong> &mdash; New clients save 10% on their first service. Use code MINT25 when booking.
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
+              <strong className="font-extrabold text-white">First Clean Special: 10% Off</strong> &mdash; New clients save 10% on their first service. Use code MINT25 when booking.
             </p>
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               We will provide a free, detailed estimate after our facility walkthrough. No pressure. No obligation.
             </p>
           </div>
@@ -435,14 +435,14 @@ export default function ChurchCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Services
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {relatedServices.map((s) => (
-              <div key={s.href} className="rounded-[14px] bg-[#f4f8ff] p-6">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">{s.title}</h3>
-                <a href={s.href} className="mt-5 inline-block w-fit border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062]">Learn more</a>
+              <div key={s.href} className="rounded-[14px] bg-white/[0.12] p-6">
+                <h3 className="font-body text-[17px] font-extrabold text-white">{s.title}</h3>
+                <a href={s.href} className="mt-5 inline-block w-fit border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white">Learn more</a>
               </div>
             ))}
           </div>

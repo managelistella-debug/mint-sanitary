@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Recurring Cleaning in North Vancouver | Weekly & Biweekly Plans",
   description:
-    "Professional recurring cleaning in North Vancouver. Weekly, biweekly, and monthly plans from Mint Sanitary. Eco-friendly, bonded staff. Call (604) 671-6252 today.",
+    "Professional recurring cleaning in North Vancouver. Weekly, biweekly, and monthly plans from Mint Sanitary. Eco-friendly, bonded staff. Call 236-688-3248 today.",
 };
 
 const includedAreas = [
@@ -67,7 +67,7 @@ const notIncluded = [
 const processSteps = [
   {
     title: "Initial Consultation",
-    body: "Contact us by phone at (604) 671-6252, through our contact page, or online. We'll discuss your home size, cleaning priorities, and schedule preferences.",
+    body: "Contact us by phone at 236-688-3248, through our contact page, or online. We'll discuss your home size, cleaning priorities, and schedule preferences.",
   },
   {
     title: "Choose Your Frequency",
@@ -249,7 +249,7 @@ const faqItems = [
   {
     question: "How do I get started?",
     answer:
-      "Call (604) 671-6252 or visit our contact page for a free, no-obligation estimate. We'll help you choose the right plan and schedule your first cleaning.",
+      "Call 236-688-3248 or visit our contact page for a free, no-obligation estimate. We'll help you choose the right plan and schedule your first cleaning.",
   },
 ];
 
@@ -262,7 +262,7 @@ export default function RecurringCleaningNorthVancouverPage() {
       heroIntro="Recurring cleaning keeps your North Vancouver home consistently clean without the weekend catch-up. Mint Sanitary provides weekly, bi-weekly, and monthly cleaning plans with the same trusted team, eco-friendly products, and 7-day availability. Use code MINT25 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Set Up Recurring Cleaning?"
-      ctaBody="Call Mint Sanitary at (604) 671-6252 or book online. Free estimates, no long-term contracts, 7-day availability. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. Free estimates, no long-term contracts, 7-day availability. Use code MINT25 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -277,13 +277,13 @@ export default function RecurringCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Scheduled Home Cleaning
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What&apos;s Included in Every Recurring Visit
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Every recurring visit covers your home room by room — bathrooms,
                 kitchen, living areas, bedrooms, and floors. Your team follows a
                 consistent checklist while adapting to your specific preferences
@@ -291,7 +291,7 @@ export default function RecurringCleaningNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -301,7 +301,7 @@ export default function RecurringCleaningNorthVancouverPage() {
       </section>
 
       {/* ── Included Areas — Card Grid ────────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {includedAreas.map((area) => (
@@ -309,14 +309,14 @@ export default function RecurringCleaningNorthVancouverPage() {
                 key={area.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {area.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
@@ -327,20 +327,20 @@ export default function RecurringCleaningNorthVancouverPage() {
           </div>
 
           <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               What&apos;s Not Included in Recurring Cleaning
             </h3>
             <ul className="mt-3 space-y-1.5">
               {notIncluded.map((item) => (
                 <li
                   key={item}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {item}
                 </li>
               ))}
             </ul>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Need these services? They&apos;re available as part of our{" "}
               <a
                 href="/cleaning-services-north-vancouver/deep-cleaning/"
@@ -414,10 +414,10 @@ export default function RecurringCleaningNorthVancouverPage() {
             to reset their home, then switch to a recurring plan for ongoing
             maintenance. Not sure which is right for you? Call{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             and we&apos;ll help you decide.
           </p>
@@ -429,7 +429,7 @@ export default function RecurringCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Recurring Cleaning Process: Step by Step
             </h2>
           </div>
@@ -439,10 +439,10 @@ export default function RecurringCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -468,10 +468,10 @@ export default function RecurringCleaningNorthVancouverPage() {
           <div className="grid items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Flexible Plans
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Recurring Cleaning Frequency &amp; Pricing Guidance
               </h2>
             </div>
@@ -488,22 +488,22 @@ export default function RecurringCleaningNorthVancouverPage() {
             {frequencyOptions.map((option) => (
               <div
                 key={option.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {option.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {option.body}
                 </p>
               </div>
             ))}
           </div>
           <div className="mt-10">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Pricing Factors
             </h3>
-            <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
               Recurring cleaning in North Vancouver is priced lower per visit
               than one-time services. Your specific price depends on:
             </p>
@@ -511,19 +511,19 @@ export default function RecurringCleaningNorthVancouverPage() {
               {pricingFactors.map((factor) => (
                 <li
                   key={factor}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {factor}
                 </li>
               ))}
             </ul>
-            <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               Call{" "}
               <a
-                href="tel:+16046716252"
+                href="tel:+12366883248"
                 className="underline underline-offset-2"
               >
-                (604) 671-6252
+                236-688-3248
               </a>{" "}
               for a free estimate. Use code MINT25 for 10% off your first
               booking. See full pricing details on our{" "}
@@ -602,13 +602,13 @@ export default function RecurringCleaningNorthVancouverPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Your Home, Your Time
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Recurring Cleaning Matters: Benefits &amp; Results
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Regular recurring cleaning isn&apos;t just about appearances. It
                 has measurable benefits for your health, your home, and your
                 quality of life.
@@ -627,12 +627,12 @@ export default function RecurringCleaningNorthVancouverPage() {
             {benefitCards.map((card) => (
               <div
                 key={card.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {card.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {card.body}
                 </p>
               </div>

@@ -24,7 +24,7 @@ const faqItems = [
     question:
       "Can you clean windows after business hours in North Vancouver?",
     answer:
-      "Yes. Mint Sanitary offers after-hours scheduling including early morning (before business opens), evening (after business closes), weekends, and holidays. We coordinate with your business calendar to schedule cleaning during times that minimize disruption to operations, client meetings, and customer access. Contact us at (604) 671-6252 or hello@mintsanitary.com to discuss your preferred service window and availability.",
+      "Yes. Mint Sanitary offers after-hours scheduling including early morning (before business opens), evening (after business closes), weekends, and holidays. We coordinate with your business calendar to schedule cleaning during times that minimize disruption to operations, client meetings, and customer access. Contact us at 236-688-3248 or hello@mintsanitary.com to discuss your preferred service window and availability.",
   },
   {
     question:
@@ -163,7 +163,7 @@ export default function CommercialWindowCleaningPage() {
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="font-body text-[15px] leading-[1.7] text-white/80">
             Mint Sanitary provides full-service{" "}
             <a
               href="/window-cleaning-north-vancouver/commercial-window-cleaning/"
@@ -180,10 +180,10 @@ export default function CommercialWindowCleaningPage() {
 
           <div className="mt-14">
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               What&apos;s Included in Commercial Window Cleaning Service
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Our commercial window cleaning service in North Vancouver covers
               all exterior and interior glass surfaces on your property.
             </p>
@@ -191,12 +191,12 @@ export default function CommercialWindowCleaningPage() {
               {includedServices.map((s) => (
                 <div
                   key={s.title}
-                  className="rounded-[14px] bg-[#f4f8ff] p-5"
+                  className="rounded-[14px] bg-white/[0.12] p-5"
                 >
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {s.title}
                   </h3>
-                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                     {s.body}
                   </p>
                 </div>
@@ -272,19 +272,19 @@ export default function CommercialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Ground-Level, Mid-Rise, and High-Rise Window Cleaning
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Different building heights require different approaches, equipment,
             and safety protocols.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Ground-Level Storefronts
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 The first impression customers receive. Monthly cleaning is
                 standard for retail properties because foot traffic and
                 weathering quickly degrade storefront appearance. In Seymour
@@ -294,11 +294,11 @@ export default function CommercialWindowCleaningPage() {
                 and customers to see clearly into the store.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Mid-Rise Buildings (3 to 10 Stories)
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Typically require quarterly or bi-monthly exterior service. These
                 buildings are tall enough that safety equipment becomes essential.
                 We deploy modern work platforms, safety harnesses, and fall
@@ -316,11 +316,11 @@ export default function CommercialWindowCleaningPage() {
                 and salt spray.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 High-Rise Commercial Buildings (10+ Stories)
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Demand specialized expertise and equipment. We use certified rope
                 access systems, elevated work platforms, and IRATA-trained
                 technicians. High-rise work requires documented fall protection
@@ -329,11 +329,11 @@ export default function CommercialWindowCleaningPage() {
                 because of the elevated risk profile.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Access and Safety Equipment
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 A critical differentiator between DIY approaches and professional
                 commercial cleaning. We deploy ANSI-certified harnesses, modern
                 safety anchors, evacuation procedures, and communication systems.
@@ -351,11 +351,11 @@ export default function CommercialWindowCleaningPage() {
                 standard.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Specialized High-Rise Expertise
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Comes from training and experience. Our team members hold IRATA
                 (International Rope Access Trade Association) certification or
                 equivalent rope access training. This credential, combined with
@@ -439,60 +439,60 @@ export default function CommercialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Flexible Scheduling to Minimize Business Disruption
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Commercial window cleaning doesn&apos;t have to interrupt business
             operations. We offer flexible scheduling options designed around your
             property&apos;s operational needs.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 After-Hours Availability
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Includes early morning, evening, weekends, and holidays. We clean
                 retail storefronts in Lower Lonsdale before opening or office
                 buildings after employees leave, ensuring no disruption to
                 business activities.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Customizable Service Windows
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Let you control scheduling frequency. We work within your
                 preferred timeline and building schedule.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Strata Coordination
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Includes advance notice (7 days via email), compliance with
                 strata bylaws, and scheduling around resident patterns across
                 North Vancouver.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Seasonal Scheduling
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Aligns with North Vancouver&apos;s climate. Spring (April to
                 May) removes winter accumulation; fall (September to October)
                 prepares for winter weather.
               </p>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Planned Maintenance Contracts
               </h3>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Include monthly, bi-monthly, or quarterly recurring service
                 booked in advance, providing predictable budgeting and guaranteed
                 availability.
@@ -543,10 +543,10 @@ export default function CommercialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Recommended Frequency for Commercial Window Cleaning
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Window cleaning frequency depends on building type, location, and
             environmental exposure.
           </p>
@@ -554,19 +554,19 @@ export default function CommercialWindowCleaningPage() {
             {frequencyItems.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
-            <strong className="font-extrabold text-[#4E5062]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
+            <strong className="font-extrabold text-white">
               Seasonal deep clean
             </strong>{" "}
             is recommended in spring (April to May) and fall (September to
@@ -655,10 +655,10 @@ export default function CommercialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Service Area Coverage in North Vancouver
           </h2>
-          <div className="mt-6 space-y-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <div className="mt-6 space-y-4 font-body text-[15px] leading-[1.7] text-white/80">
             <p>
               Mint Sanitary serves{" "}
               <a
@@ -670,7 +670,7 @@ export default function CommercialWindowCleaningPage() {
               with flexible dispatch and rapid scheduling.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Primary service area
               </strong>{" "}
               covers all of North Vancouver, from Lower Lonsdale through Lynn
@@ -678,20 +678,20 @@ export default function CommercialWindowCleaningPage() {
               expertise in coastal climate and salt spray challenges.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Extended Greater Vancouver coverage
               </strong>{" "}
               includes West Vancouver, Vancouver, Burnaby, and surrounding
               municipalities for coordinated multi-property service.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Flexible dispatch
               </strong>{" "}
               means same-week or next-week scheduling across North Vancouver.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Local expertise
               </strong>{" "}
               with North Vancouver&apos;s coastal salt spray, frequent rain, and
@@ -832,10 +832,10 @@ export default function CommercialWindowCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             A Note on Commercial Property Maintenance
           </h2>
-          <div className="mt-6 space-y-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <div className="mt-6 space-y-4 font-body text-[15px] leading-[1.7] text-white/80">
             <p>
               Over my ten years in property management, I learned that building
               appearance directly influences tenant satisfaction and property
@@ -856,24 +856,24 @@ export default function CommercialWindowCleaningPage() {
               industrial facilities throughout North Vancouver.
             </p>
           </div>
-          <div className="mt-8 rounded-[14px] bg-[#f4f8ff] p-5">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+          <div className="mt-8 rounded-[14px] bg-white/[0.12] p-5">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               Contact Mint Sanitary Today
             </h3>
-            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
               <li>
-                <strong className="font-extrabold text-[#4E5062]">
+                <strong className="font-extrabold text-white">
                   Phone:
                 </strong>{" "}
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="underline underline-offset-2"
                 >
-                  (604) 671-6252
+                  236-688-3248
                 </a>
               </li>
               <li>
-                <strong className="font-extrabold text-[#4E5062]">
+                <strong className="font-extrabold text-white">
                   Email:
                 </strong>{" "}
                 <a
@@ -884,20 +884,20 @@ export default function CommercialWindowCleaningPage() {
                 </a>
               </li>
               <li>
-                <strong className="font-extrabold text-[#4E5062]">
+                <strong className="font-extrabold text-white">
                   Available:
                 </strong>{" "}
                 7 days a week
               </li>
               <li>
-                <strong className="font-extrabold text-[#4E5062]">
+                <strong className="font-extrabold text-white">
                   First-time customer promo:
                 </strong>{" "}
                 10% off your first clean with code MINT25
               </li>
             </ul>
           </div>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Let&apos;s discuss how we can keep your North Vancouver commercial
             property looking professional and protect your building investment.{" "}
             <a href="/contact/" className="underline underline-offset-2">

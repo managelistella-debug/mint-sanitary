@@ -222,11 +222,11 @@ export default function Navbar() {
           </a>
 
           <a
-            href="tel:+16046716252"
+            href="tel:+12366883248"
             onClick={closeMobileMenu}
             className="text-center font-body text-[13px] font-semibold tracking-[0.24px] text-white/70"
           >
-            Call (604) 671-6252
+            Call 236-688-3248
           </a>
         </div>
       </div>

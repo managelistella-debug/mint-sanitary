@@ -209,19 +209,19 @@ const faqItems = [
   {
     question: "How much does deep cleaning cost in North Vancouver?",
     answer:
-      "Pricing is based on property size (square footage). Deep cleaning starts at $390 for 500\u2013600 sq ft and scales up based on size. Visit our rates page for the full pricing table, or call (604) 671-6252 for a free estimate. First-time clients save 10% with code MINT25.",
+      "Pricing is based on property size (square footage). Deep cleaning starts at $390 for 500\u2013600 sq ft and scales up based on size. Visit our rates page for the full pricing table, or call 236-688-3248 for a free estimate. First-time clients save 10% with code MINT25.",
   },
   {
     question: "How do I book a deep cleaning?",
     answer:
-      "Call (604) 671-6252 or request a quote online. We provide a free estimate with no obligation. Available 7 days a week, including evenings and weekends. Use code MINT25 for 10% off your first service.",
+      "Call 236-688-3248 or request a quote online. We provide a free estimate with no obligation. Available 7 days a week, including evenings and weekends. Use code MINT25 for 10% off your first service.",
   },
 ];
 
 const processSteps = [
   {
     title: "Free Estimate & Assessment",
-    body: "Call (604) 671-6252 or book online. We discuss your property, focus areas, and any special requirements. You receive a transparent quote with no obligation.",
+    body: "Call 236-688-3248 or book online. We discuss your property, focus areas, and any special requirements. You receive a transparent quote with no obligation.",
   },
   {
     title: "Schedule at Your Convenience",
@@ -297,7 +297,7 @@ export default function DeepCleaningNorthVancouverPage() {
       heroIntro="Deep cleaning goes beyond regular maintenance — reaching inside appliances, scrubbing grout, cleaning behind furniture, and tackling every corner that routine cleaning misses. Mint Sanitary provides professional deep cleaning across North Vancouver with eco-friendly products and 7-day availability. Use code MINT25 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Book a Deep Clean in North Vancouver?"
-      ctaBody="Call Mint Sanitary at (604) 671-6252 or book online. Free estimates. 7-day availability. Eco-friendly products. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. Free estimates. 7-day availability. Eco-friendly products. Use code MINT25 for 10% off your first booking."
     >
       {/* ── A. Image + Text Intro ──────────────────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -312,13 +312,13 @@ export default function DeepCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Beyond the Surface
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What&apos;s Included in a Deep Clean
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 A deep clean goes well beyond standard maintenance. While regular
                 cleaning keeps surfaces tidy, deep cleaning reaches inside
                 appliances, scrubs grout lines, cleans behind furniture, and
@@ -327,7 +327,7 @@ export default function DeepCleaningNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -337,7 +337,7 @@ export default function DeepCleaningNorthVancouverPage() {
       </section>
 
       {/* ── B. Included Areas — Card Grid ─────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {deepCleanAreas.map((area) => (
@@ -345,14 +345,14 @@ export default function DeepCleaningNorthVancouverPage() {
                 key={area.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {area.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
@@ -363,14 +363,14 @@ export default function DeepCleaningNorthVancouverPage() {
           </div>
 
           <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               When Do You Need a Deep Clean?
             </h3>
             <ul className="mt-3 space-y-1.5">
               {whenNeeded.map((item) => (
                 <li
                   key={item}
-                  className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                  className="font-body text-[15px] leading-[1.7] text-white/80"
                 >
                   &bull; {item}
                 </li>
@@ -448,7 +448,7 @@ export default function DeepCleaningNorthVancouverPage() {
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {tier.label}
                 </h3>
-                <p className="mt-2 font-display-reg text-[24px] text-[#66DAD5]">
+                <p className="mt-2 font-display-reg text-[24px] text-white">
                   {tier.range}
                 </p>
                 <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
@@ -477,7 +477,7 @@ export default function DeepCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Deep Cleaning Process: Step by Step
             </h2>
           </div>
@@ -487,10 +487,10 @@ export default function DeepCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -516,20 +516,20 @@ export default function DeepCleaningNorthVancouverPage() {
           <div className="grid items-start gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Transparent Pricing
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Deep Cleaning Pricing in North Vancouver
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Deep cleaning pricing depends on home size, current condition,
                 and any add-on services requested. Larger homes with significant
                 buildup or multiple bathrooms will take longer and cost more than
                 smaller, well-maintained spaces. We always provide a transparent
                 quote before any work begins &mdash; no surprises.
               </p>
-              <p className="mt-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 Factors that affect your final price include total square
                 footage, number of bathrooms, severity of buildup, and any
                 add-ons like carpet treatment or interior window washing.
@@ -548,27 +548,27 @@ export default function DeepCleaningNorthVancouverPage() {
             {pricingTiers.map((tier) => (
               <div
                 key={tier.label}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {tier.label}
                 </h3>
                 <p className="mt-2 font-display-reg text-[24px] text-[#6191e9]">
                   {tier.range}
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {tier.details}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             Call{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             for a free estimate. Use code MINT25 for 10% off your first
             booking. See full pricing details on our{" "}
@@ -581,9 +581,9 @@ export default function DeepCleaningNorthVancouverPage() {
       </section>
 
       {/* ── G. Related Services ───────────────────────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Cleaning Services
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -592,10 +592,10 @@ export default function DeepCleaningNorthVancouverPage() {
                 key={s.href}
                 className="flex flex-col rounded-[14px] bg-white p-6 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {s.title}
                 </h3>
-                <p className="mt-3 flex-1 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 flex-1 font-body text-[15px] leading-[1.7] text-white/80">
                   {s.description}
                 </p>
                 <a
@@ -676,13 +676,13 @@ export default function DeepCleaningNorthVancouverPage() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Your Home, Your Health
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Deep Cleaning Matters: Health &amp; Environmental Benefits
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 A professional deep clean isn&apos;t just about appearances. It
                 has measurable benefits for your health, your home, and the
                 people who live in it.
@@ -701,12 +701,12 @@ export default function DeepCleaningNorthVancouverPage() {
             {healthBenefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {benefit.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {benefit.body}
                 </p>
               </div>

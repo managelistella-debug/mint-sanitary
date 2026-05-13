@@ -71,7 +71,7 @@ const depositDeductions = [
 const processSteps = [
   {
     title: "Contact Us for a Free Estimate",
-    body: "Call (604) 671-6252, visit our contact page, or request a quote online. We\u2019ll ask about your property size, condition, and move-out date to provide an accurate estimate.",
+    body: "Call 236-688-3248, visit our contact page, or request a quote online. We\u2019ll ask about your property size, condition, and move-out date to provide an accurate estimate.",
   },
   {
     title: "Schedule Your Cleaning",
@@ -185,7 +185,7 @@ const faqItems = [
   {
     question: "How far in advance should I book move-out cleaning?",
     answer:
-      "We recommend booking 1\u20132 weeks before your move-out date, but we can often accommodate last-minute requests depending on availability. Call (604) 671-6252 as soon as your date is confirmed.",
+      "We recommend booking 1\u20132 weeks before your move-out date, but we can often accommodate last-minute requests depending on availability. Call 236-688-3248 as soon as your date is confirmed.",
   },
   {
     question: "Will move-out cleaning help me get my security deposit back?",
@@ -233,7 +233,7 @@ export default function MoveOutCleaningPage() {
       heroIntro="Moving out is stressful enough without worrying about your security deposit. Mint Sanitary provides thorough move-out cleaning across North Vancouver that meets BC tenancy inspection standards — giving you the best chance of a full deposit return. Use code MINT25 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Protect Your Deposit?"
-      ctaBody="Book your move-out clean today. Call Mint Sanitary at (604) 671-6252. 7-day availability, eco-friendly products, bonded and insured staff. Use code MINT25 for 10% off."
+      ctaBody="Book your move-out clean today. Call Mint Sanitary at 236-688-3248. 7-day availability, eco-friendly products, bonded and insured staff. Use code MINT25 for 10% off."
     >
       {/* ── A. Image + Text Intro (white bg) ─────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -248,13 +248,13 @@ export default function MoveOutCleaningPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Deposit Protection Cleaning
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What&apos;s Included in a Move-Out Clean
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Under BC&apos;s Residential Tenancy Act, tenants must leave the
                 property in a reasonably clean condition. Our move-out cleaning
                 is designed to meet and exceed landlord inspection standards
@@ -263,7 +263,7 @@ export default function MoveOutCleaningPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -273,7 +273,7 @@ export default function MoveOutCleaningPage() {
       </section>
 
       {/* ── B. Checklist Card Grid (f4f8ff bg) ───────────── */}
-      <section className="relative z-10 bg-[#f4f8ff] px-4 py-16 sm:px-8 md:px-[60px]">
+      <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-6 md:grid-cols-2">
             {checklistCards.map((card) => (
@@ -281,14 +281,14 @@ export default function MoveOutCleaningPage() {
                 key={card.title}
                 className="rounded-[14px] bg-white p-5 shadow-sm"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {card.title}
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {card.items.map((item) => (
                     <li
                       key={item}
-                      className="font-body text-[15px] leading-[1.7] text-[#5c6075]"
+                      className="font-body text-[15px] leading-[1.7] text-white/80"
                     >
                       &bull; {item}
                     </li>
@@ -299,16 +299,16 @@ export default function MoveOutCleaningPage() {
           </div>
 
           <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
-            <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <h3 className="font-body text-[17px] font-extrabold text-white">
               What Can Landlords Deduct?
             </h3>
             <div className="mt-4 grid gap-5 md:grid-cols-3">
               {depositDeductions.map((item) => (
                 <div key={item.title}>
-                  <h4 className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                  <h4 className="font-body text-[15px] font-extrabold text-white">
                     {item.title}
                   </h4>
-                  <p className="mt-1.5 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-1.5 font-body text-[15px] leading-[1.7] text-white/80">
                     {item.desc}
                   </p>
                 </div>
@@ -395,10 +395,10 @@ export default function MoveOutCleaningPage() {
           <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             Need help getting your full deposit back? Call{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>
             .
           </p>
@@ -410,7 +410,7 @@ export default function MoveOutCleaningPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Move-Out Cleaning Process: Step by Step
             </h2>
           </div>
@@ -420,10 +420,10 @@ export default function MoveOutCleaningPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -447,16 +447,16 @@ export default function MoveOutCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Cleaning Services
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {deepCleaningLinks.map((link) => (
               <div
                 key={link.label}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   <a
                     href={link.href}
                     className="underline decoration-[#66DAD5] underline-offset-2"
@@ -464,7 +464,7 @@ export default function MoveOutCleaningPage() {
                     {link.label}
                   </a>
                 </h3>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {link.desc}
                 </p>
               </div>

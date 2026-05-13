@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Professional Gym Cleaning North Vancouver | Mint Sanitary",
   description:
-    "Expert gym cleaning & disinfection in North Vancouver. Certified staff, eco-friendly products, 7-day availability. Call (604) 671-6252 for a free estimate.",
+    "Expert gym cleaning & disinfection in North Vancouver. Certified staff, eco-friendly products, 7-day availability. Call 236-688-3248 for a free estimate.",
 };
 
 const preventionItems = [
@@ -220,7 +220,7 @@ const faqItems = [
   },
   {
     question: "Can I get a first-time discount on gym cleaning in North Vancouver?",
-    answer: "Yes. New clients in North Vancouver get 10% off their first service with code MINT25. This applies to any of our gym cleaning packages. Call (604) 671-6252 to schedule your first clean and use the code at checkout.",
+    answer: "Yes. New clients in North Vancouver get 10% off their first service with code MINT25. This applies to any of our gym cleaning packages. Call 236-688-3248 to schedule your first clean and use the code at checkout.",
   },
   {
     question: "How do I know your cleaning is working in my North Vancouver gym?",
@@ -251,7 +251,7 @@ export default function GymCleaningNorthVancouverPage() {
       heroIntro="Your gym is only as good as it is clean. Members choose fitness facilities based on cleanliness first, and they&apos;ll leave if surfaces feel sticky or smell off. At Mint Sanitary, we handle the heavy lifting so your North Vancouver gym stays spotless, safe, and welcoming every single day."
       faqItems={faqItems}
       ctaHeading="Get Your North Vancouver Gym Cleaning Service Started"
-      ctaBody="Call (604) 671-6252 or visit www.mintsanitary.com for your free on-site estimate. Use code MINT25 for 10% off your first service."
+      ctaBody="Call 236-688-3248 or visit www.mintsanitary.com for your free on-site estimate. Use code MINT25 for 10% off your first service."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -267,13 +267,13 @@ export default function GymCleaningNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Professional Gym Cleaning
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Gym Cleaning in North Vancouver &amp; Why It Matters
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Professional gym cleaning goes way beyond pushing a mop around.
                 It&apos;s about targeting the bacteria hotspots that members
                 touch dozens of times per workout: free weights, treadmill
@@ -281,7 +281,7 @@ export default function GymCleaningNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -295,9 +295,9 @@ export default function GymCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-10 md:grid-cols-2 md:gap-12">
             <div className="space-y-4">
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Here&apos;s what the science says:{" "}
-                <strong className="font-extrabold text-[#4E5062]">
+                <strong className="font-extrabold text-white">
                   free weights carry 362 times more germs than a toilet seat
                 </strong>
                 . Treadmills hold 74 times more bacteria than a public restroom
@@ -306,15 +306,15 @@ export default function GymCleaningNorthVancouverPage() {
               </p>
             </div>
             <div className="space-y-4">
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 Research shows that{" "}
-                <strong className="font-extrabold text-[#4E5062]">
+                <strong className="font-extrabold text-white">
                   81% of gym members cite cleanliness as the deciding factor
                 </strong>{" "}
                 when choosing a facility. That number matters for your
                 membership retention, your reputation, and your liability.
               </p>
-              <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="font-body text-[15px] leading-[1.7] text-white/80">
                 A professional gym cleaning service in North Vancouver uses
                 commercial-grade disinfectants, follows certified protocols, and
                 creates a schedule that catches the dirtiest times of day. Your
@@ -363,14 +363,14 @@ export default function GymCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What&apos;s Included in Professional Gym Cleaning Service
           </h2>
 
-          <h3 className="mt-10 font-body text-[20px] font-extrabold text-[#4E5062]">
+          <h3 className="mt-10 font-body text-[20px] font-extrabold text-white">
             Daily Cleaning Services
           </h3>
-          <p className="mt-3 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-3 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Your gym operates on a schedule. So does our cleaning. We customize
             a daily routine that hits peak times and high-traffic areas.
           </p>
@@ -378,22 +378,22 @@ export default function GymCleaningNorthVancouverPage() {
             {dailyServices.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
             ))}
           </div>
 
-          <h3 className="mt-14 font-body text-[20px] font-extrabold text-[#4E5062]">
+          <h3 className="mt-14 font-body text-[20px] font-extrabold text-white">
             Deep Cleaning &amp; Specialized Services
           </h3>
-          <p className="mt-3 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-3 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Beyond daily maintenance, your gym needs deeper attention on a
             weekly or monthly schedule.
           </p>
@@ -401,12 +401,12 @@ export default function GymCleaningNorthVancouverPage() {
             {deepServices.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
@@ -489,7 +489,7 @@ export default function GymCleaningNorthVancouverPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               How the Gym Cleaning Process Works
             </h2>
           </div>
@@ -499,10 +499,10 @@ export default function GymCleaningNorthVancouverPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -522,50 +522,50 @@ export default function GymCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Gym Cleaning Pricing &amp; Packages
           </h2>
           <div className="mt-8 space-y-4">
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Pricing depends on several factors: your facility&apos;s square
               footage, the number of pieces of equipment, your preferred
               cleaning frequency, and whether you need specialized services like
               carpet extraction or locker room deep cleaning.
             </p>
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               A small studio in Lynn Valley with five cardio machines and
               limited equipment will cost less than a 10,000-square-foot
               facility in Lower Lonsdale with dozens of strength machines and a
               full locker room complex.
             </p>
           </div>
-          <p className="mt-6 font-body text-[15px] font-extrabold leading-[1.7] text-[#4E5062]">
+          <p className="mt-6 font-body text-[15px] font-extrabold leading-[1.7] text-white">
             We offer flexible packages:
           </p>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {packages.map((pkg) => (
               <div
                 key={pkg.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {pkg.title}
                 </h3>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {pkg.body}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             Get a free on-site estimate. We&apos;ll measure your space,
             understand your member traffic, and provide a transparent, itemized
             quote with no pressure. Call us at{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             or visit our website for your free estimate.
           </p>
@@ -656,21 +656,21 @@ export default function GymCleaningNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Services
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {relatedServices.map((s) => (
               <div
                 key={s.href}
-                className="rounded-[14px] bg-[#f4f8ff] p-6"
+                className="rounded-[14px] bg-white/[0.12] p-6"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {s.title}
                 </h3>
                 <a
                   href={s.href}
-                  className="mt-5 inline-block w-fit border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062]"
+                  className="mt-5 inline-block w-fit border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white"
                 >
                   Learn more
                 </a>

@@ -40,7 +40,7 @@ const faqItems = [
   {
     question: "How long does window screen cleaning take?",
     answer:
-      "A typical home with 8 to 12 screens takes 1 to 2 hours, depending on how soiled screens are and whether repairs are needed. We schedule flexibly and work 7 days a week so you can choose a time that suits you. Emergency same-day service is available in many cases. Just call (604) 671-6252 and describe what you need.",
+      "A typical home with 8 to 12 screens takes 1 to 2 hours, depending on how soiled screens are and whether repairs are needed. We schedule flexibly and work 7 days a week so you can choose a time that suits you. Emergency same-day service is available in many cases. Just call 236-688-3248 and describe what you need.",
   },
   {
     question:
@@ -58,7 +58,7 @@ const faqItems = [
     question:
       "Do you service all areas of North Vancouver, including Lynn Valley and Edgemont?",
     answer:
-      "Yes. Mint Sanitary proudly serves all neighborhoods in North Vancouver, including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. We also serve West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver communities. Call (604) 671-6252 to confirm service availability in your specific neighborhood and schedule your free estimate.",
+      "Yes. Mint Sanitary proudly serves all neighborhoods in North Vancouver, including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. We also serve West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver communities. Call 236-688-3248 to confirm service availability in your specific neighborhood and schedule your free estimate.",
   },
 ];
 
@@ -120,7 +120,7 @@ const whyChooseItems: { title: string; body: string }[] = [
   },
   {
     title: "Satisfaction Guaranteed",
-    body: "We stand behind every job; call (604) 671-6252 for questions or concerns.",
+    body: "We stand behind every job; call 236-688-3248 for questions or concerns.",
   },
 ];
 
@@ -136,7 +136,7 @@ export default function WindowScreenCleaningPage() {
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <div className="space-y-4 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <div className="space-y-4 font-body text-[15px] leading-[1.7] text-white/80">
             <p>
               In North Vancouver, where the pollen season runs from February
               through October and coastal humidity creates ideal conditions for
@@ -153,7 +153,7 @@ export default function WindowScreenCleaningPage() {
               visits throughout the year.
             </p>
             <p>
-              <strong className="font-extrabold text-[#4E5062]">
+              <strong className="font-extrabold text-white">
                 Get your{" "}
                 <a href="/contact/" className="underline underline-offset-2">
                   free window screen cleaning estimate
@@ -166,61 +166,61 @@ export default function WindowScreenCleaningPage() {
 
           <div className="mt-14">
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               What&apos;s Included in Our Window Screen Cleaning Service
             </h2>
-            <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Our comprehensive window screen cleaning service in North Vancouver
               covers everything needed to restore your screens to like-new
               condition:
             </p>
             <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Professional Removal
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Screens removed from frames with safe, damage-free handling (no
                   bent corners or damaged mesh).
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Deep Cleaning
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Specialized soft-bristle brushes, low-pressure water rinse, and
                   our eco-friendly biodegradable solution.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Frame Inspection
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Gentle dusting of window sills and tracks to remove accumulated
                   debris.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Careful Reinstallation
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   With proper fit and latch verification before we finish.
                 </p>
               </div>
-              <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+              <div className="rounded-[14px] bg-white/[0.12] p-5">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   Optional Assessment
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   Screen damage assessment with transparent guidance on repair or
                   replacement if needed.
                 </p>
               </div>
             </div>
-            <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
               This service works for all screen material types, including
               fiberglass, aluminum, and specialty mesh. Older homes and new
               builds alike benefit from our service&mdash;our technicians adjust
@@ -306,10 +306,10 @@ export default function WindowScreenCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Our Window Screen Cleaning Process
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Every professional window screen cleaning in North Vancouver follows
             a systematic process designed to protect your screens while achieving
             deep cleanliness:
@@ -318,22 +318,22 @@ export default function WindowScreenCleaningPage() {
             {cleaningProcess.map((step, i) => (
               <div key={step.title} className="flex gap-5">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#66DAD5]">
-                  <span className="font-body text-[15px] font-extrabold text-[#4E5062]">
+                  <span className="font-body text-[15px] font-extrabold text-white">
                     {i + 1}
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                  <h3 className="font-body text-[17px] font-extrabold text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                  <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                     {step.body}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             Our window screen removal and cleaning service takes approximately 1
             to 2 hours for a typical home with 8 to 12 screens, depending on how
             soiled they are and whether repairs are needed. We schedule flexibly
@@ -408,10 +408,10 @@ export default function WindowScreenCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Fiberglass vs. Aluminum Window Screens
           </h2>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Choosing the right{" "}
             <a
               href="https://www.phifer.com/blog/how-to-choose-screening-material.html"
@@ -425,74 +425,74 @@ export default function WindowScreenCleaningPage() {
             Here&apos;s how the two most common materials compare:
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Fiberglass Screens
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Durability:
                   </strong>{" "}
                   Resistant to coastal salt and moisture; minimal corrosion risk
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Flexibility:
                   </strong>{" "}
                   Stretches and rebounds without sagging; forgiving of impacts
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Cost:
                   </strong>{" "}
                   $15 to $35 per screen
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Lifespan:
                   </strong>{" "}
                   10 to 15+ years in coastal BC conditions
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Best For:
                   </strong>{" "}
                   North Vancouver coastal climate (salt spray, humidity)
                 </li>
               </ul>
             </div>
-            <div className="rounded-[14px] bg-[#f4f8ff] p-5">
-              <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+            <div className="rounded-[14px] bg-white/[0.12] p-5">
+              <h3 className="font-body text-[17px] font-extrabold text-white">
                 Aluminum Screens
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Durability:
                   </strong>{" "}
                   Highly durable but susceptible to dents if bumped or hit
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Flexibility:
                   </strong>{" "}
                   Rigid; holds shape well but doesn&apos;t absorb impacts
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Cost:
                   </strong>{" "}
                   $30 to $70 per screen (roughly 2x fiberglass)
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Lifespan:
                   </strong>{" "}
                   8 to 12 years if protected from dents and impacts
                 </li>
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     Best For:
                   </strong>{" "}
                   Areas with high wind or insect concerns; extra strength needed
@@ -500,7 +500,7 @@ export default function WindowScreenCleaningPage() {
               </ul>
             </div>
           </div>
-          <p className="mt-8 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-8 font-body text-[15px] leading-[1.7] text-white/80">
             North Vancouver&apos;s coastal environment favors{" "}
             <a
               href="https://www.qualitywindowscreen.com/aluminum-vs.-fiberglass-comparing-screen-panel-options.html"
@@ -589,10 +589,10 @@ export default function WindowScreenCleaningPage() {
           <div className="grid gap-10 md:grid-cols-2 md:gap-12">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Service Areas
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Mint Sanitary proudly serves{" "}
                 <a
                   href="/service-areas/"
@@ -602,9 +602,9 @@ export default function WindowScreenCleaningPage() {
                 </a>
                 , including:
               </p>
-              <ul className="mt-4 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-4 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
-                  <strong className="font-extrabold text-[#4E5062]">
+                  <strong className="font-extrabold text-white">
                     North Vancouver
                   </strong>{" "}
                   (primary service area)&mdash;Lower Lonsdale, Lynn Valley, Deep
@@ -615,31 +615,31 @@ export default function WindowScreenCleaningPage() {
                 <li>Burnaby</li>
                 <li>Greater Vancouver suburbs and municipalities</li>
               </ul>
-              <p className="mt-4 font-body text-[15px] font-bold leading-[1.7] text-[#4E5062]">
+              <p className="mt-4 font-body text-[15px] font-bold leading-[1.7] text-white">
                 Call for service availability in your neighborhood:{" "}
                 <a
-                  href="tel:+16046716252"
+                  href="tel:+12366883248"
                   className="underline underline-offset-2"
                 >
-                  (604) 671-6252
+                  236-688-3248
                 </a>
               </p>
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Why Choose Mint Sanitary
               </h2>
               <ul className="mt-6 space-y-4">
                 {whyChooseItems.map((item) => (
                   <li
                     key={item.title}
-                    className="rounded-[14px] bg-[#f4f8ff] p-5"
+                    className="rounded-[14px] bg-white/[0.12] p-5"
                   >
-                    <p className="font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                    <p className="font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                       {item.title}
                     </p>
-                    <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                    <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                       {item.body}
                     </p>
                   </li>
@@ -681,10 +681,10 @@ export default function WindowScreenCleaningPage() {
           <div className="grid gap-10 md:grid-cols-2 md:gap-12">
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Related Services
               </h2>
-              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
                   <a
                     href="/window-cleaning-north-vancouver/"
@@ -729,10 +729,10 @@ export default function WindowScreenCleaningPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 Additional Resources
               </h2>
-              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-6 space-y-3 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
                   <a
                     href="https://us.e-cloth.com/blogs/cleaning-freq/window-screens"

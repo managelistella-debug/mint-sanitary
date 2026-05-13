@@ -181,7 +181,7 @@ const faqItems = [
     question:
       "Can you do an emergency commercial kitchen clean before my health inspection in North Vancouver?",
     answer:
-      "Yes. We offer same-day or next-day service for pre-inspection cleaning. If your inspection is coming up and your kitchen needs attention, call us immediately at (604) 671-6252. We prioritize these requests.",
+      "Yes. We offer same-day or next-day service for pre-inspection cleaning. If your inspection is coming up and your kitchen needs attention, call us immediately at 236-688-3248. We prioritize these requests.",
   },
   {
     question:
@@ -205,7 +205,7 @@ const faqItems = [
     question:
       "How much does commercial kitchen cleaning cost in North Vancouver?",
     answer:
-      "Pricing depends on your kitchen size, equipment, and cleaning frequency. Small takeout kitchens start around $600. Full-service restaurants with multiple hoods and extensive equipment may range from $1,500 to $3,500 or more. We offer free estimates with no obligation. Call (604) 671-6252 for a custom quote for your North Vancouver kitchen.",
+      "Pricing depends on your kitchen size, equipment, and cleaning frequency. Small takeout kitchens start around $600. Full-service restaurants with multiple hoods and extensive equipment may range from $1,500 to $3,500 or more. We offer free estimates with no obligation. Call 236-688-3248 for a custom quote for your North Vancouver kitchen.",
   },
 ];
 
@@ -217,7 +217,7 @@ export default function CommercialKitchenCleaningPage() {
       heroIntro="Your kitchen is the heart of your food service business. It&apos;s also one of the most heavily inspected and regulated spaces you&apos;ll operate. When Vancouver Coastal Health inspectors walk in, or when fire safety auditors check your hood systems, you need to know every surface meets code."
       faqItems={faqItems}
       ctaHeading="Call Mint Sanitary for Commercial Kitchen Cleaning in North Vancouver"
-      ctaBody="Call us today at (604) 671-6252 for a free estimate. New clients: Use code MINT25 for 10% off your first clean. We&apos;re available 7 days a week, same-day or next-day scheduling."
+      ctaBody="Call us today at 236-688-3248 for a free estimate. New clients: Use code MINT25 for 10% off your first clean. We&apos;re available 7 days a week, same-day or next-day scheduling."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -233,13 +233,13 @@ export default function CommercialKitchenCleaningPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Professional Kitchen Cleaning
               </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Commercial Kitchen Cleaning in North Vancouver?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 That&apos;s where professional commercial kitchen cleaning in North
                 Vancouver comes in. It&apos;s not about making things look nice
                 (though they will). It&apos;s about health compliance, fire safety,
@@ -252,7 +252,7 @@ export default function CommercialKitchenCleaningPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -265,7 +265,7 @@ export default function CommercialKitchenCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="grid gap-10 md:grid-cols-2 md:gap-12">
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Your daily staff might handle light cleaning between service.
               Weekly deep cleans by your team catch obvious spills and splatters.
               But professional commercial kitchen cleaning North Vancouver
@@ -273,7 +273,7 @@ export default function CommercialKitchenCleaningPage() {
               inside your drain traps, and the fire hazards accumulating in your
               hood system.
             </p>
-            <p className="font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <p className="font-body text-[15px] leading-[1.7] text-white/80">
               Most kitchens benefit from a professional deep clean every 3 to 6
               months, though high-volume restaurants may need quarterly service.
               Your health inspector and your insurance company will appreciate the
@@ -316,10 +316,10 @@ export default function CommercialKitchenCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             What&apos;s Included in Commercial Kitchen Cleaning Services
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             When Mint Sanitary schedules a commercial kitchen cleaning appointment
             in North Vancouver, here&apos;s what happens:
           </p>
@@ -327,12 +327,12 @@ export default function CommercialKitchenCleaningPage() {
             {includedItems.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                   {item.body}
                 </p>
               </div>
@@ -407,7 +407,7 @@ export default function CommercialKitchenCleaningPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-            <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+            <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
               The Professional Kitchen Cleaning Process
             </h2>
           </div>
@@ -417,10 +417,10 @@ export default function CommercialKitchenCleaningPage() {
                 <span className="relative mx-auto flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#6191e9] font-body text-[18px] font-extrabold text-white">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-[#4E5062]">
+                <h3 className="mt-4 font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 font-body text-[14px] leading-[1.6] text-[#5c6075]">
+                <p className="mt-2 font-body text-[14px] leading-[1.6] text-white/80">
                   {step.body}
                 </p>
               </div>
@@ -441,10 +441,10 @@ export default function CommercialKitchenCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Pricing &amp; Quote Process
           </h2>
-          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-4 max-w-[700px] font-body text-[15px] leading-[1.7] text-white/80">
             Commercial kitchen cleaning pricing depends on your kitchen size,
             equipment volume, and cleaning frequency. A small takeout counter
             costs less than a full-service restaurant with multiple hood systems
@@ -454,27 +454,27 @@ export default function CommercialKitchenCleaningPage() {
             {pricingTiers.map((tier) => (
               <div
                 key={tier.title}
-                className="rounded-[14px] bg-[#f4f8ff] p-5"
+                className="rounded-[14px] bg-white/[0.12] p-5"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {tier.title}
                 </h3>
-                <p className="mt-2 font-body text-[20px] font-extrabold text-[#66DAD5]">
+                <p className="mt-2 font-body text-[20px] font-extrabold text-white">
                   {tier.range}
                 </p>
-                <p className="mt-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+                <p className="mt-2 font-body text-[15px] leading-[1.7] text-white/80">
                   {tier.body}
                 </p>
               </div>
             ))}
           </div>
-          <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+          <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             To get an exact quote for your North Vancouver kitchen, call us at{" "}
             <a
-              href="tel:+16046716252"
+              href="tel:+12366883248"
               className="underline underline-offset-2"
             >
-              (604) 671-6252
+              236-688-3248
             </a>{" "}
             or visit our website. We&apos;ll ask about your kitchen size,
             equipment, and current cleaning frequency, then send a custom
@@ -530,21 +530,21 @@ export default function CommercialKitchenCleaningPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Related Services
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {relatedServices.map((s) => (
               <div
                 key={s.href}
-                className="rounded-[14px] bg-[#f4f8ff] p-6"
+                className="rounded-[14px] bg-white/[0.12] p-6"
               >
-                <h3 className="font-body text-[17px] font-extrabold text-[#4E5062]">
+                <h3 className="font-body text-[17px] font-extrabold text-white">
                   {s.title}
                 </h3>
                 <a
                   href={s.href}
-                  className="mt-5 inline-block w-fit border-b border-[#66DAD5] font-body text-[13px] font-bold uppercase tracking-[0.4px] text-[#4E5062]"
+                  className="mt-5 inline-block w-fit border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white"
                 >
                   Learn more
                 </a>

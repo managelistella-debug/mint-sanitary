@@ -36,7 +36,7 @@ const faqItems = [
   {
     question: "Do you offer same-day stain removal in North Vancouver?",
     answer:
-      "Yes. Call (604) 671-6252 with stain details, and we\u0027ll schedule same-day or next-day service depending on availability. We work seven days a week.",
+      "Yes. Call 236-688-3248 with stain details, and we\u0027ll schedule same-day or next-day service depending on availability. We work seven days a week.",
   },
   {
     question:
@@ -76,7 +76,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
       heroIntro="That red wine spill during dinner? The pet accident you discovered this morning? The mystery coffee stain that&apos;s been sitting for weeks? We get it. Carpet stains happen to everyone."
       faqItems={faqItems}
       ctaHeading="Ready to Remove That Stain?"
-      ctaBody="That carpet doesn&apos;t have to stay stained. Call Mint Sanitary at (604) 671-6252 or email hello@mintsanitary.com to schedule your free estimate. Same-day and next-day appointments are available throughout North Vancouver. Use code MINT25 for 10% off your first service."
+      ctaBody="That carpet doesn&apos;t have to stay stained. Call Mint Sanitary at 236-688-3248 or email hello@mintsanitary.com to schedule your free estimate. Same-day and next-day appointments are available throughout North Vancouver. Use code MINT25 for 10% off your first service."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -90,10 +90,10 @@ export default function CarpetStainRemovalNorthVancouverPage() {
             </div>
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
                 What Is Professional Carpet Stain Removal in North Vancouver?
               </h2>
-              <p className="mt-6 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 Professional stain removal goes way beyond blotting with a towel or
                 renting an underperforming machine. When you spill something on your
                 carpet, the liquid doesn&apos;t just sit on the surface. It bonds to the
@@ -102,7 +102,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-[#6191e9] px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-white transition-colors duration-200 hover:bg-[#5580d4]"
+                className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
               >
                 Get a Free Estimate
               </a>
@@ -113,18 +113,18 @@ export default function CarpetStainRemovalNorthVancouverPage() {
 
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
-          <p className="font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="font-body text-[15px] leading-[1.8] text-white/80">
             DIY rental machines apply about 20 to 40 PSI of extraction force.
             Professional stain removal uses industrial-grade equipment with 200
             to 500 PSI of extraction power, plus stain chemistry knowledge and
             targeted treatment selection.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-[16px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+            <div className="rounded-[16px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
                 Types of Stains We Treat in North Vancouver
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>Beverage stains: wine, coffee, tea, soda, and juice</li>
                 <li>Food stains: chocolate, tomato sauce, grease, and oils</li>
                 <li>Pet stains: urine, vomit, feces, and odor issues</li>
@@ -133,17 +133,17 @@ export default function CarpetStainRemovalNorthVancouverPage() {
                 <li>Set-in stains from weeks or months ago</li>
               </ul>
             </div>
-            <div className="rounded-[16px] bg-[#f4f8ff] p-6">
-              <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+            <div className="rounded-[16px] bg-white/[0.12] p-6">
+              <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
                 What stains cannot be removed
               </h3>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>Bleach or chemical damage</li>
                 <li>Fiber melting from heat damage</li>
                 <li>Very old dye-based marker or ink stains</li>
                 <li>Rust and mineral stains in some cases</li>
               </ul>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 We&apos;ll assess your stain during our free estimate and tell you
                 honestly whether removal is likely. We won&apos;t promise miracles.
               </p>
@@ -203,24 +203,24 @@ export default function CarpetStainRemovalNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             DIY vs. Professional Stain Removal in North Vancouver
           </h2>
-          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-white/80">
             For fresh spills, blotting with cold water works fine. But for
             stains sitting more than a few hours, or stains already treated with
             store products, professional removal is usually worth it.
           </p>
-          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-white/80">
             DIY rental equipment extracts about 50% of moisture. Professional
             equipment extracts 85 to 95%. That means dry times of 4 to 6 hours
             instead of 24+ hours and a much lower chance of stains returning.
           </p>
           <div className="mt-10 mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Eco-Friendly Stain Removal Solutions in North Vancouver
           </h2>
-          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-[#5c6075]">
+          <p className="mt-4 max-w-[980px] font-body text-[15px] leading-[1.8] text-white/80">
             At Mint Sanitary, all stain removal treatments use eco-friendly,
             non-toxic products that are safe for kids, pets, and the
             environment. Enzymatic cleaners break down organic matter at a
@@ -249,15 +249,15 @@ export default function CarpetStainRemovalNorthVancouverPage() {
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-          <h2 className="font-display-reg text-[30px] uppercase text-[#4E5062] sm:text-[38px]">
+          <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             Pricing & Related Services
           </h2>
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <div>
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Pricing
               </p>
-              <p className="mt-3 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Carpet stain removal pricing in North Vancouver: single stain
                 removal is $120 to $180, multiple stains (3+) are $200 to $280,
                 and pet stain plus odor treatment is $150 to $240. Optional
@@ -265,14 +265,14 @@ export default function CarpetStainRemovalNorthVancouverPage() {
               </p>
             </div>
             <div>
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-[#5c6075]">
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
                 Related services
               </p>
-              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+              <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Carpet cleaning in North Vancouver
                   </a>
@@ -280,7 +280,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/carpet-steam-cleaning/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Carpet steam cleaning in North Vancouver
                   </a>
@@ -288,7 +288,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
                 <li>
                   <a
                     href="/carpet-cleaning-north-vancouver/area-rug-cleaning/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Area rug cleaning in North Vancouver
                   </a>
@@ -296,7 +296,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
                 <li>
                   <a
                     href="/cleaning-services-north-vancouver/upholstery-cleaning/"
-                    className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                    className="border-b border-white/40 font-body font-bold text-white"
                   >
                     Upholstery cleaning in North Vancouver
                   </a>
@@ -304,15 +304,15 @@ export default function CarpetStainRemovalNorthVancouverPage() {
               </ul>
             </div>
           </div>
-          <div className="mt-10 rounded-[16px] bg-[#f4f8ff] p-6">
-            <h3 className="font-body text-[15px] font-extrabold uppercase text-[#4E5062]">
+          <div className="mt-10 rounded-[16px] bg-white/[0.12] p-6">
+            <h3 className="font-body text-[15px] font-extrabold uppercase text-white">
               Sources & Further Reading
             </h3>
-            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-[#5c6075]">
+            <ul className="mt-3 space-y-2 font-body text-[15px] leading-[1.7] text-white/80">
               <li>
                 <a
                   href="https://spotremoval.coit.com/how-to-remove-urine-from-carpet"
-                  className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                  className="border-b border-white/40 font-body font-bold text-white"
                 >
                   COIT Stain Removal Guide
                 </a>
@@ -320,7 +320,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
               <li>
                 <a
                   href="https://www.whittakersystem.com/blog/remove-old-stains-from-carpet/"
-                  className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                  className="border-b border-white/40 font-body font-bold text-white"
                 >
                   Whittaker System: Old Stain Removal
                 </a>
@@ -328,7 +328,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
               <li>
                 <a
                   href="https://www.hgtv.com/lifestyle/clean-and-organize/how-to-get-pet-stains-out-of-carpet"
-                  className="border-b border-[#66DAD5] font-body font-bold text-[#4E5062]"
+                  className="border-b border-white/40 font-body font-bold text-white"
                 >
                   HGTV Pet Stain Removal
                 </a>
