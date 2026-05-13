@@ -301,7 +301,7 @@ export default function StandardCleaningNorthVancouverPage() {
             {includedAreas.map((area) => (
               <div
                 key={area.title}
-                className="rounded-[14px] bg-white p-5 shadow-sm"
+                className="rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5"
               >
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
@@ -320,7 +320,7 @@ export default function StandardCleaningNorthVancouverPage() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
+          <div className="mt-8 rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5">
             <h3 className="font-body text-[17px] font-extrabold text-white">
               What&apos;s Not Included in Standard Cleaning
             </h3>

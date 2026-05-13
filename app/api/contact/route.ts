@@ -1,15 +1,9 @@
+import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
-// ── Resend setup ──────────────────────────────────────────────────────────────
-// When ready:
-//   1. npm install resend
-//   2. Add RESEND_API_KEY and ADMIN_EMAIL to .env.local
-//   3. Uncomment the Resend import and the two email sends below
-//
-// import { Resend } from "resend";
-// const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL ?? "hello@mintsanitary.com";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL ?? "hello@listella.co";
 const FROM_ADDRESS = "Mint Sanitary <noreply@mintsanitary.com>";
 
 export async function POST(req: NextRequest) {
@@ -20,11 +14,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
     }
 
-    // ── TODO: Uncomment once RESEND_API_KEY is configured ────────────────────
-    /*
-
     // 1. Confirmation email to the person who submitted
-    await resend.emails.send({
+    const confirm = await resend.emails.send({
       from: FROM_ADDRESS,
       to: email,
       subject: "We received your message — Mint Sanitary",
@@ -42,9 +33,13 @@ export async function POST(req: NextRequest) {
         <p>— The Mint Sanitary Team</p>
       `,
     });
+    if (confirm.error) {
+      console.error("Resend confirmation error:", confirm.error);
+      return NextResponse.json({ error: "Failed to send confirmation email.", detail: confirm.error }, { status: 500 });
+    }
 
     // 2. Internal notification to admin
-    await resend.emails.send({
+    const notify = await resend.emails.send({
       from: FROM_ADDRESS,
       to: ADMIN_EMAIL,
       subject: `New inquiry from ${name} — ${service}`,
@@ -61,12 +56,10 @@ export async function POST(req: NextRequest) {
         <p>Reply directly to <a href="mailto:${email}">${email}</a></p>
       `,
     });
-
-    */
-
-    // Placeholder success response (remove this line once Resend is wired up)
-    void ADMIN_EMAIL; // suppress unused variable warning until Resend is active
-    void FROM_ADDRESS;
+    if (notify.error) {
+      console.error("Resend notify error:", notify.error);
+      return NextResponse.json({ error: "Failed to send admin notification.", detail: notify.error }, { status: 500 });
+    }
 
     return NextResponse.json({ success: true });
   } catch (err) {

@@ -156,7 +156,7 @@ export default function ServiceAreasPage() {
             {whyChooseItems.map((item) => (
               <div
                 key={item.title}
-                className="overflow-hidden rounded-[20px] bg-white p-4 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                className="overflow-hidden rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-4 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
               >
                 <img
                   src={item.image}

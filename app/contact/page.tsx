@@ -465,12 +465,7 @@ export default function ContactPage() {
 
               {/* Trust note */}
               <div
-                className="reveal rounded-[16px] p-[24px] flex flex-col gap-[8px] text-center lg:text-left"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgba(97,145,233,0.94), rgba(97,145,233,0.94)), url('/mint-bg.png')",
-                  backgroundSize: "cover",
-                }}
+                className="reveal bg-white/[0.12] backdrop-blur-sm rounded-[16px] p-[24px] flex flex-col gap-[8px] text-center lg:text-left border border-white/10"
               >
                 <div className="h-[3px] w-[40px] bg-[#66DAD5] mx-auto lg:mx-0" />
                 <p className="font-display-reg text-[15px] tracking-[0.64px] uppercase text-white leading-none mt-[4px]">
@@ -524,15 +519,10 @@ export default function ContactPage() {
               </div>
 
               <div
-                className="reveal rounded-[20px] p-[28px] flex flex-col gap-[14px] transition-all duration-200 hover:-translate-y-1 hover:"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgba(97,145,233,0.92), rgba(97,145,233,0.92)), url('/mint-bg.png')",
-                  backgroundSize: "cover",
-                }}
+                className="reveal bg-white/[0.12] backdrop-blur-sm rounded-[20px] p-[28px] flex flex-col gap-[14px] transition-all duration-200 hover:-translate-y-1 border border-white/10"
               >
-                <div className="w-[48px] h-[48px] bg-white/15 rounded-[12px] flex items-center justify-center border border-white/20">
-                  <Tag size={22} strokeWidth={1.8} className="text-white" />
+                <div className="w-[48px] h-[48px] bg-white rounded-[12px] flex items-center justify-center border border-white/10">
+                  <Tag size={22} strokeWidth={1.8} className="text-[#6191e9]" />
                 </div>
                 <h3 className="font-display-reg text-[20px] leading-[1.2] text-white uppercase">
                   Current Offer

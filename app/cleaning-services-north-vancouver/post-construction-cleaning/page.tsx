@@ -312,7 +312,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
             {phases.map((phase) => (
               <div
                 key={phase.title}
-                className="rounded-[14px] bg-white p-5 shadow-sm"
+                className="rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5"
               >
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {phase.title}
@@ -331,7 +331,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
+          <div className="mt-8 rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5">
             <h3 className="font-body text-[17px] font-extrabold text-white">
               Complete Post-Construction Checklist
             </h3>

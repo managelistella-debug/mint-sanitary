@@ -281,7 +281,7 @@ export default function UpholsteryCleaningNorthVancouverPage() {
             {furnitureTypes.map((area) => (
               <div
                 key={area.title}
-                className="rounded-[14px] bg-white p-5 shadow-sm"
+                className="rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5"
               >
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
@@ -304,7 +304,7 @@ export default function UpholsteryCleaningNorthVancouverPage() {
             {cleaningMethods.map((method) => (
               <div
                 key={method.title}
-                className="rounded-[14px] bg-white p-5 shadow-sm"
+                className="rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5"
               >
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {method.title}

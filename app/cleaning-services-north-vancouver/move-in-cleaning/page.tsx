@@ -263,7 +263,7 @@ export default function MoveInCleaningNorthVancouverPage() {
             {checklistCards.map((card) => (
               <div
                 key={card.title}
-                className="rounded-[14px] bg-white p-5 shadow-sm"
+                className="rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5"
               >
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {card.title}

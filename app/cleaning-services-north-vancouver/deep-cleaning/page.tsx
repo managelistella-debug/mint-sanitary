@@ -343,7 +343,7 @@ export default function DeepCleaningNorthVancouverPage() {
             {deepCleanAreas.map((area) => (
               <div
                 key={area.title}
-                className="rounded-[14px] bg-white p-5 shadow-sm"
+                className="rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5"
               >
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {area.title}
@@ -362,7 +362,7 @@ export default function DeepCleaningNorthVancouverPage() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-[14px] bg-white p-5 shadow-sm">
+          <div className="mt-8 rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-5">
             <h3 className="font-body text-[17px] font-extrabold text-white">
               When Do You Need a Deep Clean?
             </h3>
@@ -590,7 +590,7 @@ export default function DeepCleaningNorthVancouverPage() {
             {relatedServices.map((s) => (
               <div
                 key={s.href}
-                className="flex flex-col rounded-[14px] bg-white p-6 shadow-sm"
+                className="flex flex-col rounded-[14px] bg-white/[0.12] backdrop-blur-sm p-6"
               >
                 <h3 className="font-body text-[17px] font-extrabold text-white">
                   {s.title}

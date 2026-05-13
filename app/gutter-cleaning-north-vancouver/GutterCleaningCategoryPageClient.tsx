@@ -434,7 +434,7 @@ export default function GutterCleaningCategoryPageClient() {
                   <span className="relative flex h-[48px] w-[48px] items-center justify-center rounded-full border-2 border-[#66DAD5] bg-white font-body text-[18px] font-extrabold text-[#6191e9]">
                     {index + 1}
                   </span>
-                  <div className="mt-4 rounded-[20px] bg-white p-5 shadow-sm">
+                  <div className="mt-4 rounded-[20px] bg-white/[0.12] backdrop-blur-sm p-5">
                     <h3 className="font-body text-[15px] font-extrabold uppercase tracking-[0.3px] text-white">
                       {step.title}
                     </h3>
