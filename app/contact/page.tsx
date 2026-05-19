@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Phone, Mail, Clock, MapPin, CheckCircle2, AlertCircle, ChevronDown, Shield, Sparkles, Tag, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { trackEvent } from "@/components/AnalyticsTracker";
 
 // ── Reveal hook ───────────────────────────────────────────────────────────────
 function useReveal(threshold = 0.1) {
@@ -181,12 +182,25 @@ export default function ContactPage() {
       });
       if (res.ok) {
         setStatus("success");
+        trackEvent("generate_lead", {
+          form_name: "contact",
+          service: form.service,
+          city: form.city,
+        });
         setForm({ name: "", email: "", phone: "", service: "", city: "", message: "" });
       } else {
         setStatus("error");
+        trackEvent("form_submit_error", {
+          form_name: "contact",
+          status_code: res.status,
+        });
       }
     } catch {
       setStatus("error");
+      trackEvent("form_submit_error", {
+        form_name: "contact",
+        status_code: 0,
+      });
     }
   };
 

@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import GradientBackground from "@/components/GradientBackground";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
   title: "Cleaning Services North Vancouver | Mint Sanitary",
@@ -41,6 +42,7 @@ export default function RootLayout({
             gtag('config', 'G-LYS8GKPMP2');
           `}
         </Script>
+        <AnalyticsTracker />
         <SmoothScroll />
         <div className="relative z-10">{children}</div>
       </body>
