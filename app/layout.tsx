@@ -29,6 +29,18 @@ export default function RootLayout({
         <Script id="typekit-load" strategy="beforeInteractive">
           {`try{Typekit.load();}catch(e){}`}
         </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LYS8GKPMP2"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LYS8GKPMP2');
+          `}
+        </Script>
         <SmoothScroll />
         <div className="relative z-10">{children}</div>
       </body>
