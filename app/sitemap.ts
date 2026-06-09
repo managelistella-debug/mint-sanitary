@@ -52,6 +52,8 @@ const PUBLIC_PATHS: string[] = [
   "/window-cleaning-north-vancouver/post-construction-window-cleaning",
   "/window-cleaning-north-vancouver/residential-window-cleaning",
   "/window-cleaning-north-vancouver/window-screen-cleaning",
+  "/blog",
+  "/blog/seven-ways-to-get-your-home-ready-for-spring",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

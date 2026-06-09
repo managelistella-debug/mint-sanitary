@@ -5,6 +5,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Service Areas", href: "/service-areas" },
   { label: "Contact", href: "/contact" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const categoryLinks = [
