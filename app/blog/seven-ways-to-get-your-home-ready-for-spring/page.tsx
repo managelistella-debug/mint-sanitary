@@ -49,13 +49,13 @@ export default function SpringCleaningPost() {
           </div>
           <div className="absolute bottom-0 left-0 right-0 z-10">
             <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
-              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(13,30,54,0.8)" />
+              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(37,56,98,0.8)" />
             </svg>
           </div>
         </section>
 
         {/* Article */}
-        <article className="py-[80px] md:py-[100px] bg-[#0d1e36]">
+        <article className="py-[80px] md:py-[100px] bg-[#253862]">
           <div className="px-4 sm:px-8 md:px-[60px] max-w-[820px] mx-auto flex flex-col gap-[48px]">
 
             {/* Intro */}
@@ -64,7 +64,7 @@ export default function SpringCleaningPost() {
                 Spring arrives slowly on the North Shore. The mountains are still capped in white, but the days are getting longer, the tulips are pushing up through the garden beds, and that unmistakable feeling of a fresh start is in the air. For homeowners, spring is the natural moment to reset. After a long Pacific Northwest winter of muddy boots, wet umbrellas, and sealed-up windows, your home deserves a thorough refresh.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Whether you tackle it yourself or bring in professionals for <strong className="text-white">house cleaning in North Vancouver</strong>, here are seven high-impact ways to get your home truly ready for the season ahead.
+                Whether you tackle it yourself or bring in professionals for <Link href="/cleaning-services-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">house cleaning in North Vancouver</strong></Link>, here are seven high-impact ways to get your home truly ready for the season ahead.
               </p>
             </div>
 
@@ -123,11 +123,11 @@ export default function SpringCleaningPost() {
                 Spring cleaning is not a quick vacuum and a wipe of the counters. A real spring deep clean means going into the spaces that accumulate grime all winter: behind the fridge and stove, inside kitchen cabinets, the tracks of sliding doors and windows, ceiling fans, light fixtures, and baseboards throughout. Bathrooms should be descaled thoroughly. North Vancouver's water is relatively mineral-rich, and lime buildup around faucets and showerheads can become significant over a winter.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                If a full deep clean feels overwhelming, that is exactly what professional house cleaning services like{" "}
+                If a full deep clean feels overwhelming, that is exactly what a professional <Link href="/cleaning-services-north-vancouver/deep-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">deep cleaning service</Link> like{" "}
                 <Link href="/" className="text-[#93b8f5] font-semibold hover:text-white transition-colors">
                   Mint Sanitary
                 </Link>{" "}
-                are designed for. Our team handles the grout, the grease, the buildup, and the forgotten corners so you can spend the season enjoying your home rather than cleaning it.
+                is designed for. Our team handles the grout, the grease, the buildup, and the forgotten corners so you can spend the season enjoying your home rather than cleaning it.
               </p>
             </div>
 
@@ -137,7 +137,7 @@ export default function SpringCleaningPost() {
                 3. Wash Your Windows Inside and Out
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                There is no faster way to transform how your home looks and feels than clean windows. After months of rain, condensation, and road-splash, even modest streaking significantly dulls the natural light coming into your home. Open the windows, wipe down the frames and tracks, and clean both the interior and exterior glass. For upper-story windows, a professional window cleaning service can do the job safely and streak-free in a fraction of the time.
+                There is no faster way to transform how your home looks and feels than clean windows. After months of rain, condensation, and road-splash, even modest streaking significantly dulls the natural light coming into your home. Open the windows, wipe down the frames and tracks, and clean both the interior and exterior glass. For upper-story windows, a professional <Link href="/window-cleaning-north-vancouver/residential-window-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">window cleaning service</Link> can do the job safely and streak-free in a fraction of the time.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Clean windows also matter for plants. If you have been keeping indoor plants over winter, moving them into cleaner light can help them recover from the shorter days and dry indoor air of the heating season.
@@ -179,7 +179,7 @@ export default function SpringCleaningPost() {
                 5. Refresh Your Soft Furnishings
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Carpets, rugs, upholstery, drapes, and pillows absorb a winter's worth of dust, pet dander, and moisture. Spring is the ideal time to have carpets and area rugs professionally cleaned. The weather is dry enough for quick drying, and you will notice the difference immediately in how fresh the home smells. Throw your duvets, decorative pillows, and machine-washable curtains through the wash. If your drapes or upholstery are not machine-washable, a professional upholstery cleaning service can restore them safely.
+                Carpets, rugs, upholstery, drapes, and pillows absorb a winter's worth of dust, pet dander, and moisture. Spring is the ideal time to have carpets and area rugs professionally cleaned. The weather is dry enough for quick drying, and you will notice the difference immediately in how fresh the home smells. Throw your duvets, decorative pillows, and machine-washable curtains through the wash. If your drapes or upholstery are not machine-washable, a professional <Link href="/carpet-cleaning-north-vancouver/upholstery-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">upholstery cleaning service</Link> can restore them safely.
               </p>
             </div>
 
@@ -192,7 +192,7 @@ export default function SpringCleaningPost() {
                 North Vancouver receives some of the highest rainfall in Metro Vancouver, and gutters work hard all winter. Spring is the right moment to clear out any debris, check for sagging sections, and inspect downspout drainage to make sure water is being directed away from your foundation. While you are up there, scan the roof for missing or lifted shingles and check around vents and flashings for any gaps that could allow moisture in.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Clogged gutters are one of the leading causes of water damage in residential properties. A straightforward gutter cleaning in spring can prevent expensive repairs down the line.
+                Clogged gutters are one of the leading causes of water damage in residential properties. A straightforward <Link href="/gutter-cleaning-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors">gutter cleaning</Link> in spring can prevent expensive repairs down the line.
               </p>
             </div>
 
@@ -218,7 +218,7 @@ export default function SpringCleaningPost() {
                 7. Set Up a Maintenance Cleaning Routine
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                The best way to maintain the results of a thorough spring clean is to never let grime accumulate to the same level again. Setting up a regular bi-weekly or monthly house cleaning routine keeps your home consistently fresh without the need for marathon cleaning sessions. Many North Vancouver homeowners find that a professional recurring clean every two to four weeks gives them back significant time while keeping their home in genuinely good shape year-round.
+                The best way to maintain the results of a thorough spring clean is to never let grime accumulate to the same level again. Setting up a regular bi-weekly or monthly house cleaning routine keeps your home consistently fresh without the need for marathon cleaning sessions. Many North Vancouver homeowners find that a professional <Link href="/cleaning-services-north-vancouver/recurring-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">recurring clean</Link> every two to four weeks gives them back significant time while keeping their home in genuinely good shape year-round.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Create simple daily habits too: wipe counters after cooking, squeegee the shower after use, and set a ten-minute tidy before bed. Small consistent actions make the biggest difference in maintaining a clean home between professional visits.

@@ -43,12 +43,12 @@ export default function CarpetCleaningPost() {
           </div>
           <div className="absolute bottom-0 left-0 right-0 z-10">
             <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
-              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(13,30,54,0.8)" />
+              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(37,56,98,0.8)" />
             </svg>
           </div>
         </section>
 
-        <article className="py-[80px] md:py-[100px] bg-[#0d1e36]">
+        <article className="py-[80px] md:py-[100px] bg-[#253862]">
           <div className="px-4 sm:px-8 md:px-[60px] max-w-[820px] mx-auto flex flex-col gap-[48px]">
 
             <div className="flex flex-col gap-[20px]">
@@ -56,7 +56,7 @@ export default function CarpetCleaningPost() {
                 Carpet holds onto things that a vacuum cannot reach. Over months, a residential carpet accumulates fine soil, dead skin cells, pet dander, dust mite waste, pollen tracked in from outside, and moisture from spills that dried but never fully disappeared. In North Vancouver, where muddy shoes and wet dogs are a daily reality for a large portion of households, carpets earn their cleaning faster than in drier climates.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                This guide explains how to know when it is time to book <strong className="text-white">carpet cleaning in North Vancouver</strong>, what methods are available, and what the process actually looks like when a professional team arrives.
+                This guide explains how to know when it is time to book <Link href="/carpet-cleaning-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">carpet cleaning in North Vancouver</strong></Link>, what methods are available, and what the process actually looks like when a professional team arrives.
               </p>
             </div>
 
@@ -132,7 +132,7 @@ export default function CarpetCleaningPost() {
                 A thorough professional carpet clean starts with a pre-inspection to identify stains, damage, and areas of concern. The technician will pre-treat high-traffic areas and spots with appropriate solutions before the main cleaning pass. The hot water extraction process involves multiple slow, overlapping passes to ensure full coverage. After extraction, most carpets take two to four hours to dry in normal ventilation conditions. Opening windows or running fans speeds up drying significantly.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Reputable <strong className="text-white">carpet cleaning companies in North Vancouver</strong> will walk you through what to expect, point out any areas where staining may be permanent (older pet stains that have set into the backing, for example), and explain aftercare to help the results last longer.
+                Reputable <Link href="/carpet-cleaning-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">carpet cleaning companies in North Vancouver</strong></Link> will walk you through what to expect, point out any areas where staining may be permanent (older pet stains that have set into the backing, for example), and explain aftercare to help the results last longer.
               </p>
             </div>
 
@@ -156,10 +156,10 @@ export default function CarpetCleaningPost() {
                 Area Rugs and Upholstery
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Area rugs need cleaning on a similar schedule to wall-to-wall carpet, and some require extra care depending on fibre type and backing. Wool, silk, and natural-fibre rugs need gentler treatment than synthetic pile and should be assessed before any cleaning method is applied. If you have both carpet and area rugs, booking them together with the same cleaning visit usually reduces the overall cost and simplifies the scheduling.
+                <Link href="/carpet-cleaning-north-vancouver/area-rug-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">Area rugs</Link> need cleaning on a similar schedule to wall-to-wall carpet, and some require extra care depending on fibre type and backing. Wool, silk, and natural-fibre rugs need gentler treatment than synthetic pile and should be assessed before any cleaning method is applied. If you have both carpet and area rugs, booking them together with the same cleaning visit usually reduces the overall cost and simplifies the scheduling.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Upholstered furniture, particularly sofas and armchairs, carries a similar soil and allergen load to carpets but often gets neglected because it does not show dirt as visibly. A professional upholstery clean in the same visit extends the results across your whole living space.
+                Upholstered furniture, particularly sofas and armchairs, carries a similar soil and allergen load to carpets but often gets neglected because it does not show dirt as visibly. A professional <Link href="/carpet-cleaning-north-vancouver/upholstery-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">upholstery clean</Link> in the same visit extends the results across your whole living space.
               </p>
             </div>
 

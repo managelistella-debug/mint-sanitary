@@ -43,12 +43,12 @@ export default function MoveOutCleaningPost() {
           </div>
           <div className="absolute bottom-0 left-0 right-0 z-10">
             <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
-              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(13,30,54,0.8)" />
+              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(37,56,98,0.8)" />
             </svg>
           </div>
         </section>
 
-        <article className="py-[80px] md:py-[100px] bg-[#0d1e36]">
+        <article className="py-[80px] md:py-[100px] bg-[#253862]">
           <div className="px-4 sm:px-8 md:px-[60px] max-w-[820px] mx-auto flex flex-col gap-[48px]">
 
             <div className="flex flex-col gap-[20px]">
@@ -56,7 +56,7 @@ export default function MoveOutCleaningPost() {
                 In British Columbia, landlords can deduct from a damage deposit for cleaning only if the unit is left in a worse condition than when you moved in, accounting for reasonable wear and tear. In practice, though, disputes over cleanliness are one of the most common reasons tenants lose part or all of their deposit. The difference between getting your money back and losing it is usually not about how hard you cleaned. It is about whether you cleaned the right things.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Here is a practical breakdown of what property managers in North Vancouver focus on during move out inspections, and what a professional <strong className="text-white">move out cleaning in North Vancouver</strong> covers that a DIY clean often misses.
+                Here is a practical breakdown of what property managers in North Vancouver focus on during move out inspections, and what a professional <Link href="/cleaning-services-north-vancouver/move-out-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">move out cleaning in North Vancouver</strong></Link> covers that a DIY clean often misses.
               </p>
             </div>
 
@@ -132,7 +132,7 @@ export default function MoveOutCleaningPost() {
                 What a Move In Clean Means for the Next Tenant
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                If you are on the receiving end as a new tenant, a professional <strong className="text-white">move in cleaning in North Vancouver</strong> is worth booking even if the property manager says the unit was professionally cleaned before your arrival. Standards vary, and moving into a space that you have had cleaned to your own standard means you know exactly what condition it was in when your tenancy started. This matters if you ever end up in a dispute at the end of your own lease.
+                If you are on the receiving end as a new tenant, a professional <Link href="/cleaning-services-north-vancouver/move-in-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">move in cleaning in North Vancouver</strong></Link> is worth booking even if the property manager says the unit was professionally cleaned before your arrival. Standards vary, and moving into a space that you have had cleaned to your own standard means you know exactly what condition it was in when your tenancy started. This matters if you ever end up in a dispute at the end of your own lease.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Documenting the state of the unit with photos on move in day and pairing that with a professional clean you arranged yourself gives you strong footing from day one.
@@ -159,7 +159,7 @@ export default function MoveOutCleaningPost() {
                 Timing Your Move Out Clean
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Book your move out clean for after all furniture and belongings are out of the unit. Trying to clean around boxes and furniture means things get missed and the job takes longer. Most professional cleaning teams can complete a thorough move out clean in three to six hours depending on the size of the unit, and the best companies in North Vancouver can often accommodate bookings within 24 to 48 hours for move out situations.
+                Book your move out clean for after all furniture and belongings are out of the unit. Trying to clean around boxes and furniture means things get missed and the job takes longer. Most professional cleaning teams can complete a thorough <Link href="/cleaning-services-north-vancouver/deep-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">deep clean</Link> in three to six hours depending on the size of the unit, and the best companies in North Vancouver can often accommodate bookings within 24 to 48 hours for move out situations.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Build cleaning time into your moving schedule rather than treating it as an afterthought. The cost of a professional clean is almost always less than the cost of losing even part of a damage deposit in the current North Vancouver rental market.

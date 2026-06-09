@@ -43,12 +43,12 @@ export default function PressureWashingPost() {
           </div>
           <div className="absolute bottom-0 left-0 right-0 z-10">
             <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="block w-full h-[60px] sm:h-[80px] md:h-[100px]">
-              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(13,30,54,0.8)" />
+              <path d="M0,60 C360,120 720,0 1440,60 L1440,100 L0,100 Z" fill="rgba(37,56,98,0.8)" />
             </svg>
           </div>
         </section>
 
-        <article className="py-[80px] md:py-[100px] bg-[#0d1e36]">
+        <article className="py-[80px] md:py-[100px] bg-[#253862]">
           <div className="px-4 sm:px-8 md:px-[60px] max-w-[820px] mx-auto flex flex-col gap-[48px]">
 
             <div className="flex flex-col gap-[20px]">
@@ -56,7 +56,7 @@ export default function PressureWashingPost() {
                 North Vancouver's climate is ideal for a lot of things. Living conditions are excellent. The scenery is remarkable. But the combination of heavy rainfall, dense tree cover, and the particular temperature swings we get between seasons creates consistently good conditions for moss, algae, and mildew to take hold on exterior surfaces. Left unaddressed, these growths stain concrete, break down wood fibres, make surfaces slippery, and accelerate the deterioration of siding, decking, and roofing materials.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                <strong className="text-white">Pressure washing in North Vancouver</strong> is one of the most effective ways to deal with this. Here is what you need to know about when to do it, what it covers, and how to get the most out of a professional service.
+                <Link href="/pressure-washing-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">Pressure washing in North Vancouver</strong></Link> is one of the most effective ways to deal with this. Here is what you need to know about when to do it, what it covers, and how to get the most out of a professional service.
               </p>
             </div>
 
@@ -93,7 +93,7 @@ export default function PressureWashingPost() {
                 Driveways and Walkways
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Concrete driveways in North Vancouver commonly develop green and black algae growth, particularly in shaded sections. This growth makes surfaces slippery, stains the concrete, and if left for multiple seasons, can begin to degrade the surface. Professional <strong className="text-white">North Vancouver pressure washing</strong> using a surface cleaner attachment produces even results across large flat areas without the streaking that hand-held wands can leave.
+                Concrete driveways in North Vancouver commonly develop green and black algae growth, particularly in shaded sections. This growth makes surfaces slippery, stains the concrete, and if left for multiple seasons, can begin to degrade the surface. Professional <Link href="/pressure-washing-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">North Vancouver pressure washing</strong></Link> using a surface cleaner attachment produces even results across large flat areas without the streaking that hand-held wands can leave.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Interlock pavers and stamped concrete require lower pressure than standard concrete to avoid damaging joints and surface texture. A professional team will adjust PSI and technique based on your specific surface type.
@@ -172,7 +172,7 @@ export default function PressureWashingPost() {
                 Professional Pressure Washing Across North Vancouver
               </h3>
               <p className="font-body text-[16px] leading-[1.7] text-white/65">
-                <Link href="/" className="text-[#93b8f5] font-semibold hover:text-white transition-colors">Mint Sanitary</Link> provides driveway washing, deck and patio cleaning, house washing, and fence washing across North Vancouver and the North Shore. We adjust pressure and technique to each surface and use eco-friendly treatments to kill biological growth at the root. Free estimates, available seven days a week.
+                <Link href="/" className="text-[#93b8f5] font-semibold hover:text-white transition-colors">Mint Sanitary</Link> provides <Link href="/pressure-washing-north-vancouver/driveway-pressure-washing" className="text-[#93b8f5] hover:text-white transition-colors">driveway washing</Link>, <Link href="/pressure-washing-north-vancouver/deck-patio-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">deck and patio cleaning</Link>, <Link href="/pressure-washing-north-vancouver/house-washing" className="text-[#93b8f5] hover:text-white transition-colors">house washing</Link>, and <Link href="/pressure-washing-north-vancouver/fence-washing" className="text-[#93b8f5] hover:text-white transition-colors">fence washing</Link> across North Vancouver and the North Shore. We adjust pressure and technique to each surface and use eco-friendly treatments to kill biological growth at the root. Free estimates, available seven days a week.
               </p>
               <div className="flex flex-col sm:flex-row gap-[12px] mt-[4px]">
                 <a href="/contact" className="inline-flex items-center justify-center bg-white text-[#253862] font-body font-extrabold text-[14px] tracking-[0.32px] uppercase rounded-[99px] px-[32px] py-[12px] hover:bg-white/90 transition-colors duration-200">
