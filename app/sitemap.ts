@@ -54,6 +54,12 @@ const PUBLIC_PATHS: string[] = [
   "/window-cleaning-north-vancouver/window-screen-cleaning",
   "/blog",
   "/blog/seven-ways-to-get-your-home-ready-for-spring",
+  "/blog/how-to-choose-a-house-cleaning-service-north-vancouver",
+  "/blog/move-out-cleaning-north-vancouver",
+  "/blog/carpet-cleaning-north-vancouver-guide",
+  "/blog/office-cleaning-north-vancouver",
+  "/blog/pressure-washing-north-vancouver-guide",
+  "/blog/apartment-cleaning-north-vancouver",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

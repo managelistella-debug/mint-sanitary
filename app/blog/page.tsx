@@ -7,15 +7,69 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Cleaning Tips & Guides | Mint Sanitary Blog",
   description:
-    "Expert cleaning tips, seasonal guides, and home maintenance advice from the team at Mint Sanitary — North Vancouver's trusted house cleaning professionals.",
+    "Expert cleaning tips, seasonal guides, and home maintenance advice from the team at Mint Sanitary, North Vancouver's trusted cleaning company.",
 };
 
 const posts = [
   {
+    slug: "apartment-cleaning-north-vancouver",
+    title: "Apartment Cleaning in North Vancouver: A Practical Guide for Renters",
+    excerpt:
+      "Whether you are maintaining a rental suite or preparing to move, here is a practical guide for renters who want to protect their deposit and their living environment.",
+    date: "June 3, 2025",
+    image: "/apartment-cleaning-north-vancouver-condo.jpg",
+    category: "Residential Cleaning",
+  },
+  {
+    slug: "pressure-washing-north-vancouver-guide",
+    title: "Pressure Washing in North Vancouver: A Homeowner's Practical Guide",
+    excerpt:
+      "Driveways, decks, siding, and fences all take a beating over a North Vancouver winter. Here is what to wash, when to wash it, and what to expect from a professional team.",
+    date: "May 27, 2025",
+    image: "/north-vancouver-skyline-pressure-washing-hero.webp",
+    category: "Pressure Washing",
+  },
+  {
+    slug: "office-cleaning-north-vancouver",
+    title: "Office Cleaning in North Vancouver: What a Clean Workspace Does for Your Business",
+    excerpt:
+      "A clean office affects staff health, client impressions, and how your team feels walking through the door each morning. Here is what the research and experience actually say.",
+    date: "May 14, 2025",
+    image: "/office-cleaning-north-vancouver-workspace.jpg",
+    category: "Commercial Cleaning",
+  },
+  {
+    slug: "carpet-cleaning-north-vancouver-guide",
+    title: "Carpet Cleaning in North Vancouver: When to Book and What to Expect",
+    excerpt:
+      "How often should you have your carpets professionally cleaned? What methods actually work? A practical guide from the team at Mint Sanitary.",
+    date: "May 6, 2025",
+    image: "/carpet-cleaning-in-north-vancouver.webp",
+    category: "Carpet Cleaning",
+  },
+  {
+    slug: "move-out-cleaning-north-vancouver",
+    title: "Move Out Cleaning in North Vancouver: What Landlords Actually Inspect",
+    excerpt:
+      "Losing your damage deposit over cleaning is avoidable. Here is exactly what landlords and property managers check during move out inspections, and how to make sure you pass.",
+    date: "April 24, 2025",
+    image: "/move-out-cleaning-north-vancouver-living-room.jpg",
+    category: "Move Out Cleaning",
+  },
+  {
+    slug: "how-to-choose-a-house-cleaning-service-north-vancouver",
+    title: "How to Choose a House Cleaning Service in North Vancouver",
+    excerpt:
+      "Not all house cleaning services are equal. Here is what to look for, what to ask, and how to find a cleaning company in North Vancouver you can actually trust.",
+    date: "April 15, 2025",
+    image: "/mint-sanitary-professional-cleaning-north-vancouver-hero.jpg",
+    category: "House Cleaning",
+  },
+  {
     slug: "seven-ways-to-get-your-home-ready-for-spring",
     title: "Seven Ways to Get Your Home Ready for Spring",
     excerpt:
-      "From curb appeal to deep-cleaned interiors, here's how to shake off winter and refresh every corner of your North Vancouver home this spring.",
+      "From curb appeal to deep-cleaned interiors, here is how to shake off winter and refresh every corner of your North Vancouver home this spring.",
     date: "April 8, 2025",
     image: "/spring-cleaned-living-room-north-vancouver.jpg",
     category: "Seasonal Cleaning",
@@ -112,7 +166,7 @@ export default function BlogPage() {
               Ready for a spotless home?
             </h2>
             <p className="font-body font-medium text-[16px] text-white/65 max-w-[480px] leading-[28px]">
-              Let Mint Sanitary handle the hard work. Book your house cleaning in North Vancouver today.
+              Let Mint Sanitary handle the hard work. Book your cleaning in North Vancouver today.
             </p>
             <div className="flex flex-col sm:flex-row gap-[16px]">
               <a
