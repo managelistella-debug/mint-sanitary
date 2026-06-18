@@ -3,45 +3,71 @@ import { NextRequest, NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL ?? "hello@listella.co";
+const DEFAULT_NOTIFICATION_EMAILS = [
+  "hello@listella.co",
+  "hello@mintsanitary.com",
+  "service@mintsanitary.com",
+];
+
+const NOTIFICATION_EMAILS = process.env.ADMIN_EMAIL
+  ? process.env.ADMIN_EMAIL.split(",").map((email) => email.trim()).filter(Boolean)
+  : DEFAULT_NOTIFICATION_EMAILS;
 const FROM_ADDRESS = "Mint Sanitary <noreply@mintsanitary.com>";
+
+// In-memory rate limiter: ip -> { count, windowStart }
+const rateLimitMap = new Map<string, { count: number; windowStart: number }>();
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+const RATE_LIMIT_MAX = 3; // max submissions per IP per hour
+
+function getClientIp(req: NextRequest): string {
+  return (
+    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+    req.headers.get("x-real-ip") ||
+    "unknown"
+  );
+}
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || now - entry.windowStart > RATE_LIMIT_WINDOW_MS) {
+    rateLimitMap.set(ip, { count: 1, windowStart: now });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT_MAX) return true;
+  entry.count++;
+  return false;
+}
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, service, city, message } = await req.json();
+    const { name, email, phone, service, city, message, _honey, _loadedAt } = await req.json();
+
+    // Honeypot: bots fill hidden fields, humans leave them blank
+    if (_honey) {
+      return NextResponse.json({ success: true }); // silently discard
+    }
+
+    // Timing check: bots submit in under 3 seconds; require at least 3s
+    const elapsed = _loadedAt ? Date.now() - Number(_loadedAt) : 0;
+    if (_loadedAt && elapsed < 3000) {
+      return NextResponse.json({ success: true }); // silently discard
+    }
+
+    // Rate limiting per IP
+    const ip = getClientIp(req);
+    if (isRateLimited(ip)) {
+      return NextResponse.json({ error: "Too many requests. Please try again later." }, { status: 429 });
+    }
 
     if (!name || !email || !service || !city) {
       return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
     }
 
-    // 1. Confirmation email to the person who submitted
-    const confirm = await resend.emails.send({
-      from: FROM_ADDRESS,
-      to: email,
-      subject: "We received your message — Mint Sanitary",
-      html: `
-        <p>Hi ${name},</p>
-        <p>Thanks for reaching out to Mint Sanitary. We've received your message and will be in touch within 2 hours.</p>
-        <p><strong>Your submission:</strong></p>
-        <ul>
-          <li><strong>Service:</strong> ${service}</li>
-          <li><strong>City:</strong> ${city}</li>
-          ${phone ? `<li><strong>Phone:</strong> ${phone}</li>` : ""}
-          ${message ? `<li><strong>Message:</strong> ${message}</li>` : ""}
-        </ul>
-        <p>If you need immediate assistance, call us at <strong>604-123-4567</strong> (Mon–Sat, 7am–6pm).</p>
-        <p>— The Mint Sanitary Team</p>
-      `,
-    });
-    if (confirm.error) {
-      console.error("Resend confirmation error:", confirm.error);
-      return NextResponse.json({ error: "Failed to send confirmation email.", detail: confirm.error }, { status: 500 });
-    }
-
-    // 2. Internal notification to admin
+    // Internal notification to admin
     const notify = await resend.emails.send({
       from: FROM_ADDRESS,
-      to: ADMIN_EMAIL,
+      to: NOTIFICATION_EMAILS,
       subject: `New inquiry from ${name} — ${service}`,
       html: `
         <p><strong>New contact form submission received:</strong></p>
