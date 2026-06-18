@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Phone, Mail, Clock, MapPin, CheckCircle2, AlertCircle, ChevronDown, Shield, Sparkles, Tag, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -147,7 +147,23 @@ export default function ContactPage() {
     name: "", email: "", phone: "", service: "", city: "", message: "",
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const loadedAtRef = useRef<number>(Date.now());
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const getRecaptchaToken = useCallback((): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      if (typeof window === "undefined" || !window.grecaptcha) {
+        reject(new Error("reCAPTCHA not loaded"));
+        return;
+      }
+      window.grecaptcha.ready(() => {
+        window.grecaptcha
+          .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!, { action: "contact_form" })
+          .then(resolve)
+          .catch(reject);
+      });
+    });
+  }, []);
 
   const whyRef = useReveal(0.06);
   const stepsRef = useReveal(0.06);
@@ -171,14 +187,16 @@ export default function ContactPage() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
+    const honey = (e.currentTarget.elements.namedItem("_honey") as HTMLInputElement | null)?.value ?? "";
     try {
+      const recaptchaToken = await getRecaptchaToken();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, _honey: honey, _loadedAt: loadedAtRef.current, recaptchaToken }),
       });
       if (res.ok) {
         setStatus("success");
@@ -213,6 +231,11 @@ export default function ContactPage() {
 
   return (
     <>
+      <script
+        src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+        async
+        defer
+      />
       <Navbar />
       <main>
 
@@ -279,6 +302,16 @@ export default function ContactPage() {
               </div>
 
               <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
+                {/* Honeypot — hidden from humans, bots fill it in */}
+                <input
+                  type="text"
+                  name="_honey"
+                  defaultValue=""
+                  aria-hidden="true"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  style={{ display: "none" }}
+                />
                 {/* Name + Email row */}
                 <div className="flex flex-col sm:flex-row gap-[16px]">
                   <div className="flex flex-col gap-[6px] flex-1">

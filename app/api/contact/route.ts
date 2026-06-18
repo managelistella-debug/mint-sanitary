@@ -39,9 +39,22 @@ function isRateLimited(ip: string): boolean {
   return false;
 }
 
+async function verifyRecaptcha(token: string): Promise<boolean> {
+  const secret = process.env.RECAPTCHA_SECRET_KEY;
+  if (!secret) return false;
+  const res = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `secret=${encodeURIComponent(secret)}&response=${encodeURIComponent(token)}`,
+  });
+  const data = await res.json();
+  // Require score >= 0.5 (0 = bot, 1 = human)
+  return data.success === true && data.score >= 0.5;
+}
+
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, service, city, message, _honey, _loadedAt } = await req.json();
+    const { name, email, phone, service, city, message, _honey, _loadedAt, recaptchaToken } = await req.json();
 
     // Honeypot: bots fill hidden fields, humans leave them blank
     if (_honey) {
@@ -62,6 +75,11 @@ export async function POST(req: NextRequest) {
 
     if (!name || !email || !service || !city) {
       return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
+    }
+
+    // reCAPTCHA v3 verification
+    if (!recaptchaToken || !(await verifyRecaptcha(recaptchaToken))) {
+      return NextResponse.json({ error: "reCAPTCHA verification failed." }, { status: 400 });
     }
 
     // Internal notification to admin
