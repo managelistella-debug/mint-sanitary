@@ -4,14 +4,17 @@ import { NextRequest, NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const DEFAULT_NOTIFICATION_EMAILS = [
-  "hello@listella.co",
   "hello@mintsanitary.com",
   "service@mintsanitary.com",
 ];
+const DEFAULT_BCC_EMAILS = ["hello@listella.co"];
 
 const NOTIFICATION_EMAILS = process.env.ADMIN_EMAIL
   ? process.env.ADMIN_EMAIL.split(",").map((email) => email.trim()).filter(Boolean)
   : DEFAULT_NOTIFICATION_EMAILS;
+const BCC_EMAILS = process.env.BCC_EMAIL
+  ? process.env.BCC_EMAIL.split(",").map((email) => email.trim()).filter(Boolean)
+  : DEFAULT_BCC_EMAILS;
 const FROM_ADDRESS = "Mint Sanitary <noreply@mintsanitary.com>";
 
 // In-memory rate limiter: ip -> { count, windowStart }
@@ -86,6 +89,7 @@ export async function POST(req: NextRequest) {
     const notify = await resend.emails.send({
       from: FROM_ADDRESS,
       to: NOTIFICATION_EMAILS,
+      bcc: BCC_EMAILS,
       subject: `New inquiry from ${name} — ${service}`,
       html: `
         <p><strong>New contact form submission received:</strong></p>
