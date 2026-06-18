@@ -446,7 +446,7 @@ export default function ContactPage() {
                   <div className="flex items-start gap-[10px] bg-white/[0.12] border border-white/20 rounded-[12px] px-[16px] py-[14px]">
                     <CheckCircle2 size={18} className="text-[#6191e9] shrink-0 mt-[1px]" />
                     <p className="font-body font-medium text-[14px] text-white leading-[22px]">
-                      <strong>Message received!</strong> We&apos;ll be in touch within 2 hours. Check your inbox for a confirmation email.
+                      <strong>Message received!</strong> We&apos;ll get back to you as soon as possible. For an instant quote, call us at <a href="tel:+12366883248" className="font-extrabold underline">236-688-3248</a>.
                     </p>
                   </div>
                 )}
