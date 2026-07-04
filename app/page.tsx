@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import InstantQuoteForm from "@/components/InstantQuoteForm";
 
 const categoryCards = [
   {
@@ -244,7 +245,7 @@ export default function Home() {
                 <li>10% Off With Code MINT25</li>
               </ul>
             </div>
-            <div className="hidden md:block" />
+            <InstantQuoteForm />
           </div>
           {/* Wave at bottom of hero */}
           <div className="absolute bottom-0 left-0 right-0 z-10">
