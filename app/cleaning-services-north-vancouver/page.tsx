@@ -90,7 +90,7 @@ const whyPoints = [
   },
   {
     title: "10% Off First Clean",
-    body: "New customers save 10% on their first service with promo code MINT25. No strings attached.",
+    body: "New customers save 10% on their first service with promo code MINT26. No strings attached.",
   },
 ];
 
@@ -182,7 +182,7 @@ const faqItems = [
   {
     question: "Do you offer discounts for first-time customers?",
     answer:
-      "Yes. New customers save 10% on their first service with promo code MINT25. This applies to all residential and commercial cleaning services.",
+      "Yes. New customers save 10% on their first service with promo code MINT26. This applies to all residential and commercial cleaning services.",
   },
 ];
 
@@ -324,7 +324,7 @@ export default function CleaningServicesNorthVancouverPage() {
                 rentals, and businesses across North Vancouver. We use
                 eco-friendly products, work seven days a week, and deliver
                 transparent pricing with no hidden fees. Call 236-688-3248 for
-                a free estimate or use code MINT25 for 10% off your first
+                a free estimate or use code MINT26 for 10% off your first
                 service.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -344,7 +344,7 @@ export default function CleaningServicesNorthVancouverPage() {
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
                 <li>Eco-Friendly Products</li>
                 <li>Bonded &amp; Insured Teams</li>
-                <li>10% Off With Code MINT25</li>
+                <li>10% Off With Code MINT26</li>
               </ul>
             </div>
             <div className="hidden md:block" />
@@ -1090,7 +1090,7 @@ export default function CleaningServicesNorthVancouverPage() {
                     rates page
                   </a>{" "}
                   to learn more about pricing. New customers save 10% with code
-                  MINT25.
+                  MINT26.
                 </p>
               </div>
             </div>
@@ -1160,11 +1160,11 @@ export default function CleaningServicesNorthVancouverPage() {
             <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-white/80">
               Book your free estimate and get professional cleaning that fits
               your schedule. Call Mint Sanitary at 236-688-3248 and use code
-              MINT25 for 10% off your first service.
+              MINT26 for 10% off your first service.
             </p>
             <p className="mx-auto mt-3 max-w-[500px] font-body text-[15px] leading-[1.7] text-white/80">
               Use code{" "}
-              <strong className="text-white font-extrabold">MINT25</strong> for 10% off
+              <strong className="text-white font-extrabold">MINT26</strong> for 10% off
               your first service.{" "}
               <a
                 href="/rates/"

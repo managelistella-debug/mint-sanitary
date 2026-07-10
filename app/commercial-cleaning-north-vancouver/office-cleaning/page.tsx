@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Office Cleaning North Vancouver | Mint Sanitary",
   description:
-    "Professional office cleaning in North Vancouver. Eco-friendly, bonded staff. 7-day service. Free estimate. MINT25 for 10% off first clean.",
+    "Professional office cleaning in North Vancouver. Eco-friendly, bonded staff. 7-day service. Free estimate. MINT26 for 10% off first clean.",
 };
 
 const includedItems = [
@@ -108,7 +108,7 @@ const whyChooseItems = [
   },
   {
     title: "10% Off Your First Clean",
-    body: "Use code MINT25 to save 10% on your first office cleaning. A risk-free way to experience the Mint Sanitary difference.",
+    body: "Use code MINT26 to save 10% on your first office cleaning. A risk-free way to experience the Mint Sanitary difference.",
   },
   {
     title: "24-Hour Satisfaction Guarantee",
@@ -197,9 +197,9 @@ const faqItems = [
       "Absolutely. We offer month-to-month contracts with no long-term commitment. You can adjust frequency, scope, or scheduling anytime as your office needs change.",
   },
   {
-    question: "What does MINT25 get me?",
+    question: "What does MINT26 get me?",
     answer:
-      "MINT25 is our promo code for 10% off your first office cleaning. It\u2019s a risk-free way to try our service. Mention it when you call or include it in your online estimate request.",
+      "MINT26 is our promo code for 10% off your first office cleaning. It\u2019s a risk-free way to try our service. Mention it when you call or include it in your online estimate request.",
   },
   {
     question: "How quickly can you start?",
@@ -216,7 +216,7 @@ export default function OfficeCleaningNorthVancouverPage() {
       heroIntro="A clean office isn&apos;t a luxury — it&apos;s the foundation of a healthy, productive workplace. Mint Sanitary provides professional office cleaning programs across North Vancouver with eco-friendly products, bonded staff, and 7-day availability."
       faqItems={faqItems}
       ctaHeading="Upgrade Your Office Cleaning"
-      ctaBody="Book your free office cleaning estimate with Mint Sanitary. Flexible plans, eco-friendly products, bonded staff, and seven-day availability. Use code MINT25 for 10% off your first clean. Call 236-688-3248 or request a free estimate online."
+      ctaBody="Book your free office cleaning estimate with Mint Sanitary. Flexible plans, eco-friendly products, bonded staff, and seven-day availability. Use code MINT26 for 10% off your first clean. Call 236-688-3248 or request a free estimate online."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -502,7 +502,7 @@ export default function OfficeCleaningNorthVancouverPage() {
                 236-688-3248
               </a>{" "}
               to schedule yours. Mention code{" "}
-              <strong className="text-white">MINT25</strong> for 10% off your
+              <strong className="text-white">MINT26</strong> for 10% off your
               first clean.
             </p>
           </div>

@@ -51,7 +51,7 @@ export default function Navbar() {
       {/* Announcement bar — always white */}
       <div className="bg-white px-4 py-2 text-center">
         <p className="font-body text-xs font-semibold tracking-[0.4px] text-[#4E5062] sm:text-sm">
-          Use code <span className="text-[#6191e9]">MINT25</span> for 10% off your first clean.
+          Use code <span className="text-[#6191e9]">MINT26</span> for 10% off your first clean.
         </p>
       </div>
 

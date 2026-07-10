@@ -132,7 +132,7 @@ const faqItems = [
     question:
       "How do I get a free estimate for gutter cleaning in North Vancouver?",
     answer:
-      "Book online or call 236-688-3248. We provide free, no-obligation estimates including property walk-through, gutter assessment, cleaning quote, and repair recommendations. Estimates typically take 15 to 20 minutes. New customers receive 10% off first clean with code MINT25.",
+      "Book online or call 236-688-3248. We provide free, no-obligation estimates including property walk-through, gutter assessment, cleaning quote, and repair recommendations. Estimates typically take 15 to 20 minutes. New customers receive 10% off first clean with code MINT26.",
   },
   {
     question: "What areas of North Vancouver do you service?",
@@ -258,7 +258,7 @@ export default function GutterCleaningCategoryPageClient() {
                 causes expensive damage that can cost thousands to repair. Mint
                 Sanitary provides professional gutter cleaning with thorough
                 system inspection, eco-friendly disposal, and before-and-after
-                photo documentation. Call 236-688-3248 or use code MINT25 for
+                photo documentation. Call 236-688-3248 or use code MINT26 for
                 10% off your first service.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -278,7 +278,7 @@ export default function GutterCleaningCategoryPageClient() {
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
                 <li>Full System Inspection</li>
                 <li>Before &amp; After Photos</li>
-                <li>10% Off With Code MINT25</li>
+                <li>10% Off With Code MINT26</li>
               </ul>
             </div>
             <div className="hidden md:block" />
@@ -697,7 +697,7 @@ export default function GutterCleaningCategoryPageClient() {
               Clogged gutters cause water damage that costs thousands to repair.
               Don&apos;t wait for overflow or foundation problems. Schedule your
               professional gutter cleaning in North Vancouver today. Call 236-688-3248
-              or email hello@mintsanitary.com. Use code MINT25 for 10%
+              or email hello@mintsanitary.com. Use code MINT26 for 10%
               off your first service.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">

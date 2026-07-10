@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Church Cleaning Services in North Vancouver | Mint Sanitary",
   description:
-    "Professional church cleaning in North Vancouver. Eco-friendly, background-checked staff. Available 7 days/week. 10% off first clean with MINT25.",
+    "Professional church cleaning in North Vancouver. Eco-friendly, background-checked staff. Available 7 days/week. 10% off first clean with MINT26.",
 };
 
 const includedAreas = [
@@ -102,7 +102,7 @@ const whyChooseItems = [
   { title: "Eco-Friendly Commitment", body: "We use green, non-toxic products. Your congregation members breathe better. Children are safer. The environment benefits." },
   { title: "Local North Vancouver Expertise", body: "We know our community. We have served places of worship in Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights. We understand North Vancouver climate, water quality, and facility types." },
   { title: "Background-Checked, Professional Staff", body: "Every team member is bonded, insured, and background-checked. They are trained in handling sacred spaces with respect and care." },
-  { title: "Transparent Pricing", body: "No hidden fees. We provide free estimates and fixed pricing. Ask about our 10% discount on your first clean with code MINT25." },
+  { title: "Transparent Pricing", body: "No hidden fees. We provide free estimates and fixed pricing. Ask about our 10% discount on your first clean with code MINT26." },
   { title: "Proven Track Record", body: "We have built our reputation on reliability and quality work. References available upon request." },
 ];
 
@@ -152,7 +152,7 @@ export default function ChurchCleaningNorthVancouverPage() {
       heroIntro="Your congregation deserves a clean, welcoming sanctuary. At Mint Sanitary, we specialize in professional church cleaning in North Vancouver. We serve places of worship across the community with respect, expertise, and care."
       faqItems={faqItems}
       ctaHeading="Ready to Refresh Your North Vancouver Church?"
-      ctaBody="Contact Mint Sanitary today for a free facility walkthrough and estimate. Phone: 236-688-3248. First clean discount: 10% off with code MINT25. We work around your schedule. Available 7 days a week."
+      ctaBody="Contact Mint Sanitary today for a free facility walkthrough and estimate. Phone: 236-688-3248. First clean discount: 10% off with code MINT26. We work around your schedule. Available 7 days a week."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -374,7 +374,7 @@ export default function ChurchCleaningNorthVancouverPage() {
               We offer discounts for longer-term contracts and regular scheduling.
             </p>
             <p className="font-body text-[15px] leading-[1.7] text-white/80">
-              <strong className="font-extrabold text-white">First Clean Special: 10% Off</strong> &mdash; New clients save 10% on their first service. Use code MINT25 when booking.
+              <strong className="font-extrabold text-white">First Clean Special: 10% Off</strong> &mdash; New clients save 10% on their first service. Use code MINT26 when booking.
             </p>
             <p className="font-body text-[15px] leading-[1.7] text-white/80">
               We will provide a free, detailed estimate after our facility walkthrough. No pressure. No obligation.

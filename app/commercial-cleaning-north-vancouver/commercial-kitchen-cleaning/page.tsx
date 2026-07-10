@@ -87,7 +87,7 @@ const whyChooseItems = [
   },
   {
     title: "10% Off Your First Clean",
-    body: "New clients get 10% off with code MINT25.",
+    body: "New clients get 10% off with code MINT26.",
   },
   {
     title: "Local North Shore Expertise",
@@ -217,7 +217,7 @@ export default function CommercialKitchenCleaningPage() {
       heroIntro="Your kitchen is the heart of your food service business. It&apos;s also one of the most heavily inspected and regulated spaces you&apos;ll operate. When Vancouver Coastal Health inspectors walk in, or when fire safety auditors check your hood systems, you need to know every surface meets code."
       faqItems={faqItems}
       ctaHeading="Call Mint Sanitary for Commercial Kitchen Cleaning in North Vancouver"
-      ctaBody="Call us today at 236-688-3248 for a free estimate. New clients: Use code MINT25 for 10% off your first clean. We&apos;re available 7 days a week, same-day or next-day scheduling."
+      ctaBody="Call us today at 236-688-3248 for a free estimate. New clients: Use code MINT26 for 10% off your first clean. We&apos;re available 7 days a week, same-day or next-day scheduling."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">

@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Carpet Steam Cleaning in North Vancouver | Mint Sanitary",
   description:
-    "Professional carpet steam cleaning in North Vancouver using hot water extraction. Eco-friendly, guaranteed results. 7-day availability. Get 10% off with MINT25.",
+    "Professional carpet steam cleaning in North Vancouver using hot water extraction. Eco-friendly, guaranteed results. 7-day availability. Get 10% off with MINT26.",
 };
 
 const faqItems = [

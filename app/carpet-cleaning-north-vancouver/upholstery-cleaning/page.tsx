@@ -115,8 +115,8 @@ const whyChoose = [
     body: "If any area doesn't meet your expectations, let us know and we'll return to make it right. We stand behind every job we complete.",
   },
   {
-    title: "MINT25: 10% Off First Clean",
-    body: "First-time clients save 10% on their first upholstery cleaning with promo code MINT25. No contracts, no strings attached.",
+    title: "MINT26: 10% Off First Clean",
+    body: "First-time clients save 10% on their first upholstery cleaning with promo code MINT26. No contracts, no strings attached.",
   },
 ];
 
@@ -220,7 +220,7 @@ const faqItems = [
   {
     question: "How much does upholstery cleaning cost?",
     answer:
-      "Most individual pieces cost $100\u2013$200, depending on size, fabric type, and condition. Sectionals and larger pieces may cost more. Call 236-688-3248 for a free estimate. Use code MINT25 for first-time savings.",
+      "Most individual pieces cost $100\u2013$200, depending on size, fabric type, and condition. Sectionals and larger pieces may cost more. Call 236-688-3248 for a free estimate. Use code MINT26 for first-time savings.",
   },
 ];
 
@@ -230,10 +230,10 @@ export default function UpholsteryCleaningNorthVancouverPage() {
       title="Upholstery Cleaning in North Vancouver"
       heroImage="/upholstery-cleaning-north-vancouver-sofa.jpg"
       heroSubtitle="Professional Sofa & Furniture Cleaning"
-      heroIntro="Upholstered furniture traps dust, allergens, pet dander, and stains deep in fabric fibers where regular vacuuming can't reach. Mint Sanitary provides professional upholstery cleaning for sofas, chairs, and all fabric furniture across North Vancouver — using eco-friendly products matched to your fabric type. Use code MINT25 for 10% off your first clean."
+      heroIntro="Upholstered furniture traps dust, allergens, pet dander, and stains deep in fabric fibers where regular vacuuming can't reach. Mint Sanitary provides professional upholstery cleaning for sofas, chairs, and all fabric furniture across North Vancouver — using eco-friendly products matched to your fabric type. Use code MINT26 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready for Fresh, Clean Upholstery?"
-      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, eco-friendly products, fabric-safe techniques. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, eco-friendly products, fabric-safe techniques. Use code MINT26 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -489,7 +489,7 @@ export default function UpholsteryCleaningNorthVancouverPage() {
               >
                 236-688-3248
               </a>{" "}
-              for a free estimate. Use code MINT25 for 10% off your first
+              for a free estimate. Use code MINT26 for 10% off your first
               booking. See full pricing details on our{" "}
               <a href="/rates/" className="underline underline-offset-2">
                 rates page

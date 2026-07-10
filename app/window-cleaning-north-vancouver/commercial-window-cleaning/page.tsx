@@ -48,7 +48,7 @@ const faqItems = [
     question:
       "How much does commercial window cleaning cost in North Vancouver?",
     answer:
-      "Pricing varies based on building size, height, number of windows, access complexity, and service frequency. Ground-level storefronts typically cost $1 to $2 per pane; larger commercial buildings are priced by square footage ($0.50 to $2.50 per square foot) or hourly rates ($50 to $100 per hour). Recurring contracts receive 10 to 15 percent discounts compared to one-time service. We provide free estimates after on-site assessment so you understand exactly what your property requires. First-time customers receive 10 percent off with code MINT25.",
+      "Pricing varies based on building size, height, number of windows, access complexity, and service frequency. Ground-level storefronts typically cost $1 to $2 per pane; larger commercial buildings are priced by square footage ($0.50 to $2.50 per square foot) or hourly rates ($50 to $100 per hour). Recurring contracts receive 10 to 15 percent discounts compared to one-time service. We provide free estimates after on-site assessment so you understand exactly what your property requires. First-time customers receive 10 percent off with code MINT26.",
   },
   {
     question:
@@ -159,7 +159,7 @@ export default function CommercialWindowCleaningPage() {
       heroIntro="Clean windows are more than appearance. They signal professional operations, protect your property investment, and influence how customers perceive your business. For commercial properties across North Vancouver, regular window maintenance is a non-negotiable part of building management, especially given the coastal salt spray and frequent rain that accelerates grime buildup on glass surfaces."
       faqItems={faqItems}
       ctaHeading="Ready to Maintain Your Commercial Property?"
-      ctaBody="Mint Sanitary assesses every commercial property and provides a customized quote, covering office buildings, retail storefronts, strata properties, and industrial facilities throughout North Vancouver. New customers receive 10% off with code MINT25."
+      ctaBody="Mint Sanitary assesses every commercial property and provides a customized quote, covering office buildings, retail storefronts, strata properties, and industrial facilities throughout North Vancouver. New customers receive 10% off with code MINT26."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -645,7 +645,7 @@ export default function CommercialWindowCleaningPage() {
               </h3>
               <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 New customers receive 10 percent off with code{" "}
-                <strong className="font-extrabold text-white">MINT25</strong>.
+                <strong className="font-extrabold text-white">MINT26</strong>.
               </p>
             </div>
           </div>
@@ -893,7 +893,7 @@ export default function CommercialWindowCleaningPage() {
                 <strong className="font-extrabold text-white">
                   First-time customer promo:
                 </strong>{" "}
-                10% off your first clean with code MINT25
+                10% off your first clean with code MINT26
               </li>
             </ul>
           </div>

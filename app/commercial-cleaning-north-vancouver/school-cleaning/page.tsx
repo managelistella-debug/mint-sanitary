@@ -159,7 +159,7 @@ const whyChooseItems = [
   },
   {
     title: "Transparent Pricing",
-    body: "No surprise charges. No hidden fees. We quote based on your actual space and needs. First-clean discount of 10% (code MINT25) applies to new school clients.",
+    body: "No surprise charges. No hidden fees. We quote based on your actual space and needs. First-clean discount of 10% (code MINT26) applies to new school clients.",
   },
   {
     title: "Free Estimates",
@@ -220,7 +220,7 @@ const faqItems = [
   },
   {
     question: "What's included in your first-clean discount for North Vancouver schools?",
-    answer: "Our MINT25 code gives 10% off your first cleaning service. There's no minimum order. This applies to any North Vancouver school trying our services for the first time, whether it's a single deep clean or the beginning of a long-term contract.",
+    answer: "Our MINT26 code gives 10% off your first cleaning service. There's no minimum order. This applies to any North Vancouver school trying our services for the first time, whether it's a single deep clean or the beginning of a long-term contract.",
   },
 ];
 
@@ -238,7 +238,7 @@ export default function SchoolCleaningNorthVancouverPage() {
       heroIntro="When you walk into a clean school, you notice it immediately. Fresh air. Bright hallways. Sanitized classrooms. That&apos;s not luck. It&apos;s the result of professional school cleaning in North Vancouver."
       faqItems={faqItems}
       ctaHeading="Get Started with Professional School Cleaning in North Vancouver"
-      ctaBody="Call us today: 236-688-3248. We&apos;ll visit your North Vancouver school, assess your specific needs, and provide a free estimate. Use code MINT25 for 10% off your first clean."
+      ctaBody="Call us today: 236-688-3248. We&apos;ll visit your North Vancouver school, assess your specific needs, and provide a free estimate. Use code MINT26 for 10% off your first clean."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">

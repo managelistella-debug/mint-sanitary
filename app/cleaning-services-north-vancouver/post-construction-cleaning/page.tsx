@@ -192,8 +192,8 @@ const benefitCards = [
     body: "Every product we use is non-toxic and biodegradable \u2014 effective at removing construction residue while being safe for new surfaces, future occupants, and the environment.",
   },
   {
-    title: "MINT25: 10% Off First Clean",
-    body: "New clients save 10% on their first post-construction cleaning with promo code MINT25. Call 236-688-3248 for a free estimate and to redeem your discount.",
+    title: "MINT26: 10% Off First Clean",
+    body: "New clients save 10% on their first post-construction cleaning with promo code MINT26. Call 236-688-3248 for a free estimate and to redeem your discount.",
   },
 ];
 
@@ -257,10 +257,10 @@ export default function PostConstructionCleaningNorthVancouverPage() {
       title="Post-Construction Cleaning in North Vancouver"
       heroImage="/post-construction-cleaning-north-vancouver.jpg"
       heroSubtitle="New Build & Renovation Cleanup"
-      heroIntro="After construction ends, a thorough post-construction clean is essential before move-in or opening. Mint Sanitary handles renovation dust, construction debris, adhesive residue, and fine particles using HEPA equipment and eco-friendly products. Serving North Vancouver 7 days a week. Use code MINT25 for 10% off your first clean."
+      heroIntro="After construction ends, a thorough post-construction clean is essential before move-in or opening. Mint Sanitary handles renovation dust, construction debris, adhesive residue, and fine particles using HEPA equipment and eco-friendly products. Serving North Vancouver 7 days a week. Use code MINT26 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Clean Up After Construction?"
-      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, HEPA equipment, eco-friendly products. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, HEPA equipment, eco-friendly products. Use code MINT26 for 10% off your first booking."
     >
       {/* ── Image + Text: What Is Post-Construction Cleaning ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -495,7 +495,7 @@ export default function PostConstructionCleaningNorthVancouverPage() {
               <a href="/contact" className="underline underline-offset-2">
                 request a quote online
               </a>
-              . Use code MINT25 for 10% off your first booking. See full pricing
+              . Use code MINT26 for 10% off your first booking. See full pricing
               details on our{" "}
               <a href="/rates/" className="underline underline-offset-2">
                 rates page

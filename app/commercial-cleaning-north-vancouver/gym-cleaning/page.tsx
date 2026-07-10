@@ -154,7 +154,7 @@ const whyChooseItems = [
   },
   {
     title: "First-Clean Discount",
-    body: "New clients get 10% off their first service with code MINT25. That's how confident we are in our work.",
+    body: "New clients get 10% off their first service with code MINT26. That's how confident we are in our work.",
   },
 ];
 
@@ -220,7 +220,7 @@ const faqItems = [
   },
   {
     question: "Can I get a first-time discount on gym cleaning in North Vancouver?",
-    answer: "Yes. New clients in North Vancouver get 10% off their first service with code MINT25. This applies to any of our gym cleaning packages. Call 236-688-3248 to schedule your first clean and use the code at checkout.",
+    answer: "Yes. New clients in North Vancouver get 10% off their first service with code MINT26. This applies to any of our gym cleaning packages. Call 236-688-3248 to schedule your first clean and use the code at checkout.",
   },
   {
     question: "How do I know your cleaning is working in my North Vancouver gym?",
@@ -251,7 +251,7 @@ export default function GymCleaningNorthVancouverPage() {
       heroIntro="Your gym is only as good as it is clean. Members choose fitness facilities based on cleanliness first, and they&apos;ll leave if surfaces feel sticky or smell off. At Mint Sanitary, we handle the heavy lifting so your North Vancouver gym stays spotless, safe, and welcoming every single day."
       faqItems={faqItems}
       ctaHeading="Get Your North Vancouver Gym Cleaning Service Started"
-      ctaBody="Call 236-688-3248 or visit www.mintsanitary.com for your free on-site estimate. Use code MINT25 for 10% off your first service."
+      ctaBody="Call 236-688-3248 or visit www.mintsanitary.com for your free on-site estimate. Use code MINT26 for 10% off your first service."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">

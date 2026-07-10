@@ -128,7 +128,7 @@ const whyChooseItems = [
   },
   {
     title: "First Clean Discount",
-    body: "New clients get 10% off their first cleaning with code MINT25. If you have been considering professional strata cleaning in North Vancouver, this is a good time to try us.",
+    body: "New clients get 10% off their first cleaning with code MINT26. If you have been considering professional strata cleaning in North Vancouver, this is a good time to try us.",
   },
   {
     title: "Flexible Service Frequency",
@@ -248,7 +248,7 @@ export default function StrataCleaningNorthVancouverPage() {
       heroIntro="If you manage a condo building, townhouse complex, or multi-unit residential property in North Vancouver, you know how demanding it is to keep common areas spotless. Lobbies get dirty fast. Elevators accumulate fingerprints and smudges. Parkades collect dust and debris."
       faqItems={faqItems}
       ctaHeading="Ready to Upgrade Your Strata Building?"
-      ctaBody="Your North Vancouver strata building deserves professional care. Contact Mint Sanitary for a free estimate. Call 236-688-3248 or visit www.mintsanitary.com. Mention code MINT25 for 10% off your first strata cleaning service."
+      ctaBody="Your North Vancouver strata building deserves professional care. Contact Mint Sanitary for a free estimate. Call 236-688-3248 or visit www.mintsanitary.com. Mention code MINT26 for 10% off your first strata cleaning service."
     >
       {/* ── Image + Text Intro ── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">

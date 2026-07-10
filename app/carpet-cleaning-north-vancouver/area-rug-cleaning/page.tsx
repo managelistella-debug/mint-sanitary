@@ -236,7 +236,7 @@ export default function AreaRugCleaningNorthVancouverPage() {
               <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 Free estimate by phone, email, or in-person: call 236-688-3248
                 or email hello@mintsanitary.com. First-time customers
-                can use code MINT25 for 10% off.
+                can use code MINT26 for 10% off.
               </p>
             </div>
             <div>

@@ -123,8 +123,8 @@ const whyChooseItems = [
     desc: "The same team learns your property\u2019s layout, staging preferences, and host standards. Consistency across every turnover means fewer mistakes and faster execution.",
   },
   {
-    title: "MINT25: 10% Off First Turnover",
-    desc: "New hosts save 10% on their first vacation rental turnover with promo code MINT25. No strings attached.",
+    title: "MINT26: 10% Off First Turnover",
+    desc: "New hosts save 10% on their first vacation rental turnover with promo code MINT26. No strings attached.",
   },
 ];
 
@@ -216,7 +216,7 @@ const faqItems = [
   {
     question: "How much does vacation rental turnover cleaning cost?",
     answer:
-      "Turnover cleaning ranges from $120\u2013$400 depending on property size, condition, and services included. Call 236-688-3248 for a free estimate. Use code MINT25 for first-time savings.",
+      "Turnover cleaning ranges from $120\u2013$400 depending on property size, condition, and services included. Call 236-688-3248 for a free estimate. Use code MINT26 for first-time savings.",
   },
 ];
 
@@ -226,10 +226,10 @@ export default function VacationRentalCleaningNorthVancouverPage() {
       title="Vacation Rental Cleaning in North Vancouver"
       heroImage="/vacation-rental-cleaning-north-vancouver.jpg"
       heroSubtitle="Airbnb & Short-Term Rental Turnover"
-      heroIntro="Fast, reliable turnover cleaning for Airbnb, VRBO, and short-term rentals across North Vancouver. Mint Sanitary handles full property resets between guests — restocking, sanitizing, linen management, and guest-ready presentation on your schedule. Use code MINT25 for 10% off your first turnover."
+      heroIntro="Fast, reliable turnover cleaning for Airbnb, VRBO, and short-term rentals across North Vancouver. Mint Sanitary handles full property resets between guests — restocking, sanitizing, linen management, and guest-ready presentation on your schedule. Use code MINT26 for 10% off your first turnover."
       faqItems={faqItems}
       ctaHeading="Ready to Streamline Your Vacation Rental Turnovers?"
-      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, same-day turnovers available. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. 7-day availability, same-day turnovers available. Use code MINT26 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -503,7 +503,7 @@ export default function VacationRentalCleaningNorthVancouverPage() {
               >
                 236-688-3248
               </a>{" "}
-              for a free estimate tailored to your property. Use code MINT25 for
+              for a free estimate tailored to your property. Use code MINT26 for
               10% off your first turnover. See full pricing details on our{" "}
               <a href="/rates/" className="underline underline-offset-2">
                 rates page
@@ -654,11 +654,11 @@ export default function VacationRentalCleaningNorthVancouverPage() {
             </div>
             <div className="rounded-[14px] bg-white/[0.12] p-5">
               <h3 className="font-body text-[17px] font-extrabold text-white">
-                MINT25: 10% Off First Turnover
+                MINT26: 10% Off First Turnover
               </h3>
               <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 New hosts save 10% on their first vacation rental turnover with
-                promo code MINT25. No strings attached, no contracts required.
+                promo code MINT26. No strings attached, no contracts required.
               </p>
             </div>
           </div>

@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Standard Cleaning North Vancouver | Mint Sanitary",
   description:
-    "Professional standard cleaning in North Vancouver. Eco-friendly services, 7 days/week, free estimates. MINT25 for 10% off first clean.",
+    "Professional standard cleaning in North Vancouver. Eco-friendly services, 7 days/week, free estimates. MINT26 for 10% off first clean.",
 };
 
 const includedAreas = [
@@ -124,8 +124,8 @@ const whyChoose = [
     body: "If any area doesn\u2019t meet your expectations, let us know within 24 hours and we\u2019ll return to make it right at no extra charge.",
   },
   {
-    title: "MINT25: 10% Off First Clean",
-    body: "New customers save 10% on their first standard cleaning with promo code MINT25. No strings attached.",
+    title: "MINT26: 10% Off First Clean",
+    body: "New customers save 10% on their first standard cleaning with promo code MINT26. No strings attached.",
   },
 ];
 
@@ -224,7 +224,7 @@ const faqItems = [
   {
     question: "How much does standard cleaning cost in North Vancouver?",
     answer:
-      "Standard cleaning is priced by property size (square footage), starting at $220 for 500\u2013600 sq ft and scaling based on size. Weekly clients get preferred rates. Visit our rates page for full pricing details. First-time clients save 10% with code MINT25. Call 236-688-3248 for a free estimate.",
+      "Standard cleaning is priced by property size (square footage), starting at $220 for 500\u2013600 sq ft and scaling based on size. Weekly clients get preferred rates. Visit our rates page for full pricing details. First-time clients save 10% with code MINT26. Call 236-688-3248 for a free estimate.",
   },
   {
     question: "Can I request the same cleaner every time?",
@@ -254,10 +254,10 @@ export default function StandardCleaningNorthVancouverPage() {
       title="Standard Cleaning in North Vancouver"
       heroImage="/standard-cleaning-kitchen-north-vancouver.jpg"
       heroSubtitle="Professional House Cleaning"
-      heroIntro="Standard cleaning keeps your home consistently fresh between deep cleans. Mint Sanitary provides professional standard cleaning across North Vancouver with eco-friendly products, trained teams, and flexible scheduling 7 days a week. Choose weekly, bi-weekly, or monthly service and use code MINT25 for 10% off your first clean."
+      heroIntro="Standard cleaning keeps your home consistently fresh between deep cleans. Mint Sanitary provides professional standard cleaning across North Vancouver with eco-friendly products, trained teams, and flexible scheduling 7 days a week. Choose weekly, bi-weekly, or monthly service and use code MINT26 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Get Your Home Clean?"
-      ctaBody="Book a free estimate today. Call Mint Sanitary at 236-688-3248. We&apos;re open seven days a week, including evenings and weekends. New clients, use code MINT25 for 10% off your first booking."
+      ctaBody="Book a free estimate today. Call Mint Sanitary at 236-688-3248. We&apos;re open seven days a week, including evenings and weekends. New clients, use code MINT26 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -530,7 +530,7 @@ export default function StandardCleaningNorthVancouverPage() {
               >
                 236-688-3248
               </a>{" "}
-              for a free estimate. Use code MINT25 for 10% off your first
+              for a free estimate. Use code MINT26 for 10% off your first
               booking. See full pricing details on our{" "}
               <a href="/rates/" className="underline underline-offset-2">
                 rates page

@@ -127,7 +127,7 @@ export default function PostConstructionWindowCleaningPage() {
       heroIntro="When new construction or major renovations wrap up, windows often bear the marks of the building process. Paint overspray, protective stickers, caulk drips, adhesive residue, and construction dust cling to glass and frames. What may seem like routine cleanup requires specialized expertise and equipment to avoid permanent damage."
       faqItems={faqItems}
       ctaHeading="Schedule Your Post Construction Window Cleaning Today"
-      ctaBody="Newly constructed or renovated windows deserve professional care. Mint Sanitary removes construction debris safely, protects your investment, and ensures windows are ready for final inspection and occupancy throughout North Vancouver. Use code MINT25 for 10% off your first clean."
+      ctaBody="Newly constructed or renovated windows deserve professional care. Mint Sanitary removes construction debris safely, protects your investment, and ensures windows are ready for final inspection and occupancy throughout North Vancouver. Use code MINT26 for 10% off your first clean."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -501,7 +501,7 @@ export default function PostConstructionWindowCleaningPage() {
                 </a>{" "}
                 for all jobs. First-time customers receive{" "}
                 <strong className="font-extrabold text-white">
-                  10% off with code MINT25
+                  10% off with code MINT26
                 </strong>
                 .
               </p>

@@ -74,7 +74,7 @@ export default function AboutPage() {
       heroIntro="Mint Sanitary was built to give North Vancouver homeowners and businesses a cleaning company they can trust for reliability, safety, and consistent results."
       faqItems={faqItems}
       ctaHeading="Ready to Experience the Mint Sanitary Difference?"
-      ctaBody="Clean feels good. Let Mint Sanitary handle the cleaning so you can focus on what truly matters. Get 10% off your first clean with code MINT25. No tricks. No hidden fees. Available 7 days a week."
+      ctaBody="Clean feels good. Let Mint Sanitary handle the cleaning so you can focus on what truly matters. Get 10% off your first clean with code MINT26. No tricks. No hidden fees. Available 7 days a week."
     >
       {/* ── Our Story — Text + Image Side-by-Side ───────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -409,7 +409,7 @@ export default function AboutPage() {
               <strong className="font-extrabold text-white">
                 Special offer:
               </strong>{" "}
-              Get 10% off your first clean with code MINT25. No tricks. No hidden
+              Get 10% off your first clean with code MINT26. No tricks. No hidden
               fees.
             </p>
             <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">

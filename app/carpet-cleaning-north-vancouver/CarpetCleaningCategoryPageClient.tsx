@@ -259,7 +259,7 @@ export default function CarpetCleaningCategoryPageClient() {
                 embedded dirt, stains, and allergens using hot-water extraction.
                 Seven-day availability, fast drying times, and transparent
                 pricing. Call 236-688-3248 for a free estimate or use code
-                MINT25 for 10% off your first service.
+                MINT26 for 10% off your first service.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
@@ -278,7 +278,7 @@ export default function CarpetCleaningCategoryPageClient() {
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
                 <li>Eco-Friendly Products</li>
                 <li>Fast-Dry Technology</li>
-                <li>10% Off With Code MINT25</li>
+                <li>10% Off With Code MINT26</li>
               </ul>
             </div>
             <div className="hidden md:block" />
@@ -770,7 +770,7 @@ export default function CarpetCleaningCategoryPageClient() {
             </h2>
             <p className="mx-auto mt-5 max-w-[640px] font-body text-[16px] leading-[1.7] text-white/80">
               Call Mint Sanitary at 236-688-3248 or email
-              hello@mintsanitary.com. Use promo code MINT25 for 10% off carpet
+              hello@mintsanitary.com. Use promo code MINT26 for 10% off carpet
               cleaning in North Vancouver. Free estimates. 7-day availability.
               Eco-friendly products. Bonded, insured technicians.
             </p>

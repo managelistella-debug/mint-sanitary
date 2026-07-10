@@ -242,7 +242,7 @@ export default function Home() {
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
                 <li>Eco-Friendly Products</li>
                 <li>Bonded &amp; Insured Teams</li>
-                <li>10% Off With Code MINT25</li>
+                <li>10% Off With Code MINT26</li>
               </ul>
             </div>
             <InstantQuoteForm />
@@ -579,7 +579,7 @@ export default function Home() {
             </p>
             <p className="mx-auto mt-3 max-w-[500px] font-body text-[15px] leading-[1.7] text-white/80">
               Use code{" "}
-              <strong className="text-white font-extrabold">MINT25</strong> for 10% off
+              <strong className="text-white font-extrabold">MINT26</strong> for 10% off
               your first service.{" "}
               <a
                 href="/rates/"

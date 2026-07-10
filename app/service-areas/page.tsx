@@ -97,7 +97,7 @@ export default function ServiceAreasPage() {
       heroIntro="Mint Sanitary started in North Vancouver and has grown into one of the region's most trusted cleaning companies. Today, we serve North Vancouver, West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver areas with the same commitment to quality, eco-friendly cleaning that made us local favorites."
       faqItems={faqItems}
       ctaHeading="Ready to Schedule Your Cleaning?"
-      ctaBody="Finding reliable, eco-friendly cleaning across Greater Vancouver is simpler than you think. Mint Sanitary brings professional standards, non-toxic products, and 7-day availability to every neighborhood we serve. First-time customers: use code MINT25 for 10% off your first clean."
+      ctaBody="Finding reliable, eco-friendly cleaning across Greater Vancouver is simpler than you think. Mint Sanitary brings professional standards, non-toxic products, and 7-day availability to every neighborhood we serve. First-time customers: use code MINT26 for 10% off your first clean."
     >
       {/* ── Intro + Image ───────────────────────────────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -125,7 +125,7 @@ export default function ServiceAreasPage() {
             </p>
             <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
               <strong className="font-extrabold text-white">
-                New customers receive 10% off your first clean with code MINT25.
+                New customers receive 10% off your first clean with code MINT26.
               </strong>
             </p>
             <a

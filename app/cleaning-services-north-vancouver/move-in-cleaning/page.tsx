@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:
     "Move-In Cleaning North Vancouver | Professional Service by Mint Sanitary",
   description:
-    "Professional move-in cleaning in North Vancouver. Eco-friendly deep cleaning before you move in. Free estimate + 10% off with code MINT25. Call 236-688-3248.",
+    "Professional move-in cleaning in North Vancouver. Eco-friendly deep cleaning before you move in. Free estimate + 10% off with code MINT26. Call 236-688-3248.",
 };
 
 const kitchenItems = [
@@ -131,7 +131,7 @@ const whyChooseItems = [
   },
   {
     title: "First-Time Client Discount",
-    desc: "New customers get 10% off with promo code MINT25.",
+    desc: "New customers get 10% off with promo code MINT26.",
   },
   {
     title: "Satisfaction Guarantee",
@@ -215,10 +215,10 @@ export default function MoveInCleaningNorthVancouverPage() {
       title="Move-In Cleaning in North Vancouver"
       heroImage="/move-in-cleaning-north-vancouver-apartment.jpg"
       heroSubtitle="Fresh Start Deep Cleaning"
-      heroIntro="Moving into a new home deserves a clean start. Mint Sanitary provides thorough move-in cleaning across North Vancouver — reaching inside every cabinet, appliance, and hidden corner before you unpack. Eco-friendly products, 7-day availability, and a satisfaction guarantee. Use code MINT25 for 10% off your first clean."
+      heroIntro="Moving into a new home deserves a clean start. Mint Sanitary provides thorough move-in cleaning across North Vancouver — reaching inside every cabinet, appliance, and hidden corner before you unpack. Eco-friendly products, 7-day availability, and a satisfaction guarantee. Use code MINT26 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready for a Fresh Start in Your New Home?"
-      ctaBody="Book your move-in clean today. Call Mint Sanitary at 236-688-3248 or request a quote online. 7-day availability, eco-friendly products. Use code MINT25 for 10% off."
+      ctaBody="Book your move-in clean today. Call Mint Sanitary at 236-688-3248 or request a quote online. 7-day availability, eco-friendly products. Use code MINT26 for 10% off."
     >
       {/* ── A. Image + Text Intro (white bg) ──────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">

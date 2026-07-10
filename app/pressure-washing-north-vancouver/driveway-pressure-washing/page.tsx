@@ -4,7 +4,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata: Metadata = {
   title: "Driveway Pressure Washing North Vancouver | Mint Sanitary",
   description:
-    "Professional driveway pressure washing in North Vancouver. Eco-friendly cleaning, safe for all surfaces. Free estimate, code MINT25 for 10% off!",
+    "Professional driveway pressure washing in North Vancouver. Eco-friendly cleaning, safe for all surfaces. Free estimate, code MINT26 for 10% off!",
 };
 
 const surfaceTypes = [
@@ -164,7 +164,7 @@ const whyChoosePoints = [
   },
   {
     title: "10% First-Clean Discount",
-    body: "New customers save with code MINT25 on your first service.",
+    body: "New customers save with code MINT26 on your first service.",
   },
   {
     title: "Responsive and Convenient",
@@ -229,7 +229,7 @@ const faqItems = [
     question:
       "How much does driveway pressure washing cost in North Vancouver?",
     answer:
-      "Professional driveway pressure washing typically costs $0.30 to $0.55 per square foot, or $100 to $350 for most North Vancouver driveways. A typical 500 square foot driveway averages $150 to $250. Heavy stains, large properties, or add-ons like sealing or oil treatment increase the cost. Mint Sanitary offers 10% off your first clean with code MINT25 and free on-site estimates with no obligation. Call 236-688-3248 or email hello@mintsanitary.com for your personalized quote.",
+      "Professional driveway pressure washing typically costs $0.30 to $0.55 per square foot, or $100 to $350 for most North Vancouver driveways. A typical 500 square foot driveway averages $150 to $250. Heavy stains, large properties, or add-ons like sealing or oil treatment increase the cost. Mint Sanitary offers 10% off your first clean with code MINT26 and free on-site estimates with no obligation. Call 236-688-3248 or email hello@mintsanitary.com for your personalized quote.",
   },
 ];
 
@@ -241,7 +241,7 @@ export default function DrivewayPressureWashingPage() {
       heroIntro="Your driveway is often the first impression visitors have of your home. In North Vancouver's wet climate, dirt, moss, and algae buildup happens fast. Professional driveway pressure washing restores curb appeal, prevents slippery hazards, and protects your investment from long-term damage. Driveway pressure washing in North Vancouver is an affordable, effective solution for homeowners preparing to sell or dealing with stubborn oil stains."
       faqItems={faqItems}
       ctaHeading="Ready to Restore Your Driveway?"
-      ctaBody="Your North Vancouver driveway deserves professional care. Mint Sanitary delivers excellent results with eco-friendly products and professional service. Contact us today for your free, no-obligation estimate. New customers save 10% with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week."
+      ctaBody="Your North Vancouver driveway deserves professional care. Mint Sanitary delivers excellent results with eco-friendly products and professional service. Contact us today for your free, no-obligation estimate. New customers save 10% with code MINT26. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -260,7 +260,7 @@ export default function DrivewayPressureWashingPage() {
           </p>
           <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             Get a free, no-obligation estimate and save 10% with code{" "}
-            <strong className="font-extrabold text-white">MINT25</strong>.
+            <strong className="font-extrabold text-white">MINT26</strong>.
             Call{" "}
             <a href="tel:+12366883248" className="underline underline-offset-2">
               236-688-3248
@@ -567,7 +567,7 @@ export default function DrivewayPressureWashingPage() {
               Special Offer:
             </strong>{" "}
             10% off your first clean with code{" "}
-            <strong className="font-extrabold text-white">MINT25</strong>.
+            <strong className="font-extrabold text-white">MINT26</strong>.
             Call{" "}
             <a href="tel:+12366883248" className="underline underline-offset-2">
               236-688-3248

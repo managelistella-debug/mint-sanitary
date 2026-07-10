@@ -106,7 +106,7 @@ const whyChoose = [
   },
   {
     title: "First-Clean Discount",
-    desc: "New clients save 10% with promo code MINT25.",
+    desc: "New clients save 10% with promo code MINT26.",
   },
   {
     title: "Experienced and Trained Staff",
@@ -259,10 +259,10 @@ export default function RecurringCleaningNorthVancouverPage() {
       title="Recurring Cleaning in North Vancouver"
       heroImage="/recurring-cleaning-kitchen-north-vancouver.jpg"
       heroSubtitle="Scheduled Home Cleaning"
-      heroIntro="Recurring cleaning keeps your North Vancouver home consistently clean without the weekend catch-up. Mint Sanitary provides weekly, bi-weekly, and monthly cleaning plans with the same trusted team, eco-friendly products, and 7-day availability. Use code MINT25 for 10% off your first clean."
+      heroIntro="Recurring cleaning keeps your North Vancouver home consistently clean without the weekend catch-up. Mint Sanitary provides weekly, bi-weekly, and monthly cleaning plans with the same trusted team, eco-friendly products, and 7-day availability. Use code MINT26 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Set Up Recurring Cleaning?"
-      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. Free estimates, no long-term contracts, 7-day availability. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. Free estimates, no long-term contracts, 7-day availability. Use code MINT26 for 10% off your first booking."
     >
       {/* ── Image + Text: What's Included Intro ──────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -525,7 +525,7 @@ export default function RecurringCleaningNorthVancouverPage() {
               >
                 236-688-3248
               </a>{" "}
-              for a free estimate. Use code MINT25 for 10% off your first
+              for a free estimate. Use code MINT26 for 10% off your first
               booking. See full pricing details on our{" "}
               <a href="/rates/" className="underline underline-offset-2">
                 rates page

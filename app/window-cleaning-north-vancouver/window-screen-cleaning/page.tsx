@@ -4,7 +4,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata: Metadata = {
   title: "Window Screen Cleaning North Vancouver | Mint Sanitary",
   description:
-    "Professional window screen cleaning in North Vancouver. Eco-friendly products, pollen removal, screen repair & replacement. Free estimate. 10% off with code MINT25.",
+    "Professional window screen cleaning in North Vancouver. Eco-friendly products, pollen removal, screen repair & replacement. Free estimate. 10% off with code MINT26.",
 };
 
 const faqItems = [
@@ -132,7 +132,7 @@ export default function WindowScreenCleaningPage() {
       heroIntro="Dirty window screens don't just look bad. They quietly compromise your home's air quality, natural light, and views. Over time, screens trap dust, pollen, mold spores, and debris, restricting airflow and trapping allergens that can affect your health."
       faqItems={faqItems}
       ctaHeading="Ready to Restore Your Window Clarity?"
-      ctaBody="Dirty window screens compromise your home's light, views, and indoor air quality, especially critical during North Vancouver's allergy-heavy pollen season. Professional screen cleaning removes trapped contaminants, improves indoor air quality, and restores the beauty of your windows. Ask about our 10% first-clean discount (code: MINT25) and same-day or next-day availability."
+      ctaBody="Dirty window screens compromise your home's light, views, and indoor air quality, especially critical during North Vancouver's allergy-heavy pollen season. Professional screen cleaning removes trapped contaminants, improves indoor air quality, and restores the beauty of your windows. Ask about our 10% first-clean discount (code: MINT26) and same-day or next-day availability."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -160,7 +160,7 @@ export default function WindowScreenCleaningPage() {
                 </a>{" "}
                 in North Vancouver.
               </strong>{" "}
-              Ask about our 10% first-clean discount with code MINT25.
+              Ask about our 10% first-clean discount with code MINT26.
             </p>
           </div>
 
@@ -559,7 +559,7 @@ export default function WindowScreenCleaningPage() {
               </h3>
               <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 10% off your first professional screen cleaning with code{" "}
-                <strong className="font-extrabold text-white">MINT25</strong>.
+                <strong className="font-extrabold text-white">MINT26</strong>.
               </p>
             </div>
             <div className="rounded-[14px] bg-white/10 p-5">

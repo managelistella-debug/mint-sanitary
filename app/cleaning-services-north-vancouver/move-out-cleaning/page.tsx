@@ -118,7 +118,7 @@ const whyChooseItems = [
   },
   {
     title: "First-Time Client Discount",
-    desc: "New customers save 10% with promo code MINT25.",
+    desc: "New customers save 10% with promo code MINT26.",
   },
   {
     title: "24-Hour Satisfaction Guarantee",
@@ -230,10 +230,10 @@ export default function MoveOutCleaningPage() {
       title="Move-Out Cleaning in North Vancouver"
       heroImage="/move-out-cleaning-north-vancouver-living-room.jpg"
       heroSubtitle="End of Tenancy Cleaning"
-      heroIntro="Moving out is stressful enough without worrying about your security deposit. Mint Sanitary provides thorough move-out cleaning across North Vancouver that meets BC tenancy inspection standards — giving you the best chance of a full deposit return. Use code MINT25 for 10% off your first clean."
+      heroIntro="Moving out is stressful enough without worrying about your security deposit. Mint Sanitary provides thorough move-out cleaning across North Vancouver that meets BC tenancy inspection standards — giving you the best chance of a full deposit return. Use code MINT26 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Protect Your Deposit?"
-      ctaBody="Book your move-out clean today. Call Mint Sanitary at 236-688-3248. 7-day availability, eco-friendly products, bonded and insured staff. Use code MINT25 for 10% off."
+      ctaBody="Book your move-out clean today. Call Mint Sanitary at 236-688-3248. 7-day availability, eco-friendly products, bonded and insured staff. Use code MINT26 for 10% off."
     >
       {/* ── A. Image + Text Intro (white bg) ─────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">

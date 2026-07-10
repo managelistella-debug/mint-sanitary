@@ -5,7 +5,7 @@ import AccordionWithImage from "@/components/AccordionWithImage";
 export const metadata: Metadata = {
   title: "Deep Cleaning in North Vancouver | Mint Sanitary",
   description:
-    "Professional deep cleaning in North Vancouver. Eco-friendly service for homes and businesses. 7-day availability. Free estimate. MINT25 saves 10%.",
+    "Professional deep cleaning in North Vancouver. Eco-friendly service for homes and businesses. 7-day availability. Free estimate. MINT26 saves 10%.",
 };
 
 const deepCleanAreas = [
@@ -209,12 +209,12 @@ const faqItems = [
   {
     question: "How much does deep cleaning cost in North Vancouver?",
     answer:
-      "Pricing is based on property size (square footage). Deep cleaning starts at $390 for 500\u2013600 sq ft and scales up based on size. Visit our rates page for the full pricing table, or call 236-688-3248 for a free estimate. First-time clients save 10% with code MINT25.",
+      "Pricing is based on property size (square footage). Deep cleaning starts at $390 for 500\u2013600 sq ft and scales up based on size. Visit our rates page for the full pricing table, or call 236-688-3248 for a free estimate. First-time clients save 10% with code MINT26.",
   },
   {
     question: "How do I book a deep cleaning?",
     answer:
-      "Call 236-688-3248 or request a quote online. We provide a free estimate with no obligation. Available 7 days a week, including evenings and weekends. Use code MINT25 for 10% off your first service.",
+      "Call 236-688-3248 or request a quote online. We provide a free estimate with no obligation. Available 7 days a week, including evenings and weekends. Use code MINT26 for 10% off your first service.",
   },
 ];
 
@@ -294,10 +294,10 @@ export default function DeepCleaningNorthVancouverPage() {
       title="Deep Cleaning in North Vancouver"
       heroImage="/deep-cleaning-bathroom-north-vancouver.jpg"
       heroSubtitle="Professional Deep Cleaning Service"
-      heroIntro="Deep cleaning goes beyond regular maintenance — reaching inside appliances, scrubbing grout, cleaning behind furniture, and tackling every corner that routine cleaning misses. Mint Sanitary provides professional deep cleaning across North Vancouver with eco-friendly products and 7-day availability. Use code MINT25 for 10% off your first clean."
+      heroIntro="Deep cleaning goes beyond regular maintenance — reaching inside appliances, scrubbing grout, cleaning behind furniture, and tackling every corner that routine cleaning misses. Mint Sanitary provides professional deep cleaning across North Vancouver with eco-friendly products and 7-day availability. Use code MINT26 for 10% off your first clean."
       faqItems={faqItems}
       ctaHeading="Ready to Book a Deep Clean in North Vancouver?"
-      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. Free estimates. 7-day availability. Eco-friendly products. Use code MINT25 for 10% off your first booking."
+      ctaBody="Call Mint Sanitary at 236-688-3248 or book online. Free estimates. 7-day availability. Eco-friendly products. Use code MINT26 for 10% off your first booking."
     >
       {/* ── A. Image + Text Intro ──────────────────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -570,7 +570,7 @@ export default function DeepCleaningNorthVancouverPage() {
             >
               236-688-3248
             </a>{" "}
-            for a free estimate. Use code MINT25 for 10% off your first
+            for a free estimate. Use code MINT26 for 10% off your first
             booking. See full pricing details on our{" "}
             <a href="/rates/" className="underline underline-offset-2">
               rates page

@@ -4,7 +4,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata: Metadata = {
   title: "House Washing North Vancouver | Professional Soft Wash Cleaning",
   description:
-    "Professional house washing and soft wash cleaning in North Vancouver. Safe for all siding types. 10% off first clean with code MINT25. Free estimates, 7 days a week.",
+    "Professional house washing and soft wash cleaning in North Vancouver. Safe for all siding types. 10% off first clean with code MINT26. Free estimates, 7 days a week.",
 };
 
 const whatIncludes: { title: string; body: string }[] = [
@@ -130,7 +130,7 @@ const whyChoosePoints: { title: string; body: string }[] = [
   },
   {
     title: "10% First-Time Discount",
-    body: "New customers save with code MINT25.",
+    body: "New customers save with code MINT26.",
   },
   {
     title: "Satisfaction Guaranteed",
@@ -172,7 +172,7 @@ const faqItems: { question: string; answer: string }[] = [
   {
     question: "How much does house washing cost in North Vancouver?",
     answer:
-      "Pricing depends on home size and stories. Single-story homes (1,500 to 2,000 sq ft) typically cost $170 to $360. Two-story homes (2,500 to 3,500 sq ft) range from $450 to $850+. Exact pricing is determined by square footage of exterior wall area, siding material type, and level of soiling. We provide free estimates to give you accurate pricing before commitment. New customers save 10% with code MINT25.",
+      "Pricing depends on home size and stories. Single-story homes (1,500 to 2,000 sq ft) typically cost $170 to $360. Two-story homes (2,500 to 3,500 sq ft) range from $450 to $850+. Exact pricing is determined by square footage of exterior wall area, siding material type, and level of soiling. We provide free estimates to give you accurate pricing before commitment. New customers save 10% with code MINT26.",
   },
   {
     question:
@@ -208,7 +208,7 @@ export default function HouseWashingPage() {
       heroIntro="Your home is one of your biggest investments. When dirt, algae, and mold accumulate on exterior siding, it doesn't just look neglected. It accelerates paint decay and material damage that costs thousands to repair. Mint Sanitary brings professional soft wash expertise to North Vancouver homes, removing stubborn stains safely while protecting vinyl, stucco, Hardie board, and cedar siding. We're available 7 days a week to deliver clean, beautiful results across North Vancouver."
       faqItems={faqItems}
       ctaHeading="Get Your Free House Washing Estimate Today"
-      ctaBody="Your North Vancouver home deserves professional care. Let Mint Sanitary restore your exterior to its best appearance while protecting your investment for years to come. New customers save 10% with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week."
+      ctaBody="Your North Vancouver home deserves professional care. Let Mint Sanitary restore your exterior to its best appearance while protecting your investment for years to come. New customers save 10% with code MINT26. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -494,7 +494,7 @@ export default function HouseWashingPage() {
           </div>
           <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             New customers receive 10% off first clean with code{" "}
-            <strong className="font-extrabold text-white">MINT25</strong>. We
+            <strong className="font-extrabold text-white">MINT26</strong>. We
             provide free, no-pressure estimates so you know the exact cost
             before commitment. Call{" "}
             <a

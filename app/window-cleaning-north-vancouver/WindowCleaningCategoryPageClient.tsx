@@ -54,7 +54,7 @@ const whyChooseItems = [
   },
   {
     title: "Satisfaction Guaranteed",
-    body: "Get 10% off your first clean with code MINT25. Not satisfied with your cleaning? We'll re-clean at no cost.",
+    body: "Get 10% off your first clean with code MINT26. Not satisfied with your cleaning? We'll re-clean at no cost.",
   },
 ];
 
@@ -98,7 +98,7 @@ const faqItems = [
     question:
       "What makes Mint Sanitary different from other window cleaning companies in North Vancouver?",
     answer:
-      "We combine eco-friendly products, seven-day availability, free estimates, and transparent pricing with deep local expertise in North Vancouver's unique climate challenges. Our first-time customer discount of 10% with code MINT25 and satisfaction guarantee mean you can try our service risk-free.",
+      "We combine eco-friendly products, seven-day availability, free estimates, and transparent pricing with deep local expertise in North Vancouver's unique climate challenges. Our first-time customer discount of 10% with code MINT26 and satisfaction guarantee mean you can try our service risk-free.",
   },
   {
     question:
@@ -246,7 +246,7 @@ export default function WindowCleaningCategoryPageClient() {
                 salt-air spotting, mineral deposits from coastal humidity, and
                 construction dust — using eco-friendly solutions safe for
                 children, pets, and landscaping. Seven-day availability, free
-                estimates, and 10% off your first clean with code MINT25. Call
+                estimates, and 10% off your first clean with code MINT26. Call
                 236-688-3248 today.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -266,7 +266,7 @@ export default function WindowCleaningCategoryPageClient() {
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
                 <li>Eco-Friendly Products</li>
                 <li>7-Day Availability</li>
-                <li>10% Off With Code MINT25</li>
+                <li>10% Off With Code MINT26</li>
               </ul>
             </div>
             <div className="hidden md:block" />
@@ -727,7 +727,7 @@ export default function WindowCleaningCategoryPageClient() {
               Our window cleaning experts are prepared to deliver sparkling
               results tailored to your North Vancouver home or business. Call
               236-688-3248 or email hello@mintsanitary.com. Use promo code
-              MINT25 for 10% off your first clean.
+              MINT26 for 10% off your first clean.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a

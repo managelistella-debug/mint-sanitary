@@ -180,7 +180,7 @@ export default function FenceWashingPage() {
       heroIntro="Your fence is one of the first things visitors and potential buyers notice about your property. Over time, North Vancouver's damp Pacific Northwest climate can leave cedar fences covered in moss, vinyl ones stained with algae, and composite materials looking dingy. Professional fence washing removes years of buildup, restores your fence's color and texture, and prepares it for sealing or staining."
       faqItems={faqItems}
       ctaHeading="Ready to Restore Your North Vancouver Fence?"
-      ctaBody="Your fence deserves professional care. Mint Sanitary combines material expertise, eco-friendly solutions, transparent pricing, and same-day service to deliver results that exceed expectations. First-time customers receive 10% off with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Open 7 days a week with flexible scheduling."
+      ctaBody="Your fence deserves professional care. Mint Sanitary combines material expertise, eco-friendly solutions, transparent pricing, and same-day service to deliver results that exceed expectations. First-time customers receive 10% off with code MINT26. Call 236-688-3248 or email hello@mintsanitary.com. Open 7 days a week with flexible scheduling."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">

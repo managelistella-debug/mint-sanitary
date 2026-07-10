@@ -50,7 +50,7 @@ const whyChooseItems = [
   },
   {
     title: "10% First Clean Discount",
-    body: "New customers receive code MINT25 for 10% off your first service.",
+    body: "New customers receive code MINT26 for 10% off your first service.",
   },
   {
     title: "Professional Insurance",
@@ -86,7 +86,7 @@ const faqItems = [
   {
     question: "How much does pressure washing cost in North Vancouver?",
     answer:
-      "Cost varies by property size and surface type. A typical driveway runs $150 to $300; house washing costs $200 to $500; deck cleaning ranges from $150 to $400. We offer free estimates with no obligation. Contact us to discuss your specific property needs. New customers get 10% off with code MINT25.",
+      "Cost varies by property size and surface type. A typical driveway runs $150 to $300; house washing costs $200 to $500; deck cleaning ranges from $150 to $400. We offer free estimates with no obligation. Contact us to discuss your specific property needs. New customers get 10% off with code MINT26.",
   },
   {
     question: "Can I DIY pressure wash my home?",
@@ -111,7 +111,7 @@ const faqItems = [
   {
     question: "How do I book a pressure washing appointment in North Vancouver?",
     answer:
-      "Book online at our website, call 236-688-3248, or email hello@mintsanitary.com. We're available 7 days a week. First-time customers receive 10% off with code MINT25. Free estimates are available for all services with no obligation.",
+      "Book online at our website, call 236-688-3248, or email hello@mintsanitary.com. We're available 7 days a week. First-time customers receive 10% off with code MINT26. Free estimates are available for all services with no obligation.",
   },
 ];
 
@@ -255,7 +255,7 @@ export default function PressureWashingCategoryPageClient() {
                 for moss, algae, and mildew on driveways, decks, siding, and fences.
                 Mint Sanitary brings professional pressure washing and soft washing
                 services to North Vancouver — removing years of buildup and restoring
-                your home&apos;s curb appeal. Call 236-688-3248 or use code MINT25 for
+                your home&apos;s curb appeal. Call 236-688-3248 or use code MINT26 for
                 10% off your first service.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -275,7 +275,7 @@ export default function PressureWashingCategoryPageClient() {
               <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">
                 <li>Biodegradable Solutions</li>
                 <li>7-Day Availability</li>
-                <li>10% Off With Code MINT25</li>
+                <li>10% Off With Code MINT26</li>
               </ul>
             </div>
             <div className="hidden md:block" />
@@ -748,7 +748,7 @@ export default function PressureWashingCategoryPageClient() {
               No obligation. Our team will assess your surfaces, recommend the
               right method, and provide a clear quote. Available 7 days a week
               across all North Vancouver neighbourhoods. New customer? Use code
-              MINT25 for 10% off your first clean.
+              MINT26 for 10% off your first clean.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a

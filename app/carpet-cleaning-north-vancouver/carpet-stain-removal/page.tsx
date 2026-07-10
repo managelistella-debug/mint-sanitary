@@ -64,7 +64,7 @@ const faqItems = [
   {
     question: "How much does carpet stain removal cost in North Vancouver?",
     answer:
-      "Single stain removal runs $120 to $180. Multiple stains are $200 to $280. Pet stain and odor treatment is $150 to $240. All quotes are free, and new customers can use code MINT25 for 10% off first service.",
+      "Single stain removal runs $120 to $180. Multiple stains are $200 to $280. Pet stain and odor treatment is $150 to $240. All quotes are free, and new customers can use code MINT26 for 10% off first service.",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function CarpetStainRemovalNorthVancouverPage() {
       heroIntro="That red wine spill during dinner? The pet accident you discovered this morning? The mystery coffee stain that&apos;s been sitting for weeks? We get it. Carpet stains happen to everyone."
       faqItems={faqItems}
       ctaHeading="Ready to Remove That Stain?"
-      ctaBody="That carpet doesn&apos;t have to stay stained. Call Mint Sanitary at 236-688-3248 or email hello@mintsanitary.com to schedule your free estimate. Same-day and next-day appointments are available throughout North Vancouver. Use code MINT25 for 10% off your first service."
+      ctaBody="That carpet doesn&apos;t have to stay stained. Call Mint Sanitary at 236-688-3248 or email hello@mintsanitary.com to schedule your free estimate. Same-day and next-day appointments are available throughout North Vancouver. Use code MINT26 for 10% off your first service."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">

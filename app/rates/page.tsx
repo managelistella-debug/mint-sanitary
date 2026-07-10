@@ -80,7 +80,7 @@ const faqItems = [
     question:
       "Do you offer first-time cleaning discounts in North Vancouver and nearby cities?",
     answer:
-      "Yes. New customers can use code MINT25 for 10% off their first service.",
+      "Yes. New customers can use code MINT26 for 10% off their first service.",
   },
   {
     question: "Do rates change based on condition, access, or special requests?",
@@ -165,7 +165,7 @@ export default function RatesPage() {
               eco-friendly products, all supplies, and a trained, bonded team.
             </p>
             <p className="mt-4 font-body text-[16px] leading-[1.75] text-white/80">
-              Use code <strong className="text-white font-extrabold">MINT25</strong> for 10%
+              Use code <strong className="text-white font-extrabold">MINT26</strong> for 10%
               off your first service.
             </p>
             <a

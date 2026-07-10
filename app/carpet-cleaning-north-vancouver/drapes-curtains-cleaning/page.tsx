@@ -239,7 +239,7 @@ export default function DrapesCurtainsCleaningPage() {
       heroIntro="Your drapes and curtains collect dust, allergens, and odors every single day. In North Vancouver's humid climate, that buildup happens faster, and the risk of mold and mildew grows with each season. Professional cleaning isn't just about appearance. It's about protecting your investment, improving indoor air quality, and keeping your home healthy."
       faqItems={faqItems}
       ctaHeading="Ready to Restore Your North Vancouver Drapes?"
-      ctaBody="Don't wait. Contact Mint Sanitary today for your free North Vancouver drapery cleaning estimate. Call 236-688-3248 or email hello@mintsanitary.com. Use MINT25 for 10% off your first clean."
+      ctaBody="Don't wait. Contact Mint Sanitary today for your free North Vancouver drapery cleaning estimate. Call 236-688-3248 or email hello@mintsanitary.com. Use MINT26 for 10% off your first clean."
     >
       {/* ── Image + Text Intro ──────────────────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
@@ -265,7 +265,7 @@ export default function DrapesCurtainsCleaningPage() {
                 products that clean thoroughly without damaging delicate fabrics like
                 silk, velvet, or specialty linens. We offer flexible scheduling with
                 7-day availability, free estimates, and 10% off your first clean
-                with code MINT25. Ready to restore your drapes? Call us at 236-688-3248
+                with code MINT26. Ready to restore your drapes? Call us at 236-688-3248
                 or email hello@mintsanitary.com.
               </p>
               <a
@@ -623,7 +623,7 @@ export default function DrapesCurtainsCleaningPage() {
                 First-Time Discount
               </h3>
               <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
-                Use code MINT25 for 10% off your first cleaning. For a $200
+                Use code MINT26 for 10% off your first cleaning. For a $200
                 drop-off job, that&apos;s $20 savings. For larger projects,
                 it&apos;s even more.
               </p>
@@ -753,7 +753,7 @@ export default function DrapesCurtainsCleaningPage() {
               <strong className="font-extrabold text-white">
                 Discount:
               </strong>{" "}
-              MINT25 for 10% off your first clean
+              MINT26 for 10% off your first clean
             </p>
           </div>
           <div className="mt-12">

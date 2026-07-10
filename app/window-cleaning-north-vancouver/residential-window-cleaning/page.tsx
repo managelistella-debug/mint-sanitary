@@ -4,7 +4,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 export const metadata: Metadata = {
   title: "Residential Window Cleaning in North Vancouver | Mint Sanitary",
   description:
-    "Professional residential window cleaning in North Vancouver. Eco-friendly service, free estimates, 10% off first clean with code MINT25. Available 7 days a week.",
+    "Professional residential window cleaning in North Vancouver. Eco-friendly service, free estimates, 10% off first clean with code MINT26. Available 7 days a week.",
 };
 
 const faqItems = [
@@ -154,7 +154,7 @@ export default function ResidentialWindowCleaningPage() {
       heroIntro="Sparkling, clean windows transform your home's appearance and protect your investment. When you look out at North Vancouver's stunning mountain views from clean glass, the difference is immediate. Professional residential window cleaning goes far beyond what a ladder and squeegee can achieve."
       faqItems={faqItems}
       ctaHeading="Ready for Sparkling Windows in North Vancouver?"
-      ctaBody="Clean windows make a genuine difference in how your home looks and feels. Mint Sanitary handles one-time deep cleans and recurring maintenance throughout North Vancouver. We deliver eco-friendly service, transparent pricing, and professional results. New customers: use code MINT25 for 10% off your first residential window cleaning."
+      ctaBody="Clean windows make a genuine difference in how your home looks and feels. Mint Sanitary handles one-time deep cleans and recurring maintenance throughout North Vancouver. We deliver eco-friendly service, transparent pricing, and professional results. New customers: use code MINT26 for 10% off your first residential window cleaning."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">
@@ -175,7 +175,7 @@ export default function ResidentialWindowCleaningPage() {
                 free estimates
               </a>{" "}
               with transparent pricing. New customers receive 10% off their first
-              clean with code MINT25.
+              clean with code MINT26.
             </p>
             <p>
               Clean windows are more than cosmetic. They&apos;re an investment in
@@ -578,7 +578,7 @@ export default function ResidentialWindowCleaningPage() {
               </h3>
               <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
                 Use code{" "}
-                <strong className="font-extrabold text-white">MINT25</strong>{" "}
+                <strong className="font-extrabold text-white">MINT26</strong>{" "}
                 for 10% off your first residential window cleaning in North
                 Vancouver. This discount applies to both one-time and recurring
                 services. We also provide free estimates with no obligation and

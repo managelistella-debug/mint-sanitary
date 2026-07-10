@@ -57,7 +57,7 @@ const whyChoosePoints: { title: string; body: string }[] = [
   },
   {
     title: "Transparent Pricing",
-    body: "Free on-site assessment with honest quotes and no surprise charges. Get 10% off your first clean with code MINT25.",
+    body: "Free on-site assessment with honest quotes and no surprise charges. Get 10% off your first clean with code MINT26.",
   },
   {
     title: "Flexible Scheduling",
@@ -134,7 +134,7 @@ export default function DeckPatioCleaningPage() {
       heroIntro="North Vancouver's wet Pacific Northwest climate creates ideal conditions for moss, algae, and mildew growth on outdoor surfaces. Cedar decks in Lower Lonsdale, composite decking in Edgemont Village, stone patios in Deep Cove &#8212; professional cleaning restores your outdoor space and protects your investment."
       faqItems={faqItems}
       ctaHeading="Get Your Free Deck Cleaning Estimate"
-      ctaBody="Ready to restore your outdoor space? Contact Mint Sanitary for a free on-site assessment and transparent quote. First-time customers get 10% off with code MINT25. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week across North Vancouver."
+      ctaBody="Ready to restore your outdoor space? Contact Mint Sanitary for a free on-site assessment and transparent quote. First-time customers get 10% off with code MINT26. Call 236-688-3248 or email hello@mintsanitary.com. Available 7 days a week across North Vancouver."
     >
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
         <div className="mx-auto max-w-[1200px]">

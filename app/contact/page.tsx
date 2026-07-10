@@ -575,7 +575,7 @@ export default function ContactPage() {
                   Current Offer
                 </h3>
                 <p className="font-body font-medium text-[15px] text-white/85 leading-[24px]">
-                  Get 10% off your first clean with code <span className="font-extrabold text-white">MINT25</span>. This limited-time promotion makes it affordable to try Mint Sanitary.
+                  Get 10% off your first clean with code <span className="font-extrabold text-white">MINT26</span>. This limited-time promotion makes it affordable to try Mint Sanitary.
                 </p>
                 <a
                   href="tel:+12366883248"
@@ -728,7 +728,7 @@ export default function ContactPage() {
             <p className="reveal font-body text-[16px] sm:text-[18px] text-white/80 leading-[1.7] max-w-[600px]">
               Call Mint Sanitary at{" "}
               <a href="tel:+12366883248" className="font-extrabold text-[#6191e9] border-b border-white/40 hover:text-[#5580d4] transition-colors">236-688-3248</a>{" "}
-              or book a free North Vancouver cleaning estimate. Use code <strong className="text-white font-extrabold">MINT25</strong> for 10% off your first clean.
+              or book a free North Vancouver cleaning estimate. Use code <strong className="text-white font-extrabold">MINT26</strong> for 10% off your first clean.
             </p>
             <p className="reveal font-body font-medium text-[14px] text-white/80">
               We&apos;re here 7 days a week to serve you.
