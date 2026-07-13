@@ -458,6 +458,13 @@ export default function InstantQuoteForm() {
           </div>
         </div>
 
+        {quote.inquireFollowUps.map((note) => (
+          <div key={note} className="rounded-[12px] bg-[#6191e9]/8 px-[14px] py-[10px] flex items-start gap-[8px]">
+            <AlertCircle size={16} className="text-[#6191e9] shrink-0 mt-[1px]" strokeWidth={2} />
+            <p className="font-body font-medium text-[12px] text-[#4E5062]/80 leading-[17px]">{note}</p>
+          </div>
+        ))}
+
         {!expired ? (
           <>
             {countdownBanner}
@@ -940,6 +947,11 @@ export default function InstantQuoteForm() {
                 )}
                 . Our team will reach out shortly to confirm your appointment.
               </p>
+              {quote?.inquireFollowUps.map((note) => (
+                <p key={note} className="font-body font-medium text-[12px] text-[#4E5062]/70 leading-[18px] max-w-[300px]">
+                  {note}
+                </p>
+              ))}
               <button type="button" onClick={resetQuote} className="font-body font-bold text-[12px] text-[#6191e9] underline cursor-pointer">
                 Submit Another Request
               </button>

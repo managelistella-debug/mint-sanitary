@@ -39,7 +39,7 @@ export function getSqftTier(sqft: number): SqftTier {
   return SQFT_TIERS[SQFT_TIERS.length - 1];
 }
 
-export type AddonUnit = "flat" | "room" | "window" | "balcony" | "bed" | "inquire";
+export type AddonUnit = "flat" | "room" | "window" | "balcony" | "bed" | "oven" | "fridge" | "cabinet" | "inquire";
 
 export interface AddonDef {
   id: string;
@@ -52,22 +52,33 @@ export interface AddonDef {
   note?: string;
   /** Short prompt shown above the qty stepper once this add-on is selected. */
   qtyQuestion?: string;
+  /** Shown to the customer once selected, for add-ons priced on request. */
+  followUpNote?: string;
 }
 
 export const ADDONS: AddonDef[] = [
-  { id: "oven", label: "Oven (inside)", price: 30, unit: "flat", hasQty: false },
-  { id: "fridge", label: "Fridge (inside)", price: 30, unit: "flat", hasQty: false },
+  { id: "oven", label: "Oven (inside)", price: 30, unit: "oven", hasQty: true, unitLabel: "oven", qtyQuestion: "How many ovens need cleaning?" },
+  { id: "fridge", label: "Fridge (inside)", price: 30, unit: "fridge", hasQty: true, unitLabel: "fridge", qtyQuestion: "How many fridges need cleaning?" },
   { id: "windows", label: "Windows & frames (inside)", price: 30, unit: "window", hasQty: true, unitLabel: "window", qtyQuestion: "How many windows will we need to clean?" },
-  { id: "cabinets", label: "Cabinets and closets (inside)", price: 45, unit: "flat", hasQty: false },
+  { id: "cabinets", label: "Cabinets and closets (inside)", price: 45, unit: "cabinet", hasQty: true, unitLabel: "cabinet", qtyQuestion: "How many cabinets and closets need cleaning?" },
   { id: "wall-marks", label: "Marks on walls and baseboards", price: 25, unit: "room", hasQty: true, unitLabel: "room", qtyQuestion: "How many rooms have marks to remove?" },
   { id: "balconies", label: "Balconies swept", price: 30, unit: "balcony", hasQty: true, unitLabel: "balcony", qtyQuestion: "How many balconies need sweeping?" },
   { id: "blinds", label: "Blinds washed", price: 30, unit: "room", hasQty: true, unitLabel: "room", qtyQuestion: "How many rooms have blinds to wash?" },
   { id: "walls", label: "Walls washed", price: 50, unit: "room", hasQty: true, unitLabel: "room", note: "Base price covers 1 room", qtyQuestion: "How many rooms need walls washed?" },
-  { id: "dishes", label: "Dishes washed", price: 15, unit: "room", hasQty: true, unitLabel: "room", note: "Base price covers 1 room", qtyQuestion: "How many rooms of dishes need washing?" },
-  { id: "linen", label: "Linen & towels changed", price: 15, unit: "bed", hasQty: true, unitLabel: "bed", qtyQuestion: "How many beds need linen & towels changed?" },
+  { id: "dishes", label: "Dishes washed", price: 15, unit: "flat", hasQty: false },
+  { id: "linen", label: "Linen & Bed Change", price: 15, unit: "bed", hasQty: true, unitLabel: "bed", qtyQuestion: "How many beds need linen changed?" },
+  { id: "towels", label: "Towels Changed", price: 15, unit: "room", hasQty: true, unitLabel: "room", qtyQuestion: "How many bathrooms need towels changed?" },
   { id: "inspection", label: "Inspection for damages, toiletries & supplies", price: 25, unit: "flat", hasQty: false },
   { id: "carpet", label: "Carpet cleaning", price: 60, unit: "room", hasQty: true, unitLabel: "room", qtyQuestion: "How many rooms need carpet cleaning?" },
-  { id: "laundry", label: "Laundry options", price: null, unit: "inquire", hasQty: false, note: "Please inquire" },
+  {
+    id: "laundry",
+    label: "Laundry options",
+    price: null,
+    unit: "inquire",
+    hasQty: false,
+    note: "Please inquire",
+    followUpNote: "We'll follow up with you directly to go over laundry pricing and options before your visit.",
+  },
 ];
 
 export interface SelectedAddon {
@@ -91,6 +102,7 @@ export interface QuoteBreakdown {
   addonLines: AddonLine[];
   addonsTotal: number;
   inquireAddons: string[];
+  inquireFollowUps: string[];
   /** Grand total. `null` means the property is out of range and needs a custom quote. */
   total: number | null;
 }
@@ -105,6 +117,7 @@ export function calculateQuote(
 
   const addonLines: AddonLine[] = [];
   const inquireAddons: string[] = [];
+  const inquireFollowUps: string[] = [];
   let addonsTotal = 0;
 
   for (const sel of selected) {
@@ -112,6 +125,7 @@ export function calculateQuote(
     if (!def) continue;
     if (def.price == null) {
       inquireAddons.push(def.label);
+      if (def.followUpNote) inquireFollowUps.push(def.followUpNote);
       continue;
     }
     const qty = def.hasQty ? Math.max(1, sel.qty) : 1;
@@ -122,7 +136,7 @@ export function calculateQuote(
 
   const total = basePrice != null ? basePrice + addonsTotal : null;
 
-  return { tier, cleanType, sqft, basePrice, addonLines, addonsTotal, inquireAddons, total };
+  return { tier, cleanType, sqft, basePrice, addonLines, addonsTotal, inquireAddons, inquireFollowUps, total };
 }
 
 export const HOME_TYPE_LABELS: Record<HomeType, string> = {
