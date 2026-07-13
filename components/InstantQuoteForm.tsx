@@ -12,6 +12,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Home,
+  Info,
   Lock,
   Minus,
   Phone as PhoneIcon,
@@ -75,6 +76,33 @@ function buildTimeSlots(): string[] {
 }
 
 const TIME_SLOTS = buildTimeSlots();
+const ARRIVAL_WINDOW_MINUTES = 90;
+
+function formatMinutesAsTime(mins: number): string {
+  const wrapped = ((mins % (24 * 60)) + 24 * 60) % (24 * 60);
+  const hour24 = Math.floor(wrapped / 60);
+  const minute = wrapped % 60;
+  const period = hour24 >= 12 ? "PM" : "AM";
+  const hour12 = hour24 % 12 === 0 ? 12 : hour24 % 12;
+  return `${hour12}:${String(minute).padStart(2, "0")} ${period}`;
+}
+
+function parseSlotToMinutes(slot: string): number | null {
+  const match = slot.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+  if (!match) return null;
+  let hour = parseInt(match[1], 10);
+  const minute = parseInt(match[2], 10);
+  const period = match[3].toUpperCase();
+  if (period === "PM" && hour !== 12) hour += 12;
+  if (period === "AM" && hour === 12) hour = 0;
+  return hour * 60 + minute;
+}
+
+function getArrivalWindowEnd(slot: string): string | null {
+  const startMins = parseSlotToMinutes(slot);
+  if (startMins == null) return null;
+  return formatMinutesAsTime(startMins + ARRIVAL_WINDOW_MINUTES);
+}
 
 const HOME_TYPES: HomeType[] = ["detached", "townhouse", "condo"];
 const LOCK_IN_SECONDS = 10 * 60;
@@ -521,18 +549,39 @@ export default function InstantQuoteForm() {
           </div>
         </div>
 
-        <div className="relative">
-          <select
-            value={requestedTimeSlot}
-            onChange={(e) => setRequestedTimeSlot(e.target.value)}
-            className={selectClass}
-          >
-            <option value="" disabled>Select a time</option>
-            {TIME_SLOTS.map((slot) => (
-              <option key={slot} value={slot}>{slot}</option>
-            ))}
-          </select>
-          <ChevronDown size={16} strokeWidth={2} className="absolute right-[14px] top-1/2 -translate-y-1/2 text-[#6191e9] pointer-events-none" />
+        <div className="flex flex-col gap-[6px]">
+          <div className="flex items-center gap-[6px]">
+            <label className="font-body font-extrabold text-[11px] tracking-[0.5px] uppercase text-[#4E5062]/70">
+              Arrival Window
+            </label>
+            <div className="group relative flex items-center">
+              <Info size={13} className="text-[#6191e9]/70 cursor-help" strokeWidth={2} />
+              <div className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-[6px] w-[220px] -translate-x-1/2 rounded-[8px] bg-[#4E5062] px-[10px] py-[8px] text-center font-body font-medium text-[11px] leading-[15px] text-white opacity-0 shadow-lg transition-opacity duration-150 group-hover:opacity-100">
+                We will arrive at this time within a 1.5- to 2-hour window.
+                <div className="absolute left-1/2 top-full -translate-x-1/2 border-[5px] border-transparent border-t-[#4E5062]" />
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <select
+              value={requestedTimeSlot}
+              onChange={(e) => setRequestedTimeSlot(e.target.value)}
+              className={selectClass}
+            >
+              <option value="" disabled>Select your arrival window start time</option>
+              {TIME_SLOTS.map((slot) => (
+                <option key={slot} value={slot}>{slot}</option>
+              ))}
+            </select>
+            <ChevronDown size={16} strokeWidth={2} className="absolute right-[14px] top-1/2 -translate-y-1/2 text-[#6191e9] pointer-events-none" />
+          </div>
+          {requestedTimeSlot && getArrivalWindowEnd(requestedTimeSlot) && (
+            <p className="font-body font-medium text-[12px] text-[#4E5062]/70 leading-[17px]">
+              We&apos;ll arrive between{" "}
+              <strong className="font-extrabold text-[#4E5062]">{requestedTimeSlot}</strong> and{" "}
+              <strong className="font-extrabold text-[#4E5062]">{getArrivalWindowEnd(requestedTimeSlot)}</strong>.
+            </p>
+          )}
         </div>
         <textarea
           rows={2}
@@ -809,25 +858,32 @@ export default function InstantQuoteForm() {
                             </span>
                           </button>
                           {selected && addon.hasQty && (
-                            <div className="mt-[8px] flex items-center gap-[10px] pl-[24px]">
-                              <span className="font-body font-medium text-[11px] text-[#4E5062]/60">Qty</span>
-                              <button
-                                type="button"
-                                onClick={() => setAddonQty(addon.id, (state?.qty ?? 1) - 1)}
-                                className="w-[22px] h-[22px] rounded-full border border-[#6191e9]/30 flex items-center justify-center text-[#6191e9] cursor-pointer"
-                              >
-                                <Minus size={12} />
-                              </button>
-                              <span className="font-body font-bold text-[12px] text-[#4E5062] w-[16px] text-center">
-                                {state?.qty ?? 1}
-                              </span>
-                              <button
-                                type="button"
-                                onClick={() => setAddonQty(addon.id, (state?.qty ?? 1) + 1)}
-                                className="w-[22px] h-[22px] rounded-full border border-[#6191e9]/30 flex items-center justify-center text-[#6191e9] cursor-pointer"
-                              >
-                                <Plus size={12} />
-                              </button>
+                            <div className="mt-[8px] pl-[24px]">
+                              {addon.qtyQuestion && (
+                                <p className="mb-[6px] font-body font-semibold text-[11px] text-[#4E5062]/60 leading-[14px]">
+                                  {addon.qtyQuestion}
+                                </p>
+                              )}
+                              <div className="flex items-center gap-[10px]">
+                                <span className="font-body font-medium text-[11px] text-[#4E5062]/60">Qty</span>
+                                <button
+                                  type="button"
+                                  onClick={() => setAddonQty(addon.id, (state?.qty ?? 1) - 1)}
+                                  className="w-[22px] h-[22px] rounded-full border border-[#6191e9]/30 flex items-center justify-center text-[#6191e9] cursor-pointer"
+                                >
+                                  <Minus size={12} />
+                                </button>
+                                <span className="font-body font-bold text-[12px] text-[#4E5062] w-[16px] text-center">
+                                  {state?.qty ?? 1}
+                                </span>
+                                <button
+                                  type="button"
+                                  onClick={() => setAddonQty(addon.id, (state?.qty ?? 1) + 1)}
+                                  className="w-[22px] h-[22px] rounded-full border border-[#6191e9]/30 flex items-center justify-center text-[#6191e9] cursor-pointer"
+                                >
+                                  <Plus size={12} />
+                                </button>
+                              </div>
                             </div>
                           )}
                         </div>
@@ -874,7 +930,15 @@ export default function InstantQuoteForm() {
               </div>
               <h3 className="font-display-reg text-[20px] uppercase text-[#4E5062]">Booking Request Sent!</h3>
               <p className="font-body font-medium text-[13px] text-[#4E5062]/70 leading-[20px] max-w-[300px]">
-                We&apos;ve received your requested date of <strong>{requestedDate}</strong> ({requestedTimeSlot}). Our team will reach out shortly to confirm your appointment.
+                We&apos;ve received your requested date of <strong>{requestedDate}</strong>, arrival window{" "}
+                {getArrivalWindowEnd(requestedTimeSlot) ? (
+                  <>
+                    <strong>{requestedTimeSlot}</strong> – <strong>{getArrivalWindowEnd(requestedTimeSlot)}</strong>
+                  </>
+                ) : (
+                  <strong>{requestedTimeSlot}</strong>
+                )}
+                . Our team will reach out shortly to confirm your appointment.
               </p>
               <button type="button" onClick={resetQuote} className="font-body font-bold text-[12px] text-[#6191e9] underline cursor-pointer">
                 Submit Another Request

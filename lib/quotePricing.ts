@@ -50,21 +50,23 @@ export interface AddonDef {
   hasQty: boolean;
   unitLabel?: string;
   note?: string;
+  /** Short prompt shown above the qty stepper once this add-on is selected. */
+  qtyQuestion?: string;
 }
 
 export const ADDONS: AddonDef[] = [
   { id: "oven", label: "Oven (inside)", price: 30, unit: "flat", hasQty: false },
   { id: "fridge", label: "Fridge (inside)", price: 30, unit: "flat", hasQty: false },
-  { id: "windows", label: "Windows & frames (inside)", price: 30, unit: "window", hasQty: true, unitLabel: "window" },
+  { id: "windows", label: "Windows & frames (inside)", price: 30, unit: "window", hasQty: true, unitLabel: "window", qtyQuestion: "How many windows will we need to clean?" },
   { id: "cabinets", label: "Cabinets and closets (inside)", price: 45, unit: "flat", hasQty: false },
-  { id: "wall-marks", label: "Marks on walls and baseboards", price: 25, unit: "room", hasQty: true, unitLabel: "room" },
-  { id: "balconies", label: "Balconies swept", price: 30, unit: "balcony", hasQty: true, unitLabel: "balcony" },
-  { id: "blinds", label: "Blinds washed", price: 30, unit: "room", hasQty: true, unitLabel: "room" },
-  { id: "walls", label: "Walls washed", price: 50, unit: "room", hasQty: true, unitLabel: "room", note: "Base price covers 1 room" },
-  { id: "dishes", label: "Dishes washed", price: 15, unit: "room", hasQty: true, unitLabel: "room", note: "Base price covers 1 room" },
-  { id: "linen", label: "Linen & towels changed", price: 15, unit: "bed", hasQty: true, unitLabel: "bed" },
+  { id: "wall-marks", label: "Marks on walls and baseboards", price: 25, unit: "room", hasQty: true, unitLabel: "room", qtyQuestion: "How many rooms have marks to remove?" },
+  { id: "balconies", label: "Balconies swept", price: 30, unit: "balcony", hasQty: true, unitLabel: "balcony", qtyQuestion: "How many balconies need sweeping?" },
+  { id: "blinds", label: "Blinds washed", price: 30, unit: "room", hasQty: true, unitLabel: "room", qtyQuestion: "How many rooms have blinds to wash?" },
+  { id: "walls", label: "Walls washed", price: 50, unit: "room", hasQty: true, unitLabel: "room", note: "Base price covers 1 room", qtyQuestion: "How many rooms need walls washed?" },
+  { id: "dishes", label: "Dishes washed", price: 15, unit: "room", hasQty: true, unitLabel: "room", note: "Base price covers 1 room", qtyQuestion: "How many rooms of dishes need washing?" },
+  { id: "linen", label: "Linen & towels changed", price: 15, unit: "bed", hasQty: true, unitLabel: "bed", qtyQuestion: "How many beds need linen & towels changed?" },
   { id: "inspection", label: "Inspection for damages, toiletries & supplies", price: 25, unit: "flat", hasQty: false },
-  { id: "carpet", label: "Carpet cleaning", price: 60, unit: "room", hasQty: true, unitLabel: "room" },
+  { id: "carpet", label: "Carpet cleaning", price: 60, unit: "room", hasQty: true, unitLabel: "room", qtyQuestion: "How many rooms need carpet cleaning?" },
   { id: "laundry", label: "Laundry options", price: null, unit: "inquire", hasQty: false, note: "Please inquire" },
 ];
 
