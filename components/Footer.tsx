@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Facebook, Instagram } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -34,6 +35,11 @@ const BUSINESS_DESCRIPTION =
 const MAP_EMBED_SRC =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.299417157852!2d-123.0463855!3d49.3086131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671be30290b4b%3A0x2546ebb7bad5e868!2sMint%20Sanitary!5e0!3m2!1sen!2sca!4v1784269847071!5m2!1sen!2sca";
 
+const socialLinks = [
+  { label: "Instagram", href: "https://www.instagram.com/mintsanitary", Icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/mintsanitary/", Icon: Facebook },
+];
+
 // Local business structured data — kept in the (global) footer so it ships on every page.
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -64,6 +70,7 @@ const localBusinessSchema = {
     opens: "08:00",
     closes: "18:00",
   },
+  sameAs: socialLinks.map((s) => s.href),
 };
 
 export default function Footer() {
@@ -171,9 +178,25 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="flex flex-col items-start justify-between gap-4 border-t border-white/20 pt-[24px] sm:flex-row sm:items-center">
-          <p className="font-body text-[13px] font-medium tracking-[0.32px] text-white/50">
-            © {new Date().getFullYear()} Mint Sanitary. All rights reserved.
-          </p>
+          <div className="flex flex-col items-start gap-[14px]">
+            <div className="flex items-center gap-[12px]">
+              {socialLinks.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Mint Sanitary on ${label}`}
+                  className="flex h-[32px] w-[32px] items-center justify-center rounded-full border border-white/25 text-white/70 transition-colors duration-200 hover:border-white hover:text-white"
+                >
+                  <Icon size={16} strokeWidth={1.8} />
+                </a>
+              ))}
+            </div>
+            <p className="font-body text-[13px] font-medium tracking-[0.32px] text-white/50">
+              © {new Date().getFullYear()} Mint Sanitary. All rights reserved.
+            </p>
+          </div>
           <div className="flex items-center gap-[24px]">
             <a
               href="/privacy-policy"
