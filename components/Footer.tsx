@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/cleaning-services-north-vancouver" },
@@ -24,9 +28,55 @@ const contactInfo = [
   { label: "Hours", value: "7 Days a Week" },
 ];
 
+const BUSINESS_DESCRIPTION =
+  "Mint Sanitary provides trusted house cleaning in North Vancouver for families, apartments, and homes across BC. We also deliver expert commercial cleaning services in North Vancouver — covering offices, restaurants, and medical facilities, 7 days a week. Our team specialises in kitchen cleaning services in North Vancouver, bathroom cleaning in North Vancouver, floor cleaning in North Vancouver, and professional carpet cleaning in North Vancouver. Eco-friendly products, fully insured, and 5-star rated. Call (236) 688-3248.";
+
+const MAP_EMBED_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.299417157852!2d-123.0463855!3d49.3086131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671be30290b4b%3A0x2546ebb7bad5e868!2sMint%20Sanitary!5e0!3m2!1sen!2sca!4v1784269847071!5m2!1sen!2sca";
+
+// Local business structured data — kept in the (global) footer so it ships on every page.
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  name: "Mint Sanitary",
+  image: "https://mintsanitary.com/mint-logo-white.png",
+  logo: "https://mintsanitary.com/mint-logo-white.png",
+  description: BUSINESS_DESCRIPTION,
+  url: "https://mintsanitary.com/",
+  telephone: "+12366883248",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1106 E 3rd St",
+    addressLocality: "North Vancouver",
+    addressRegion: "BC",
+    postalCode: "V7H 1B8",
+    addressCountry: "CA",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 49.3086131,
+    longitude: -123.0463855,
+  },
+  areaServed: ["North Vancouver", "West Vancouver", "Vancouver", "Burnaby", "Greater Vancouver"],
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "08:00",
+    closes: "18:00",
+  },
+};
+
 export default function Footer() {
+  const [moreOpen, setMoreOpen] = useState(false);
+
   return (
     <footer className="relative z-10 bg-[#6191e9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="px-4 pb-[40px] pt-[60px] sm:px-8 md:px-[60px]">
         <div className="mb-[50px] flex flex-col gap-[60px] lg:flex-row">
           {/* Brand column */}
@@ -124,7 +174,7 @@ export default function Footer() {
           <p className="font-body text-[13px] font-medium tracking-[0.32px] text-white/50">
             © {new Date().getFullYear()} Mint Sanitary. All rights reserved.
           </p>
-          <div className="flex gap-[24px]">
+          <div className="flex items-center gap-[24px]">
             <a
               href="/privacy-policy"
               className="font-body text-[13px] font-medium text-white/50 transition-colors duration-200 hover:text-white"
@@ -137,6 +187,59 @@ export default function Footer() {
             >
               Terms of Service
             </a>
+            <button
+              type="button"
+              onClick={() => setMoreOpen((v) => !v)}
+              aria-expanded={moreOpen}
+              className="font-body text-[13px] font-medium text-white/50 transition-colors duration-200 hover:text-white cursor-pointer"
+            >
+              More Information
+            </button>
+          </div>
+        </div>
+
+        {/* More Information — accordion */}
+        <div
+          className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+            moreOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+          }`}
+        >
+          <div className="overflow-hidden">
+            <div className="mt-[24px] flex flex-col gap-[24px] rounded-[16px] border border-white/15 bg-white/[0.08] p-[24px] sm:p-[28px] lg:flex-row">
+              <div className="flex flex-1 flex-col gap-[10px]">
+                <h4 className="font-body font-extrabold text-[13px] tracking-[0.96px] uppercase text-white/60">
+                  Business Information
+                </h4>
+                <p className="font-display-reg text-[20px] uppercase text-white">
+                  Mint Sanitary
+                </p>
+                <p className="font-body text-[14px] font-medium leading-[22px] text-white/80">
+                  {BUSINESS_DESCRIPTION}
+                </p>
+                <div className="mt-[8px] flex flex-col gap-[4px] font-body text-[14px] font-medium text-white/90">
+                  <span>1106 E 3rd St, North Vancouver, BC V7H 1B8</span>
+                  <a href="tel:+12366883248" className="transition-colors duration-200 hover:text-white">
+                    236-688-3248
+                  </a>
+                  <a
+                    href="https://mintsanitary.com/"
+                    className="transition-colors duration-200 hover:text-white"
+                  >
+                    mintsanitary.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex-1">
+                <iframe
+                  src={MAP_EMBED_SRC}
+                  className="h-[280px] w-full rounded-[12px] border-0 sm:h-[320px]"
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  title="Mint Sanitary location map"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
