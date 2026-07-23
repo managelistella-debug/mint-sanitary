@@ -1,25 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown, X } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
 
 const categoryCards = [
-  {
-    title: "Residential Cleaning Services",
-    href: "/cleaning-services-north-vancouver/",
-    image: "/recurring-cleaning-kitchen-north-vancouver.jpg",
-    description:
-      "From standard and deep cleaning to move-in and move-out support, we keep North Vancouver homes healthy, consistent, and guest-ready.",
-  },
-  {
-    title: "Commercial Cleaning Services",
-    href: "/commercial-cleaning-north-vancouver/",
-    image: "/office-cleaning-north-vancouver-workspace.jpg",
-    description:
-      "Offices, clinics, and retail spaces trust us for flexible, after-hours cleaning that protects your brand and keeps teams productive.",
-  },
   {
     title: "Carpet Cleaning Services",
     href: "/carpet-cleaning-north-vancouver/",
@@ -47,6 +34,52 @@ const categoryCards = [
     image: "/pressure-washing-north-vancouver.png",
     description:
       "We remove mold, algae, grime, and moss from driveways, siding, decks, and patios using surface-safe pressure settings.",
+  },
+  {
+    title: "Steam Cleaning Services",
+    href: null as string | null,
+    image: "/carpet-steam-cleaning-north-vancouver.jpg" as string | null,
+    description:
+      "Our high-temperature steam cleaning lifts embedded grime and sanitizes tile, grout, and hard-to-reach surfaces without harsh chemicals.",
+  },
+];
+
+const jobPropertyCards = [
+  {
+    title: "House Cleaning Services",
+    href: "/cleaning-services-north-vancouver/",
+    image: "/professional-cleaning-services-north-vancouver.jpg",
+    blurb:
+      "House and apartment cleaning services in North Vancouver, West Vancouver, Vancouver & beyond covering all of Greater Vancouver and the Fraser Valley.",
+    description:
+      "Our residential cleaning covers routine maintenance for kitchens, bathrooms, bedrooms, and living spaces, plus optional deep cleaning for baseboards, inside appliances, light fixtures, and window tracks. We also offer move-in and move-out cleaning, recurring weekly, bi-weekly, or monthly plans, and vacation rental turnovers — all with eco-friendly products safe for kids and pets.",
+  },
+  {
+    title: "Commercial Cleaning & Janitorial Services",
+    href: "/commercial-cleaning-north-vancouver/",
+    image: "/commercial-janitorial-cleaning-north-vancouver.jpg",
+    blurb:
+      "Commercial cleaning & janitorial services for businesses, offices, warehouses, manufacturing facilities, medical clinics, and everything in between including industrial cleaning services. Serving North Vancouver, West Vancouver, Vancouver, Greater Vancouver, and the Fraser Valley.",
+    description:
+      "From daily janitorial upkeep to deep commercial cleans, we handle offices, retail spaces, medical clinics, schools, gyms, warehouses, and manufacturing facilities. Services include floor care, washroom sanitizing, break room cleaning, high-touch disinfection, and industrial-grade degreasing and dusting — scheduled around your business hours, including evenings and weekends.",
+  },
+  {
+    title: "Construction & Post-Construction Cleaning Services",
+    href: "/cleaning-services-north-vancouver/post-construction-cleaning/",
+    image: "/post-construction-cleaning-north-vancouver.jpg",
+    blurb:
+      "Construction & post-construction cleaning services for residential and commercial properties in North Vancouver, West Vancouver, Vancouver, Greater Vancouver, and the Fraser Valley.",
+    description:
+      "We clear renovation dust, drywall debris, adhesive residue, paint overspray, and fine particles from every surface using HEPA-filtered equipment. Our crews handle final-clean detailing on windows, fixtures, floors, and cabinetry so new builds and renovated spaces are truly move-in ready.",
+  },
+  {
+    title: "Strata Cleaning",
+    href: "/commercial-cleaning-north-vancouver/strata-cleaning/",
+    image: "/strata-cleaning-north-vancouver.jpg",
+    blurb:
+      "Strata cleaning services for stratas and property managers in North Vancouver, Vancouver, West Vancouver, Greater Vancouver, and the Fraser Valley.",
+    description:
+      "We maintain lobbies, hallways, elevators, shared washrooms, recycling and garbage rooms, underground parking, and building perimeters on a schedule set by your strata council or property manager. Consistent, reliable service keeps common areas presentable for residents, guests, and inspections.",
   },
 ];
 
@@ -111,10 +144,65 @@ const serviceAreas = [
   "West Vancouver",
   "Vancouver",
   "Burnaby",
-  "Deep Cove",
-  "Lynn Valley",
-  "Edgemont Village",
+  "New Westminster",
+  "Port Moody",
+  "Coquitlam",
+  "Richmond",
+  "Surrey",
+  "Pitt Meadows",
+  "Maple Ridge",
+  "Langley",
+  "Squamish",
+  "Whistler",
+];
+
+const serviceAreaDetails: Record<string, string> = {
+  "North Vancouver":
+    "Our home base. We know the North Shore block by block — from condo towers in Lower Lonsdale to family homes in Lynn Valley, Edgemont Village, Deep Cove, and Seymour Heights, plus the offices, retail spaces, and strata buildings throughout the area. North Vancouver gets our fastest response times and same-day availability more often than anywhere else we serve.",
+  "West Vancouver":
+    "We cover all of West Vancouver, including Ambleside, Dundarave, Horseshoe Bay, and the British Properties, with no travel surcharge despite the distance across the Second Narrows. From waterfront homes and strata buildings to local businesses, we adjust our crews and equipment to match each property.",
+  Vancouver:
+    "From Downtown high-rises and Kitsilano character homes to the West End, East Van, and Kerrisdale, we run regular residential, commercial, and construction cleaning schedules across the city for condos, single-family homes, offices, and retail spaces alike.",
+  Burnaby:
+    "We clean throughout Metrotown, Burnaby Heights, and South Burnaby — condos, single-family homes, strata buildings, and commercial spaces alike — with the same eco-friendly products and 7-day scheduling flexibility we offer across the North Shore.",
+  "New Westminster":
+    "The Royal City's heritage homes in Queens Park, condos in Uptown and Sapperton, riverfront properties in Queensborough, and the local businesses throughout downtown all fall within our regular coverage — with the same transparent pricing you'd get in North Vancouver.",
+  "Port Moody":
+    "From family homes near Rocky Point Park to condo developments in Newport Village and Suter Brook, and the offices and retail spaces around Port Moody's business core, we bring the same trained, insured crews here that we send across the rest of the Tri-Cities.",
+  Coquitlam:
+    "Coquitlam's mix of established neighbourhoods and newer construction — Westwood Plateau, Burke Mountain, and Coquitlam Centre — keeps our crews busy with everything from routine residential maintenance to commercial contracts and post-construction cleanup on new builds.",
+  Richmond:
+    "Richmond's mix of City Centre towers, Steveston homes, and the offices, warehouses, and light-industrial space near YVR make it one of our most requested areas — for recurring residential cleaning, commercial contracts, and move-in/move-out turnovers alike.",
+  Surrey:
+    "Surrey is one of our largest service areas, covering Cloverdale, Guildford, Fleetwood, and South Surrey. With so much new construction and business growth across the city, we handle a steady mix of residential cleans, commercial contracts, and post-construction cleanup.",
+  "Pitt Meadows":
+    "We serve Pitt Meadows' growing mix of family homes, newer subdivisions, and local businesses with the same eco-friendly, transparent-pricing approach we use across Greater Vancouver — just ask about scheduling since this is an outer service area.",
+  "Maple Ridge":
+    "Maple Ridge homes, businesses, and larger semi-rural properties all get the same recurring, deep-cleaning, and commercial plans we run closer to North Vancouver, scaled to fit the property.",
+  Langley:
+    "From newer subdivisions in Willoughby to acreage and equestrian properties throughout the Township, plus the offices and warehouses along the Langley business corridor, we scale our crews and equipment to match the job.",
+  Squamish:
+    "Along the Sea to Sky corridor, we clean primary residences, secondary homes, vacation properties, and local businesses — a good fit for Squamish's mix of full-time residents, weekend homeowners, and growing commercial base.",
+  Whistler:
+    "We support Whistler's vacation rental and second-home market with fast turnaround cleaning between guests, plus regular maintenance for full-time residents and the resort's hotels, restaurants, and retail spaces — built around the tight timelines the hospitality industry requires.",
+};
+
+const northVancouverNeighborhoods = [
+  "Central Lonsdale",
   "Lower Lonsdale",
+  "Upper Lonsdale",
+  "Lynn Valley",
+  "Lynnmour",
+  "Blueridge",
+  "Westlynn",
+  "Delbrook",
+  "Edgemont Village",
+  "Canyon Heights",
+  "Pemberton Heights",
+  "Capilano",
+  "Grouse Woods",
+  "Deep Cove",
+  "Dollarton",
   "Seymour Heights",
 ];
 
@@ -194,6 +282,8 @@ const featuredClients = [
 export default function Home() {
   const [openWhy, setOpenWhy] = useState<number | null>(0);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [activeArea, setActiveArea] = useState<string | null>(null);
+  const [openJobDescriptions, setOpenJobDescriptions] = useState<Record<number, boolean>>({});
 
   return (
     <>
@@ -216,14 +306,14 @@ export default function Home() {
                 Top Rated Commercial & Residential Cleaning Services in North Vancouver, West Vancouver, & Greater Vancouver
               </h1>
               <p className="mt-4 font-display-reg text-[34px] uppercase leading-[1.08] text-white sm:text-[48px] md:text-[56px]">
-                House Cleaning Service in North Vancouver
+                Book Your Cleaning Service Today!
               </p>
               <div className="mt-5 h-[2px] w-[80px] bg-[#66DAD5]" />
               <p className="mt-6 max-w-[520px] font-body text-[17px] leading-[1.75] text-white/90">
-                Between work, family, and everything else, cleaning can eat your
-                weekends. Mint Sanitary helps North Vancouver homeowners and
-                property managers stay ahead with eco-friendly service, transparent
-                pricing, and seven-day availability.
+                Mint Sanitary helps homeowners, property managers, and businesses
+                across North Vancouver, West Vancouver, and Vancouver stay ahead
+                with eco-friendly residential, commercial, and specialty cleaning
+                services, transparent pricing, and seven-day availability.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
@@ -286,50 +376,172 @@ export default function Home() {
           </svg>
         </div>
 
-        {/* ── Service Categories (WHITE) ──────────────────────── */}
+        {/* ── Book by Job and Property Type (WHITE) ───────────── */}
+        <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+          <div className="mx-auto max-w-[1200px]">
+            <div className="mx-auto max-w-[700px] text-center">
+              <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
+                Cleaning Services in North Vancouver, West Vancouver, Vancouver and Beyond
+              </p>
+              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
+                Book by Job and Property Type
+              </h2>
+              <p className="mx-auto mt-4 font-body text-[16px] leading-[1.7] text-white/80">
+                From single homes to commercial facilities, choose the category
+                below that matches your property and job type.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-5 sm:grid-cols-2">
+              {jobPropertyCards.map((card, i) => {
+                const isOpen = !!openJobDescriptions[i];
+                return (
+                  <div
+                    key={card.title}
+                    className="flex flex-col overflow-hidden rounded-[20px] bg-white/[0.12] p-6 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2] sm:p-8"
+                  >
+                    <img
+                      src={card.image}
+                      alt={`${card.title} visual preview`}
+                      className="h-[180px] w-full rounded-[14px] object-cover"
+                    />
+                    <h3 className="mt-4 font-display-reg text-[20px] uppercase tracking-[0.45px] text-white">
+                      {card.title}
+                    </h3>
+                    <h2 className="mt-3 font-body text-[15px] font-medium leading-[1.65] text-white/90">
+                      {card.blurb}{" "}
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setOpenJobDescriptions((prev) => ({ ...prev, [i]: !prev[i] }))
+                        }
+                        aria-expanded={isOpen}
+                        className="inline-flex items-center gap-[3px] align-baseline whitespace-nowrap font-body text-[13px] font-bold uppercase tracking-[0.3px] text-white transition-colors hover:text-[#6191e9] cursor-pointer"
+                      >
+                        {isOpen ? "Read Less" : "Read More"}
+                        <ChevronDown
+                          size={13}
+                          strokeWidth={2.4}
+                          className="transition-transform duration-300"
+                          style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+                        />
+                      </button>
+                    </h2>
+                    <div
+                      className={`grid transition-[grid-template-rows] duration-300 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="pt-3 font-body text-[15px] font-medium leading-[1.65] text-white/80">
+                          {card.description}
+                        </p>
+                      </div>
+                    </div>
+                    <a
+                      href={card.href}
+                      className="mt-5 inline-block self-start border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors hover:text-[#6191e9]"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Book by Specialty Cleaning Service (WHITE) ──────── */}
         <section
           id="services"
           className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]"
         >
           <div className="mx-auto max-w-[1200px]">
-            <div>
-              <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+            <div className="mx-auto max-w-[700px] text-center">
+              <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
               <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
-                Our Cleaning Services
+                Greater Vancouver &amp; Fraser Valley Specialty Cleaning Services
               </p>
               <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
-                Cleaning Services in North Vancouver
+                Book by Specialty Cleaning Service
               </h2>
-              <p className="mt-4 max-w-[700px] font-body text-[16px] leading-[1.7] text-white/80">
-                Every property has different needs. Explore our core service
-                categories below and choose the cleaning plan that fits your home
-                or business.
+              <p className="mx-auto mt-4 font-body text-[16px] leading-[1.7] text-white/80">
+                Need something more specific? Explore our specialty cleaning
+                services below to tackle carpets, windows, gutters, exteriors, and
+                more.
               </p>
             </div>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {categoryCards.map((card) => (
+              {categoryCards.map((card) => {
+                const cardContent = (
+                  <>
+                    {card.image && (
+                      <img
+                        src={card.image}
+                        alt={`${card.title} visual preview`}
+                        className="h-[180px] w-full rounded-[14px] object-cover"
+                      />
+                    )}
+                    <h3
+                      className={`font-display-reg text-[20px] uppercase tracking-[0.45px] text-white ${card.image ? "mt-4" : ""}`}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="mt-3 font-body text-[15px] leading-[1.65] text-white/80">
+                      {card.description}
+                    </p>
+                    <span
+                      className={`mt-4 inline-block border-b font-body text-[13px] font-bold uppercase tracking-[0.4px] transition-colors ${
+                        card.href
+                          ? "border-white/40 text-white group-hover:text-[#6191e9]"
+                          : "border-white/20 text-white/50"
+                      }`}
+                    >
+                      Learn More
+                    </span>
+                  </>
+                );
+
+                if (card.href) {
+                  return (
+                    <a
+                      key={card.title}
+                      href={card.href}
+                      className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
+                    >
+                      {cardContent}
+                    </a>
+                  );
+                }
+
+                return (
+                  <div
+                    key={card.title}
+                    aria-disabled="true"
+                    className="overflow-hidden rounded-[20px] bg-white/[0.12] p-4"
+                  >
+                    {cardContent}
+                  </div>
+                );
+              })}
+
+              {/* CTA card — fills the 6th grid slot */}
+              <div className="flex flex-col justify-center gap-3 rounded-[20px] border-2 border-[#66DAD5] bg-white/[0.12] p-6 text-center">
+                <h3 className="font-display-reg text-[20px] uppercase tracking-[0.45px] text-white">
+                  Not Sure Which Service You Need?
+                </h3>
+                <p className="font-body text-[15px] leading-[1.65] text-white/80">
+                  Tell us what you&apos;re working with and we&apos;ll recommend
+                  the right cleaning plan — free, no-obligation quote within 24
+                  hours.
+                </p>
                 <a
-                  key={card.title}
-                  href={card.href}
-                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
+                  href="/contact"
+                  className="mt-2 inline-flex items-center justify-center self-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
                 >
-                  <img
-                    src={card.image}
-                    alt={`${card.title} visual preview`}
-                    className="h-[180px] w-full rounded-[14px] object-cover"
-                  />
-                  <h3 className="mt-4 font-display-reg text-[20px] uppercase tracking-[0.45px] text-white">
-                    {card.title}
-                  </h3>
-                  <p className="mt-3 font-body text-[15px] leading-[1.65] text-white/80">
-                    {card.description}
-                  </p>
-                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
-                    Learn More
-                  </span>
+                  Get a Free Quote
                 </a>
-              ))}
+              </div>
             </div>
           </div>
         </section>
@@ -490,14 +702,65 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               {serviceAreas.map((city) => (
-                <span
+                <button
                   key={city}
-                  className="rounded-full bg-white/[0.18] px-5 py-2.5 font-body text-[14px] font-semibold text-white shadow-sm"
+                  type="button"
+                  onClick={() => setActiveArea(activeArea === city ? null : city)}
+                  aria-expanded={activeArea === city}
+                  className={`rounded-full px-5 py-2.5 font-body text-[14px] font-semibold shadow-sm transition-colors duration-200 cursor-pointer ${
+                    activeArea === city
+                      ? "bg-white text-[#6191e9]"
+                      : "bg-white/[0.18] text-white hover:bg-white/[0.28]"
+                  }`}
                 >
                   {city}
-                </span>
+                </button>
               ))}
             </div>
+
+            <div
+              className={`mx-auto grid max-w-[640px] transition-[grid-template-rows] duration-300 ease-out ${
+                activeArea ? "mt-6 grid-rows-[1fr]" : "mt-0 grid-rows-[0fr]"
+              }`}
+            >
+              <div className="overflow-hidden">
+                {activeArea && (
+                  <div className="relative rounded-[16px] border border-white/15 bg-white/[0.12] p-6 text-left">
+                    <button
+                      type="button"
+                      onClick={() => setActiveArea(null)}
+                      aria-label="Close"
+                      className="absolute right-4 top-4 flex h-[24px] w-[24px] items-center justify-center rounded-full border border-white/30 text-white/70 transition-colors hover:border-white hover:text-white cursor-pointer"
+                    >
+                      <X size={13} strokeWidth={2.5} />
+                    </button>
+                    <h3 className="pr-8 font-body text-[16px] font-extrabold uppercase tracking-[0.3px] text-white">
+                      {activeArea}
+                    </h3>
+                    <p className="mt-2 font-body text-[15px] leading-[1.65] text-white/80">
+                      {serviceAreaDetails[activeArea]}
+                    </p>
+                    {activeArea === "North Vancouver" && (
+                      <>
+                        <h4 className="mt-5 font-body text-[13px] font-extrabold uppercase tracking-[0.5px] text-white">
+                          Neighborhoods We Clean in North Vancouver
+                        </h4>
+                        <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1.5 font-body text-[14px] text-white/80">
+                          {northVancouverNeighborhoods.map((n) => (
+                            <li key={n}>{n}</li>
+                          ))}
+                        </ul>
+                        <p className="mt-4 font-body text-[14px] leading-[1.65] text-white/80">
+                          Don&apos;t see your area? Let us know, and we&apos;ll be
+                          happy to accommodate.
+                        </p>
+                      </>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+
             <img
               src="/mint-service-area-map.png"
               alt="Map of Greater Vancouver showing Mint Sanitary service area"
