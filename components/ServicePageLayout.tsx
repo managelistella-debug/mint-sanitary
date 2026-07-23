@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import InstantQuoteForm from "@/components/InstantQuoteForm";
 
 interface FaqItem {
   question: string;
@@ -89,6 +90,8 @@ interface ServicePageLayoutProps {
   ctaBody: string;
   children: React.ReactNode;
   googleReviews?: GoogleReview[];
+  /** Shows the Instant Quote form in the hero, top-right (used on the rates page). */
+  showInstantQuote?: boolean;
 }
 
 export default function ServicePageLayout({
@@ -101,6 +104,7 @@ export default function ServicePageLayout({
   ctaBody,
   children,
   googleReviews,
+  showInstantQuote,
 }: ServicePageLayoutProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const reviews = googleReviews || defaultGoogleReviews;
@@ -151,7 +155,7 @@ export default function ServicePageLayout({
                 <li>10% Off With Code MINT26</li>
               </ul>
             </div>
-            <div className="hidden md:block" />
+            {showInstantQuote ? <InstantQuoteForm /> : <div className="hidden md:block" />}
           </div>
           <div className="absolute bottom-0 left-0 right-0 z-10">
             <svg

@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
-import { Phone, Mail, Clock, MapPin, CheckCircle2, AlertCircle, ChevronDown, Shield, Sparkles, Tag, ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Phone, Mail, Clock, MapPin, Shield, Sparkles, Tag, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { trackEvent } from "@/components/AnalyticsTracker";
+import InstantQuoteForm from "@/components/InstantQuoteForm";
 
 // ── Reveal hook ───────────────────────────────────────────────────────────────
 function useReveal(threshold = 0.1) {
@@ -32,37 +32,6 @@ function useReveal(threshold = 0.1) {
 }
 
 // ── Data ──────────────────────────────────────────────────────────────────────
-const serviceOptions = [
-  "Standard Cleaning",
-  "Deep Cleaning",
-  "Move-In Cleaning",
-  "Move-Out Cleaning",
-  "Recurring Cleaning",
-  "Commercial Cleaning",
-  "Window Cleaning",
-  "Pressure Washing",
-  "General Inquiry",
-];
-
-const cityOptions = [
-  "Vancouver",
-  "North Vancouver",
-  "West Vancouver",
-  "Burnaby",
-  "Richmond",
-  "Coquitlam",
-  "Port Coquitlam",
-  "Port Moody",
-  "New Westminster",
-  "Surrey",
-  "Delta",
-  "Langley",
-  "Maple Ridge",
-  "Pitt Meadows",
-  "White Rock",
-  "Other",
-];
-
 const contactDetails = [
   {
     Icon: Phone,
@@ -128,42 +97,11 @@ const processSteps = [
   { num: "04", title: "Experience the Difference", desc: "Our team arrives on time, equipped with eco-friendly products. You get a quality clean and a reliable partner for future appointments." },
 ];
 
-// ── Form state type ────────────────────────────────────────────────────────────
-type FormState = {
-  name: string;
-  email: string;
-  phone: string;
-  service: string;
-  city: string;
-  message: string;
-};
-
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default function ContactPage() {
   const heroRef = useRef<HTMLDivElement>(null);
   const bodyRef = useReveal(0.06);
-
-  const [form, setForm] = useState<FormState>({
-    name: "", email: "", phone: "", service: "", city: "", message: "",
-  });
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const loadedAtRef = useRef<number>(Date.now());
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const getRecaptchaToken = useCallback((): Promise<string> => {
-    return new Promise((resolve, reject) => {
-      if (typeof window === "undefined" || !window.grecaptcha) {
-        reject(new Error("reCAPTCHA not loaded"));
-        return;
-      }
-      window.grecaptcha.ready(() => {
-        window.grecaptcha
-          .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!, { action: "contact_form" })
-          .then(resolve)
-          .catch(reject);
-      });
-    });
-  }, []);
 
   const whyRef = useReveal(0.06);
   const stepsRef = useReveal(0.06);
@@ -181,61 +119,8 @@ export default function ContactPage() {
     return () => clearTimeout(t);
   }, []);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("loading");
-    const honey = (e.currentTarget.elements.namedItem("_honey") as HTMLInputElement | null)?.value ?? "";
-    try {
-      const recaptchaToken = await getRecaptchaToken();
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, _honey: honey, _loadedAt: loadedAtRef.current, recaptchaToken }),
-      });
-      if (res.ok) {
-        setStatus("success");
-        trackEvent("generate_lead", {
-          form_name: "contact",
-          service: form.service,
-          city: form.city,
-        });
-        setForm({ name: "", email: "", phone: "", service: "", city: "", message: "" });
-      } else {
-        setStatus("error");
-        trackEvent("form_submit_error", {
-          form_name: "contact",
-          status_code: res.status,
-        });
-      }
-    } catch {
-      setStatus("error");
-      trackEvent("form_submit_error", {
-        form_name: "contact",
-        status_code: 0,
-      });
-    }
-  };
-
-  // Input styles — matched to homepage palette
-  const inputClass =
-    "w-full font-body font-medium text-[15px] text-[#4E5062] bg-white border border-[#6191e9]/20 rounded-[12px] px-[16px] py-[13px] placeholder-[#4E5062]/40 focus:outline-none focus:border-[#6191e9] focus:ring-2 focus:ring-[#6191e9]/15 transition-all duration-200";
-
-  const selectClass =
-    "w-full font-body font-medium text-[15px] text-[#4E5062] bg-white border border-[#6191e9]/20 rounded-[12px] pl-[16px] pr-[40px] py-[13px] focus:outline-none focus:border-[#6191e9] focus:ring-2 focus:ring-[#6191e9]/15 transition-all duration-200 appearance-none";
-
   return (
     <>
-      <script
-        src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-        async
-        defer
-      />
       <Navbar />
       <main>
 
@@ -286,179 +171,9 @@ export default function ContactPage() {
         <section className="relative z-10 bg-white/[0.12] px-4 py-16 sm:px-8 md:px-[60px]" ref={bodyRef}>
           <div className="mx-auto max-w-[1200px] flex flex-col lg:flex-row gap-[40px] lg:items-stretch">
 
-            {/* ── LEFT: Form card ──────────────────────────────────────── */}
-            <div className="reveal flex-[1.4_0_0] w-full bg-white/[0.12] backdrop-blur-sm rounded-[20px] p-[24px] sm:p-[36px] md:p-[44px] border border-white/15 flex flex-col gap-[28px]">
-              <div className="flex flex-col gap-[10px]">
-                <div className="h-[3px] w-[50px] bg-[#66DAD5]" />
-                <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
-                  Send a Message
-                </p>
-                <h2 className="font-display-reg text-[28px] sm:text-[34px] leading-[1.1] text-white uppercase">
-                  Request Your Free Estimate
-                </h2>
-                <p className="font-body font-medium text-[14px] text-white/80 leading-[22px]">
-                  All fields marked * are required.
-                </p>
-              </div>
-
-              <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
-                {/* Honeypot — hidden from humans, bots fill it in */}
-                <input
-                  type="text"
-                  name="_honey"
-                  defaultValue=""
-                  aria-hidden="true"
-                  tabIndex={-1}
-                  autoComplete="off"
-                  style={{ display: "none" }}
-                />
-                {/* Name + Email row */}
-                <div className="flex flex-col sm:flex-row gap-[16px]">
-                  <div className="flex flex-col gap-[6px] flex-1">
-                    <label className="font-body font-extrabold text-[12px] tracking-[0.64px] uppercase text-white">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      required
-                      placeholder="Jane Smith"
-                      className={inputClass}
-                    />
-                  </div>
-                  <div className="flex flex-col gap-[6px] flex-1">
-                    <label className="font-body font-extrabold text-[12px] tracking-[0.64px] uppercase text-white">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      required
-                      placeholder="jane@example.com"
-                      className={inputClass}
-                    />
-                  </div>
-                </div>
-
-                {/* Phone */}
-                <div className="flex flex-col gap-[6px]">
-                  <label className="font-body font-extrabold text-[12px] tracking-[0.64px] uppercase text-white">
-                    Phone Number
-                    <span className="font-medium normal-case tracking-normal text-white/80/70 ml-[6px]">
-                      (optional)
-                    </span>
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={form.phone}
-                    onChange={handleChange}
-                    placeholder="604-555-0123"
-                    className={inputClass}
-                  />
-                </div>
-
-                {/* Service + City row */}
-                <div className="flex flex-col sm:flex-row gap-[16px]">
-                  <div className="flex flex-col gap-[6px] flex-1">
-                    <label className="font-body font-extrabold text-[12px] tracking-[0.64px] uppercase text-white">
-                      Service Type *
-                    </label>
-                    <div className="relative">
-                      <select
-                        name="service"
-                        value={form.service}
-                        onChange={handleChange}
-                        required
-                        className={selectClass}
-                      >
-                        <option value="" disabled>Select a service</option>
-                        {serviceOptions.map((o) => (
-                          <option key={o} value={o}>{o}</option>
-                        ))}
-                      </select>
-                      <ChevronDown
-                        size={16}
-                        strokeWidth={2}
-                        className="absolute right-[14px] top-1/2 -translate-y-1/2 text-[#6191e9] pointer-events-none"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-[6px] flex-1">
-                    <label className="font-body font-extrabold text-[12px] tracking-[0.64px] uppercase text-white">
-                      Your City *
-                    </label>
-                    <div className="relative">
-                      <select
-                        name="city"
-                        value={form.city}
-                        onChange={handleChange}
-                        required
-                        className={selectClass}
-                      >
-                        <option value="" disabled>Select your city</option>
-                        {cityOptions.map((c) => (
-                          <option key={c} value={c}>{c}</option>
-                        ))}
-                      </select>
-                      <ChevronDown
-                        size={16}
-                        strokeWidth={2}
-                        className="absolute right-[14px] top-1/2 -translate-y-1/2 text-[#6191e9] pointer-events-none"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Message */}
-                <div className="flex flex-col gap-[6px]">
-                  <label className="font-body font-extrabold text-[12px] tracking-[0.64px] uppercase text-white">
-                    Message
-                    <span className="font-medium normal-case tracking-normal text-white/80/70 ml-[6px]">
-                      (optional)
-                    </span>
-                  </label>
-                  <textarea
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    rows={4}
-                    placeholder="Tell us about your space, how often you'd like service, or anything else..."
-                    className={`${inputClass} resize-none`}
-                  />
-                </div>
-
-                {/* Submit */}
-                <button
-                  type="submit"
-                  disabled={status === "loading"}
-                  className="w-full sm:w-auto sm:self-start inline-flex items-center justify-center bg-white text-[#6191e9] font-body font-extrabold text-[14px] tracking-[0.32px] uppercase rounded-[99px] px-[36px] py-[14px] hover:bg-white/90 hover:shadow-lg transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
-                >
-                  {status === "loading" ? "Sending…" : "Send Message"}
-                </button>
-
-                {/* Status messages */}
-                {status === "success" && (
-                  <div className="flex items-start gap-[10px] bg-white/[0.12] border border-white/20 rounded-[12px] px-[16px] py-[14px]">
-                    <CheckCircle2 size={18} className="text-[#6191e9] shrink-0 mt-[1px]" />
-                    <p className="font-body font-medium text-[14px] text-white leading-[22px]">
-                      <strong>Message received!</strong> We&apos;ll get back to you as soon as possible. For an instant quote, call us at <a href="tel:+12366883248" className="font-extrabold underline">236-688-3248</a>.
-                    </p>
-                  </div>
-                )}
-                {status === "error" && (
-                  <div className="flex items-start gap-[10px] bg-red-50 rounded-[12px] px-[16px] py-[14px]">
-                    <AlertCircle size={18} className="text-red-500 shrink-0 mt-[1px]" />
-                    <p className="font-body font-medium text-[14px] text-white leading-[22px]">
-                      Something went wrong. Please try again or call us at <strong>236-688-3248</strong>.
-                    </p>
-                  </div>
-                )}
-              </form>
+            {/* ── LEFT: Instant Quote / Contact form ──────────────────── */}
+            <div className="reveal flex-[1.4_0_0] w-full flex justify-center lg:justify-start">
+              <InstantQuoteForm />
             </div>
 
             {/* ── RIGHT: Contact info ───────────────────────────────────── */}

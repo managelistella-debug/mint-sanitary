@@ -147,6 +147,7 @@ export default function RatesPage() {
       faqItems={faqItems}
       ctaHeading="Need a Custom Quote?"
       ctaBody="Call 236-688-3248 or request a free estimate online. We will confirm exact pricing based on your property and requested services."
+      showInstantQuote
     >
       {/* ── Image + Text Intro ──────────────────────────────────── */}
       <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
