@@ -1062,6 +1062,18 @@ export default function InstantQuoteForm() {
               )}
             </form>
           )}
+
+          <p className="text-center font-body font-medium text-[10px] leading-[14px] text-[#4E5062]/40">
+            This site is protected by reCAPTCHA and the Google{" "}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline">
+              Privacy Policy
+            </a>{" "}
+            and{" "}
+            <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline">
+              Terms of Service
+            </a>{" "}
+            apply.
+          </p>
         </div>
       </div>
     </div>

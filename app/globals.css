@@ -60,6 +60,18 @@ h1.font-body {
   letter-spacing: 2px !important;
 }
 
+/* Job/Property card blurb uses an <h2> tag for SEO, but should read
+   as regular body copy, not a heavy display heading. */
+h2.font-body {
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+}
+
+/* ─── reCAPTCHA badge — hidden; required disclosure text shown near forms instead ── */
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 /* ─── Scrollbar — hidden globally ───────────────────────────── */
 html {
   scrollbar-width: none;
