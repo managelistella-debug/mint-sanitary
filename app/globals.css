@@ -48,8 +48,16 @@ h1, h2, h3, h4 {
 }
 
 h1.font-display-reg, h2.font-display-reg, h3.font-display-reg, h4.font-display-reg,
-h1.font-display, h2.font-display, h3.font-display, h4.font-display {
+h1.font-display, h2.font-display, h3.font-display, h4.font-display,
+p.font-display-reg, p.font-display {
   font-weight: 900 !important;
+}
+
+/* Hero eyebrow uses an <h1> tag for SEO, but should keep the small
+   eyebrow look (not the heavy display-heading weight above). */
+h1.font-body {
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
 }
 
 /* ─── Scrollbar — hidden globally ───────────────────────────── */

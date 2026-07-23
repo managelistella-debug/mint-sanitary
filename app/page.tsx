@@ -212,12 +212,12 @@ export default function Home() {
           <div className="relative z-10 mx-auto grid max-w-[1200px] grid-cols-1 items-center px-4 pb-32 pt-[180px] sm:px-8 md:grid-cols-2 md:px-[60px] md:pb-40 md:pt-[200px]">
             <div>
               <div className="mb-5 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
+              <h1 className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
+                Top Rated Commercial & Residential Cleaning Services in North Vancouver, West Vancouver, & Greater Vancouver
+              </h1>
+              <p className="mt-4 font-display-reg text-[34px] uppercase leading-[1.08] text-white sm:text-[48px] md:text-[56px]">
                 House Cleaning Service in North Vancouver
               </p>
-              <h1 className="mt-4 font-display-reg text-[34px] uppercase leading-[1.08] text-white sm:text-[48px] md:text-[56px]">
-                Professional House Cleaning Service
-              </h1>
               <div className="mt-5 h-[2px] w-[80px] bg-[#66DAD5]" />
               <p className="mt-6 max-w-[520px] font-body text-[17px] leading-[1.75] text-white/90">
                 Between work, family, and everything else, cleaning can eat your
