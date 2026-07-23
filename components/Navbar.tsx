@@ -3,13 +3,19 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown, Menu, X, MoveRight } from "lucide-react";
 
-const categoryLinks = [
-  { label: "Cleaning Services", href: "/cleaning-services-north-vancouver" },
-  { label: "Commercial Cleaning", href: "/commercial-cleaning-north-vancouver" },
-  { label: "Carpet Cleaning", href: "/carpet-cleaning-north-vancouver" },
-  { label: "Window Cleaning", href: "/window-cleaning-north-vancouver" },
-  { label: "Pressure Washing", href: "/pressure-washing-north-vancouver" },
-  { label: "Gutter Cleaning", href: "/gutter-cleaning-north-vancouver" },
+const propertyTypeLinks = [
+  { label: "House and Apartment Cleaning", href: "/cleaning-services-north-vancouver" },
+  { label: "Commercial Cleaning and Janitorial Services", href: "/commercial-cleaning-north-vancouver" },
+  { label: "Construction and Post-Construction Cleaning", href: "/cleaning-services-north-vancouver/post-construction-cleaning" },
+  { label: "Strata Cleaning", href: "/commercial-cleaning-north-vancouver/strata-cleaning" },
+];
+
+const specialtyCleaningLinks = [
+  { label: "Carpet Cleaning Services", href: "/carpet-cleaning-north-vancouver" },
+  { label: "Gutter Cleaning Services", href: "/gutter-cleaning-north-vancouver" },
+  { label: "Window Cleaning Services", href: "/window-cleaning-north-vancouver" },
+  { label: "Pressure Washing Services", href: "/pressure-washing-north-vancouver" },
+  { label: "Steam Cleaning Services", href: null as string | null },
 ];
 
 export default function Navbar() {
@@ -92,16 +98,46 @@ export default function Navbar() {
 
               {servicesOpen && (
                 <div className="absolute top-full left-0 pt-[8px] z-50">
-                  <div className="flex min-w-[310px] flex-col overflow-hidden rounded-[12px] border border-white/20 bg-[#6191e9]/95 shadow-lg backdrop-blur-lg">
-                    {categoryLinks.map((s) => (
-                      <a
-                        key={s.label}
-                        href={s.href}
-                        className="whitespace-nowrap px-[20px] py-[14px] font-display-reg font-semibold text-[13px] tracking-[0.64px] uppercase text-white/90 transition-colors duration-200 hover:bg-white/15 hover:text-white"
-                      >
-                        {s.label}
-                      </a>
-                    ))}
+                  <div className="flex overflow-hidden rounded-[12px] border border-white/20 bg-[#6191e9]/95 shadow-lg backdrop-blur-lg">
+                    <div className="flex w-[270px] flex-col py-[10px]">
+                      <span className="px-[20px] pb-[8px] pt-[6px] font-display-reg font-semibold text-[11px] tracking-[0.9px] uppercase text-white/50">
+                        By Property Type
+                      </span>
+                      {propertyTypeLinks.map((s) => (
+                        <a
+                          key={s.label}
+                          href={s.href}
+                          className="px-[20px] py-[10px] font-display-reg font-semibold text-[13px] leading-[1.3] tracking-[0.5px] uppercase text-white/90 transition-colors duration-200 hover:bg-white/15 hover:text-white"
+                        >
+                          {s.label}
+                        </a>
+                      ))}
+                    </div>
+                    <div className="w-px bg-white/15" />
+                    <div className="flex w-[270px] flex-col py-[10px]">
+                      <span className="px-[20px] pb-[8px] pt-[6px] font-display-reg font-semibold text-[11px] tracking-[0.9px] uppercase text-white/50">
+                        Specialty Cleaning Services
+                      </span>
+                      {specialtyCleaningLinks.map((s) =>
+                        s.href ? (
+                          <a
+                            key={s.label}
+                            href={s.href}
+                            className="px-[20px] py-[10px] font-display-reg font-semibold text-[13px] leading-[1.3] tracking-[0.5px] uppercase text-white/90 transition-colors duration-200 hover:bg-white/15 hover:text-white"
+                          >
+                            {s.label}
+                          </a>
+                        ) : (
+                          <span
+                            key={s.label}
+                            aria-disabled="true"
+                            className="px-[20px] py-[10px] font-display-reg font-semibold text-[13px] leading-[1.3] tracking-[0.5px] uppercase text-white/40"
+                          >
+                            {s.label}
+                          </span>
+                        )
+                      )}
+                    </div>
                   </div>
                 </div>
               )}
@@ -181,21 +217,53 @@ export default function Navbar() {
             </button>
             <div
               className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
-                mobileServicesOpen ? "mt-3 max-h-[320px]" : "max-h-0"
+                mobileServicesOpen ? "mt-3 max-h-[640px]" : "max-h-0"
               }`}
             >
-              <div className="flex flex-col gap-3">
-                {categoryLinks.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    onClick={closeMobileMenu}
-                    className="flex items-center gap-[8px] pl-3 font-display-reg font-semibold text-[13px] tracking-[0.64px] uppercase text-white/75"
-                  >
-                    <MoveRight size={13} strokeWidth={2} className="shrink-0 text-white/50" />
-                    {s.label}
-                  </a>
-                ))}
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-3">
+                  <span className="pl-3 font-display-reg font-semibold text-[11px] tracking-[0.9px] uppercase text-white/50">
+                    By Property Type
+                  </span>
+                  {propertyTypeLinks.map((s) => (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      onClick={closeMobileMenu}
+                      className="flex items-center gap-[8px] pl-3 font-display-reg font-semibold text-[13px] tracking-[0.64px] uppercase text-white/75"
+                    >
+                      <MoveRight size={13} strokeWidth={2} className="shrink-0 text-white/50" />
+                      {s.label}
+                    </a>
+                  ))}
+                </div>
+                <div className="flex flex-col gap-3">
+                  <span className="pl-3 font-display-reg font-semibold text-[11px] tracking-[0.9px] uppercase text-white/50">
+                    Specialty Cleaning Services
+                  </span>
+                  {specialtyCleaningLinks.map((s) =>
+                    s.href ? (
+                      <a
+                        key={s.label}
+                        href={s.href}
+                        onClick={closeMobileMenu}
+                        className="flex items-center gap-[8px] pl-3 font-display-reg font-semibold text-[13px] tracking-[0.64px] uppercase text-white/75"
+                      >
+                        <MoveRight size={13} strokeWidth={2} className="shrink-0 text-white/50" />
+                        {s.label}
+                      </a>
+                    ) : (
+                      <span
+                        key={s.label}
+                        aria-disabled="true"
+                        className="flex items-center gap-[8px] pl-3 font-display-reg font-semibold text-[13px] tracking-[0.64px] uppercase text-white/35"
+                      >
+                        <MoveRight size={13} strokeWidth={2} className="shrink-0 text-white/25" />
+                        {s.label}
+                      </span>
+                    )
+                  )}
+                </div>
               </div>
             </div>
           </div>
