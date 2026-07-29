@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "About North Vancouver | Mint Sanitary",
   description:
     "About Mint Sanitary in North Vancouver, trusted eco-friendly cleaning service. 236-688-3248. Background-checked, insured, and available 7 days a week.",
+  alternates: {
+    canonical: "/about/",
+  },
 };
 
 const whyChooseItems: { title: string; body: string; image: string }[] = [

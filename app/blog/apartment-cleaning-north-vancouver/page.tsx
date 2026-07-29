@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Apartment Cleaning in North Vancouver: A Practical Guide for Renters | Mint Sanitary",
   description:
     "Whether you are maintaining a clean rental suite or preparing to move, here is a practical guide to apartment cleaning in North Vancouver for renters who want to protect their deposit and their living environment.",
+  alternates: {
+    canonical: "/blog/apartment-cleaning-north-vancouver/",
+  },
 };
 
 export default function ApartmentCleaningPost() {
@@ -56,7 +59,7 @@ export default function ApartmentCleaningPost() {
                 North Vancouver's rental market is one of the most competitive on the North Shore. Vacancy rates are low, rents are high, and damage deposits represent a significant amount of money. For renters, maintaining a clean apartment is not just about comfort. It is about protecting your deposit, preserving a good relationship with your landlord, and keeping your living environment genuinely healthy.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                This guide covers practical <Link href="/cleaning-services-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">apartment cleaning in North Vancouver</strong></Link> for renters at every stage: moving in, maintaining throughout a tenancy, and preparing to move out.
+                This guide covers practical <Link href="/north-vancouver/house-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">apartment cleaning in North Vancouver</strong></Link> for renters at every stage: moving in, maintaining throughout a tenancy, and preparing to move out.
               </p>
             </div>
 
@@ -81,7 +84,7 @@ export default function ApartmentCleaningPost() {
                 Moving In: Do Not Skip the Initial Clean
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Even if your landlord or property manager tells you the unit was professionally cleaned before your arrival, it is worth booking your own <Link href="/cleaning-services-north-vancouver/move-in-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">move in clean</Link> with a professional <Link href="/cleaning-services-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">cleaning service in North Vancouver</strong></Link>. This matters for two reasons. First, cleaning standards vary, and you may find areas that were not addressed. Second, having documented evidence of the unit's condition from a professional clean you arranged on move in day gives you strong protection if there are disputes about cleanliness at the end of your tenancy.
+                Even if your landlord or property manager tells you the unit was professionally cleaned before your arrival, it is worth booking your own <Link href="/north-vancouver/move-in-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">move in clean</Link> with a professional <Link href="/north-vancouver/house-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">cleaning service in North Vancouver</strong></Link>. This matters for two reasons. First, cleaning standards vary, and you may find areas that were not addressed. Second, having documented evidence of the unit's condition from a professional clean you arranged on move in day gives you strong protection if there are disputes about cleanliness at the end of your tenancy.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Take photos of the unit immediately after the move in clean, before any furniture is moved in. Date-stamped photos and a professional cleaning receipt together make a compelling record.
@@ -132,10 +135,10 @@ export default function ApartmentCleaningPost() {
                 When to Bring in a Professional
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Many North Vancouver renters who are not interested in regular professional cleaning still book a professional <Link href="/cleaning-services-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">apartment cleaning in North Vancouver</strong></Link> once or twice a year for a thorough deep clean they cannot reasonably do themselves. An annual deep clean that covers oven interior, bathroom descaling, baseboards, window tracks, and behind appliances resets the baseline and makes regular maintenance between visits much easier.
+                Many North Vancouver renters who are not interested in regular professional cleaning still book a professional <Link href="/north-vancouver/house-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">apartment cleaning in North Vancouver</strong></Link> once or twice a year for a thorough deep clean they cannot reasonably do themselves. An annual deep clean that covers oven interior, bathroom descaling, baseboards, window tracks, and behind appliances resets the baseline and makes regular maintenance between visits much easier.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                If your schedule or physical capacity makes regular apartment maintenance difficult, <Link href="/cleaning-services-north-vancouver/recurring-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">bi-weekly or monthly professional cleaning</Link> is a practical solution that is often more affordable than most people expect when weighed against the time it replaces.
+                If your schedule or physical capacity makes regular apartment maintenance difficult, <Link href="/north-vancouver/recurring-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">bi-weekly or monthly professional cleaning</Link> is a practical solution that is often more affordable than most people expect when weighed against the time it replaces.
               </p>
             </div>
 
@@ -159,7 +162,7 @@ export default function ApartmentCleaningPost() {
                 Preparing to Move Out
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Schedule your <Link href="/cleaning-services-north-vancouver/move-out-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">move out clean</Link> for after all furniture and belongings are out of the unit. Trying to clean around boxes and furniture means things get missed. In British Columbia, a landlord can only deduct from your deposit for cleaning costs that go beyond normal wear and tear. A professional move out clean from a recognized <Link href="/cleaning-services-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">North Vancouver cleaning service</strong></Link> brings the unit to a standard that is difficult to dispute. Get a receipt, take photos after the clean is complete, and keep both for your records.
+                Schedule your <Link href="/north-vancouver/move-out-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">move out clean</Link> for after all furniture and belongings are out of the unit. Trying to clean around boxes and furniture means things get missed. In British Columbia, a landlord can only deduct from your deposit for cleaning costs that go beyond normal wear and tear. A professional move out clean from a recognized <Link href="/north-vancouver/house-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">North Vancouver cleaning service</strong></Link> brings the unit to a standard that is difficult to dispute. Get a receipt, take photos after the clean is complete, and keep both for your records.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 The cost of a professional move out clean in a typical North Vancouver one or two bedroom apartment is usually between $200 and $400. The current average one-bedroom damage deposit in North Vancouver is well over $1,000. The math is straightforward.

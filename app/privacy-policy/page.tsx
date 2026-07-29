@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Privacy Policy | Mint Sanitary",
   description: "How Mint Sanitary collects, uses, and protects your personal information.",
+  alternates: {
+    canonical: "/privacy-policy/",
+  },
 };
 
 const sections = [

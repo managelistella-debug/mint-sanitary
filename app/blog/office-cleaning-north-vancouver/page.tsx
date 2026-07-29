@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Office Cleaning in North Vancouver: What a Clean Workspace Does for Your Business | Mint Sanitary",
   description:
     "A clean office is not just about appearances. Here is how professional office cleaning in North Vancouver affects productivity, staff health, and the impression you make on clients.",
+  alternates: {
+    canonical: "/blog/office-cleaning-north-vancouver/",
+  },
 };
 
 export default function OfficeCleaningPost() {
@@ -56,7 +59,7 @@ export default function OfficeCleaningPost() {
                 Office cleanliness rarely shows up on a business plan, but it affects almost everything that does. How staff feel walking into work each morning, how clients perceive your operation during a meeting, how quickly illness spreads through a team, and how long your furniture and flooring hold up are all directly tied to the quality and consistency of your cleaning program.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                For businesses in North Vancouver, where a mix of corporate offices, professional service firms, clinics, and small studios operate across the Lower Lonsdale, Capilano, and Lynn Valley corridors, the standard for professional <Link href="/commercial-cleaning-north-vancouver/office-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">office cleaning in North Vancouver</strong></Link> has risen considerably over the past few years.
+                For businesses in North Vancouver, where a mix of corporate offices, professional service firms, clinics, and small studios operate across the Lower Lonsdale, Capilano, and Lynn Valley corridors, the standard for professional <Link href="/north-vancouver/office-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">office cleaning in North Vancouver</strong></Link> has risen considerably over the past few years.
               </p>
             </div>
 
@@ -84,7 +87,7 @@ export default function OfficeCleaningPost() {
                 Shared office surfaces are significant vectors for illness transmission. Keyboards, desk phones, door handles, elevator buttons, shared kitchen equipment, and washroom fixtures all carry bacterial and viral loads that regular use replenishes faster than most people expect. Studies in workplace environments consistently show that regular disinfection of high-touch surfaces reduces absenteeism, even outside of major illness seasons.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                For North Vancouver businesses where remote work means staff come into the office to collaborate rather than to sit in isolation, shared surfaces get heavier use than they did in traditional desk-bound setups. A professional <Link href="/commercial-cleaning-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">commercial cleaner in North Vancouver</strong></Link> with a structured disinfection protocol makes a measurable difference in how often illness cycles through your team.
+                For North Vancouver businesses where remote work means staff come into the office to collaborate rather than to sit in isolation, shared surfaces get heavier use than they did in traditional desk-bound setups. A professional <Link href="/north-vancouver/commercial-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">commercial cleaner in North Vancouver</strong></Link> with a structured disinfection protocol makes a measurable difference in how often illness cycles through your team.
               </p>
             </div>
 
@@ -129,7 +132,7 @@ export default function OfficeCleaningPost() {
                 Getting the Frequency and Scope Right
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Most North Vancouver offices benefit from cleaning at least twice a week. High-use spaces like kitchens, washrooms, and reception areas often need daily attention, while lower-traffic areas like boardrooms or individual offices may only need weekly service. A good <Link href="/commercial-cleaning-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">commercial cleaning company in North Vancouver</strong></Link> will assess your space and usage patterns before recommending a schedule, rather than applying a one-size-fits-all approach.
+                Most North Vancouver offices benefit from cleaning at least twice a week. High-use spaces like kitchens, washrooms, and reception areas often need daily attention, while lower-traffic areas like boardrooms or individual offices may only need weekly service. A good <Link href="/north-vancouver/commercial-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">commercial cleaning company in North Vancouver</strong></Link> will assess your space and usage patterns before recommending a schedule, rather than applying a one-size-fits-all approach.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 After-hours or early morning cleaning schedules are standard for most office cleaning programs. This avoids disruption during the workday and ensures surfaces are clean before staff arrive, which is particularly important for disinfection protocols where dwell time and complete coverage matter.

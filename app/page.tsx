@@ -5,32 +5,33 @@ import { ChevronDown, X } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
+import { FaqSchema } from "@/components/SeoSchema";
 
 const categoryCards = [
   {
     title: "Carpet Cleaning Services",
-    href: "/carpet-cleaning-north-vancouver/",
+    href: "/north-vancouver/carpet-cleaning/",
     image: "/carpet-cleaning-north-vancouver.jpg",
     description:
       "Our hot-water extraction and eco-friendly solutions remove deep dirt, allergens, and odor that regular vacuuming cannot reach.",
   },
   {
     title: "Gutter Cleaning Services",
-    href: "/gutter-cleaning-north-vancouver/",
+    href: "/north-vancouver/gutter-cleaning/",
     image: "/gutter-cleaning-north-vancouver.png",
     description:
       "In North Vancouver's rainy climate, we clear leaves, moss, and debris to keep water flowing and protect your roof, fascia, and foundation.",
   },
   {
     title: "Window Cleaning Services",
-    href: "/window-cleaning-north-vancouver/",
+    href: "/north-vancouver/window-cleaning/",
     image: "/window-cleaning-north-vancouver.png",
     description:
       "We clean interior and exterior windows, frames, and sills with streak-free methods for residential and commercial properties.",
   },
   {
     title: "Pressure Washing Services",
-    href: "/pressure-washing-north-vancouver/",
+    href: "/north-vancouver/pressure-washing/",
     image: "/pressure-washing-north-vancouver.png",
     description:
       "We remove mold, algae, grime, and moss from driveways, siding, decks, and patios using surface-safe pressure settings.",
@@ -47,7 +48,7 @@ const categoryCards = [
 const jobPropertyCards = [
   {
     title: "House Cleaning Services",
-    href: "/cleaning-services-north-vancouver/",
+    href: "/north-vancouver/house-cleaning/",
     image: "/professional-cleaning-services-north-vancouver.jpg",
     blurb:
       "House and apartment cleaning services in North Vancouver, West Vancouver, Vancouver & beyond covering all of Greater Vancouver and the Fraser Valley.",
@@ -56,7 +57,7 @@ const jobPropertyCards = [
   },
   {
     title: "Commercial Cleaning & Janitorial Services",
-    href: "/commercial-cleaning-north-vancouver/",
+    href: "/north-vancouver/commercial-cleaning/",
     image: "/commercial-janitorial-cleaning-north-vancouver.jpg",
     blurb:
       "Commercial cleaning & janitorial services for businesses, offices, warehouses, manufacturing facilities, medical clinics, and everything in between including industrial cleaning services. Serving North Vancouver, West Vancouver, Vancouver, Greater Vancouver, and the Fraser Valley.",
@@ -65,7 +66,7 @@ const jobPropertyCards = [
   },
   {
     title: "Construction & Post-Construction Cleaning Services",
-    href: "/cleaning-services-north-vancouver/post-construction-cleaning/",
+    href: "/north-vancouver/post-construction-cleaning/",
     image: "/post-construction-cleaning-north-vancouver.jpg",
     blurb:
       "Construction & post-construction cleaning services for residential and commercial properties in North Vancouver, West Vancouver, Vancouver, Greater Vancouver, and the Fraser Valley.",
@@ -74,7 +75,7 @@ const jobPropertyCards = [
   },
   {
     title: "Strata Cleaning",
-    href: "/commercial-cleaning-north-vancouver/strata-cleaning/",
+    href: "/north-vancouver/strata-cleaning/",
     image: "/strata-cleaning-north-vancouver.jpg",
     blurb:
       "Strata cleaning services for stratas and property managers in North Vancouver, Vancouver, West Vancouver, Greater Vancouver, and the Fraser Valley.",
@@ -287,6 +288,7 @@ export default function Home() {
 
   return (
     <>
+      <FaqSchema items={faqItems} />
       <Navbar />
       <main>
 

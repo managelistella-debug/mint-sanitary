@@ -5,6 +5,7 @@ import { Phone, Mail, Clock, MapPin, Shield, Sparkles, Tag, ArrowRight } from "l
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
+import { FaqSchema, BreadcrumbSchema } from "@/components/SeoSchema";
 
 // ── Reveal hook ───────────────────────────────────────────────────────────────
 function useReveal(threshold = 0.1) {
@@ -121,6 +122,8 @@ export default function ContactPage() {
 
   return (
     <>
+      <FaqSchema items={faqItems.map((f) => ({ question: f.q, answer: f.a }))} />
+      <BreadcrumbSchema items={[{ name: "Contact", path: "/contact/" }]} />
       <Navbar />
       <main>
 

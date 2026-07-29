@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "House Cleaning Service Across Greater Vancouver | Mint Sanitary",
   description:
     "Professional house cleaning in North Vancouver, West Vancouver, Vancouver, Burnaby, and Greater Vancouver. 7-day availability. Free estimates. 236-688-3248.",
+  alternates: {
+    canonical: "/service-areas/",
+  },
 };
 
 const whyChooseItems: { title: string; body: string; image: string }[] = [
@@ -466,7 +469,7 @@ export default function ServiceAreasPage() {
           <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
             For complete details on our service offerings, visit our main{" "}
             <a
-              href="/cleaning-services-north-vancouver"
+              href="/north-vancouver/house-cleaning"
               className="underline underline-offset-2"
             >
               services page for house cleaning options

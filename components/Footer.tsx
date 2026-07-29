@@ -5,7 +5,7 @@ import { Facebook, Instagram } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/cleaning-services-north-vancouver" },
+  { label: "Services", href: "/north-vancouver/house-cleaning" },
   { label: "Rates", href: "/rates" },
   { label: "About", href: "/about" },
   { label: "Service Areas", href: "/service-areas" },
@@ -14,12 +14,12 @@ const navLinks = [
 ];
 
 const categoryLinks = [
-  { label: "Cleaning Services", href: "/cleaning-services-north-vancouver" },
-  { label: "Commercial Cleaning", href: "/commercial-cleaning-north-vancouver" },
-  { label: "Carpet Cleaning", href: "/carpet-cleaning-north-vancouver" },
-  { label: "Window Cleaning", href: "/window-cleaning-north-vancouver" },
-  { label: "Pressure Washing", href: "/pressure-washing-north-vancouver" },
-  { label: "Gutter Cleaning", href: "/gutter-cleaning-north-vancouver" },
+  { label: "Cleaning Services", href: "/north-vancouver/house-cleaning" },
+  { label: "Commercial Cleaning", href: "/north-vancouver/commercial-cleaning" },
+  { label: "Carpet Cleaning", href: "/north-vancouver/carpet-cleaning" },
+  { label: "Window Cleaning", href: "/north-vancouver/window-cleaning" },
+  { label: "Pressure Washing", href: "/north-vancouver/pressure-washing" },
+  { label: "Gutter Cleaning", href: "/north-vancouver/gutter-cleaning" },
 ];
 
 const contactInfo = [

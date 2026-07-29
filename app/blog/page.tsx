@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Cleaning Tips & Guides | Mint Sanitary Blog",
   description:
     "Expert cleaning tips, seasonal guides, and home maintenance advice from the team at Mint Sanitary, North Vancouver's trusted cleaning company.",
+  alternates: {
+    canonical: "/blog/",
+  },
 };
 
 const posts = [

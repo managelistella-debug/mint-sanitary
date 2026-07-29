@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "How to Choose a House Cleaning Service in North Vancouver | Mint Sanitary",
   description:
     "Not all house cleaning services in North Vancouver are equal. Here is what to look for, what to ask, and how to find a cleaning company you can actually trust.",
+  alternates: {
+    canonical: "/blog/how-to-choose-a-house-cleaning-service-north-vancouver/",
+  },
 };
 
 export default function HouseCleaningServicePost() {
@@ -56,7 +59,7 @@ export default function HouseCleaningServicePost() {
                 North Vancouver has no shortage of cleaning companies. A quick search returns pages of options, and most of them say more or less the same things: experienced, reliable, eco-friendly, affordable. So how do you actually separate a company worth hiring from one that will leave you disappointed?
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                This guide covers what actually matters when choosing <Link href="/cleaning-services-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">house cleaning services in North Vancouver</strong></Link> so you can make a confident decision rather than just picking whoever appears first in the results.
+                This guide covers what actually matters when choosing <Link href="/north-vancouver/house-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">house cleaning services in North Vancouver</strong></Link> so you can make a confident decision rather than just picking whoever appears first in the results.
               </p>
             </div>
 
@@ -81,7 +84,7 @@ export default function HouseCleaningServicePost() {
                 Start With Insurance and Background Checks
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                This is the single most important filter to apply before you even look at pricing. Any <Link href="/commercial-cleaning-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">cleaning company in North Vancouver</strong></Link> that is sending staff into your home should carry liability insurance and workers' compensation coverage. Ask directly: if something is damaged or someone is injured in your home, who pays?
+                This is the single most important filter to apply before you even look at pricing. Any <Link href="/north-vancouver/commercial-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">cleaning company in North Vancouver</strong></Link> that is sending staff into your home should carry liability insurance and workers' compensation coverage. Ask directly: if something is damaged or someone is injured in your home, who pays?
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Background checks on all team members are equally non-negotiable. You are handing over access to your home, often when you are not there. Ask whether the company runs criminal background checks, how recently they were completed, and whether they apply to all staff or just some.
@@ -159,7 +162,7 @@ export default function HouseCleaningServicePost() {
                 Prioritize Consistency Over Rock-Bottom Price
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                The cheapest <Link href="/cleaning-services-north-vancouver" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">house cleaning service in North Vancouver</strong></Link> is rarely the best value. Low prices often mean high turnover, less training, or corners being cut on coverage and labour practices. A professional cleaning company that invests in its team, carries proper insurance, and maintains quality control will cost more. That cost usually pays for itself quickly in time saved, stress reduced, and the peace of mind of knowing the work was done properly.
+                The cheapest <Link href="/north-vancouver/house-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">house cleaning service in North Vancouver</strong></Link> is rarely the best value. Low prices often mean high turnover, less training, or corners being cut on coverage and labour practices. A professional cleaning company that invests in its team, carries proper insurance, and maintains quality control will cost more. That cost usually pays for itself quickly in time saved, stress reduced, and the peace of mind of knowing the work was done properly.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Ask whether the same team will clean your home on recurring visits. Consistency matters. A team that knows your home, your preferences, and your priorities delivers meaningfully better results than a rotation of unfamiliar cleaners.
