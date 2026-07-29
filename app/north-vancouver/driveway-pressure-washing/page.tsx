@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional driveway pressure washing in North Vancouver. Eco-friendly cleaning, safe for all surfaces. Free estimate, code MINT26 for 10% off!",
   alternates: {
-    canonical: "/north-vancouver/driveway-pressure-washing/",
+    canonical: "/north-vancouver/driveway-pressure-washing",
   },
 };
 

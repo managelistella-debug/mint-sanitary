@@ -221,7 +221,7 @@ export default function WindowCleaningCategoryPageClient() {
   return (
     <>
       <FaqSchema items={faqItems} />
-      <BreadcrumbSchema items={[{ name: "Window Cleaning", path: "/north-vancouver/window-cleaning/" }]} />
+      <BreadcrumbSchema items={[{ name: "Window Cleaning", path: "/north-vancouver/window-cleaning" }]} />
       <Navbar />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}

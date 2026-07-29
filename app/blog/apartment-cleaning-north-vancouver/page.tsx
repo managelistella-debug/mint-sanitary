@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Whether you are maintaining a clean rental suite or preparing to move, here is a practical guide to apartment cleaning in North Vancouver for renters who want to protect their deposit and their living environment.",
   alternates: {
-    canonical: "/blog/apartment-cleaning-north-vancouver/",
+    canonical: "/blog/apartment-cleaning-north-vancouver",
   },
 };
 

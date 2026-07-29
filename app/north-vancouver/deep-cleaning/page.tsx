@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional deep cleaning in North Vancouver. Eco-friendly service for homes and businesses. 7-day availability. Free estimate. MINT26 saves 10%.",
   alternates: {
-    canonical: "/north-vancouver/deep-cleaning/",
+    canonical: "/north-vancouver/deep-cleaning",
   },
 };
 

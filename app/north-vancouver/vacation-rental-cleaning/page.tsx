@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional vacation rental cleaning in North Vancouver. Fast turnaround Airbnb & VRBO cleaning. Same-day turnover available. Get a free estimate today.",
   alternates: {
-    canonical: "/north-vancouver/vacation-rental-cleaning/",
+    canonical: "/north-vancouver/vacation-rental-cleaning",
   },
 };
 

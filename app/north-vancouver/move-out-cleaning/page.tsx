@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional move-out cleaning in North Vancouver to protect your security deposit. 24-hour satisfaction guarantee, eco-friendly products, bonded & insured staff.",
   alternates: {
-    canonical: "/north-vancouver/move-out-cleaning/",
+    canonical: "/north-vancouver/move-out-cleaning",
   },
 };
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Professional commercial kitchen cleaning in North Vancouver. NFPA 96-compliant, food-safe products. Same-day available. Call Mint Sanitary today.",
   alternates: {
-    canonical: "/north-vancouver/commercial-kitchen-cleaning/",
+    canonical: "/north-vancouver/commercial-kitchen-cleaning",
   },
 };
 

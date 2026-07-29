@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional standard cleaning in North Vancouver. Eco-friendly services, 7 days/week, free estimates. MINT26 for 10% off first clean.",
   alternates: {
-    canonical: "/north-vancouver/standard-cleaning/",
+    canonical: "/north-vancouver/standard-cleaning",
   },
 };
 

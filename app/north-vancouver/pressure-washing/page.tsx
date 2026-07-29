@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional pressure washing and soft washing in North Vancouver, BC. Remove moss, algae & mold. Free estimates, eco-friendly methods, 7 days a week.",
   alternates: {
-    canonical: "/north-vancouver/pressure-washing/",
+    canonical: "/north-vancouver/pressure-washing",
   },
 };
 

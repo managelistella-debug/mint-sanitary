@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Professional cleaning services in North Vancouver. Residential, commercial, and industrial cleaning with eco-friendly products. Free estimates. Call 236-688-3248.",
   alternates: {
-    canonical: "/north-vancouver/house-cleaning/",
+    canonical: "/north-vancouver/house-cleaning",
   },
 };
 

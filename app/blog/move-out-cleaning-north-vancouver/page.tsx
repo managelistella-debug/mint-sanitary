@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Losing your damage deposit over cleaning is avoidable. Here is exactly what landlords and property managers check during move out inspections in North Vancouver, and how to make sure you pass.",
   alternates: {
-    canonical: "/blog/move-out-cleaning-north-vancouver/",
+    canonical: "/blog/move-out-cleaning-north-vancouver",
   },
 };
 

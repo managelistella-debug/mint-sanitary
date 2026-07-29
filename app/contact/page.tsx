@@ -123,7 +123,7 @@ export default function ContactPage() {
   return (
     <>
       <FaqSchema items={faqItems.map((f) => ({ question: f.q, answer: f.a }))} />
-      <BreadcrumbSchema items={[{ name: "Contact", path: "/contact/" }]} />
+      <BreadcrumbSchema items={[{ name: "Contact", path: "/contact" }]} />
       <Navbar />
       <main>
 

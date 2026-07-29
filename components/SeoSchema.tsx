@@ -1,4 +1,4 @@
-const SITE_URL = "https://mintsanitary.com";
+const SITE_URL = "https://www.mintsanitary.com";
 
 interface FaqItem {
   question: string;

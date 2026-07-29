@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Expert drapery cleaning in North Vancouver. Eco-friendly, IICRC-certified service for silk, velvet & blackout curtains. Free estimates & 10% off first clean.",
   alternates: {
-    canonical: "/north-vancouver/drapes-curtains-cleaning/",
+    canonical: "/north-vancouver/drapes-curtains-cleaning",
   },
 };
 

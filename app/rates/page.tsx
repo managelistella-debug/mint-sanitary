@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "View Mint Sanitary house cleaning rates for North Vancouver and surrounding cities, including deep cleaning prices and add-ons.",
   alternates: {
-    canonical: "/rates/",
+    canonical: "/rates",
   },
 };
 

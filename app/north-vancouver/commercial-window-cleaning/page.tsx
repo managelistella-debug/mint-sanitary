@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional commercial window cleaning in North Vancouver for offices, retail, and strata buildings. Insured, WorkSafeBC compliant, 7 days a week. Get 10% off your first clean.",
   alternates: {
-    canonical: "/north-vancouver/commercial-window-cleaning/",
+    canonical: "/north-vancouver/commercial-window-cleaning",
   },
 };
 

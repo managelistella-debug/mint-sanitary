@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Spring is the perfect time to refresh your home inside and out. Here are seven ways to get your house ready for the season, including expert house cleaning in North Vancouver.",
   alternates: {
-    canonical: "/blog/seven-ways-to-get-your-home-ready-for-spring/",
+    canonical: "/blog/seven-ways-to-get-your-home-ready-for-spring",
   },
 };
 

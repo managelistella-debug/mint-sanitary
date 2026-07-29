@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Expert gym cleaning & disinfection in North Vancouver. Certified staff, eco-friendly products, 7-day availability. Call 236-688-3248 for a free estimate.",
   alternates: {
-    canonical: "/north-vancouver/gym-cleaning/",
+    canonical: "/north-vancouver/gym-cleaning",
   },
 };
 

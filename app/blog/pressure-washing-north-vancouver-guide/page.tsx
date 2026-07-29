@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Driveways, decks, siding, fences, and patios all benefit from pressure washing. Here is what North Vancouver homeowners need to know about timing, surfaces, and what to expect from a professional service.",
   alternates: {
-    canonical: "/blog/pressure-washing-north-vancouver-guide/",
+    canonical: "/blog/pressure-washing-north-vancouver-guide",
   },
 };
 

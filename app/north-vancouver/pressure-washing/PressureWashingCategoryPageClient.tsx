@@ -228,7 +228,7 @@ export default function PressureWashingCategoryPageClient() {
   return (
     <>
       <FaqSchema items={faqItems} />
-      <BreadcrumbSchema items={[{ name: "Pressure Washing", path: "/north-vancouver/pressure-washing/" }]} />
+      <BreadcrumbSchema items={[{ name: "Pressure Washing", path: "/north-vancouver/pressure-washing" }]} />
       <Navbar />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}

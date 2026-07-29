@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional gutter cleaning in North Vancouver. Prevent water damage. Book online or call 236-688-3248. 10% off first clean with code MINT26.",
   alternates: {
-    canonical: "/north-vancouver/gutter-cleaning/",
+    canonical: "/north-vancouver/gutter-cleaning",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Expert carpet cleaning in North Vancouver with eco-friendly products, 7-day availability, and fast turnaround times. Free estimates. Call 236-688-3248.",
   alternates: {
-    canonical: "/north-vancouver/carpet-cleaning/",
+    canonical: "/north-vancouver/carpet-cleaning",
   },
 };
 

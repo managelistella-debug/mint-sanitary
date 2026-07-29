@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional church cleaning in North Vancouver. Eco-friendly, background-checked staff. Available 7 days/week. 10% off first clean with MINT26.",
   alternates: {
-    canonical: "/north-vancouver/church-cleaning/",
+    canonical: "/north-vancouver/church-cleaning",
   },
 };
 

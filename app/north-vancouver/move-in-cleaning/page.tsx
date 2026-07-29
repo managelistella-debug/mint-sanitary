@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Professional move-in cleaning in North Vancouver. Eco-friendly deep cleaning before you move in. Free estimate + 10% off with code MINT26. Call 236-688-3248.",
   alternates: {
-    canonical: "/north-vancouver/move-in-cleaning/",
+    canonical: "/north-vancouver/move-in-cleaning",
   },
 };
 

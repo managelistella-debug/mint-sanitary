@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Same-day carpet stain removal in North Vancouver. Eco-friendly, certified technicians. Pet stains, wine, coffee, and set-in stains. Free estimate.",
   alternates: {
-    canonical: "/north-vancouver/carpet-stain-removal/",
+    canonical: "/north-vancouver/carpet-stain-removal",
   },
 };
 

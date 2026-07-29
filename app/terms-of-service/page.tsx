@@ -5,7 +5,7 @@ export const metadata = {
   title: "Terms of Service | Mint Sanitary",
   description: "Terms and conditions for using Mint Sanitary services in Metro Vancouver.",
   alternates: {
-    canonical: "/terms-of-service/",
+    canonical: "/terms-of-service",
   },
 };
 

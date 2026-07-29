@@ -233,7 +233,7 @@ export default function CarpetCleaningCategoryPageClient() {
   return (
     <>
       <FaqSchema items={faqItems} />
-      <BreadcrumbSchema items={[{ name: "Carpet Cleaning", path: "/north-vancouver/carpet-cleaning/" }]} />
+      <BreadcrumbSchema items={[{ name: "Carpet Cleaning", path: "/north-vancouver/carpet-cleaning" }]} />
       <Navbar />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}

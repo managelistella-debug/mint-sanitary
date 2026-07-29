@@ -230,7 +230,7 @@ export default function GutterCleaningCategoryPageClient() {
   return (
     <>
       <FaqSchema items={faqItems} />
-      <BreadcrumbSchema items={[{ name: "Gutter Cleaning", path: "/north-vancouver/gutter-cleaning/" }]} />
+      <BreadcrumbSchema items={[{ name: "Gutter Cleaning", path: "/north-vancouver/gutter-cleaning" }]} />
       <Navbar />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}

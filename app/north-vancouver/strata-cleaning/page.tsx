@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional strata cleaning services in North Vancouver. Eco-friendly janitorial services for condos and multi-unit buildings. Free estimates. 10% off first clean.",
   alternates: {
-    canonical: "/north-vancouver/strata-cleaning/",
+    canonical: "/north-vancouver/strata-cleaning",
   },
 };
 

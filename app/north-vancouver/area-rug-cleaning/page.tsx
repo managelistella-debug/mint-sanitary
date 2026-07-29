@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional area rug cleaning in North Vancouver. Eco-friendly, hand-wash care for Persian, Oriental & wool rugs. Free pickup & delivery. Call 236-688-3248.",
   alternates: {
-    canonical: "/north-vancouver/area-rug-cleaning/",
+    canonical: "/north-vancouver/area-rug-cleaning",
   },
 };
 

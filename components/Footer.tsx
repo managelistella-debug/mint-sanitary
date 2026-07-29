@@ -45,10 +45,10 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ProfessionalService"],
   name: "Mint Sanitary",
-  image: "https://mintsanitary.com/mint-logo-white.png",
-  logo: "https://mintsanitary.com/mint-logo-white.png",
+  image: "https://www.mintsanitary.com/mint-logo-white.png",
+  logo: "https://www.mintsanitary.com/mint-logo-white.png",
   description: BUSINESS_DESCRIPTION,
-  url: "https://mintsanitary.com/",
+  url: "https://www.mintsanitary.com/",
   telephone: "+12366883248",
   address: {
     "@type": "PostalAddress",

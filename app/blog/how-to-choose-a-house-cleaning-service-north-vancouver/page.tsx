@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Not all house cleaning services in North Vancouver are equal. Here is what to look for, what to ask, and how to find a cleaning company you can actually trust.",
   alternates: {
-    canonical: "/blog/how-to-choose-a-house-cleaning-service-north-vancouver/",
+    canonical: "/blog/how-to-choose-a-house-cleaning-service-north-vancouver",
   },
 };
 

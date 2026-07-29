@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional school cleaning in North Vancouver. Eco-friendly, child-safe products. Health-compliant janitorial services. Get 10% off your first clean!",
   alternates: {
-    canonical: "/north-vancouver/school-cleaning/",
+    canonical: "/north-vancouver/school-cleaning",
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "A clean office is not just about appearances. Here is how professional office cleaning in North Vancouver affects productivity, staff health, and the impression you make on clients.",
   alternates: {
-    canonical: "/blog/office-cleaning-north-vancouver/",
+    canonical: "/blog/office-cleaning-north-vancouver",
   },
 };
 

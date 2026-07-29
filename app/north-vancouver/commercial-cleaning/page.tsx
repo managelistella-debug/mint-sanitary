@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional commercial cleaning in North Vancouver. Eco-friendly, WorkSafeBC compliant. Offices, kitchens, strata. Free estimate. 7 days/week.",
   alternates: {
-    canonical: "/north-vancouver/commercial-cleaning/",
+    canonical: "/north-vancouver/commercial-cleaning",
   },
 };
 

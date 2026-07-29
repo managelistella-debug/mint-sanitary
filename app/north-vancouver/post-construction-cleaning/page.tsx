@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional post-construction cleaning in North Vancouver. HEPA-filtered debris removal, silica dust cleanup. 7 days/week. Free quote. Eco-friendly.",
   alternates: {
-    canonical: "/north-vancouver/post-construction-cleaning/",
+    canonical: "/north-vancouver/post-construction-cleaning",
   },
 };
 

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const DEFAULT_SITE_URL = "https://mintsanitary.com";
+const DEFAULT_SITE_URL = "https://www.mintsanitary.com";
 
 function getBaseUrl(): string {
   const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim() || DEFAULT_SITE_URL;

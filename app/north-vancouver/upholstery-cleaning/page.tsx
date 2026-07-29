@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional upholstery cleaning in North Vancouver. We remove pet stains, odors, and deep dirt from sofas, chairs, and furniture. Eco-friendly. Free estimates.",
   alternates: {
-    canonical: "/north-vancouver/upholstery-cleaning/",
+    canonical: "/north-vancouver/upholstery-cleaning",
   },
 };
 

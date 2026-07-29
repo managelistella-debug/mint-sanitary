@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Expert post construction window cleaning in North Vancouver. Paint overspray removal, debris cleanup, eco-friendly methods. 7 days a week. Free estimate.",
   alternates: {
-    canonical: "/north-vancouver/post-construction-window-cleaning/",
+    canonical: "/north-vancouver/post-construction-window-cleaning",
   },
 };
 

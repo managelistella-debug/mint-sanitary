@@ -299,7 +299,7 @@ export default function CleaningServicesNorthVancouverPage() {
   return (
     <>
       <FaqSchema items={faqItems} />
-      <BreadcrumbSchema items={[{ name: "House Cleaning", path: "/north-vancouver/house-cleaning/" }]} />
+      <BreadcrumbSchema items={[{ name: "House Cleaning", path: "/north-vancouver/house-cleaning" }]} />
       <Navbar />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}

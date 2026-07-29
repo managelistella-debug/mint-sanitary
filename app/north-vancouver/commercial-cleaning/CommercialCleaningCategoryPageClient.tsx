@@ -216,7 +216,7 @@ export default function CommercialCleaningCategoryPageClient() {
   return (
     <>
       <FaqSchema items={faqItems} />
-      <BreadcrumbSchema items={[{ name: "Commercial Cleaning", path: "/north-vancouver/commercial-cleaning/" }]} />
+      <BreadcrumbSchema items={[{ name: "Commercial Cleaning", path: "/north-vancouver/commercial-cleaning" }]} />
       <Navbar />
       <main>
         <section className="relative min-h-[85vh] overflow-hidden">

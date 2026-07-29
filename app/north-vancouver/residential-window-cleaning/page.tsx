@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional residential window cleaning in North Vancouver. Eco-friendly service, free estimates, 10% off first clean with code MINT26. Available 7 days a week.",
   alternates: {
-    canonical: "/north-vancouver/residential-window-cleaning/",
+    canonical: "/north-vancouver/residential-window-cleaning",
   },
 };
 

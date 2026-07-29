@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Expert deck and patio cleaning in North Vancouver. Soft-wash techniques for wood, composite, and stone surfaces. Free estimates, eco-friendly methods, 10% off first clean.",
   alternates: {
-    canonical: "/north-vancouver/deck-patio-cleaning/",
+    canonical: "/north-vancouver/deck-patio-cleaning",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional house washing and soft wash cleaning in North Vancouver. Safe for all siding types. 10% off first clean with code MINT26. Free estimates, 7 days a week.",
   alternates: {
-    canonical: "/north-vancouver/house-washing/",
+    canonical: "/north-vancouver/house-washing",
   },
 };
 

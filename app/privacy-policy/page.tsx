@@ -5,7 +5,7 @@ export const metadata = {
   title: "Privacy Policy | Mint Sanitary",
   description: "How Mint Sanitary collects, uses, and protects your personal information.",
   alternates: {
-    canonical: "/privacy-policy/",
+    canonical: "/privacy-policy",
   },
 };
 

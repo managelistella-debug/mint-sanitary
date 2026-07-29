@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional fence washing in North Vancouver removes moss, mildew & algae. Eco-friendly cleaning, transparent pricing. Free estimate. Same-day service available.",
   alternates: {
-    canonical: "/north-vancouver/fence-washing/",
+    canonical: "/north-vancouver/fence-washing",
   },
 };
 

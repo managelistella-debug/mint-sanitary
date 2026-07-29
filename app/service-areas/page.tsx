@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional house cleaning in North Vancouver, West Vancouver, Vancouver, Burnaby, and Greater Vancouver. 7-day availability. Free estimates. 236-688-3248.",
   alternates: {
-    canonical: "/service-areas/",
+    canonical: "/service-areas",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional window screen cleaning in North Vancouver. Eco-friendly products, pollen removal, screen repair & replacement. Free estimate. 10% off with code MINT26.",
   alternates: {
-    canonical: "/north-vancouver/window-screen-cleaning/",
+    canonical: "/north-vancouver/window-screen-cleaning",
   },
 };
 

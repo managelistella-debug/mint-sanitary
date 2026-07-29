@@ -6,7 +6,7 @@ import GradientBackground from "@/components/GradientBackground";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mintsanitary.com"),
+  metadataBase: new URL("https://www.mintsanitary.com"),
   title: "Cleaning Services North Vancouver | Mint Sanitary",
   description:
     "Professional cleaning services in North Vancouver. Residential, commercial & more. Eco-friendly, 7-day availability. Free estimate.",

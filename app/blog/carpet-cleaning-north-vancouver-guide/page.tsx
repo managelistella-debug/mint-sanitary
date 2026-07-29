@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "How often should you have your carpets professionally cleaned? What methods actually work? A practical guide to carpet cleaning in North Vancouver from the team at Mint Sanitary.",
   alternates: {
-    canonical: "/blog/carpet-cleaning-north-vancouver-guide/",
+    canonical: "/blog/carpet-cleaning-north-vancouver-guide",
   },
 };
 

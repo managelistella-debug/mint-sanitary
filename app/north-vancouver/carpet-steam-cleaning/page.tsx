@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional carpet steam cleaning in North Vancouver using hot water extraction. Eco-friendly, guaranteed results. 7-day availability. Get 10% off with MINT26.",
   alternates: {
-    canonical: "/north-vancouver/carpet-steam-cleaning/",
+    canonical: "/north-vancouver/carpet-steam-cleaning",
   },
 };
 

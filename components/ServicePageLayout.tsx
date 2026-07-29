@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
 
-const SITE_URL = "https://mintsanitary.com";
+const SITE_URL = "https://www.mintsanitary.com";
 
 interface FaqItem {
   question: string;

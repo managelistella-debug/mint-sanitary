@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Professional recurring cleaning in North Vancouver. Weekly, biweekly, and monthly plans from Mint Sanitary. Eco-friendly, bonded staff. Call 236-688-3248 today.",
   alternates: {
-    canonical: "/north-vancouver/recurring-cleaning/",
+    canonical: "/north-vancouver/recurring-cleaning",
   },
 };
 
