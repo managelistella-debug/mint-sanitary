@@ -354,7 +354,7 @@ export default function GalleryPage() {
                 Request a Quote
               </a>
               <a
-                href="tel:6041234567"
+                href="tel:+12366883248"
                 className="w-full inline-flex items-center justify-center gap-[8px] border-2 border-[#c8e0fd] text-[#c8e0fd] font-body font-extrabold text-[16px] tracking-[0.32px] uppercase rounded-[99px] px-[40px] py-[13px] hover:bg-white/20 hover:text-white transition-colors duration-200"
               >
                 <Phone size={16} strokeWidth={2.5} />

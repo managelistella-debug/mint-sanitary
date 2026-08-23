@@ -1,86 +1,54 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, X } from "lucide-react";
+import { X } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
 import { FaqSchema } from "@/components/SeoSchema";
 
-const categoryCards = [
+const whatWeDoCards = [
   {
-    title: "Carpet Cleaning Services",
-    href: "/north-vancouver/carpet-cleaning/",
+    title: "House Cleaning",
+    href: "/services/house-cleaning",
+    image: "/professional-cleaning-services-north-vancouver.jpg",
+    description:
+      "Regular house cleaning keeps your home in shape without eating up your weekend. We offer standard cleaning, deep cleaning, and recurring visits on a schedule that fits your life. We also handle move-in and move-out cleaning, vacation rental and Airbnb turnovers, post-construction cleanup, and detail work on upholstery, drapes, and curtains.",
+  },
+  {
+    title: "Commercial Cleaning",
+    href: "/services/commercial-cleaning",
+    image: "/commercial-janitorial-cleaning-north-vancouver.jpg",
+    description:
+      "Mint Sanitary cleans offices, medical clinics, restaurants and commercial kitchens, gyms, schools, and strata buildings across the region. We also service churches, industrial facilities, and warehouses, with schedules built around your hours so cleaning never gets in the way of business.",
+  },
+  {
+    title: "Carpet Cleaning",
+    href: "/services/carpet-cleaning",
     image: "/carpet-cleaning-north-vancouver.jpg",
     description:
-      "Our hot-water extraction and eco-friendly solutions remove deep dirt, allergens, and odor that regular vacuuming cannot reach.",
+      "Carpets trap dust, allergens, and everyday grime long after a quick vacuum stops helping. Our carpet cleaning lifts embedded dirt and stains from homes and offices alike, using HEPA-filter equipment and products that are safe around kids and pets.",
   },
   {
-    title: "Gutter Cleaning Services",
-    href: "/north-vancouver/gutter-cleaning/",
-    image: "/gutter-cleaning-north-vancouver.png",
-    description:
-      "In North Vancouver's rainy climate, we clear leaves, moss, and debris to keep water flowing and protect your roof, fascia, and foundation.",
-  },
-  {
-    title: "Window Cleaning Services",
-    href: "/north-vancouver/window-cleaning/",
+    title: "Window Cleaning",
+    href: "/services/window-cleaning",
     image: "/window-cleaning-north-vancouver.png",
     description:
-      "We clean interior and exterior windows, frames, and sills with streak-free methods for residential and commercial properties.",
+      "Streaky, grimy windows dull a property fast, inside and out. We clean residential and commercial windows to a streak-free finish, restoring natural light and curb appeal.",
   },
   {
-    title: "Pressure Washing Services",
-    href: "/north-vancouver/pressure-washing/",
+    title: "Pressure Washing",
+    href: "/services/pressure-washing",
     image: "/pressure-washing-north-vancouver.png",
     description:
-      "We remove mold, algae, grime, and moss from driveways, siding, decks, and patios using surface-safe pressure settings.",
+      "Driveways, siding, walkways, and commercial exteriors take a beating from rain, moss, and everyday traffic. Our pressure washing service strips away buildup and restores surfaces without damaging them.",
   },
   {
-    title: "Steam Cleaning Services",
-    href: null as string | null,
-    image: "/carpet-steam-cleaning-north-vancouver.jpg" as string | null,
+    title: "Gutter Cleaning",
+    href: "/services/gutter-cleaning",
+    image: "/gutter-cleaning-north-vancouver.png",
     description:
-      "Our high-temperature steam cleaning lifts embedded grime and sanitizes tile, grout, and hard-to-reach surfaces without harsh chemicals.",
-  },
-];
-
-const jobPropertyCards = [
-  {
-    title: "House Cleaning Services",
-    href: "/north-vancouver/house-cleaning/",
-    image: "/professional-cleaning-services-north-vancouver.jpg",
-    blurb:
-      "House and apartment cleaning services in North Vancouver, West Vancouver, Vancouver & beyond covering all of Greater Vancouver and the Fraser Valley.",
-    description:
-      "Our residential cleaning covers routine maintenance for kitchens, bathrooms, bedrooms, and living spaces, plus optional deep cleaning for baseboards, inside appliances, light fixtures, and window tracks. We also offer move-in and move-out cleaning, recurring weekly, bi-weekly, or monthly plans, and vacation rental turnovers — all with eco-friendly products safe for kids and pets.",
-  },
-  {
-    title: "Commercial Cleaning & Janitorial Services",
-    href: "/north-vancouver/commercial-cleaning/",
-    image: "/commercial-janitorial-cleaning-north-vancouver.jpg",
-    blurb:
-      "Commercial cleaning & janitorial services for businesses, offices, warehouses, manufacturing facilities, medical clinics, and everything in between including industrial cleaning services. Serving North Vancouver, West Vancouver, Vancouver, Greater Vancouver, and the Fraser Valley.",
-    description:
-      "From daily janitorial upkeep to deep commercial cleans, we handle offices, retail spaces, medical clinics, schools, gyms, warehouses, and manufacturing facilities. Services include floor care, washroom sanitizing, break room cleaning, high-touch disinfection, and industrial-grade degreasing and dusting — scheduled around your business hours, including evenings and weekends.",
-  },
-  {
-    title: "Construction & Post-Construction Cleaning Services",
-    href: "/north-vancouver/post-construction-cleaning/",
-    image: "/post-construction-cleaning-north-vancouver.jpg",
-    blurb:
-      "Construction & post-construction cleaning services for residential and commercial properties in North Vancouver, West Vancouver, Vancouver, Greater Vancouver, and the Fraser Valley.",
-    description:
-      "We clear renovation dust, drywall debris, adhesive residue, paint overspray, and fine particles from every surface using HEPA-filtered equipment. Our crews handle final-clean detailing on windows, fixtures, floors, and cabinetry so new builds and renovated spaces are truly move-in ready.",
-  },
-  {
-    title: "Strata Cleaning",
-    href: "/north-vancouver/strata-cleaning/",
-    image: "/strata-cleaning-north-vancouver.jpg",
-    blurb:
-      "Strata cleaning services for stratas and property managers in North Vancouver, Vancouver, West Vancouver, Greater Vancouver, and the Fraser Valley.",
-    description:
-      "We maintain lobbies, hallways, elevators, shared washrooms, recycling and garbage rooms, underground parking, and building perimeters on a schedule set by your strata council or property manager. Consistent, reliable service keeps common areas presentable for residents, guests, and inspections.",
+      "Clogged gutters lead to water damage, foundation problems, and pest issues. We clear debris and check for blockages so water flows where it should.",
   },
 ];
 
@@ -121,22 +89,37 @@ const whyMintItems = [
   {
     title: "Eco-Friendly Products",
     detail:
-      "We use products that are effective on grime but safer for kids, pets, and indoor air quality. From plant-based cleaners to HEPA-filtered vacuums, every tool protects your space.",
+      "We clean with plant-based, non-toxic products that are safe for kids and pets, paired with HEPA-filter vacuums for better indoor air quality.",
   },
   {
-    title: "Transparent Pricing",
+    title: "Vetted, Reliable Teams",
     detail:
-      "You receive a clear estimate upfront. No hidden fees, no surprise charges. If scope changes, we call first.",
+      "Every team member is background-checked, bonded, and insured. Where possible, we assign the same team to your property for consistency.",
   },
   {
     title: "7-Day Availability",
     detail:
-      "Most companies work Monday to Friday. We are available on weekends because that is often when clients need us most.",
+      "We work evenings, weekends, and holidays, so booking around your schedule is easier.",
   },
   {
-    title: "Same Trained Team",
+    title: "Transparent Pricing",
     detail:
-      "We do our best to keep the same crew on recurring jobs, so your preferences are remembered and quality stays consistent every visit.",
+      "Free estimates, no hidden fees, and no contracts locking you in.",
+  },
+  {
+    title: "24-Hour Satisfaction Guarantee",
+    detail:
+      "If something's not right, we come back within 24 hours to fix it at no charge.",
+  },
+  {
+    title: "Trusted by Real Organizations",
+    detail:
+      "Our commercial clients include Vancouver Coastal Health, BC Hydro, Arbutus Point Developments Ltd., and Powers Construction.",
+  },
+  {
+    title: "Strong Reputation",
+    detail:
+      "We hold a 4.9 out of 5 rating across more than 120 Google reviews.",
   },
 ];
 
@@ -209,55 +192,54 @@ const northVancouverNeighborhoods = [
 
 const faqItems = [
   {
-    question: "What makes Mint Sanitary different in North Vancouver?",
+    question: "What cleaning services does Mint Sanitary offer?",
     answer:
-      "We combine eco-friendly products, seven-day availability, transparent pricing, and bonded and insured teams with a 24-hour satisfaction guarantee.",
+      "We offer house cleaning, commercial cleaning and janitorial service, carpet cleaning, window cleaning, pressure washing, and gutter cleaning. House cleaning covers standard, deep, recurring, move-in and move-out, vacation rental turnover, post-construction cleanup, and upholstery and drapery cleaning. Commercial cleaning covers offices, clinics, restaurants, gyms, schools, strata buildings, churches, and industrial spaces.",
   },
   {
-    question: "How much does house cleaning cost in North Vancouver?",
+    question: "How much does cleaning cost?",
     answer:
-      "Cost depends on square footage, number of rooms, frequency, and service level. We provide free transparent estimates so you know the exact price before booking.",
+      "Most jobs are quoted based on property size and condition rather than a flat rate. The best way to get an accurate number is through our rates page, where you can get an instant estimate. Final pricing depends on the scope of work and any special requests.",
   },
   {
-    question: "Can I get same-day cleaning service in North Vancouver?",
+    question: "What areas does Mint Sanitary serve?",
     answer:
-      "Often, yes. We keep flexible capacity across North Vancouver and offer same-day options when schedule gaps are available.",
+      "We serve North Vancouver, West Vancouver, Vancouver, Burnaby, New Westminster, Maple Ridge, and surrounding communities. North Vancouver is our home base, so response times there tend to be fastest. Check our service areas page for the full coverage list.",
   },
   {
-    question:
-      "Are your cleaning products eco-friendly and safe for families and pets?",
+    question: "How do I book a cleaning?",
     answer:
-      "Yes. We use eco-friendly products that are effective on grime while staying safer for kids, pets, and people with sensitivities.",
+      "You can request a free estimate through our rates page or reach us directly by phone or email. We'll confirm the scope of the job, offer a price, and schedule a visit at a time that works for you. Most bookings can be arranged within a few days, including evenings and weekends.",
   },
   {
-    question: "What areas of North Vancouver do you service?",
+    question: "Are your cleaning products safe for kids and pets?",
     answer:
-      "We cover all of North Vancouver including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights, plus nearby cities.",
+      "Yes. We use eco-friendly, non-toxic, plant-based products across all our residential and commercial jobs. We also use HEPA-filter vacuums to help improve indoor air quality while we clean.",
   },
   {
-    question: "How do I get a free cleaning estimate?",
+    question: "What happens if I'm not happy with the clean?",
     answer:
-      "Call 236-688-3248 or request a quote online. We provide clear, no-obligation pricing before work begins.",
+      "We offer a 24-hour satisfaction guarantee. If anything was missed or doesn't meet your expectations, contact us within 24 hours and we'll come back and fix it at no extra charge.",
   },
   {
-    question: "What's included in deep cleaning?",
+    question: "Do you offer a discount for first-time customers?",
     answer:
-      "Deep cleaning includes standard tasks plus baseboards, inside appliances, light fixtures, window tracks, and buildup-prone surfaces.",
+      "Yes. New customers get 10% off their first clean with code MINT26. It applies to residential and commercial bookings.",
   },
   {
-    question: "Are your cleaners bonded and insured?",
+    question: "Do you clean both homes and businesses?",
     answer:
-      "Yes. Every team member is vetted, background-checked, bonded, and insured.",
+      "Yes. Mint Sanitary handles residential house cleaning and commercial janitorial contracts across Greater Vancouver. Many of our commercial clients, including healthcare and construction organizations, rely on us for ongoing scheduled service rather than one-time cleans.",
   },
   {
-    question: "What if I'm not satisfied with the clean?",
+    question: "Do I need to sign a contract?",
     answer:
-      "Let us know within 24 hours and we will re-clean the missed area at no charge.",
+      "No. We don't require contracts for house cleaning or most commercial arrangements. You can book a one-time clean, set up recurring visits, or adjust your schedule as your needs change.",
   },
   {
-    question: "Do you offer recurring cleaning on a fixed day?",
+    question: "Are your teams background-checked and insured?",
     answer:
-      "Yes. Weekly, bi-weekly, and monthly recurring options are available, and we keep your preferred day and team whenever possible.",
+      "Yes. Every team member is background-checked, bonded, and insured before working in your home or business. Where possible, we try to send the same team to your property so you get consistency from visit to visit.",
   },
 ];
 
@@ -284,7 +266,6 @@ export default function Home() {
   const [openWhy, setOpenWhy] = useState<number | null>(0);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeArea, setActiveArea] = useState<string | null>(null);
-  const [openJobDescriptions, setOpenJobDescriptions] = useState<Record<number, boolean>>({});
 
   return (
     <>
@@ -305,17 +286,16 @@ export default function Home() {
             <div>
               <div className="mb-5 h-[3px] w-[50px] bg-[#66DAD5]" />
               <h1 className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
-                Top Rated Commercial & Residential Cleaning Services in North Vancouver, West Vancouver, & Greater Vancouver
+                Cleaning Services in Greater Vancouver
               </h1>
               <p className="mt-4 font-display-reg text-[34px] uppercase leading-[1.08] text-white sm:text-[48px] md:text-[56px]">
                 Book Your Cleaning Service Today!
               </p>
               <div className="mt-5 h-[2px] w-[80px] bg-[#66DAD5]" />
               <p className="mt-6 max-w-[520px] font-body text-[17px] leading-[1.75] text-white/90">
-                Mint Sanitary helps homeowners, property managers, and businesses
-                across North Vancouver, West Vancouver, and Vancouver stay ahead
-                with eco-friendly residential, commercial, and specialty cleaning
-                services, transparent pricing, and seven-day availability.
+                Residential and commercial cleaning for homes and businesses
+                across North Vancouver, West Vancouver, Vancouver, Burnaby, New
+                Westminster, Maple Ridge, and the surrounding area.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
@@ -378,172 +358,51 @@ export default function Home() {
           </svg>
         </div>
 
-        {/* ── Book by Job and Property Type (WHITE) ───────────── */}
-        <section className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
+        {/* ── What We Do (WHITE) ──────────────────────────────── */}
+        <section id="services" className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]">
           <div className="mx-auto max-w-[1200px]">
             <div className="mx-auto max-w-[700px] text-center">
               <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
               <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
-                Cleaning Services in North Vancouver, West Vancouver, Vancouver and Beyond
+                Cleaning Services Across Greater Vancouver
               </p>
               <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
-                Book by Job and Property Type
+                What We Do
               </h2>
               <p className="mx-auto mt-4 font-body text-[16px] leading-[1.7] text-white/80">
-                From single homes to commercial facilities, choose the category
-                below that matches your property and job type.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-5 sm:grid-cols-2">
-              {jobPropertyCards.map((card, i) => {
-                const isOpen = !!openJobDescriptions[i];
-                return (
-                  <div
-                    key={card.title}
-                    className="flex flex-col overflow-hidden rounded-[20px] bg-white/[0.12] p-6 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2] sm:p-8"
-                  >
-                    <img
-                      src={card.image}
-                      alt={`${card.title} visual preview`}
-                      className="h-[180px] w-full rounded-[14px] object-cover"
-                    />
-                    <h3 className="mt-4 font-display-reg text-[20px] uppercase tracking-[0.45px] text-white">
-                      {card.title}
-                    </h3>
-                    <h2 className="mt-3 font-body text-[15px] font-medium leading-[1.65] text-white/90">
-                      {card.blurb}{" "}
-                      <button
-                        type="button"
-                        onClick={() =>
-                          setOpenJobDescriptions((prev) => ({ ...prev, [i]: !prev[i] }))
-                        }
-                        aria-expanded={isOpen}
-                        className="inline-flex items-center gap-[3px] align-baseline whitespace-nowrap font-body text-[13px] font-bold uppercase tracking-[0.3px] text-white transition-colors hover:text-[#6191e9] cursor-pointer"
-                      >
-                        {isOpen ? "Read Less" : "Read More"}
-                        <ChevronDown
-                          size={13}
-                          strokeWidth={2.4}
-                          className="transition-transform duration-300"
-                          style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
-                        />
-                      </button>
-                    </h2>
-                    <div
-                      className={`grid transition-[grid-template-rows] duration-300 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
-                    >
-                      <div className="overflow-hidden">
-                        <p className="pt-3 font-body text-[15px] font-medium leading-[1.65] text-white/80">
-                          {card.description}
-                        </p>
-                      </div>
-                    </div>
-                    <a
-                      href={card.href}
-                      className="mt-5 inline-block self-start border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors hover:text-[#6191e9]"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Book by Specialty Cleaning Service (WHITE) ──────── */}
-        <section
-          id="services"
-          className="relative z-10 bg-white px-4 py-16 sm:px-8 md:px-[60px]"
-        >
-          <div className="mx-auto max-w-[1200px]">
-            <div className="mx-auto max-w-[700px] text-center">
-              <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
-              <p className="font-body text-[12px] font-bold uppercase tracking-[2px] text-white/80">
-                Greater Vancouver &amp; Fraser Valley Specialty Cleaning Services
-              </p>
-              <h2 className="mt-3 font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
-                Book by Specialty Cleaning Service
-              </h2>
-              <p className="mx-auto mt-4 font-body text-[16px] leading-[1.7] text-white/80">
-                Need something more specific? Explore our specialty cleaning
-                services below to tackle carpets, windows, gutters, exteriors, and
-                more.
+                Mint Sanitary covers the full range of cleaning needs for homes
+                and businesses in Greater Vancouver. Pick the one you need for
+                full details, or head to our{" "}
+                <a href="/rates" className="underline underline-offset-2">
+                  rates page
+                </a>{" "}
+                for an instant quote.
               </p>
             </div>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {categoryCards.map((card) => {
-                const cardContent = (
-                  <>
-                    {card.image && (
-                      <img
-                        src={card.image}
-                        alt={`${card.title} visual preview`}
-                        className="h-[180px] w-full rounded-[14px] object-cover"
-                      />
-                    )}
-                    <h3
-                      className={`font-display-reg text-[20px] uppercase tracking-[0.45px] text-white ${card.image ? "mt-4" : ""}`}
-                    >
-                      {card.title}
-                    </h3>
-                    <p className="mt-3 font-body text-[15px] leading-[1.65] text-white/80">
-                      {card.description}
-                    </p>
-                    <span
-                      className={`mt-4 inline-block border-b font-body text-[13px] font-bold uppercase tracking-[0.4px] transition-colors ${
-                        card.href
-                          ? "border-white/40 text-white group-hover:text-[#6191e9]"
-                          : "border-white/20 text-white/50"
-                      }`}
-                    >
-                      Learn More
-                    </span>
-                  </>
-                );
-
-                if (card.href) {
-                  return (
-                    <a
-                      key={card.title}
-                      href={card.href}
-                      className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
-                    >
-                      {cardContent}
-                    </a>
-                  );
-                }
-
-                return (
-                  <div
-                    key={card.title}
-                    aria-disabled="true"
-                    className="overflow-hidden rounded-[20px] bg-white/[0.12] p-4"
-                  >
-                    {cardContent}
-                  </div>
-                );
-              })}
-
-              {/* CTA card — fills the 6th grid slot */}
-              <div className="flex flex-col justify-center gap-3 rounded-[20px] border-2 border-[#66DAD5] bg-white/[0.12] p-6 text-center">
-                <h3 className="font-display-reg text-[20px] uppercase tracking-[0.45px] text-white">
-                  Not Sure Which Service You Need?
-                </h3>
-                <p className="font-body text-[15px] leading-[1.65] text-white/80">
-                  Tell us what you&apos;re working with and we&apos;ll recommend
-                  the right cleaning plan — free, no-obligation quote within 24
-                  hours.
-                </p>
+              {whatWeDoCards.map((card) => (
                 <a
-                  href="/contact"
-                  className="mt-2 inline-flex items-center justify-center self-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
+                  key={card.title}
+                  href={card.href}
+                  className="group overflow-hidden rounded-[20px] bg-white/[0.12] p-4 transition-all duration-200 hover:-translate-y-1 hover:bg-white/[0.2]"
                 >
-                  Get a Free Quote
+                  <img
+                    src={card.image}
+                    alt={`${card.title} visual preview`}
+                    className="h-[180px] w-full rounded-[14px] object-cover"
+                  />
+                  <h3 className="mt-4 font-display-reg text-[20px] uppercase tracking-[0.45px] text-white">
+                    {card.title}
+                  </h3>
+                  <p className="mt-3 font-body text-[15px] leading-[1.65] text-white/80">
+                    {card.description}
+                  </p>
+                  <span className="mt-4 inline-block border-b border-white/40 font-body text-[13px] font-bold uppercase tracking-[0.4px] text-white transition-colors group-hover:text-[#6191e9]">
+                    Learn More
+                  </span>
                 </a>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -606,11 +465,11 @@ export default function Home() {
             <div>
               <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
               <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
-                Detail-Driven, Every Single Time
+                Why Choose Mint Sanitary
               </h2>
               <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
-                When you hire a cleaning service, you&rsquo;re buying time,
-                consistency, and peace of mind. Here&rsquo;s how we deliver.
+                Homeowners and businesses across Greater Vancouver choose Mint
+                Sanitary for a few simple reasons.
               </p>
               <div className="mt-6 space-y-3">
                 {whyMintItems.map((item, i) => (
@@ -647,6 +506,14 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+              <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
+                New to Mint Sanitary? Take 10% off your first clean with code{" "}
+                <strong className="text-white">MINT26</strong>.
+              </p>
+              <p className="mt-3 font-body text-[15px] leading-[1.7] text-white/80">
+                On pricing, most jobs are quoted by property size, condition,
+                and scope of work rather than a flat rate.
+              </p>
               <a
                 href="/rates"
                 className="mt-7 inline-flex items-center justify-center rounded-[99px] bg-white px-7 py-3 font-body text-[14px] font-extrabold uppercase tracking-[0.32px] text-[#6191e9] transition-colors duration-200 hover:bg-white/90"
@@ -835,12 +702,12 @@ export default function Home() {
           <div className="mx-auto max-w-[820px] text-center">
             <div className="mx-auto mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
             <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
-              Ready to Refresh Your Space?
+              Get Your Free Quote
             </h2>
             <p className="mx-auto mt-5 max-w-[600px] font-body text-[16px] leading-[1.7] text-white/80">
-              Your home deserves professional care, and you deserve your time
-              back. Book your free estimate today and see why North Vancouver
-              clients trust Mint Sanitary for dependable cleaning.
+              Ready to see what your clean will cost? Get an instant estimate
+              on house cleaning, commercial janitorial service, carpet
+              cleaning, window cleaning, pressure washing, or gutter cleaning.
             </p>
             <p className="mx-auto mt-3 max-w-[500px] font-body text-[15px] leading-[1.7] text-white/80">
               Use code{" "}

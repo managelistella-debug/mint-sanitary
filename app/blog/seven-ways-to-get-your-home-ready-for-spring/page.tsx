@@ -140,7 +140,7 @@ export default function SpringCleaningPost() {
                 3. Wash Your Windows Inside and Out
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                There is no faster way to transform how your home looks and feels than clean windows. After months of rain, condensation, and road-splash, even modest streaking significantly dulls the natural light coming into your home. Open the windows, wipe down the frames and tracks, and clean both the interior and exterior glass. For upper-story windows, a professional <Link href="/north-vancouver/residential-window-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">window cleaning service</Link> can do the job safely and streak-free in a fraction of the time.
+                There is no faster way to transform how your home looks and feels than clean windows. After months of rain, condensation, and road-splash, even modest streaking significantly dulls the natural light coming into your home. Open the windows, wipe down the frames and tracks, and clean both the interior and exterior glass. For upper-story windows, a professional <Link href="/north-vancouver/window-cleaning#residential-window-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">window cleaning service</Link> can do the job safely and streak-free in a fraction of the time.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Clean windows also matter for plants. If you have been keeping indoor plants over winter, moving them into cleaner light can help them recover from the shorter days and dry indoor air of the heating season.
@@ -221,7 +221,7 @@ export default function SpringCleaningPost() {
                 7. Set Up a Maintenance Cleaning Routine
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                The best way to maintain the results of a thorough spring clean is to never let grime accumulate to the same level again. Setting up a regular bi-weekly or monthly house cleaning routine keeps your home consistently fresh without the need for marathon cleaning sessions. Many North Vancouver homeowners find that a professional <Link href="/north-vancouver/recurring-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">recurring clean</Link> every two to four weeks gives them back significant time while keeping their home in genuinely good shape year-round.
+                The best way to maintain the results of a thorough spring clean is to never let grime accumulate to the same level again. Setting up a regular bi-weekly or monthly house cleaning routine keeps your home consistently fresh without the need for marathon cleaning sessions. Many North Vancouver homeowners find that a professional <Link href="/north-vancouver/house-cleaning" className="text-[#93b8f5] hover:text-white transition-colors">recurring clean</Link> every two to four weeks gives them back significant time while keeping their home in genuinely good shape year-round.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Create simple daily habits too: wipe counters after cooking, squeegee the shower after use, and set a ten-minute tidy before bed. Small consistent actions make the biggest difference in maintaining a clean home between professional visits.

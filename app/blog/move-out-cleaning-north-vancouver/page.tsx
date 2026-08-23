@@ -59,7 +59,7 @@ export default function MoveOutCleaningPost() {
                 In British Columbia, landlords can deduct from a damage deposit for cleaning only if the unit is left in a worse condition than when you moved in, accounting for reasonable wear and tear. In practice, though, disputes over cleanliness are one of the most common reasons tenants lose part or all of their deposit. The difference between getting your money back and losing it is usually not about how hard you cleaned. It is about whether you cleaned the right things.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                Here is a practical breakdown of what property managers in North Vancouver focus on during move out inspections, and what a professional <Link href="/north-vancouver/move-out-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">move out cleaning in North Vancouver</strong></Link> covers that a DIY clean often misses.
+                Here is a practical breakdown of what property managers in North Vancouver focus on during move out inspections, and what a professional <Link href="/north-vancouver/move-in-move-out-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">move out cleaning in North Vancouver</strong></Link> covers that a DIY clean often misses.
               </p>
             </div>
 
@@ -135,7 +135,7 @@ export default function MoveOutCleaningPost() {
                 What a Move In Clean Means for the Next Tenant
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
-                If you are on the receiving end as a new tenant, a professional <Link href="/north-vancouver/move-in-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">move in cleaning in North Vancouver</strong></Link> is worth booking even if the property manager says the unit was professionally cleaned before your arrival. Standards vary, and moving into a space that you have had cleaned to your own standard means you know exactly what condition it was in when your tenancy started. This matters if you ever end up in a dispute at the end of your own lease.
+                If you are on the receiving end as a new tenant, a professional <Link href="/north-vancouver/move-in-move-out-cleaning" className="text-[#93b8f5] hover:text-white transition-colors"><strong className="text-white">move in cleaning in North Vancouver</strong></Link> is worth booking even if the property manager says the unit was professionally cleaned before your arrival. Standards vary, and moving into a space that you have had cleaned to your own standard means you know exactly what condition it was in when your tenancy started. This matters if you ever end up in a dispute at the end of your own lease.
               </p>
               <p className="font-body text-[17px] leading-[1.75] text-white/75">
                 Documenting the state of the unit with photos on move in day and pairing that with a professional clean you arranged yourself gives you strong footing from day one.

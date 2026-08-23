@@ -61,7 +61,7 @@ const sections = [
     title: "Contact Us",
     content: [
       "If you have any questions or concerns about this Privacy Policy or how we handle your personal information, please contact us:",
-      "Email: hello@mintsanitary.com\nPhone: 604-123-4567\nService Area: Metro Vancouver, BC",
+      "Email: hello@mintsanitary.com\nPhone: 236-688-3248\nService Area: Metro Vancouver, BC",
     ],
   },
 ];

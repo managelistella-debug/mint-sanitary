@@ -41,7 +41,7 @@ const addOns = [
   { item: "Balconies swept", price: "$30 per balcony" },
   { item: "Blinds washed", price: "$30 per room" },
   { item: "Walls washed", price: "$50 (1 room)" },
-  { item: "Dishes washed", price: "$15 (1 room)" },
+  { item: "Dishes washed", price: "$15 (flat)" },
   { item: "Linen & towels changed", price: "$15 per bed" },
   { item: "Inspection for damages, toiletries & supplies", price: "$25" },
   { item: "Carpet cleaning", price: "$60 per room" },

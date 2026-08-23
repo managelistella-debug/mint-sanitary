@@ -4,18 +4,18 @@ import { useState, useRef, useEffect } from "react";
 import { ChevronDown, Menu, X, MoveRight } from "lucide-react";
 
 const propertyTypeLinks = [
-  { label: "House and Apartment Cleaning", href: "/north-vancouver/house-cleaning" },
-  { label: "Commercial Cleaning and Janitorial Services", href: "/north-vancouver/commercial-cleaning" },
-  { label: "Construction and Post-Construction Cleaning", href: "/north-vancouver/post-construction-cleaning" },
-  { label: "Strata Cleaning", href: "/north-vancouver/strata-cleaning" },
+  { label: "House and Apartment Cleaning", href: "/services/house-cleaning" },
+  { label: "Commercial Cleaning and Janitorial Services", href: "/services/commercial-cleaning" },
+  { label: "Construction and Post-Construction Cleaning", href: "/services/post-construction-cleaning" },
+  { label: "Strata Cleaning", href: "/services/strata-cleaning" },
 ];
 
 const specialtyCleaningLinks = [
-  { label: "Carpet Cleaning Services", href: "/north-vancouver/carpet-cleaning" },
-  { label: "Gutter Cleaning Services", href: "/north-vancouver/gutter-cleaning" },
-  { label: "Window Cleaning Services", href: "/north-vancouver/window-cleaning" },
-  { label: "Pressure Washing Services", href: "/north-vancouver/pressure-washing" },
-  { label: "Steam Cleaning Services", href: null as string | null },
+  { label: "Carpet Cleaning Services", href: "/services/carpet-cleaning" },
+  { label: "Gutter Cleaning Services", href: "/services/gutter-cleaning" },
+  { label: "Window Cleaning Services", href: "/services/window-cleaning" },
+  { label: "Pressure Washing Services", href: "/services/pressure-washing" },
+  { label: "Steam Cleaning Services", href: "/services/carpet-cleaning" },
 ];
 
 export default function Navbar() {

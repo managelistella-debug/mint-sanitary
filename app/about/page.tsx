@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "About North Vancouver | Mint Sanitary",
+  title: "About Mint Sanitary | Greater Vancouver Cleaning Company",
   description:
-    "About Mint Sanitary in North Vancouver, trusted eco-friendly cleaning service. 236-688-3248. Background-checked, insured, and available 7 days a week.",
+    "About Mint Sanitary, a trusted eco-friendly cleaning company serving Greater Vancouver. 236-688-3248. Background-checked, insured, and available 7 days a week.",
   alternates: {
     canonical: "/about",
   },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const whyChooseItems: { title: string; body: string; image: string }[] = [
   {
     title: "Coverage You Can Count On",
-    body: "Available seven days a week, including evenings and weekends. Our North Vancouver team responds quickly and works around your schedule.",
+    body: "Available seven days a week, including evenings and weekends. Our team responds quickly and works around your schedule.",
     image: "/recurring-cleaning-kitchen-north-vancouver.jpg",
   },
   {
@@ -23,7 +23,7 @@ const whyChooseItems: { title: string; body: string; image: string }[] = [
   },
   {
     title: "Transparent Pricing",
-    body: "Free estimates, no surprises, upfront costs. North Vancouver customers know exactly what they\u2019re paying.",
+    body: "Free estimates, no surprises, upfront costs. Customers know exactly what they\u2019re paying.",
     image: "/standard-cleaning-kitchen-north-vancouver.jpg",
   },
   {
@@ -33,7 +33,7 @@ const whyChooseItems: { title: string; body: string; image: string }[] = [
   },
   {
     title: "Service Versatility",
-    body: "Mint Sanitary in North Vancouver handles residential cleaning, commercial spaces, and post-construction cleanup.",
+    body: "Mint Sanitary handles residential cleaning, commercial spaces, and post-construction cleanup across Greater Vancouver.",
     image: "/post-construction-cleaning-north-vancouver.jpg",
   },
 ];
@@ -42,30 +42,30 @@ const faqItems: { question: string; answer: string }[] = [
   {
     question: "Who founded Mint Sanitary and why?",
     answer:
-      "Mint Sanitary was founded by a team frustrated with cleaning services that cut corners or used harsh chemicals. We wanted North Vancouver to have a service that\u2019s reliable, trustworthy, and genuinely cares about the safety of families and pets. In neighborhoods like Lower Lonsdale and Edgemont Village, homeowners deserve a cleaning company they can trust completely. That\u2019s what we built.",
+      "Mint Sanitary was founded by a team frustrated with cleaning services that cut corners or used harsh chemicals. We wanted Greater Vancouver to have a service that\u2019s reliable, trustworthy, and genuinely cares about the safety of families and pets. Homeowners deserve a cleaning company they can trust completely. That\u2019s what we built.",
   },
   {
     question:
-      "How do you hire and train your cleaning team in North Vancouver?",
+      "How do you hire and train your cleaning team?",
     answer:
-      "Every team member working in North Vancouver undergoes a thorough background check and is fully insured and bonded. We provide comprehensive training on cleaning techniques, proper product use, and customer service standards. All our North Vancouver cleaners continue training throughout their time with us to maintain quality. You\u2019re trusting us with your home, and we take that responsibility as seriously as you do.",
+      "Every team member undergoes a thorough background check and is fully insured and bonded. We provide comprehensive training on cleaning techniques, proper product use, and customer service standards. Our cleaners continue training throughout their time with us to maintain quality. You\u2019re trusting us with your home, and we take that responsibility as seriously as you do.",
   },
   {
     question:
-      "Why does Mint Sanitary use eco-friendly products for North Vancouver homes?",
+      "Why does Mint Sanitary use eco-friendly products?",
     answer:
-      "Eco-friendly products are just as effective as harsh chemicals without the toxic fumes or health risks. Why expose your family in Seymour Heights or Lynn Valley to unnecessary chemicals when plant-based alternatives clean just as powerfully? It\u2019s better for your home, your children, your pets, and the environment. Green cleaning isn\u2019t a compromise on results; it\u2019s a better way to get them.",
+      "Eco-friendly products are just as effective as harsh chemicals without the toxic fumes or health risks. Why expose your family to unnecessary chemicals when plant-based alternatives clean just as powerfully? It\u2019s better for your home, your children, your pets, and the environment. Green cleaning isn\u2019t a compromise on results; it\u2019s a better way to get them.",
   },
   {
     question: "What areas of Greater Vancouver does Mint Sanitary serve?",
     answer:
-      "We proudly serve all of North Vancouver, including Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village, and Seymour Heights, plus West Vancouver, Vancouver, Burnaby, and surrounding Greater Vancouver communities. If you\u2019re uncertain whether we service your address, just call 236-688-3248 or email hello@mintsanitary.com and we\u2019ll confirm our coverage.",
+      "We're based in North Vancouver and serve all of Greater Vancouver, including North Vancouver, West Vancouver, Vancouver, Burnaby, New Westminster, and Maple Ridge. If you\u2019re uncertain whether we service your address, just call 236-688-3248 or email hello@mintsanitary.com and we\u2019ll confirm our coverage.",
   },
   {
     question:
-      "What makes Mint Sanitary different from other cleaning companies in North Vancouver?",
+      "What makes Mint Sanitary different from other cleaning companies?",
     answer:
-      "We combine several differentiators that set North Vancouver\u2019s Mint Sanitary apart. We\u2019re available seven days a week, offering unmatched convenience. Eco-friendly cleaning isn\u2019t an upsell; it\u2019s core to who we are. We promise transparent pricing, free estimates, and a fully background-checked, trained, and insured team. Whether it\u2019s residential, commercial, or industrial cleaning, Mint Sanitary brings the same professionalism and care to every North Vancouver job. Clean feels good, and it should also feel safe and responsible.",
+      "We combine several differentiators that set Mint Sanitary apart. We\u2019re available seven days a week, offering unmatched convenience. Eco-friendly cleaning isn\u2019t an upsell; it\u2019s core to who we are. We promise transparent pricing, free estimates, and a fully background-checked, trained, and insured team. Whether it\u2019s residential, commercial, or industrial cleaning, Mint Sanitary brings the same professionalism and care to every job across Greater Vancouver. Clean feels good, and it should also feel safe and responsible.",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function AboutPage() {
     <ServicePageLayout
       title="About Mint Sanitary"
       heroImage="/mint-sanitary-team-north-vancouver.jpg"
-      heroIntro="Mint Sanitary was built to give North Vancouver homeowners and businesses a cleaning company they can trust for reliability, safety, and consistent results."
+      heroIntro="Mint Sanitary was built to give Greater Vancouver homeowners and businesses a cleaning company they can trust for reliability, safety, and consistent results."
       faqItems={faqItems}
       ctaHeading="Ready to Experience the Mint Sanitary Difference?"
       ctaBody="Clean feels good. Let Mint Sanitary handle the cleaning so you can focus on what truly matters. Get 10% off your first clean with code MINT26. No tricks. No hidden fees. Available 7 days a week."
@@ -94,11 +94,11 @@ export default function AboutPage() {
               We started Mint Sanitary because we couldn&apos;t find a cleaning
               service we&apos;d trust in our own homes. We saw too many companies
               cutting corners, using harsh chemicals that made families nervous, or
-              showing up late without apology. North Vancouver families deserve
+              showing up late without apology. Greater Vancouver families deserve
               better. We believed the community needed a team that treated spaces
               with genuine care, showed up reliably, and used products safe for
               children and pets. That frustration became our mission. Today,
-              we&apos;re proud to serve North Vancouver with the service we always
+              we&apos;re proud to serve Greater Vancouver with the service we always
               wanted for ourselves.
             </p>
             <a
@@ -144,11 +144,11 @@ export default function AboutPage() {
               around three core values: trustworthiness, reliability, and
               responsibility. Every cleaner is background-checked, fully insured,
               and bonded. We&apos;re available seven days a week because life in
-              North Vancouver doesn&apos;t follow a nine-to-five schedule. We use
+              Greater Vancouver doesn&apos;t follow a nine-to-five schedule. We use
               only plant-based, non-toxic products because peace of mind matters as
               much as cleanliness. Transparency guides everything we do. No hidden
-              fees. No surprises. Just honest, professional service for North
-              Vancouver homeowners who want their spaces treated right.
+              fees. No surprises. Just honest, professional service for
+              homeowners who want their spaces treated right.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div className="rounded-[14px] border border-white/15 bg-white/10 p-4 text-center">
@@ -177,7 +177,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
           <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
-            Why Choose Mint Sanitary for Cleaning in North Vancouver
+            Why Choose Mint Sanitary for Cleaning in Greater Vancouver
           </h2>
           <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
             Mint Sanitary stands apart in several key ways:
@@ -203,9 +203,9 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="mt-10 font-body text-[15px] leading-[1.7] text-white/80">
-            North Vancouver families and businesses across Lower Lonsdale, Lynn
-            Valley, Deep Cove, Edgemont Village, Seymour Heights, and beyond
-            trust Mint Sanitary to keep their spaces spotless and safe.
+            Families and businesses across North Vancouver, West Vancouver,
+            Vancouver, Burnaby, and the rest of Greater Vancouver trust
+            Mint Sanitary to keep their spaces spotless and safe.
           </p>
         </div>
       </section>
@@ -229,18 +229,18 @@ export default function AboutPage() {
               </h2>
               <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
                 We believe families deserve a clean home without sacrificing their
-                health or the environment. That&apos;s why every North Vancouver
-                customer gets the same eco-friendly commitment, regardless of service
-                type.
+                health or the environment. That&apos;s why every
+                customer across Greater Vancouver gets the same eco-friendly
+                commitment, regardless of service type.
               </p>
               <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
                 Plant-based and mineral-based products work just as effectively as
                 traditional chemicals, but without toxic fumes, harsh residues, or
                 safety concerns for children and pets. We choose products that are
-                kind to families in Lynn Valley and Deep Cove, safe for the
+                kind to families, safe for the
                 environment, and proven effective on every surface. There&apos;s no
                 performance trade-off when you choose Mint Sanitary&apos;s
-                eco-friendly approach. Your North Vancouver home gets clean, healthy,
+                eco-friendly approach. Your home gets clean, healthy,
                 and responsibly maintained.
               </p>
             </div>
@@ -284,21 +284,19 @@ export default function AboutPage() {
           <div>
             <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
             <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
-              Serving North Vancouver and Greater Vancouver
+              Serving Greater Vancouver
             </h2>
             <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
-              Based right here in North Vancouver, we proudly serve our local
-              community and the surrounding Greater Vancouver area. Our North
-              Vancouver roots mean we understand the unique needs of the region,
-              from the local water conditions to neighborhood-specific cleaning
-              challenges.
+              Based in North Vancouver, we proudly serve homes and businesses
+              throughout Greater Vancouver. Our local roots mean we understand
+              the region&apos;s needs, from coastal weather and rain to
+              neighborhood-specific cleaning challenges.
             </p>
             <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
-              We serve Lower Lonsdale, Lynn Valley, Deep Cove, Edgemont Village,
-              Seymour Heights, and all of North Vancouver, plus West Vancouver,
-              Vancouver, Burnaby, and nearby communities. If you&apos;re unsure
-              whether your neighborhood is in our service area, we encourage you to
-              call or email us directly.
+              We serve North Vancouver, West Vancouver, Vancouver, Burnaby,
+              New Westminster, Maple Ridge, and nearby communities.
+              If you&apos;re unsure whether your neighborhood is in our
+              service area, we encourage you to call or email us directly.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               {["North Vancouver", "West Vancouver", "Vancouver", "Burnaby", "Deep Cove", "Lynn Valley"].map((area) => (
@@ -351,16 +349,16 @@ export default function AboutPage() {
             <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
               Behind every clean home is a trained, trustworthy professional. Every
               member of the Mint Sanitary team undergoes a rigorous background
-              check before being hired. We invest in ongoing training so our North
-              Vancouver team maintains the highest standards for cleaning
+              check before being hired. We invest in ongoing training so our
+              team maintains the highest standards for cleaning
               techniques, product knowledge, and customer service.
             </p>
             <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">
-              We carry full bonding and insurance coverage, protecting every North
-              Vancouver homeowner and business we serve. Our credentials
-              aren&apos;t just words; they&apos;re our commitment that you&apos;re
-              letting the right people into your home or workplace. We take that
-              responsibility seriously.
+              We carry full bonding and insurance coverage, protecting every
+              homeowner and business we serve across Greater Vancouver. Our
+              credentials aren&apos;t just words; they&apos;re our commitment
+              that you&apos;re letting the right people into your home or
+              workplace. We take that responsibility seriously.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               {["Background-Checked", "Fully Insured", "Bonded", "Ongoing Training"].map((tag) => (
@@ -385,9 +383,9 @@ export default function AboutPage() {
               Community and Local Commitment
             </h2>
             <p className="mt-6 font-body text-[15px] leading-[1.7] text-white/80">
-              Mint Sanitary is deeply committed to North Vancouver. We hire
-              locally, support local suppliers, and believe in giving back to the
-              communities we serve. Our North Vancouver team is made up of
+              Mint Sanitary is deeply committed to the communities we serve
+              across Greater Vancouver. We hire locally, support local
+              suppliers, and believe in giving back. Our team is made up of
               neighbors, people who live in the areas they clean.
             </p>
             <p className="mt-4 font-body text-[15px] leading-[1.7] text-white/80">

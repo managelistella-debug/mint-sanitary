@@ -7,9 +7,9 @@ import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mintsanitary.com"),
-  title: "Cleaning Services North Vancouver | Mint Sanitary",
+  title: "Cleaning Services in Greater Vancouver | Mint Sanitary",
   description:
-    "Professional cleaning services in North Vancouver. Residential, commercial & more. Eco-friendly, 7-day availability. Free estimate.",
+    "House cleaning, commercial janitorial, carpet, window, and pressure washing across Greater Vancouver. Free estimates. 4.9 stars, 120+ reviews.",
   icons: {
     icon: "/favicon.png",
   },

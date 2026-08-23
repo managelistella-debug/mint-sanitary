@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Plus } from "lucide-react";
 
 interface AccordionItem {
   title: string;
@@ -15,6 +16,8 @@ interface Props {
   items: AccordionItem[];
   ctaHref?: string;
   ctaLabel?: string;
+  /** Hides the small teal accent bar above the heading. Defaults to shown. */
+  hideAccent?: boolean;
 }
 
 export default function AccordionWithImage({
@@ -25,6 +28,7 @@ export default function AccordionWithImage({
   items,
   ctaHref,
   ctaLabel,
+  hideAccent,
 }: Props) {
   const [open, setOpen] = useState<number | null>(0);
 
@@ -46,7 +50,7 @@ export default function AccordionWithImage({
           />
         </div>
         <div>
-          <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />
+          {!hideAccent && <div className="mb-4 h-[3px] w-[50px] bg-[#66DAD5]" />}
           <h2 className="font-display-reg text-[30px] uppercase text-white sm:text-[38px]">
             {heading}
           </h2>
@@ -69,13 +73,13 @@ export default function AccordionWithImage({
                     {item.title}
                   </span>
                   <span
-                    className="ml-4 flex h-[28px] w-[28px] shrink-0 items-center justify-center rounded-full border border-white/30 font-body text-[20px] leading-none text-white transition-transform duration-300"
+                    className="ml-4 flex h-[28px] w-[28px] shrink-0 items-center justify-center rounded-full border border-white/30 text-white transition-transform duration-300"
                     style={{
                       transform:
                         open === i ? "rotate(45deg)" : "rotate(0deg)",
                     }}
                   >
-                    +
+                    <Plus size={14} strokeWidth={2.5} />
                   </span>
                 </button>
                 <div

@@ -95,6 +95,10 @@ interface ServicePageLayoutProps {
   googleReviews?: GoogleReview[];
   /** Shows the Instant Quote form in the hero, top-right (used on the rates page). */
   showInstantQuote?: boolean;
+  /** Overrides the hero + bottom CTA button destination. Defaults to /contact. */
+  ctaHref?: string;
+  /** When provided, emits a 3-level breadcrumb (Home > city > page) instead of the default 2-level one. */
+  breadcrumbCity?: { name: string; href: string };
 }
 
 export default function ServicePageLayout({
@@ -108,6 +112,8 @@ export default function ServicePageLayout({
   children,
   googleReviews,
   showInstantQuote,
+  ctaHref = "/contact",
+  breadcrumbCity,
 }: ServicePageLayoutProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const reviews = googleReviews || defaultGoogleReviews;
@@ -130,23 +136,26 @@ export default function ServicePageLayout({
         }
       : null;
 
+  const breadcrumbItems = breadcrumbCity
+    ? [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: breadcrumbCity.name,
+          item: `${SITE_URL}${breadcrumbCity.href}`,
+        },
+        { "@type": "ListItem", position: 3, name: title, item: pageUrl },
+      ]
+    : [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: title, item: pageUrl },
+      ];
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: SITE_URL,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: title,
-        item: pageUrl,
-      },
-    ],
+    itemListElement: breadcrumbItems,
   };
 
   return (
@@ -191,7 +200,7 @@ export default function ServicePageLayout({
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                  href="/contact"
+                  href={ctaHref}
                   className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
                 >
                   Free Estimate
@@ -415,7 +424,7 @@ export default function ServicePageLayout({
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                href="/contact"
+                href={ctaHref}
                 className="inline-flex items-center justify-center rounded-[99px] bg-white px-8 py-3.5 font-body text-[14px] font-extrabold uppercase tracking-[0.3px] text-[#6191e9] transition-all duration-200 hover:bg-white/90 hover:shadow-lg"
               >
                 Get a Free Estimate
