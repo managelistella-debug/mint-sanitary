@@ -39,7 +39,7 @@ const whatWeDoCards = [
   {
     title: "Pressure Washing",
     href: "/services/pressure-washing",
-    image: "/pressure-washing-north-vancouver.png",
+    image: "/pressure-washing-rooftop-deck-north-vancouver.jpg",
     description:
       "Driveways, siding, walkways, and commercial exteriors take a beating from rain, moss, and everyday traffic. Our pressure washing service strips away buildup and restores surfaces without damaging them.",
   },
