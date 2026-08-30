@@ -13,28 +13,32 @@ export const metadata: Metadata = {
 const neighbourhoods = ["Kitsilano", "Yaletown", "Downtown Vancouver", "West End", "Mount Pleasant", "Kerrisdale", "Point Grey", "Commercial Drive", "Fairview", "Dunbar"];
 
 const residentialServices = [
-  { title: "House Cleaning", href: "/services/house-cleaning", body: "Regular cleaning for Vancouver condos, apartments, and houses, scheduled weekly, biweekly, or monthly." },
-  { title: "Deep Cleaning", href: "/services/deep-cleaning", body: "A thorough top-to-bottom clean for a Vancouver home that needs more attention than a standard visit, whether it's a first booking or a seasonal reset." },
-  { title: "Move-In Move-Out Cleaning", href: "/services/move-in-move-out-cleaning", body: "Empty-unit cleaning for Vancouver renters, owners, landlords, and property managers handling a turnover." },
-  { title: "Vacation Rental Cleaning", href: "/services/vacation-rental-cleaning", body: "Turnover cleaning for short-term rental units in Vancouver, built around guest checkout and check-in windows." },
+  { title: "House Cleaning", href: "/vancouver/house-cleaning", body: "Regular cleaning for Vancouver condos, apartments, and houses, scheduled weekly, biweekly, or monthly." },
+  { title: "Deep Cleaning", href: "/vancouver/deep-cleaning", body: "A thorough top-to-bottom clean for a Vancouver home that needs more attention than a standard visit, whether it's a first booking or a seasonal reset." },
+  { title: "Move-In Move-Out Cleaning", href: "/vancouver/move-in-move-out-cleaning", body: "Empty-unit cleaning for Vancouver renters, owners, landlords, and property managers handling a turnover." },
+  { title: "Vacation Rental Cleaning", href: "/vancouver/vacation-rental-cleaning", body: "Turnover cleaning for short-term rental units in Vancouver, built around guest checkout and check-in windows." },
 ];
 
 const specialtyServices = [
-  { title: "Post-Construction Cleaning", href: "/services/post-construction-cleaning", body: "Dust and debris removal for Vancouver renovation and build sites before occupancy." },
-  { title: "Upholstery Cleaning", href: "/services/upholstery-cleaning", body: "Fabric and furniture cleaning for Vancouver homes and offices." },
-  { title: "Carpet Cleaning", href: "/services/carpet-cleaning", body: "Carpet cleaning for Vancouver condos, houses, and commercial units." },
-  { title: "Window Cleaning", href: "/services/window-cleaning", body: "Interior and exterior window cleaning for Vancouver homes and low-rise buildings." },
-  { title: "Pressure Washing", href: "/services/pressure-washing", body: "Exterior surface cleaning for Vancouver driveways, patios, and walkways." },
-  { title: "Gutter Cleaning", href: "/services/gutter-cleaning", body: "Gutter clearing for Vancouver houses ahead of the wet season." },
+  { title: "Post-Construction Cleaning", href: "/vancouver/post-construction-cleaning", body: "Dust and debris removal for Vancouver renovation and build sites before occupancy." },
+  { title: "Upholstery Cleaning", href: "/vancouver/upholstery-cleaning", body: "Fabric and furniture cleaning for Vancouver homes and offices." },
+  { title: "Carpet Cleaning", href: "/vancouver/carpet-cleaning", body: "Carpet cleaning for Vancouver condos, houses, and commercial units." },
+  { title: "Window Cleaning", href: "/vancouver/window-cleaning", body: "Interior and exterior window cleaning for Vancouver homes and low-rise buildings." },
+  { title: "Pressure Washing", href: "/vancouver/pressure-washing", body: "Exterior surface cleaning for Vancouver driveways, patios, and walkways." },
+  { title: "Gutter Cleaning", href: "/vancouver/gutter-cleaning", body: "Gutter clearing for Vancouver houses ahead of the wet season." },
+  { title: "Drapes and Curtains Cleaning", href: "/vancouver/drapes-curtains-cleaning", body: "In-home or drop-off cleaning for drapes and curtains in Vancouver homes and condos." },
+  { title: "Steam Cleaning", href: "/vancouver/steam-cleaning", body: "Chemical-free steam cleaning for Vancouver homes and offices." },
 ];
 
 const commercialServices = [
-  { title: "Commercial Cleaning", href: "/services/commercial-cleaning", body: "Scheduled cleaning for Vancouver businesses of any size." },
-  { title: "Office Cleaning", href: "/services/office-cleaning", body: "Daily, weekly, or after-hours cleaning for Vancouver offices." },
-  { title: "Church Cleaning", href: "/services/church-cleaning", body: "Cleaning for Vancouver places of worship, scheduled around services and events." },
-  { title: "Gym Cleaning", href: "/services/gym-cleaning", body: "Sanitizing and cleaning for Vancouver gyms and fitness studios." },
-  { title: "School Cleaning", href: "/services/school-cleaning", body: "Cleaning for Vancouver schools and childcare facilities, scheduled around class hours." },
-  { title: "Strata Cleaning", href: "/services/strata-cleaning", body: "Common area cleaning for Vancouver strata buildings and condo corporations." },
+  { title: "Commercial Cleaning", href: "/vancouver/commercial-cleaning", body: "Scheduled cleaning for Vancouver businesses of any size." },
+  { title: "Office Cleaning", href: "/vancouver/office-cleaning", body: "Daily, weekly, or after-hours cleaning for Vancouver offices." },
+  { title: "Church Cleaning", href: "/vancouver/church-cleaning", body: "Cleaning for Vancouver places of worship, scheduled around services and events." },
+  { title: "Gym Cleaning", href: "/vancouver/gym-cleaning", body: "Sanitizing and cleaning for Vancouver gyms and fitness studios." },
+  { title: "School Cleaning", href: "/vancouver/school-cleaning", body: "Cleaning for Vancouver schools and childcare facilities, scheduled around class hours." },
+  { title: "Strata Cleaning", href: "/vancouver/strata-cleaning", body: "Common area cleaning for Vancouver strata buildings and condo corporations." },
+  { title: "Restaurant Cleaning", href: "/vancouver/restaurant-cleaning", body: "Kitchen and hood cleaning for Vancouver restaurants." },
+  { title: "Industrial Cleaning", href: "/vancouver/industrial-cleaning", body: "WHMIS-compliant cleaning for Vancouver warehouses and light-industrial facilities." },
 ];
 
 const whyChoose = [
@@ -161,9 +165,9 @@ export default function VancouverPage() {
           </h2>
           <p className="mt-4 max-w-[900px] font-body text-[15px] leading-[1.7] text-white/80">
             Mint Sanitary&apos;s full service list is available to
-            customers throughout Vancouver. The links below lead to the
-            general service pages that apply company-wide, since Vancouver
-            does not yet have dedicated service pages of its own.
+            customers throughout Vancouver. Each link below leads to a
+            dedicated Vancouver page with pricing, process details, and
+            neighbourhood coverage specific to that service.
           </p>
 
           <h3 className="mt-10 font-body text-[20px] font-extrabold text-white">Residential Cleaning in Vancouver</h3>
