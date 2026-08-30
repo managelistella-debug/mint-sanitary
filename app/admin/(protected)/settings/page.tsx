@@ -175,13 +175,13 @@ export default function SettingsPage() {
                 onChange={(e) => setDoc({ reviewsHeading: e.target.value })}
               />
             </Field>
-            <Field label="Rating line" hint="e.g. 4.9 out of 5">
+            <Field label="Rating line" hint="e.g. 5 out of 5">
               <TextInput
                 value={doc.reviewsRating}
                 onChange={(e) => setDoc({ reviewsRating: e.target.value })}
               />
             </Field>
-            <Field label="Count line" hint="e.g. based on 120+ reviews">
+            <Field label="Count line" hint="e.g. based on 50+ reviews">
               <TextInput
                 value={doc.reviewsCount}
                 onChange={(e) => setDoc({ reviewsCount: e.target.value })}

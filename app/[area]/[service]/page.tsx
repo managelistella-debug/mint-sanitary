@@ -12,6 +12,7 @@ import {
 import { imageUrl } from "@/lib/cms/sanity";
 import CmsPageShell from "@/components/cms/CmsPageShell";
 import SectionStack from "@/components/cms/SectionStack";
+import { ServiceSchema } from "@/components/SeoSchema";
 
 const SITE_URL = "https://www.mintsanitary.com";
 
@@ -85,6 +86,12 @@ export default async function AreaServicePage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
         }}
+      />
+      <ServiceSchema
+        serviceType={page.cleaningType.name}
+        description={page.metaDescription}
+        areaServed={[page.area.name]}
+        path={`/${area}/${service}`}
       />
       <CmsPageShell
         title={page.heroHeading || page.title}

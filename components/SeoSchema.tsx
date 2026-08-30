@@ -53,3 +53,43 @@ export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(schema)} />;
 }
+
+/**
+ * Service structured data — tells search engines exactly what service is
+ * offered where, distinct from the sitewide LocalBusiness block in
+ * Footer.tsx (which describes the business itself, not a specific service).
+ * `provider` intentionally repeats just enough LocalBusiness identity to be
+ * self-contained per Google's guidance, rather than relying on cross-page
+ * entity resolution.
+ */
+export function ServiceSchema({
+  serviceType,
+  description,
+  areaServed,
+  path,
+}: {
+  /** e.g. "Carpet Cleaning" */
+  serviceType: string;
+  description?: string;
+  /** City names, e.g. ["North Vancouver"] or all four service cities. */
+  areaServed: string[];
+  /** Path relative to site root, e.g. "/services/carpet-cleaning" */
+  path: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType,
+    ...(description ? { description } : {}),
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Mint Sanitary",
+      telephone: "+12366883248",
+      url: `${SITE_URL}/`,
+    },
+    areaServed: areaServed.map((name) => ({ "@type": "City", name })),
+    url: `${SITE_URL}${path}`,
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(schema)} />;
+}

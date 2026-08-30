@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.mintsanitary.com"),
   title: "Cleaning Services in Greater Vancouver | Mint Sanitary",
   description:
-    "House cleaning, commercial janitorial, carpet, window, and pressure washing across Greater Vancouver. Free estimates. 4.9 stars, 120+ reviews.",
+    "House cleaning, commercial janitorial, carpet, window, and pressure washing across Greater Vancouver. Free estimates. 5 stars, 50+ reviews.",
   icons: {
     icon: "/favicon.png",
   },

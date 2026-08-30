@@ -70,6 +70,16 @@ const localBusinessSchema = {
     opens: "08:00",
     closes: "18:00",
   },
+  // Keep in sync with siteGlobals.reviewsRating/reviewsCount (edited in
+  // /admin → Site Settings) — this static copy is what actually renders the
+  // star rating in Google search results, since crawlers don't run the CMS
+  // query that feeds the on-page testimonials number.
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    bestRating: "5",
+    reviewCount: "50",
+  },
   sameAs: socialLinks.map((s) => s.href),
 };
 

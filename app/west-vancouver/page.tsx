@@ -44,7 +44,7 @@ const whyChoose = [
   { title: "24-Hour Satisfaction Guarantee", body: "If something is missed on a West Vancouver clean, tell us within 24 hours and we will come back and fix it." },
   { title: "Transparent, Published Pricing", body: "West Vancouver customers see the same rate structure listed below before booking, with no hidden add-ons." },
   { title: "Institutional Experience", body: "Mint Sanitary holds cleaning relationships with organizations including Vancouver Coastal Health, BC Hydro, Arbutus Point Developments Ltd., and Powers Construction. That same standard applies to West Vancouver strata buildings, offices, and commercial accounts." },
-  { title: "4.9 Out of 5 Rating", body: "Mint Sanitary holds a 4.9 out of 5 rating across 120+ reviews company-wide, from the same team and standards that serve West Vancouver." },
+  { title: "5 Out of 5 Rating", body: "Mint Sanitary holds a 5 out of 5 rating across 50+ reviews company-wide, from the same team and standards that serve West Vancouver." },
 ];
 
 const pricingTiers = [

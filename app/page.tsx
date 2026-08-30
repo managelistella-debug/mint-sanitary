@@ -119,7 +119,7 @@ const whyMintItems = [
   {
     title: "Strong Reputation",
     detail:
-      "We hold a 4.9 out of 5 rating across more than 120 Google reviews.",
+      "We hold a 5 out of 5 rating across more than 50 Google reviews.",
   },
 ];
 

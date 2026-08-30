@@ -160,7 +160,7 @@ export default function AboutPage() {
                 <p className="mt-1 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">Eco-Friendly</p>
               </div>
               <div className="rounded-[14px] border border-white/15 bg-white/10 p-4 text-center">
-                <p className="font-display-reg text-[28px] text-white">120+</p>
+                <p className="font-display-reg text-[28px] text-white">50+</p>
                 <p className="mt-1 font-body text-[13px] font-semibold uppercase tracking-[0.5px] text-white/70">5-Star Reviews</p>
               </div>
               <div className="rounded-[14px] border border-white/15 bg-white/10 p-4 text-center">

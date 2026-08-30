@@ -9,6 +9,9 @@ import { RESERVED_SERVICE_SLUGS } from "@/lib/cms/reservedSlugs";
 import { imageUrl } from "@/lib/cms/sanity";
 import CmsPageShell from "@/components/cms/CmsPageShell";
 import SectionStack from "@/components/cms/SectionStack";
+import { ServiceSchema } from "@/components/SeoSchema";
+
+const SERVICE_AREA_CITIES = ["North Vancouver", "West Vancouver", "Vancouver", "Burnaby"];
 
 const SITE_URL = "https://www.mintsanitary.com";
 
@@ -67,6 +70,12 @@ export default async function CleaningTypePage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
         }}
+      />
+      <ServiceSchema
+        serviceType={page.name || page.title}
+        description={page.metaDescription}
+        areaServed={SERVICE_AREA_CITIES}
+        path={`/services/${slug}`}
       />
       <CmsPageShell
         title={page.heroHeading || page.title}

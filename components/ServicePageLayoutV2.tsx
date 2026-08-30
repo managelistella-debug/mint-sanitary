@@ -326,10 +326,10 @@ export default function ServicePageLayoutV2({
               <div className="mt-2 flex items-center justify-center gap-2">
                 <StarRating rating={5} />
                 <span className="font-body text-[15px] font-semibold text-white">
-                  4.9 out of 5
+                  5 out of 5
                 </span>
                 <span className="font-body text-[14px] text-white/80">
-                  based on 120+ reviews
+                  based on 50+ reviews
                 </span>
               </div>
             </div>
