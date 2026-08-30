@@ -58,17 +58,21 @@ export async function listDocs(type: CollectionName) {
   );
 }
 
+/**
+ * Images are deliberately NOT dereferenced here. `asset->{...}` would replace
+ * the `{_type:"reference", _ref:"image-…"}` object with the resolved asset
+ * document, dropping `_ref` — and `imageUrl()` builds its URL from `_ref`, so
+ * the admin's ImagePicker would render empty for an image that is actually
+ * set. The raw reference is all the client needs.
+ */
 const DOC_PROJECTION = `{
   ...,
-  heroImage{ ..., asset->{_id, url} },
   area->{ _id, name, slug },
   cleaningType->{ _id, name, slug },
   sections[]{
     ...,
-    _type == "whyChoose" => { ..., image{ ..., asset->{_id, url} } },
     _type == "serviceTiles" => { ..., tiles[]-> {
-      _id, name, tileDescription, hasOwnPage, slug,
-      tileImage{ ..., asset->{_id, url} }
+      _id, name, tileDescription, hasOwnPage, slug, tileImage
     } },
     _type == "areas" => { ..., areas[]-> { _id, name, slug } },
     _type == "neighborhoods" => { ..., neighborhoods[]-> { _id, name, slug } }
@@ -141,10 +145,9 @@ export async function deleteDoc(id: string) {
 const SETTINGS_ID = "siteGlobals";
 
 export async function getSettingsDoc() {
-  const existing = await writeClient().fetch(
-    `*[_id == $id][0]{ ..., clientLogos[]{ ..., image{ ..., asset->{_id, url} } } }`,
-    { id: SETTINGS_ID }
-  );
+  // Same reason as DOC_PROJECTION: leave the image reference intact so the
+  // admin's ImagePicker can build a preview URL from asset._ref.
+  const existing = await writeClient().fetch(`*[_id == $id][0]`, { id: SETTINGS_ID });
   if (existing) return existing;
   // Seed an empty singleton on first access so the editor always has something to load.
   return writeClient().createIfNotExists({

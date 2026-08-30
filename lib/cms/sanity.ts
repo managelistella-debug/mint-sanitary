@@ -57,12 +57,22 @@ export function writeClient(): SanityClient {
   return _write;
 }
 
-/** Image URL builder. Returns null when unconfigured so callers can skip rendering. */
+/**
+ * Image URL builder. Returns null when unconfigured so callers can skip rendering.
+ *
+ * Accepts either an unresolved reference (`asset._ref`, the normal shape) or a
+ * dereferenced asset (`asset._id`). Both carry the same `image-…` id that the
+ * URL builder needs, and tolerating both means a GROQ projection that
+ * dereferences the asset can't silently render every picker empty.
+ */
 export function imageUrl(source: CmsImage | undefined | null): string | null {
-  if (!source?.asset?._ref || !isCmsConfigured) return null;
+  if (!isCmsConfigured) return null;
+  const asset = source?.asset as { _ref?: string; _id?: string } | undefined;
+  const ref = asset?._ref ?? asset?._id;
+  if (!ref) return null;
   try {
     return imageUrlBuilder({ projectId: SANITY_PROJECT_ID, dataset: SANITY_DATASET })
-      .image(source)
+      .image({ ...source, asset: { _type: "reference", _ref: ref } })
       .auto("format")
       .fit("max")
       .url();

@@ -15,7 +15,7 @@ const specialtyCleaningLinks = [
   { label: "Gutter Cleaning Services", href: "/services/gutter-cleaning" },
   { label: "Window Cleaning Services", href: "/services/window-cleaning" },
   { label: "Pressure Washing Services", href: "/services/pressure-washing" },
-  { label: "Steam Cleaning Services", href: "/services/carpet-cleaning" },
+  { label: "Steam Cleaning Services", href: "/services/steam-cleaning" },
 ];
 
 export default function Navbar() {
