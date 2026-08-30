@@ -41,13 +41,13 @@ export const RESERVED_AREA_SLUGS = new Set([
 ]);
 
 /**
- * North Vancouver's own static folder currently covers all 18 of its
- * services, so /north-vancouver/[anything-not-in-that-folder] 404s rather
- * than falling through to /[area]/[service] — Next.js commits to a matched
- * literal segment and doesn't back out of it for children. West Vancouver,
- * Vancouver, and any brand-new area have no such subtree, so CMS-created
- * area-service pages under them work immediately. North Vancouver's
- * CMS-driven pages start working the moment its static folder is removed
- * (Phase 3 of the migration) — no code change needed then either.
+ * An area whose literal static folder (app/<area>/) has any subtree beneath
+ * it — a [service] route, or old *-original service folders — needs its own
+ * dedicated app/<area>/[service]/page.tsx rather than relying on the
+ * top-level /[area]/[service] catch-all. Next.js commits to a matched
+ * literal segment and doesn't back out of it for children, so
+ * /north-vancouver/[anything] or /vancouver/[anything] 404s instead of
+ * falling through to the catch-all. West Vancouver and any brand-new area
+ * with no subtree of their own still work immediately via the catch-all.
  */
-export const AREAS_WITH_BLOCKING_STATIC_SUBTREE = new Set(["north-vancouver"]);
+export const AREAS_WITH_BLOCKING_STATIC_SUBTREE = new Set(["north-vancouver", "vancouver"]);
